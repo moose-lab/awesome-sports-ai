@@ -21,21 +21,11 @@ This repository follows the [Awesome List](https://github.com/sindresorhus/aweso
 
 ## Featured Now
 
-High-relevance sports moments to anchor the collection before the broader category list.
+Generated event visuals live in [visualizations/](visualizations/). Regenerate them with `node scripts/generate-visualizations.mjs`.
 
-### NBA Finals
+[![NBA Finals 2026 schedule and stats visualization](visualizations/nba-finals-2026.svg)](visualizations/nba-finals-2026.svg)
 
-Official and useful resources for following the current NBA Finals window.
-
-- [NBA Finals 2026 Schedule](https://api-hub.nba.com/news/2026-nba-finals-schedule) - Official NBA schedule hub for the 2026 Finals.
-- [NBA Stats](https://www.nba.com/stats) - Official NBA statistics portal for players, teams, games, and playoff analysis.
-
-### FIFA World Cup 2026
-
-Official and useful resources for the 2026 FIFA World Cup in Canada, Mexico, and the United States.
-
-- [FIFA World Cup 2026 Match Schedule](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums) - Official fixtures, venues, dates, and live results hub for the tournament.
-- [FIFA World Cup 2026](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026) - Official tournament hub for news, teams, fixtures, tickets, and event information.
+[![FIFA World Cup 2026 visualization](visualizations/fifa-world-cup-2026.svg)](visualizations/fifa-world-cup-2026.svg)
 
 ## Data, APIs, and Feeds
 
