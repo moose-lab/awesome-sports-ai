@@ -1,0 +1,131 @@
+{
+  "generatedDate": "2026-06-07",
+  "nbaFinals": {
+    "title": "NBA Finals 2026",
+    "subtitle": "New York Knicks vs San Antonio Spurs",
+    "updated": "Updated June 7, 2026",
+    "series": {
+      "leader": "New York Knicks",
+      "record": "2-0",
+      "knicksPoints": 210,
+      "spursPoints": 199,
+      "pointDifferential": "+11 NYK"
+    },
+    "links": [
+      {
+        "label": "NBA Finals schedule",
+        "url": "https://api-hub.nba.com/news/2026-nba-finals-schedule"
+      },
+      {
+        "label": "NBA Stats",
+        "url": "https://www.nba.com/stats"
+      }
+    ],
+    "games": [
+      {
+        "game": "G1",
+        "date": "Jun 3",
+        "venue": "San Antonio",
+        "status": "Final",
+        "score": "NYK 105 - SAS 95"
+      },
+      {
+        "game": "G2",
+        "date": "Jun 5",
+        "venue": "San Antonio",
+        "status": "Final",
+        "score": "NYK 105 - SAS 104"
+      },
+      {
+        "game": "G3",
+        "date": "Jun 8",
+        "venue": "New York",
+        "status": "8:30 PM ET",
+        "score": "Scheduled"
+      },
+      {
+        "game": "G4",
+        "date": "Jun 10",
+        "venue": "New York",
+        "status": "8:30 PM ET",
+        "score": "Scheduled"
+      },
+      {
+        "game": "G5",
+        "date": "Jun 13",
+        "venue": "San Antonio",
+        "status": "If necessary",
+        "score": "8:30 PM ET"
+      },
+      {
+        "game": "G6",
+        "date": "Jun 16",
+        "venue": "New York",
+        "status": "If necessary",
+        "score": "8:30 PM ET"
+      },
+      {
+        "game": "G7",
+        "date": "Jun 19",
+        "venue": "San Antonio",
+        "status": "If necessary",
+        "score": "8:30 PM ET"
+      }
+    ]
+  },
+  "fifaWorldCup": {
+    "title": "FIFA World Cup 2026",
+    "subtitle": "Canada, Mexico, United States",
+    "updated": "Updated June 7, 2026",
+    "links": [
+      {
+        "label": "FIFA match schedule",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums"
+      },
+      {
+        "label": "FIFA tournament hub",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026"
+      }
+    ],
+    "stats": [
+      {
+        "label": "Teams",
+        "value": "48"
+      },
+      {
+        "label": "Matches",
+        "value": "104"
+      },
+      {
+        "label": "Host cities",
+        "value": "16"
+      },
+      {
+        "label": "Countries",
+        "value": "3"
+      }
+    ],
+    "milestones": [
+      {
+        "label": "Opening match",
+        "date": "Jun 11",
+        "detail": "Mexico vs South Africa - Mexico City"
+      },
+      {
+        "label": "Group stage",
+        "date": "Jun 11-27",
+        "detail": "72 matches across 12 groups"
+      },
+      {
+        "label": "Knockout rounds",
+        "date": "Jun 28-Jul 15",
+        "detail": "Round of 32 through semifinals"
+      },
+      {
+        "label": "Final",
+        "date": "Jul 19",
+        "detail": "New York New Jersey Stadium"
+      }
+    ]
+  }
+}
