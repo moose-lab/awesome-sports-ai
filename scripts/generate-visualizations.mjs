@@ -69,64 +69,91 @@ ${body}
 </svg>
 `;
 
+const cleanSvg = (svg) =>
+  svg
+    .split("\n")
+    .map((line) => line.trimEnd())
+    .join("\n");
+
 function renderNba(finals) {
-  const rows = finals.games
-    .map((game, index) => {
-      const y = 224 + index * 38;
-      const isFinal = game.status === "Final";
+  const teams = Object.fromEntries(finals.teams.map((team) => [team.abbr, team]));
+  const [leader, challenger] = finals.teams;
+
+  const teamStamp = (x, y, team, options = {}) => {
+    const { active = false } = options;
+    return `
+  <g>
+    <circle cx="${x}" cy="${y}" r="38" fill="${team.color}" stroke="${team.accent}" stroke-width="${active ? 5 : 2}"/>
+    <circle cx="${x}" cy="${y}" r="28" fill="#ffffff" opacity="0.9"/>
+    ${text(x, y + 7, team.abbr, { size: 18, weight: 950, fill: team.accent, anchor: "middle" })}
+    ${text(x, y + 58, `${team.seriesWins} wins`, { size: 12, weight: 800, fill: active ? team.accent : "#64748b", anchor: "middle" })}
+  </g>`;
+  };
+
+  const winSeal = (x, y, team) => `
+  <g transform="rotate(-10 ${x} ${y})">
+    <circle cx="${x}" cy="${y}" r="26" fill="${team.color}" stroke="${team.accent}" stroke-width="3"/>
+    <circle cx="${x}" cy="${y}" r="18" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
+    ${text(x, y + 5, "WIN", { size: 12, weight: 950, fill: "#ffffff", anchor: "middle" })}
+  </g>`;
+
+  const signalCards = finals.signals
+    .map((signal, index) => {
+      const x = 42 + index * 340;
       return [
-        rect(40, y - 25, 1020, 32, {
-          fill: isFinal ? "#fff7ed" : "#ffffff",
-          stroke: "#e6ebf2",
-          radius: 8,
-        }),
-        text(58, y - 4, game.game, { size: 13, weight: 800, fill: "#0f4c81" }),
-        text(130, y - 4, game.date, { size: 13, weight: 700 }),
-        text(230, y - 4, game.venue, { size: 13, weight: 600, fill: "#48566a" }),
-        text(450, y - 4, game.status, { size: 13, weight: 600, fill: isFinal ? "#b45309" : "#56657a" }),
-        text(700, y - 4, game.score, { size: 13, weight: isFinal ? 800 : 600, fill: isFinal ? "#152033" : "#56657a" }),
+        rect(x, 168, 306, 82, { fill: "#ffffff", stroke: index === 0 ? leader.color : "#dfe6f0", radius: 16 }),
+        text(x + 20, 194, signal.label, { size: 12, weight: 850, fill: "#64748b" }),
+        text(x + 20, 222, signal.value, { size: 24, weight: 950, fill: index === 0 ? leader.accent : "#0f2544" }),
+        text(x + 20, 242, signal.detail, { size: 12, weight: 650, fill: "#526174" }),
       ].join("");
     })
     .join("");
 
-  const total = finals.series.knicksPoints + finals.series.spursPoints;
-  const barWidth = 350;
-  const knicksWidth = Math.round((finals.series.knicksPoints / total) * barWidth);
-  const spursWidth = barWidth - knicksWidth;
+  const gameCards = finals.games
+    .map((game, index) => {
+      const col = index % 4;
+      const row = Math.floor(index / 4);
+      const x = 42 + col * 258;
+      const y = 298 + row * 134;
+      const isFinal = game.status === "Final";
+      const winner = teams[game.winner];
+      const cardFill = isFinal ? "#fff7ed" : row === 0 ? "#ffffff" : "#f8fafc";
+      const border = isFinal && winner ? winner.color : "#dfe6f0";
+      return `
+  <g>
+    ${rect(x, y, 236, 112, { fill: cardFill, stroke: border, radius: 16, strokeWidth: isFinal ? 2 : 1 })}
+    ${text(x + 18, y + 28, game.game, { size: 17, weight: 950, fill: isFinal && winner ? winner.accent : "#0f4c81" })}
+    ${text(x + 68, y + 27, game.date, { size: 13, weight: 800, fill: "#152033" })}
+    ${text(x + 18, y + 51, game.venue, { size: 12, weight: 700, fill: "#526174" })}
+    ${text(x + 18, y + 78, game.score, { size: 16, weight: isFinal ? 900 : 750, fill: isFinal ? "#0f2544" : "#526174" })}
+    ${text(x + 18, y + 101, game.insight, { size: 11, weight: 700, fill: isFinal ? "#b45309" : "#64748b" })}
+    ${isFinal && winner ? winSeal(x + 196, y + 38, winner) : pill(x + 142, y + 16, game.status, "#e2e8f0", "#475569")}
+    ${isFinal && winner ? text(x + 182, y + 102, `${winner.abbr} ${game.margin}`, { size: 12, weight: 950, fill: winner.accent }) : ""}
+  </g>`;
+    })
+    .join("");
 
   return svgFrame(
     1100,
-    620,
+    690,
     `
-  ${rect(0, 0, 1100, 620, { fill: "url(#nbaBg)", stroke: "none", radius: 0 })}
-  ${rect(24, 24, 1052, 572, { fill: "#ffffff", stroke: "#dfe6f0", radius: 22, opacity: 0.94 })}
+  ${rect(0, 0, 1100, 690, { fill: "url(#nbaBg)", stroke: "none", radius: 0 })}
+  ${rect(24, 24, 1052, 642, { fill: "#ffffff", stroke: "#dfe6f0", radius: 22, opacity: 0.94 })}
   ${text(42, 72, finals.title, { size: 30, weight: 900, fill: "#0f2544" })}
   ${text(42, 100, finals.subtitle, { size: 16, weight: 650, fill: "#526174" })}
   ${pill(860, 50, finals.updated, "#0f4c81")}
 
-  ${rect(42, 124, 300, 58, { fill: "#eef6ff", stroke: "#c9ddf4", radius: 14 })}
-  ${text(62, 148, "Series", { size: 12, weight: 800, fill: "#526174" })}
-  ${text(62, 171, `${finals.series.leader} ${finals.series.record}`, { size: 19, weight: 900, fill: "#0f2544" })}
+  ${teamStamp(766, 104, leader, { active: true })}
+  ${text(836, 108, finals.series.record, { size: 30, weight: 950, fill: "#0f2544", anchor: "middle" })}
+  ${teamStamp(912, 104, challenger)}
 
-  ${rect(372, 124, 300, 58, { fill: "#fff7ed", stroke: "#fed7aa", radius: 14 })}
-  ${text(392, 148, "NBA Stats snapshot", { size: 12, weight: 800, fill: "#8a4b0f" })}
-  ${text(392, 171, `${finals.series.knicksPoints}-${finals.series.spursPoints} total points`, { size: 19, weight: 900, fill: "#0f2544" })}
+  ${rect(42, 122, 636, 38, { fill: "#eef6ff", stroke: "#c9ddf4", radius: 14 })}
+  ${text(62, 147, `${finals.series.winsNeeded} · ${finals.series.momentum}`, { size: 14, weight: 800, fill: "#0f2544" })}
 
-  ${rect(702, 124, 300, 58, { fill: "#f4f7fb", stroke: "#d8dee9", radius: 14 })}
-  ${text(722, 148, "Point differential", { size: 12, weight: 800, fill: "#526174" })}
-  ${text(722, 171, finals.series.pointDifferential, { size: 19, weight: 900, fill: "#0f2544" })}
-
-  ${text(46, 216, "Game", { size: 11, weight: 800, fill: "#6b778c" })}
-  ${text(130, 216, "Date", { size: 11, weight: 800, fill: "#6b778c" })}
-  ${text(230, 216, "Venue", { size: 11, weight: 800, fill: "#6b778c" })}
-  ${text(450, 216, "Status", { size: 11, weight: 800, fill: "#6b778c" })}
-  ${text(700, 216, "Score / Tipoff", { size: 11, weight: 800, fill: "#6b778c" })}
-  ${rows}
-
-  ${rect(42, 540, barWidth, 16, { fill: "#eef2f7", stroke: "none", radius: 8 })}
-  ${rect(42, 540, knicksWidth, 16, { fill: "#f97316", stroke: "none", radius: 8 })}
-  ${rect(42 + knicksWidth, 540, spursWidth, 16, { fill: "#94a3b8", stroke: "none", radius: 0 })}
-  ${text(42, 578, "Generated from source-data.json. Official hubs: NBA Finals schedule + NBA Stats.", { size: 12, weight: 600, fill: "#64748b" })}
+  ${signalCards}
+  ${text(42, 282, "Game-by-game read", { size: 18, weight: 950, fill: "#0f2544" })}
+  ${gameCards}
+  ${text(42, 642, "Generated from source-data.json. Official hubs: NBA Finals schedule + NBA Stats.", { size: 12, weight: 600, fill: "#64748b" })}
 `
   );
 }
@@ -185,8 +212,8 @@ function renderFifa(worldCup) {
   );
 }
 
-writeFileSync(join(root, "visualizations", "nba-finals-2026.svg"), renderNba(data.nbaFinals));
-writeFileSync(join(root, "visualizations", "fifa-world-cup-2026.svg"), renderFifa(data.fifaWorldCup));
+writeFileSync(join(root, "visualizations", "nba-finals-2026.svg"), cleanSvg(renderNba(data.nbaFinals)));
+writeFileSync(join(root, "visualizations", "fifa-world-cup-2026.svg"), cleanSvg(renderFifa(data.fifaWorldCup)));
 
 console.log("Generated visualizations/nba-finals-2026.svg");
 console.log("Generated visualizations/fifa-world-cup-2026.svg");
