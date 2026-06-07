@@ -4,13 +4,53 @@
     "title": "NBA Finals 2026",
     "subtitle": "New York Knicks vs San Antonio Spurs",
     "updated": "Updated June 7, 2026",
+    "teams": [
+      {
+        "name": "New York Knicks",
+        "abbr": "NYK",
+        "seed": "East champion",
+        "color": "#f97316",
+        "accent": "#0f4c81",
+        "seriesWins": 2,
+        "finalsWins": [
+          "G1",
+          "G2"
+        ]
+      },
+      {
+        "name": "San Antonio Spurs",
+        "abbr": "SAS",
+        "seed": "West champion",
+        "color": "#9ca3af",
+        "accent": "#111827",
+        "seriesWins": 0,
+        "finalsWins": []
+      }
+    ],
     "series": {
       "leader": "New York Knicks",
       "record": "2-0",
-      "knicksPoints": 210,
-      "spursPoints": 199,
-      "pointDifferential": "+11 NYK"
+      "winsNeeded": "NYK needs 2 more wins",
+      "pressure": "SAS needs first series win before Game 5",
+      "momentum": "Two road wins, then the series shifts to New York"
     },
+    "signals": [
+      {
+        "label": "Road control",
+        "value": "2-0 NYK",
+        "detail": "Both wins came in San Antonio."
+      },
+      {
+        "label": "Close-game test",
+        "value": "G2 by 1",
+        "detail": "Game 2 was a one-possession finish."
+      },
+      {
+        "label": "Next leverage",
+        "value": "Game 3",
+        "detail": "New York can move within one win at home."
+      }
+    ],
     "links": [
       {
         "label": "NBA Finals schedule",
@@ -27,49 +67,70 @@
         "date": "Jun 3",
         "venue": "San Antonio",
         "status": "Final",
-        "score": "NYK 105 - SAS 95"
+        "score": "NYK 105 - SAS 95",
+        "winner": "NYK",
+        "margin": "+10",
+        "insight": "Road opener"
       },
       {
         "game": "G2",
         "date": "Jun 5",
         "venue": "San Antonio",
         "status": "Final",
-        "score": "NYK 105 - SAS 104"
+        "score": "NYK 105 - SAS 104",
+        "winner": "NYK",
+        "margin": "+1",
+        "insight": "One-possession win"
       },
       {
         "game": "G3",
         "date": "Jun 8",
         "venue": "New York",
         "status": "8:30 PM ET",
-        "score": "Scheduled"
+        "score": "Scheduled",
+        "winner": "",
+        "margin": "",
+        "insight": "Home-court swing"
       },
       {
         "game": "G4",
         "date": "Jun 10",
         "venue": "New York",
         "status": "8:30 PM ET",
-        "score": "Scheduled"
+        "score": "Scheduled",
+        "winner": "",
+        "margin": "",
+        "insight": "Series pivot"
       },
       {
         "game": "G5",
         "date": "Jun 13",
         "venue": "San Antonio",
         "status": "If necessary",
-        "score": "8:30 PM ET"
+        "score": "8:30 PM ET",
+        "winner": "",
+        "margin": "",
+        "insight": "Return to Texas"
       },
       {
         "game": "G6",
         "date": "Jun 16",
         "venue": "New York",
         "status": "If necessary",
-        "score": "8:30 PM ET"
+        "score": "8:30 PM ET",
+        "winner": "",
+        "margin": "",
+        "insight": "Home closeout chance"
       },
       {
         "game": "G7",
         "date": "Jun 19",
         "venue": "San Antonio",
         "status": "If necessary",
-        "score": "8:30 PM ET"
+        "score": "8:30 PM ET",
+        "winner": "",
+        "margin": "",
+        "insight": "Winner-take-all"
       }
     ]
   },
