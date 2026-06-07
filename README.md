@@ -7,6 +7,7 @@ This repository follows the [Awesome List](https://github.com/sindresorhus/aweso
 ## Contents
 
 - [Featured Now](#featured-now)
+- [Enterprise-to-Open-Source Decomposition](#enterprise-to-open-source-decomposition)
 - [Data, APIs, and Feeds](#data-apis-and-feeds)
 - [Analytics and Visualization](#analytics-and-visualization)
 - [Training and Performance](#training-and-performance)
@@ -26,6 +27,12 @@ Generated event visuals live in [visualizations/](visualizations/). Regenerate t
 [![NBA Finals 2026 schedule and stats visualization](visualizations/nba-finals-2026.svg)](visualizations/nba-finals-2026.svg)
 
 [![FIFA World Cup 2026 visualization](visualizations/fifa-world-cup-2026.svg)](visualizations/fifa-world-cup-2026.svg)
+
+## Enterprise-to-Open-Source Decomposition
+
+Professional sports teams use expensive AI, video, tracking, scouting, and athlete-performance systems that are hard for individual builders to access. This repository decomposes those enterprise capabilities into small mono-tools the open-source community can build.
+
+See the [Enterprise-to-Open-Source Decomposition roadmap](docs/enterprise-to-open-source-decomposition.md) for the stack map and development roadmap.
 
 ## Data, APIs, and Feeds
 
