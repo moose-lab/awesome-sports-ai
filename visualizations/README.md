@@ -4,7 +4,7 @@ Generated event visuals used by the main README.
 
 ## Assets
 
-- [nba-finals-2026.svg](nba-finals-2026.svg) - NBA Finals schedule and series stats snapshot.
+- [nba-finals-2026.svg](nba-finals-2026.svg) - NBA Finals game-level analysis with team stamps, win seals, margin labels, and schedule context.
 - [fifa-world-cup-2026.svg](fifa-world-cup-2026.svg) - FIFA World Cup 2026 tournament scale and timeline snapshot.
 - [source-data.json](source-data.json) - Structured data used to generate the SVG assets.
 
