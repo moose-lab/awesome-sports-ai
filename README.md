@@ -11,6 +11,7 @@ This repository follows the [Awesome List](https://github.com/sindresorhus/aweso
 ## Contents
 
 - [Featured Now](#featured-now)
+- [Sport Tags](#sport-tags)
 - [Enterprise-to-Open-Source Decomposition](#enterprise-to-open-source-decomposition)
 - [The Builder's Path](#the-builders-path)
 - [Data, APIs, and Feeds](#data-apis-and-feeds)
@@ -32,6 +33,20 @@ Generated event visuals live in [visualizations/](visualizations/). Regenerate t
 [![NBA Finals 2026 schedule and stats visualization](visualizations/nba-finals-2026.svg)](visualizations/nba-finals-2026.svg)
 
 [![FIFA World Cup 2026 visualization](visualizations/fifa-world-cup-2026.svg)](visualizations/fifa-world-cup-2026.svg)
+
+## Sport Tags
+
+Entries are grouped by use case and tagged by sport so contributors can keep one canonical placement while still making sport-specific tools easy to find.
+
+V1 sport tags: `Soccer`, `Basketball`, `American Football`, `Baseball/Softball`, `Tennis/Racquet`, `Running/Track`, `Cycling`, `Swimming`, `Ice Hockey`, `Rugby`, `Cricket`, `Volleyball`, `Golf`, `Combat Sports`, `Motorsport`, `Esports`, `Multi-sport`.
+
+Use `Multi-sport` for tools designed to work across many sports, generic APIs, infrastructure, visualization libraries, video tooling, and datasets not tied to one sport.
+
+Example entry tags:
+
+- [Example Basketball Tool](https://example.com) - Clear one-sentence description. _Sports: Basketball._
+- [Example Match Analytics Tool](https://example.com) - Clear one-sentence description. _Sports: Soccer, Basketball._
+- [Example Sports API](https://example.com) - Clear one-sentence description. _Sports: Multi-sport._
 
 ## Enterprise-to-Open-Source Decomposition
 

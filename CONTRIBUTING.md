@@ -28,22 +28,39 @@ Do not add:
 Use this format:
 
 ```markdown
-- [Tool Name](https://example.com) - Clear one-sentence description of what it helps users do.
+- [Tool Name](https://example.com) - Clear one-sentence description of what it helps users do. _Sports: Basketball._
 ```
 
-Keep descriptions short, factual, and free of hype. Start descriptions with a capital letter and end them with a period.
+Keep descriptions short, factual, and free of hype. Start descriptions with a capital letter and end the description sentence before the sport tag suffix.
 
 Good:
 
 ```markdown
-- [Example Sports API](https://example.com) - Provides fixtures, scores, and team statistics for sports applications.
+- [Example Sports API](https://example.com) - Provides fixtures, scores, and team statistics for sports applications. _Sports: Multi-sport._
 ```
 
 Needs work:
 
 ```markdown
-- [Example Sports API](https://example.com) - The best and most amazing sports platform ever!!!
+- [Example Sports API](https://example.com) - The best and most amazing sports platform ever!!! _Sports: Multi-sport._
 ```
+
+## Sport Tags
+
+Every new entry must include one canonical category placement and one sport fit. In your pull request, include:
+
+```markdown
+Category: Analytics and Visualization
+Sports: Soccer, Basketball
+```
+
+Use the current v1 sport tags: `Soccer`, `Basketball`, `American Football`, `Baseball/Softball`, `Tennis/Racquet`, `Running/Track`, `Cycling`, `Swimming`, `Ice Hockey`, `Rugby`, `Cricket`, `Volleyball`, `Golf`, `Combat Sports`, `Motorsport`, `Esports`, `Multi-sport`.
+
+- Contributors choose the initial sport tag.
+- Reviewers and auditors may normalize, add, or remove sport tags during review.
+- Prefer the smallest accurate tag set: one sport when specific, 2-4 sports when genuinely proven, and `Multi-sport` when the tool is sport-agnostic.
+- Use `Multi-sport` for tools designed to work across many sports, generic APIs, infrastructure, visualization libraries, video tooling, and datasets not tied to one sport.
+- Add a new sport tag only when at least two accepted entries need it or when a major sport is clearly missing from the v1 vocabulary.
 
 ## Category Rules
 
@@ -51,6 +68,7 @@ Needs work:
 - Keep entries alphabetized within each category.
 - Add a new category only when at least two entries clearly belong there.
 - If a tool fits several categories, choose the category that describes its primary use.
+- Do not duplicate the same entry across categories just because it supports several sports; use sport tags for cross-sport discovery.
 - Keep category names short and easy to scan.
 
 ## Pull Request Checklist
@@ -62,6 +80,8 @@ Before opening a pull request, confirm that:
 - The description is neutral and concise.
 - The entry is alphabetized inside its category.
 - The category is appropriate.
+- The entry includes a visible `_Sports: ..._` suffix.
+- The pull request includes `Category:` and `Sports:` metadata for review.
 - Markdown renders cleanly.
 
 ## Review Process
