@@ -1,5 +1,9 @@
 # Awesome Sports AI
 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/moose-lab/awesome-sports-ai?style=social)](https://github.com/moose-lab/awesome-sports-ai/stargazers)
+
 A curated collection of sports tools, platforms, datasets, APIs, and resources for people building, analyzing, coaching, operating, and covering sports.
 
 This repository follows the [Awesome List](https://github.com/sindresorhus/awesome) style: entries should be useful, specific, actively reachable, and grouped into clear categories.
