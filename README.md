@@ -62,105 +62,130 @@ The magic is in the framing: this is not only a list of sports tools. It is a ma
 
 Want to build your own expected-goals model? Here are the mono-tools you need.
 
-- `public-data-loader` - Load public shot event data into local files.
-- `match-event-schema` - Normalize shots, assists, body part, period, and game-state fields.
-- `shot-map-renderer` - Visualize shot locations and outcomes.
-- `xg-baseline` - Train a simple xG model from distance, angle, body part, and situation.
-- `model-card-md` - Document training data, assumptions, limitations, and evaluation results.
+- [`public-data-loader`](https://github.com/statsbomb/open-data) - Load public shot event data into local files. _Sports: Soccer._
+- [`match-event-schema`](https://github.com/PySport/kloppy) - Normalize shots, assists, body part, period, and game-state fields. _Sports: Soccer._
+- [`shot-map-renderer`](https://github.com/andrewRowlinson/mplsoccer) - Visualize shot locations and outcomes. _Sports: Soccer._
+- [`xg-baseline`](https://github.com/ML-KULeuven/soccer_xg) - Train a simple xG model from distance, angle, body part, and situation. _Sports: Soccer._
+- [`model-card-md`](https://github.com/tensorflow/model-card-toolkit) - Document training data, assumptions, limitations, and evaluation results. _Sports: Multi-sport._
 
 ### Build Your Own Coaching Video Tagger
 
 Want to build your own Sportscode-style review workflow? Here are the mono-tools you need.
 
-- `clip-cutter` - Cut timestamp ranges from user-owned game footage.
-- `event-tagger` - Add keyboard-driven event labels to video timestamps.
-- `possession-timeline` - Render tagged possessions and phases of play.
-- `coach-notes-exporter` - Export clips, tags, and notes to Markdown or CSV.
-- `highlight-captioner` - Draft short labels for review clips.
+- [`clip-cutter`](https://github.com/kkroening/ffmpeg-python) - Cut timestamp ranges from user-owned game footage. _Sports: Multi-sport._
+- [`event-tagger`](https://github.com/napo/videotaggingevents) - Add keyboard-driven event labels to video timestamps. _Sports: Multi-sport._
+- [`possession-timeline`](https://github.com/tryolabs/soccer-video-analytics) - Render tagged possessions and phases of play. _Sports: Soccer._
+- [`coach-notes-exporter`](https://github.com/devinpleuler/analytics-handbook) - Export clips, tags, and notes to Markdown or CSV. _Sports: Soccer._
+- [`highlight-captioner`](https://github.com/openai/whisper) - Draft short labels for review clips. _Sports: Multi-sport._
 
 ### Build Your Own Player Scouting Board
 
 Want to build your own lightweight scouting platform? Here are the mono-tools you need.
 
-- `player-profile-schema` - Store player bio, role, position, club, and competition context.
-- `public-data-loader` - Load open player and match data into a shared format.
-- `player-similarity-radar` - Compare players with normalized role metrics.
-- `searchable-clip-index` - Connect player notes to tagged video moments.
-- `scouting-report-template` - Generate repeatable player reports for review.
+- [`player-profile-schema`](https://github.com/ML-KULeuven/socceraction) - Store player bio, role, position, club, and competition context. _Sports: Soccer._
+- [`public-data-loader`](https://github.com/swar/nba_api) - Load open player and match data into a shared format. _Sports: Basketball._
+- [`player-similarity-radar`](https://github.com/slothfulwave/soccerplots) - Compare players with normalized role metrics. _Sports: Soccer._
+- [`searchable-clip-index`](https://github.com/roboflow/sports) - Connect player notes to tagged video moments. _Sports: Multi-sport._
+- [`scouting-report-template`](https://github.com/yotambraun/football_scout_rag) - Generate repeatable player reports for review. _Sports: Soccer._
 
 ### Build Your Own Athlete Load Dashboard
 
 Want to build your own training-load monitor? Here are the mono-tools you need.
 
-- `wearable-csv-parser` - Read athlete-owned GPS, heart-rate, or session-load files.
-- `team-id-resolver` - Normalize athlete, team, and session identifiers.
-- `acute-chronic-workload` - Calculate short-window vs long-window load ratios.
-- `load-risk-flags` - Highlight spikes, drops, and unusual workload patterns.
-- `training-load-dashboard` - Render weekly load, recovery, and trend charts.
+- [`wearable-csv-parser`](https://github.com/Alek050/databallpy) - Read athlete-owned GPS, heart-rate, or session-load files. _Sports: Soccer._
+- [`team-id-resolver`](https://github.com/PySport/kloppy) - Normalize athlete, team, and session identifiers. _Sports: Soccer._
+- [`acute-chronic-workload`](https://github.com/ale-uy/Acute_Chronic_Workload_Ratio) - Calculate short-window vs long-window load ratios. _Sports: Multi-sport._
+- [`load-risk-flags`](https://github.com/SaxionAMI/AthleteLoadMonitor) - Highlight spikes, drops, and unusual workload patterns. _Sports: Multi-sport._
+- [`training-load-dashboard`](https://github.com/prakashsellathurai/Coroebus) - Render weekly load, recovery, and trend charts. _Sports: Multi-sport._
 
 ### Build Your Own Match Intelligence Report
 
 Want to build your own automated match report? Here are the mono-tools you need.
 
-- `fixture-normalizer` - Convert schedule data into a shared match schema.
-- `match-event-schema` - Normalize goals, shots, cards, substitutions, and possessions.
-- `win-probability-lite` - Estimate match-state pressure from score, time, and venue.
-- `stat-card-generator` - Generate SVG cards for key moments and player stats.
-- `match-report-md` - Generate a readable Markdown report from events and summary metrics.
+- [`fixture-normalizer`](https://github.com/eddwebster/football_analytics) - Convert schedule data into a shared match schema. _Sports: Soccer._
+- [`match-event-schema`](https://github.com/ML-KULeuven/socceraction) - Normalize goals, shots, cards, substitutions, and possessions. _Sports: Soccer._
+- [`win-probability-lite`](https://github.com/georgedouzas/sports-betting) - Estimate match-state pressure from score, time, and venue. _Sports: Multi-sport._
+- [`stat-card-generator`](https://github.com/andrewRowlinson/mplsoccer) - Generate SVG cards for key moments and player stats. _Sports: Soccer._
+- [`match-report-md`](https://github.com/DataKnight1/football-match-intelligence) - Generate a readable Markdown report from events and summary metrics. _Sports: Soccer._
 
 ## Data, APIs, and Feeds
 
 Tools and services for sports schedules, scores, fixtures, rosters, odds, play-by-play data, stats, and live feeds.
 
-No entries yet. See [CONTRIBUTING.md](CONTRIBUTING.md) to add the first tool.
+- [football.json](https://github.com/openfootball/football.json) - Provides public-domain football match data in JSON for schedules, leagues, clubs, and results. _Sports: Soccer._
+- [Kloppy](https://github.com/PySport/kloppy) - Standardizes soccer tracking and event data into vendor-independent Python objects. _Sports: Soccer._
+- [nba_api](https://github.com/swar/nba_api) - Provides a Python client for NBA.com stats endpoints and basketball data workflows. _Sports: Basketball._
+- [statsbombpy](https://github.com/statsbomb/statsbombpy) - Streams StatsBomb soccer data into Python for analysis and modeling. _Sports: Soccer._
 
 ## Analytics and Visualization
 
 Tools for scouting, performance analysis, dashboards, data visualization, modeling, and sports intelligence workflows.
 
-No entries yet. See [CONTRIBUTING.md](CONTRIBUTING.md) to add the first tool.
+- [football-match-intelligence](https://github.com/DataKnight1/football-match-intelligence) - Builds football match intelligence dashboards with pitch control, sprint efficiency, and tactical sequencing. _Sports: Soccer._
+- [mplsoccer](https://github.com/andrewRowlinson/mplsoccer) - Draws soccer pitches and common football analytics plots with Matplotlib. _Sports: Soccer._
+- [soccer_xg](https://github.com/ML-KULeuven/soccer_xg) - Trains and analyzes expected-goals models for soccer. _Sports: Soccer._
+- [socceraction](https://github.com/ML-KULeuven/socceraction) - Converts soccer event streams to SPADL and values actions with VAEP or xT. _Sports: Soccer._
+- [soccerplots](https://github.com/slothfulwave/soccerplots) - Creates radar and pizza charts for football player analysis. _Sports: Soccer._
+- [sportypy](https://github.com/sportsdataverse/sportypy) - Draws regulation playing surfaces for several sports in Python. _Sports: Multi-sport._
 
 ## Training and Performance
 
 Tools for coaching, athlete development, strength and conditioning, recovery, wellness, biomechanics, and wearable data.
 
-No entries yet. See [CONTRIBUTING.md](CONTRIBUTING.md) to add the first tool.
+- [Acute_Chronic_Workload_Ratio](https://github.com/ale-uy/Acute_Chronic_Workload_Ratio) - Calculates acute-to-chronic workload ratios in Python. _Sports: Multi-sport._
+- [AthleteLoadMonitor](https://github.com/SaxionAMI/AthleteLoadMonitor) - Monitors and predicts athlete load for team-sport coaches. _Sports: Multi-sport._
+- [Coroebus](https://github.com/prakashsellathurai/Coroebus) - Tracks training load, fitness, fatigue, and readiness for athletes. _Sports: Multi-sport._
+- [databallpy](https://github.com/Alek050/databallpy) - Reads, preprocesses, visualizes, and synchronizes soccer event and tracking data. _Sports: Soccer._
+- [MMPose](https://github.com/open-mmlab/mmpose) - Provides an open-source pose estimation toolbox for biomechanics and movement analysis. _Sports: Multi-sport._
+- [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) - Detects real-time multi-person body, hand, face, and foot keypoints. _Sports: Multi-sport._
 
 ## Team and League Operations
 
 Tools for scheduling, registration, payments, tournament management, club administration, facilities, ticketing, and operations.
 
-No entries yet. See [CONTRIBUTING.md](CONTRIBUTING.md) to add the first tool.
+- [bracket](https://github.com/evroon/bracket) - Provides a self-hosted tournament system for creating and managing brackets. _Sports: Multi-sport._
+- [Competition Factory](https://github.com/CourtHive/competition-factory) - Manipulates tournament and league documents, including draws and competition structures. _Sports: Tennis/Racquet, Multi-sport._
+- [Ready2Race](https://github.com/lambda9-gmbh/ready2race) - Plans and executes competition events such as coastal rowing races. _Sports: Multi-sport._
 
 ## Fan Experience and Community
 
 Tools for communities, fantasy sports, fan engagement, memberships, loyalty, live events, and interactive experiences.
 
-No entries yet. See [CONTRIBUTING.md](CONTRIBUTING.md) to add the first tool.
+- [dynastyprocess/data](https://github.com/dynastyprocess/data) - Provides open fantasy football data maintained by DynastyProcess. _Sports: American Football._
+- [fantasy-football-wrapped](https://github.com/kt474/fantasy-football-wrapped) - Generates fantasy league insights and charts for Sleeper and ESPN leagues. _Sports: American Football._
+- [fantasy-manager](https://github.com/lukasdotcom/fantasy-manager) - Provides an open-source self-hosted fantasy manager. _Sports: Multi-sport._
+- [yahoo-fantasy-sports-api-go](https://github.com/n-ae/yahoo-fantasy-sports-api-go) - Provides Go bindings for Yahoo Fantasy Sports APIs. _Sports: Multi-sport._
 
 ## Media, Highlights, and Content
 
 Tools for sports video, clips, highlights, live production, graphics, social publishing, newsletters, podcasts, and editorial workflows.
 
-No entries yet. See [CONTRIBUTING.md](CONTRIBUTING.md) to add the first tool.
+- [OpenAI Whisper](https://github.com/openai/whisper) - Transcribes commentary, interviews, and review audio for sports media workflows. _Sports: Multi-sport._
+- [Roboflow Sports](https://github.com/roboflow/sports) - Provides computer-vision examples and datasets for sports analysis. _Sports: Multi-sport._
+- [soccer-video-analytics](https://github.com/tryolabs/soccer-video-analytics) - Demonstrates automatic soccer ball possession analysis from video. _Sports: Soccer._
+- [Video Tagging Events](https://github.com/napo/videotaggingevents) - Tags specific segments of a video for sports review and analysis. _Sports: Multi-sport._
 
 ## Developer Tools
 
 Libraries, SDKs, open-source projects, frameworks, and infrastructure useful for sports technology builders.
 
-No entries yet. See [CONTRIBUTING.md](CONTRIBUTING.md) to add the first tool.
+- [ffmpeg-python](https://github.com/kkroening/ffmpeg-python) - Provides Python bindings for FFmpeg video processing and filtering. _Sports: Multi-sport._
+- [OpenCV](https://github.com/opencv/opencv) - Provides open-source computer vision infrastructure for tracking, detection, and video analysis. _Sports: Multi-sport._
+- [sports-betting](https://github.com/georgedouzas/sports-betting) - Collects sports betting AI tools and prediction experiments. _Sports: Multi-sport._
 
 ## Datasets and Research
 
 Open datasets, research projects, papers, benchmarks, and public reference material for sports analysis and product development.
 
-No entries yet. See [CONTRIBUTING.md](CONTRIBUTING.md) to add the first tool.
+- [Google Research Football](https://github.com/google-research/football) - Provides a reinforcement-learning football environment for AI research. _Sports: Soccer._
+- [StatsBomb Open Data](https://github.com/statsbomb/open-data) - Provides free soccer event data for public analysis and modeling. _Sports: Soccer._
 
 ## Other Sports Collections
 
 Related Awesome Lists, directories, indexes, and curated sports technology resources.
 
-No entries yet. See [CONTRIBUTING.md](CONTRIBUTING.md) to add the first resource.
+- [analytics-handbook](https://github.com/devinpleuler/analytics-handbook) - Introduces practical soccer analytics concepts and workflows. _Sports: Soccer._
+- [football_analytics](https://github.com/eddwebster/football_analytics) - Curates football analytics projects, data, and public resources. _Sports: Soccer._
 
 ## Contributing
 
