@@ -1,4 +1,4 @@
-# Awesome Sports Collection
+# Awesome Sports AI
 
 A curated collection of sports tools, platforms, datasets, APIs, and resources for people building, analyzing, coaching, operating, and covering sports.
 

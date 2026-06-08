@@ -1,6 +1,6 @@
 # Code of Conduct
 
-Awesome Sports Collection is intended to be a welcoming, practical, and professional community resource.
+Awesome Sports AI is intended to be a welcoming, practical, and professional community resource.
 
 ## Expected Behavior
 
