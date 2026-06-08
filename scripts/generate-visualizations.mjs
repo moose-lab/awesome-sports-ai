@@ -50,7 +50,7 @@ const pill = (x, y, label, fill, color = "#ffffff") => {
 
 const svgFrame = (width, height, body) => `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
-  <title id="title">Awesome Sports Collection event visualization</title>
+  <title id="title">Awesome Sports AI event visualization</title>
   <desc id="desc">Generated sports event visualization for the repository README.</desc>
   <defs>
     <linearGradient id="nbaBg" x1="0" y1="0" x2="1" y2="1">

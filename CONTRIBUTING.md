@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping improve Awesome Sports Collection. This repository is meant to be a practical, high-signal list, so every contribution should make the list easier to use.
+Thanks for helping improve Awesome Sports AI. This repository is meant to be a practical, high-signal list, so every contribution should make the list easier to use.
 
 ## What Belongs Here
 
