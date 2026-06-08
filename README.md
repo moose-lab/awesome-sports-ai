@@ -133,7 +133,7 @@ No entries yet. See [CONTRIBUTING.md](CONTRIBUTING.md) to add the first tool.
 
 Libraries, SDKs, open-source projects, frameworks, and infrastructure useful for sports technology builders.
 
-No entries yet. See [CONTRIBUTING.md](CONTRIBUTING.md) to add the first tool.
+- [TWZRD Agent Intel](https://intel.twzrd.xyz) - Trust scoring for AI sports analytics agents. Verify agent wallet identity before x402 micropayment access to premium play-by-play, biometric, or sports data APIs. Free MCP: `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}`
 
 ## Datasets and Research
 
