@@ -30,6 +30,8 @@ This repository follows the [Awesome List](https://github.com/sindresorhus/aweso
 
 Generated event visuals live in [visualizations/](visualizations/). Regenerate them with `node scripts/generate-visualizations.mjs`.
 
+Direct visualization tags: [NBA Finals 2026](visualizations/nba-finals-2026.svg) · [FIFA World Cup 2026](visualizations/fifa-world-cup-2026.svg)
+
 [![NBA Finals 2026 schedule and stats visualization](visualizations/nba-finals-2026.svg)](visualizations/nba-finals-2026.svg)
 
 [![FIFA World Cup 2026 visualization](visualizations/fifa-world-cup-2026.svg)](visualizations/fifa-world-cup-2026.svg)

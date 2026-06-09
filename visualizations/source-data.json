@@ -1,9 +1,9 @@
 {
-  "generatedDate": "2026-06-07",
+  "generatedDate": "2026-06-09",
   "nbaFinals": {
     "title": "NBA Finals 2026",
     "subtitle": "New York Knicks vs San Antonio Spurs",
-    "updated": "Updated June 7, 2026",
+    "updated": "Updated June 9, 2026",
     "teams": [
       {
         "name": "New York Knicks",
@@ -23,32 +23,34 @@
         "seed": "West champion",
         "color": "#9ca3af",
         "accent": "#111827",
-        "seriesWins": 0,
-        "finalsWins": []
+        "seriesWins": 1,
+        "finalsWins": [
+          "G3"
+        ]
       }
     ],
     "series": {
       "leader": "New York Knicks",
-      "record": "2-0",
+      "record": "2-1",
       "winsNeeded": "NYK needs 2 more wins",
-      "pressure": "SAS needs first series win before Game 5",
-      "momentum": "Two road wins, then the series shifts to New York"
+      "pressure": "SAS can tie the series before it returns to Texas",
+      "momentum": "Spurs answered in New York; Game 4 can reset the Finals"
     },
     "signals": [
       {
-        "label": "Road control",
-        "value": "2-0 NYK",
-        "detail": "Both wins came in San Antonio."
+        "label": "Series state",
+        "value": "2-1 NYK",
+        "detail": "Knicks still lead, Spurs now have a Finals win."
       },
       {
-        "label": "Close-game test",
-        "value": "G2 by 1",
-        "detail": "Game 2 was a one-possession finish."
+        "label": "Game 3 swing",
+        "value": "SAS by 4",
+        "detail": "San Antonio took a 115-111 road win."
       },
       {
         "label": "Next leverage",
-        "value": "Game 3",
-        "detail": "New York can move within one win at home."
+        "value": "Game 4 tie chance",
+        "detail": "Spurs can even the series in New York."
       }
     ],
     "links": [
@@ -86,11 +88,11 @@
         "game": "G3",
         "date": "Jun 8",
         "venue": "New York",
-        "status": "8:30 PM ET",
-        "score": "Scheduled",
-        "winner": "",
-        "margin": "",
-        "insight": "Home-court swing"
+        "status": "Final",
+        "score": "SAS 115 - NYK 111",
+        "winner": "SAS",
+        "margin": "+4",
+        "insight": "Spurs answer"
       },
       {
         "game": "G4",
@@ -100,17 +102,17 @@
         "score": "Scheduled",
         "winner": "",
         "margin": "",
-        "insight": "Series pivot"
+        "insight": "Game 4 tie chance"
       },
       {
         "game": "G5",
         "date": "Jun 13",
         "venue": "San Antonio",
-        "status": "If necessary",
-        "score": "8:30 PM ET",
+        "status": "8:30 PM ET",
+        "score": "Scheduled",
         "winner": "",
         "margin": "",
-        "insight": "Return to Texas"
+        "insight": "Guaranteed return"
       },
       {
         "game": "G6",
@@ -137,7 +139,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 7, 2026",
+    "updated": "Updated June 9, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -150,8 +152,8 @@
     ],
     "stats": [
       {
-        "label": "Teams",
-        "value": "48"
+        "label": "Qualified teams",
+        "value": "48/48"
       },
       {
         "label": "Matches",
@@ -162,15 +164,106 @@
         "value": "16"
       },
       {
-        "label": "Countries",
-        "value": "3"
+        "label": "Opening window",
+        "value": "Jun 11-17"
+      }
+    ],
+    "fixtureSummary": {
+      "label": "Opening confirmed fixtures",
+      "window": "Jun 11-17",
+      "detail": "Opening-week matchups have named teams, groups, and venues after the final draw."
+    },
+    "confirmedFixtures": [
+      {
+        "date": "Jun 11",
+        "match": "Mexico v South Africa",
+        "group": "Group A",
+        "venue": "Mexico City Stadium",
+        "tag": "Opener"
+      },
+      {
+        "date": "Jun 11",
+        "match": "Korea Republic v Czechia",
+        "group": "Group A",
+        "venue": "Estadio Guadalajara",
+        "tag": "Group A"
+      },
+      {
+        "date": "Jun 12",
+        "match": "Canada v Bosnia and Herzegovina",
+        "group": "Group B",
+        "venue": "Toronto Stadium",
+        "tag": "Host"
+      },
+      {
+        "date": "Jun 12",
+        "match": "USA v Paraguay",
+        "group": "Group D",
+        "venue": "Los Angeles Stadium",
+        "tag": "Host"
+      },
+      {
+        "date": "Jun 13",
+        "match": "Haiti v Scotland",
+        "group": "Group C",
+        "venue": "Boston Stadium",
+        "tag": "Group C"
+      },
+      {
+        "date": "Jun 13",
+        "match": "Australia v Turkiye",
+        "group": "Group D",
+        "venue": "BC Place Vancouver",
+        "tag": "Group D"
+      },
+      {
+        "date": "Jun 13",
+        "match": "Brazil v Morocco",
+        "group": "Group C",
+        "venue": "New York New Jersey Stadium",
+        "tag": "Marquee"
+      },
+      {
+        "date": "Jun 13",
+        "match": "Qatar v Switzerland",
+        "group": "Group B",
+        "venue": "San Francisco Bay Area Stadium",
+        "tag": "Group B"
+      },
+      {
+        "date": "Jun 14",
+        "match": "Cote d'Ivoire v Ecuador",
+        "group": "Group E",
+        "venue": "Philadelphia Stadium",
+        "tag": "Group E"
+      },
+      {
+        "date": "Jun 14",
+        "match": "Germany v Curacao",
+        "group": "Group E",
+        "venue": "Houston Stadium",
+        "tag": "Group E"
+      },
+      {
+        "date": "Jun 14",
+        "match": "Netherlands v Japan",
+        "group": "Group F",
+        "venue": "Dallas Stadium",
+        "tag": "Group F"
+      },
+      {
+        "date": "Jun 17",
+        "match": "England v Croatia",
+        "group": "Group L",
+        "venue": "Dallas Stadium",
+        "tag": "Marquee"
       }
     ],
     "milestones": [
       {
         "label": "Opening match",
         "date": "Jun 11",
-        "detail": "Mexico vs South Africa - Mexico City"
+        "detail": "Mexico v South Africa - Mexico City"
       },
       {
         "label": "Group stage",

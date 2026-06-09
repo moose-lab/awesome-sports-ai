@@ -35,8 +35,10 @@ const rect = (x, y, width, height, options = {}) => {
   return `<rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${radius}" fill="${fill}" stroke="${stroke}" stroke-width="${strokeWidth}" opacity="${opacity}"/>`;
 };
 
+const pillWidth = (label) => Math.max(72, label.length * 8 + 24);
+
 const pill = (x, y, label, fill, color = "#ffffff") => {
-  const width = Math.max(72, label.length * 8 + 24);
+  const width = pillWidth(label);
   return [
     rect(x, y, width, 28, { fill, stroke: fill, radius: 14 }),
     text(x + width / 2, y + 19, label, {
@@ -119,6 +121,7 @@ function renderNba(finals) {
       const winner = teams[game.winner];
       const cardFill = isFinal ? "#fff7ed" : row === 0 ? "#ffffff" : "#f8fafc";
       const border = isFinal && winner ? winner.color : "#dfe6f0";
+      const statusX = x + 226 - pillWidth(game.status);
       return `
   <g>
     ${rect(x, y, 236, 112, { fill: cardFill, stroke: border, radius: 16, strokeWidth: isFinal ? 2 : 1 })}
@@ -127,7 +130,7 @@ function renderNba(finals) {
     ${text(x + 18, y + 51, game.venue, { size: 12, weight: 700, fill: "#526174" })}
     ${text(x + 18, y + 78, game.score, { size: 16, weight: isFinal ? 900 : 750, fill: isFinal ? "#0f2544" : "#526174" })}
     ${text(x + 18, y + 101, game.insight, { size: 11, weight: 700, fill: isFinal ? "#b45309" : "#64748b" })}
-    ${isFinal && winner ? winSeal(x + 196, y + 38, winner) : pill(x + 142, y + 16, game.status, "#e2e8f0", "#475569")}
+    ${isFinal && winner ? winSeal(x + 196, y + 38, winner) : pill(statusX, y + 16, game.status, "#e2e8f0", "#475569")}
     ${isFinal && winner ? text(x + 182, y + 102, `${winner.abbr} ${game.margin}`, { size: 12, weight: 950, fill: winner.accent }) : ""}
   </g>`;
     })
@@ -161,53 +164,53 @@ function renderNba(finals) {
 function renderFifa(worldCup) {
   const statCards = worldCup.stats
     .map((stat, index) => {
-      const x = 42 + index * 270;
+      const x = 42 + index * 252;
       return [
-        rect(x, 124, 206, 84, { fill: "#ffffff", stroke: "#d8e7df", radius: 14 }),
+        rect(x, 124, 228, 84, { fill: "#ffffff", stroke: "#d8e7df", radius: 14 }),
         text(x + 22, 156, stat.value, { size: 30, weight: 900, fill: "#086c5b" }),
         text(x + 22, 184, stat.label, { size: 14, weight: 700, fill: "#526174" }),
       ].join("");
     })
     .join("");
 
-  const milestones = worldCup.milestones
-    .map((item, index) => {
-      const y = 286;
-      const x = 110 + index * 290;
-      return [
-        `<circle cx="${x}" cy="${y}" r="10" fill="#086c5b"/>`,
-        text(x, y + 33, item.date, { size: 13, weight: 900, fill: "#086c5b", anchor: "middle" }),
-        text(x, y + 54, item.label, { size: 13, weight: 800, fill: "#152033", anchor: "middle" }),
-      ].join("");
-    })
-    .join("");
-
-  const detailRows = worldCup.milestones
-    .map((item, index) => {
-      const y = 432 + index * 28;
-      return [
-        text(42, y, item.date, { size: 12, weight: 900, fill: "#086c5b" }),
-        text(120, y, `${item.label}: ${item.detail}`, { size: 12, weight: 600, fill: "#526174" }),
-      ].join("");
+  const groupColors = ["#086c5b", "#1d4ed8", "#b45309", "#7c3aed", "#be123c", "#0f766e"];
+  const fixtureCards = worldCup.confirmedFixtures
+    .map((fixture, index) => {
+      const col = index % 3;
+      const row = Math.floor(index / 3);
+      const x = 42 + col * 340;
+      const y = 318 + row * 88;
+      const color = groupColors[row % groupColors.length];
+      const featured = fixture.tag === "Opener" || fixture.tag === "Host" || fixture.tag === "Marquee";
+      return `
+  <g>
+    ${rect(x, y, 320, 74, { fill: featured ? "#f7fffb" : "#ffffff", stroke: color, radius: 14, strokeWidth: featured ? 2 : 1 })}
+    ${pill(x + 16, y + 12, fixture.date, color)}
+    ${text(x + 102, y + 31, fixture.group, { size: 12, weight: 900, fill: color })}
+    ${pill(x + 230, y + 12, fixture.tag, featured ? "#0f766e" : "#e2e8f0", featured ? "#ffffff" : "#475569")}
+    ${text(x + 18, y + 55, fixture.match, { size: 14, weight: 950, fill: "#12342f" })}
+    ${text(x + 18, y + 70, fixture.venue, { size: 10, weight: 650, fill: "#64748b" })}
+  </g>`;
     })
     .join("");
 
   return svgFrame(
     1100,
-    620,
+    760,
     `
-  ${rect(0, 0, 1100, 620, { fill: "url(#fifaBg)", stroke: "none", radius: 0 })}
-  ${rect(24, 24, 1052, 572, { fill: "#ffffff", stroke: "#dfe6f0", radius: 22, opacity: 0.94 })}
+  ${rect(0, 0, 1100, 760, { fill: "url(#fifaBg)", stroke: "none", radius: 0 })}
+  ${rect(24, 24, 1052, 712, { fill: "#ffffff", stroke: "#dfe6f0", radius: 22, opacity: 0.94 })}
   ${text(42, 72, worldCup.title, { size: 30, weight: 900, fill: "#12342f" })}
   ${text(42, 100, worldCup.subtitle, { size: 16, weight: 650, fill: "#526174" })}
   ${pill(860, 50, worldCup.updated, "#086c5b")}
   ${statCards}
 
-  ${text(42, 250, "Tournament timeline", { size: 17, weight: 900, fill: "#12342f" })}
-  <line x1="110" y1="286" x2="980" y2="286" stroke="#cfe5dc" stroke-width="8" stroke-linecap="round"/>
-  ${milestones}
-  ${detailRows}
-  ${text(42, 578, "Generated from source-data.json. Official hubs: FIFA match schedule + tournament hub.", { size: 12, weight: 600, fill: "#64748b" })}
+  ${rect(42, 228, 1016, 58, { fill: "#f4fbf8", stroke: "#cfe5dc", radius: 16 })}
+  ${text(62, 252, `${worldCup.fixtureSummary.label} · ${worldCup.fixtureSummary.window}`, { size: 17, weight: 950, fill: "#12342f" })}
+  ${text(62, 274, worldCup.fixtureSummary.detail, { size: 12, weight: 650, fill: "#526174" })}
+
+  ${fixtureCards}
+  ${text(42, 718, "Generated from source-data.json. Official hubs: FIFA match schedule + tournament hub.", { size: 12, weight: 600, fill: "#64748b" })}
 `
   );
 }
