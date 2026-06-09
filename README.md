@@ -114,6 +114,9 @@ Want to build your own automated match report? Here are the mono-tools you need.
 
 Tools and services for sports schedules, scores, fixtures, rosters, odds, play-by-play data, stats, and live feeds.
 
+- [balldontlie](https://www.balldontlie.io/) - Provides API access to basketball teams, players, games, and box-score data. _Sports: Basketball._
+- [CollegeFootballData](https://collegefootballdata.com/) - Provides college football API endpoints for games, drives, plays, rankings, ratings, and recruiting data. _Sports: American Football._
+- [FastF1](https://github.com/theOehrly/Fast-F1) - Loads Formula 1 timing, telemetry, session, schedule, and weather data in Python. _Sports: Motorsport._
 - [football.json](https://github.com/openfootball/football.json) - Provides public-domain football match data in JSON for schedules, leagues, clubs, and results. _Sports: Soccer._
 - [Kloppy](https://github.com/PySport/kloppy) - Standardizes soccer tracking and event data into vendor-independent Python objects. _Sports: Soccer._
 - [nba_api](https://github.com/swar/nba_api) - Provides a Python client for NBA.com stats endpoints and basketball data workflows. _Sports: Basketball._
@@ -125,10 +128,13 @@ Tools for scouting, performance analysis, dashboards, data visualization, modeli
 
 - [football-match-intelligence](https://github.com/DataKnight1/football-match-intelligence) - Builds football match intelligence dashboards with pitch control, sprint efficiency, and tactical sequencing. _Sports: Soccer._
 - [mplsoccer](https://github.com/andrewRowlinson/mplsoccer) - Draws soccer pitches and common football analytics plots with Matplotlib. _Sports: Soccer._
+- [Roboflow Sports](https://github.com/roboflow/sports) - Provides computer-vision examples, models, and workflows for sports detection, tracking, and analytics. _Sports: Multi-sport._
+- [Second Spectrum](https://www.geniussports.com/newsroom/genius-sports-second-spectrum-tracking-technology-approved-by-fifa-quality-programme-for-epts/) - Provides optical tracking, tactical analytics, and augmented broadcast tools for professional leagues and teams. _Sports: Basketball, Soccer._
 - [soccer_xg](https://github.com/ML-KULeuven/soccer_xg) - Trains and analyzes expected-goals models for soccer. _Sports: Soccer._
 - [socceraction](https://github.com/ML-KULeuven/socceraction) - Converts soccer event streams to SPADL and values actions with VAEP or xT. _Sports: Soccer._
 - [soccerplots](https://github.com/slothfulwave/soccerplots) - Creates radar and pizza charts for football player analysis. _Sports: Soccer._
 - [sportypy](https://github.com/sportsdataverse/sportypy) - Draws regulation playing surfaces for several sports in Python. _Sports: Multi-sport._
+- [TacticAI](https://www.nature.com/articles/s41467-024-45965-x) - Describes a football tactics assistant for predicting and generating corner-kick tactical recommendations. _Sports: Soccer._
 
 ## Training and Performance
 
@@ -146,8 +152,11 @@ Tools for coaching, athlete development, strength and conditioning, recovery, we
 Tools for scheduling, registration, payments, tournament management, club administration, facilities, ticketing, and operations.
 
 - [bracket](https://github.com/evroon/bracket) - Provides a self-hosted tournament system for creating and managing brackets. _Sports: Multi-sport._
+- [Challonge API](https://api.challonge.com/) - Lets developers create tournaments, update brackets, and report scores programmatically. _Sports: Multi-sport._
 - [Competition Factory](https://github.com/CourtHive/competition-factory) - Manipulates tournament and league documents, including draws and competition structures. _Sports: Tennis/Racquet, Multi-sport._
 - [Ready2Race](https://github.com/lambda9-gmbh/ready2race) - Plans and executes competition events such as coastal rowing races. _Sports: Multi-sport._
+- [SportsEngine Tourney](https://www.sportsengine.com/tourney/) - Manages tournament scheduling, brackets, standings, score updates, registration, and team communication. _Sports: Multi-sport._
+- [Toornament API](https://developer.toornament.com/) - Provides APIs for building tournament, match, calendar, ranking, and registration workflows. _Sports: Esports, Multi-sport._
 
 ## Fan Experience and Community
 
@@ -163,7 +172,6 @@ Tools for communities, fantasy sports, fan engagement, memberships, loyalty, liv
 Tools for sports video, clips, highlights, live production, graphics, social publishing, newsletters, podcasts, and editorial workflows.
 
 - [OpenAI Whisper](https://github.com/openai/whisper) - Transcribes commentary, interviews, and review audio for sports media workflows. _Sports: Multi-sport._
-- [Roboflow Sports](https://github.com/roboflow/sports) - Provides computer-vision examples and datasets for sports analysis. _Sports: Multi-sport._
 - [soccer-video-analytics](https://github.com/tryolabs/soccer-video-analytics) - Demonstrates automatic soccer ball possession analysis from video. _Sports: Soccer._
 - [Video Tagging Events](https://github.com/napo/videotaggingevents) - Tags specific segments of a video for sports review and analysis. _Sports: Multi-sport._
 
@@ -172,14 +180,19 @@ Tools for sports video, clips, highlights, live production, graphics, social pub
 Libraries, SDKs, open-source projects, frameworks, and infrastructure useful for sports technology builders.
 
 - [ffmpeg-python](https://github.com/kkroening/ffmpeg-python) - Provides Python bindings for FFmpeg video processing and filtering. _Sports: Multi-sport._
+- [floodlight](https://github.com/floodlight-sports/floodlight) - Provides Python data structures, parsers, and analysis models for team-sport event and tracking data. _Sports: Multi-sport._
 - [OpenCV](https://github.com/opencv/opencv) - Provides open-source computer vision infrastructure for tracking, detection, and video analysis. _Sports: Multi-sport._
 - [sports-betting](https://github.com/georgedouzas/sports-betting) - Collects sports betting AI tools and prediction experiments. _Sports: Multi-sport._
+- [sportsdataverse-py](https://github.com/sportsdataverse/sportsdataverse-py) - Provides a Python package for loading and tidying data from several SportsDataverse ecosystems. _Sports: Multi-sport._
 
 ## Datasets and Research
 
 Open datasets, research projects, papers, benchmarks, and public reference material for sports analysis and product development.
 
 - [Google Research Football](https://github.com/google-research/football) - Provides a reinforcement-learning football environment for AI research. _Sports: Soccer._
+- [Metrica Sports Sample Data](https://github.com/metrica-sports/sample-data) - Provides sample soccer tracking and event data for analytics tutorials and reproducible analysis. _Sports: Soccer._
+- [SoccerNet](https://www.soccer-net.org/data) - Provides datasets and benchmarks for soccer video understanding, action spotting, tracking, and game-state reconstruction. _Sports: Soccer._
+- [SportsMOT](https://deeperaction.github.io/datasets/sportsmot.html) - Provides a multi-object tracking dataset across basketball, football, and volleyball scenes. _Sports: Basketball, Soccer, Volleyball._
 - [StatsBomb Open Data](https://github.com/statsbomb/open-data) - Provides free soccer event data for public analysis and modeling. _Sports: Soccer._
 
 ## Other Sports Collections
@@ -187,6 +200,9 @@ Open datasets, research projects, papers, benchmarks, and public reference mater
 Related Awesome Lists, directories, indexes, and curated sports technology resources.
 
 - [analytics-handbook](https://github.com/devinpleuler/analytics-handbook) - Introduces practical soccer analytics concepts and workflows. _Sports: Soccer._
+- [awesome-football-analytics](https://github.com/diegopastor/awesome-football-analytics) - Curates football analytics resources, datasets, software, and learning material. _Sports: Soccer._
+- [awesome-soccer-analytics](https://github.com/matiasmascioto/awesome-soccer-analytics) - Collects soccer analytics resources in English and Spanish. _Sports: Soccer._
+- [awesome-sports-analytics](https://github.com/AtomScott/awesome-sports-analytics) - Collects sports analytics datasets, tools, papers, and learning resources. _Sports: Multi-sport._
 - [football_analytics](https://github.com/eddwebster/football_analytics) - Curates football analytics projects, data, and public resources. _Sports: Soccer._
 
 ## Contributing
