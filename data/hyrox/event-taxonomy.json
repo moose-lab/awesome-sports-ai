@@ -130,6 +130,59 @@
     "65-69",
     "70+"
   ],
+  "age_bands": [
+    {
+      "label_en": "16-24 development band",
+      "label_zh": "16-24 发展年龄段",
+      "age_groups": [
+        "16-24"
+      ],
+      "coaching": [
+        "Age-band rule: build technical standards before chasing adult race volume.",
+        "年龄段规则：先建立技术标准，再追求成人比赛训练量。"
+      ]
+    },
+    {
+      "label_en": "25-39 standard progression band",
+      "label_zh": "25-39 标准进阶年龄段",
+      "age_groups": [
+        "25-29",
+        "30-34",
+        "35-39"
+      ],
+      "coaching": [
+        "Age-band rule: normal progression is allowed when sleep, soreness, and split quality stay stable.",
+        "年龄段规则：睡眠、酸痛和分段质量稳定时，可按标准节奏进阶。"
+      ]
+    },
+    {
+      "label_en": "40-54 masters progression band",
+      "label_zh": "40-54 大师组进阶年龄段",
+      "age_groups": [
+        "40-44",
+        "45-49",
+        "50-54"
+      ],
+      "coaching": [
+        "Age-band rule: add warm-up time and progress intensity only after tendon and joint response is calm.",
+        "年龄段规则：增加热身时间，只有肌腱和关节反应稳定后再提高强度。"
+      ]
+    },
+    {
+      "label_en": "55+ durability band",
+      "label_zh": "55+ 耐受年龄段",
+      "age_groups": [
+        "55-59",
+        "60-64",
+        "65-69",
+        "70+"
+      ],
+      "coaching": [
+        "Age-band rule: protect two recovery touchpoints weekly and substitute lower-impact work when joints are irritated.",
+        "年龄段规则：每周保留两个恢复节点；关节不适时替换为低冲击训练。"
+      ]
+    }
+  ],
   "experience": {
     "newcomer": {
       "label_en": "newcomer",

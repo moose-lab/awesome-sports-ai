@@ -101,6 +101,28 @@ test("personalizes output from registration division, age group, and experience"
   assert.match(output, /Experience \/ 经验: veteran \/ 老鸟/);
   assert.match(output, /Division Standard \/ 组别标准/);
   assert.match(output, /Pro load exposure/);
+  assert.match(output, /Age-band rule: normal progression is allowed/);
+});
+
+test("adapts coaching constraints for masters age groups", () => {
+  const output = run([
+    "--division",
+    "open",
+    "--sex",
+    "women",
+    "--age-group",
+    "55-59",
+    "--experience",
+    "recreational",
+    "--start-date",
+    "2026-06-10",
+    "--date",
+    "2026-06-10"
+  ]);
+
+  assert.match(output, /Age Group \/ 年龄组: 55-59/);
+  assert.match(output, /Age-band rule: protect two recovery touchpoints weekly/);
+  assert.match(output, /关节不适时替换为低冲击训练/);
 });
 
 test("renders a course-style HTML training checklist", () => {

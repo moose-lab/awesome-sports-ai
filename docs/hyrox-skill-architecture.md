@@ -35,6 +35,13 @@ Level inference:
 - Elite experience defaults to `elite`.
 - Explicit `--level` overrides inferred level after validation.
 
+Age-band coaching:
+
+- `16-24`: prioritize movement standards before adult race-volume chasing.
+- `25-39`: use standard progression when sleep, soreness, and split quality are stable.
+- `40-54`: add warm-up time and gate intensity against tendon/joint response.
+- `55+`: protect two recovery touchpoints weekly and use lower-impact substitutions when joints are irritated.
+
 ## Output Contract
 
 Every professional daily plan must include:

@@ -26,6 +26,13 @@ function resolveLevel(args, division, experience) {
   return experience?.default_level ?? division.default_level;
 }
 
+function resolveAgeBand(ageGroup) {
+  if (ageGroup === "unspecified") {
+    return undefined;
+  }
+  return taxonomy.age_bands.find((band) => band.age_groups.includes(ageGroup));
+}
+
 export function resolveAthleteProfile(args, levels) {
   const divisionKey = lower(args.division) ?? "open";
   const sexKey = lower(args.sex) ?? "unknown";
@@ -42,6 +49,7 @@ export function resolveAthleteProfile(args, levels) {
   const division = taxonomy.divisions[divisionKey];
   const sex = taxonomy.sexes[sexKey];
   const experience = taxonomy.experience[experienceKey];
+  const ageBand = resolveAgeBand(ageGroup);
   const levelKey = resolveLevel(args, division, experience);
   requireKnown(levels, levelKey, "level");
 
@@ -69,8 +77,10 @@ export function resolveAthleteProfile(args, levels) {
     sex_label_zh: sex.label_zh,
     experience_label_en: experience.label_en,
     experience_label_zh: experience.label_zh,
+    age_band_label_en: ageBand?.label_en,
+    age_band_label_zh: ageBand?.label_zh,
     standards,
-    coaching: [...proLoadExposure, ...experience.coaching]
+    coaching: [...proLoadExposure, ...(ageBand?.coaching ?? []), ...experience.coaching]
   };
 }
 
