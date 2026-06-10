@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "title": "HYROX professional training asset registry",
+    "last_verified": "2026-06-10",
+    "scope": "Professional-grade official, coaching, video, podcast, blog, and science assets for building HYROX training agents.",
+    "inclusion_criteria": [
+      "Official HYROX source, certified HYROX partner, recognized HYROX media/coaching source, or peer-reviewed sports-science source.",
+      "Useful for training-plan generation, race-day preparation, movement standards, progression, or performance analysis.",
+      "Reachable on the public web when last verified."
+    ],
+    "not_medical_advice": "Training guidance must be adapted for health status, injury history, age, sleep, nutrition, and local coaching. Stop and seek qualified help for chest pain, fainting, severe shortness of breath, acute injury, or unusual symptoms."
+  },
+  "official_reference": [
+    {
+      "title": "HYROX - The Fitness Race",
+      "url": "https://hyrox.com/the-fitness-race/",
+      "asset_type": "official race format",
+      "use_for_agent": "Canonical station order, division structure, race distances, and open/pro weights.",
+      "notes": "HYROX is eight 1 km runs with eight functional workout stations. The page lists individual, doubles, and relay weights and distances."
+    },
+    {
+      "title": "HYROX Rulebooks",
+      "url": "https://hyrox.com/rulebook/",
+      "asset_type": "official rules",
+      "use_for_agent": "Movement standards, penalties, divisions, judging, and 2025/2026 season rule checks.",
+      "notes": "Use this before race-specific advice because movement standards and penalties can change by season."
+    },
+    {
+      "title": "HYROX Singles Rulebook 2025/2026 PDF",
+      "url": "https://hyrox.com/wp-content/uploads/2025/07/25_26_HYROX_RulebookSingles_EN.pdf",
+      "asset_type": "official rules pdf",
+      "use_for_agent": "Authoritative single-racer rule checks, age groups, and Elite 15 qualification references.",
+      "notes": "PDF source for exact rule wording when the agent needs to answer a rules question."
+    },
+    {
+      "title": "HYROX Best Preparation",
+      "url": "https://hyrox.com/best-hyrox-preparation/",
+      "asset_type": "official preparation guide",
+      "use_for_agent": "Basic preparation pillars: running volume, compromised running, movement standards, pacing, rest, food, and hydration.",
+      "notes": "Official HYROX guidance emphasizes the 8 km run load and practice after arm/leg fatigue."
+    },
+    {
+      "title": "HYROX Training Club Finder",
+      "url": "https://hyrox.com/find-gym/",
+      "asset_type": "official gym directory",
+      "use_for_agent": "Recommend local certified gyms when a user needs equipment, coaching, or movement-standard checks.",
+      "notes": "Use location-aware suggestions only after asking for city/region."
+    },
+    {
+      "title": "HYROX Performance Coach Directory",
+      "url": "https://coaches.hyrox.com/",
+      "asset_type": "official coach directory",
+      "use_for_agent": "Escalate users to certified coaches for individualized programming, injury constraints, or elite goals.",
+      "notes": "Useful for handoff when the user needs remote coaching rather than a generic plan."
+    },
+    {
+      "title": "HYROX Online Training Partners",
+      "url": "https://hyrox.com/hyrox-online-training-partners/",
+      "asset_type": "official partner directory",
+      "use_for_agent": "Current official partner list for strength, running, mobility, and endurance programs.",
+      "notes": "Includes Centr, Runna, HWPO, PRVN, RJ Coaching, SHREDDY, The Progrm, Hybrid Racer, Peloton, and other partners."
+    },
+    {
+      "title": "HYROX Results and Rankings",
+      "url": "https://hyroxresults.com/",
+      "asset_type": "official results",
+      "use_for_agent": "Benchmark finishing times by division, age group, region, and race.",
+      "notes": "Use for realistic goal setting and race-to-race trend analysis."
+    },
+    {
+      "title": "HYROX PFT",
+      "url": "https://pft.hyrox.com/",
+      "asset_type": "official fitness test",
+      "use_for_agent": "Initial level assessment and re-test benchmark every 4 to 6 weeks.",
+      "notes": "Use alongside running time trials and movement-standard checks."
+    },
+    {
+      "title": "HYROX Elite 15 Leaderboard",
+      "url": "https://points.hyrox.com/",
+      "asset_type": "official elite rankings",
+      "use_for_agent": "Elite context, performance benchmarking, and qualification tracking.",
+      "notes": "Use only for current elite comparisons because rankings change during the season."
+    }
+  ],
+  "race_format": {
+    "source": "https://hyrox.com/the-fitness-race/",
+    "station_sequence": [
+      {
+        "step": 1,
+        "run_before": "1 km",
+        "station": "SkiErg",
+        "work": "1000 m"
+      },
+      {
+        "step": 2,
+        "run_before": "1 km",
+        "station": "Sled Push",
+        "work": "50 m total; lane breakdown by current rulebook",
+        "open_weights": "Women 102 kg incl. sled; Men 152 kg incl. sled",
+        "pro_weights": "Women 152 kg incl. sled; Men 202 kg incl. sled"
+      },
+      {
+        "step": 3,
+        "run_before": "1 km",
+        "station": "Sled Pull",
+        "work": "50 m total; lane breakdown by current rulebook",
+        "open_weights": "Women 78 kg incl. sled; Men 103 kg incl. sled",
+        "pro_weights": "Women 103 kg incl. sled; Men 153 kg incl. sled"
+      },
+      {
+        "step": 4,
+        "run_before": "1 km",
+        "station": "Burpee Broad Jump",
+        "work": "80 m"
+      },
+      {
+        "step": 5,
+        "run_before": "1 km",
+        "station": "Row",
+        "work": "1000 m"
+      },
+      {
+        "step": 6,
+        "run_before": "1 km",
+        "station": "Farmers Carry",
+        "work": "200 m",
+        "open_weights": "Women 2 x 16 kg; Men 2 x 24 kg",
+        "pro_weights": "Women 2 x 24 kg; Men 2 x 32 kg"
+      },
+      {
+        "step": 7,
+        "run_before": "1 km",
+        "station": "Sandbag Lunges",
+        "work": "100 m",
+        "open_weights": "Women 10 kg; Men 20 kg",
+        "pro_weights": "Women 20 kg; Men 30 kg"
+      },
+      {
+        "step": 8,
+        "run_before": "1 km",
+        "station": "Wall Balls",
+        "work": "100 reps",
+        "open_weights": "Women 4 kg; Men 6 kg",
+        "pro_weights": "Women 6 kg; Men 9 kg"
+      }
+    ]
+  },
+  "science_and_methodology": [
+    {
+      "title": "Acute physiological responses and performance determinants in Hyrox - Frontiers in Physiology",
+      "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1519240/full",
+      "asset_type": "peer-reviewed study",
+      "use_for_agent": "Evidence base for emphasizing aerobic capacity, running volume, compromised running, HIIT, and pacing.",
+      "notes": "The study observed that participants spent more total time running than in stations, most time was hard to very hard, and VO2max correlated strongly with total and run performance."
+    },
+    {
+      "title": "ACSM Physical Activity Guidelines",
+      "url": "https://acsm.org/education-resources/trending-topics-resources/physical-activity-guidelines/",
+      "asset_type": "health guideline",
+      "use_for_agent": "Minimum safe baseline for inactive adults: progressive aerobic work and at least two strength days weekly.",
+      "notes": "Use as the bottom rail for casual or desk-based starters before HYROX-specific load."
+    },
+    {
+      "title": "CDC Adult Physical Activity Guidelines",
+      "url": "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
+      "asset_type": "health guideline",
+      "use_for_agent": "Cross-check weekly aerobic and strength minimums for general adult health.",
+      "notes": "Useful for explaining why beginners should not skip strength or easy aerobic work."
+    }
+  ],
+  "video_and_technique": [
+    {
+      "title": "HYROX YouTube",
+      "url": "https://www.youtube.com/@HYROXWORLD",
+      "asset_type": "official video channel",
+      "use_for_agent": "Race footage, athlete interviews, event recaps, and official visual context.",
+      "notes": "Use for station standards and race environment familiarity, but verify current standards against the rulebook."
+    },
+    {
+      "title": "Centr - Training for HYROX: Everything You Need to Know",
+      "url": "https://centr.com/blog/show/33989/training-for-hyrox-everything-you-need-to-know",
+      "asset_type": "partner technique and training guide",
+      "use_for_agent": "Equipment, beginner guidance, and practical station preparation from HYROX official equipment ecosystem.",
+      "notes": "Useful for home/gym equipment substitutions."
+    },
+    {
+      "title": "Concept2 SkiErg Technique",
+      "url": "https://www.concept2.com/training/technique/skierg",
+      "asset_type": "equipment technique",
+      "use_for_agent": "Teach safe SkiErg mechanics and common technique cues.",
+      "notes": "Concept2 is a HYROX equipment partner listed on HYROX pages."
+    },
+    {
+      "title": "Concept2 RowErg Technique",
+      "url": "https://www.concept2.com/training/technique/rowing",
+      "asset_type": "equipment technique",
+      "use_for_agent": "Teach rowing sequence and efficiency for the 1000 m row station.",
+      "notes": "Use when prescribing row intervals or technique sessions."
+    }
+  ],
+  "blogs_and_training_guides": [
+    {
+      "title": "HYROX Training Plan Fundamentals - Rox Lyfe",
+      "url": "https://roxlyfe.com/hyrox-training-plan-fundamentals/",
+      "asset_type": "HYROX training blog",
+      "use_for_agent": "Programming considerations, race demands, and practical plan design.",
+      "notes": "Good supplement to official HYROX guidance; avoid copying workouts verbatim."
+    },
+    {
+      "title": "Runna - Ultimate Functional Fitness and HYROX Running Training Guide",
+      "url": "https://support.runna.com/en/articles/6781532-the-ultimate-functional-fitness-and-hyrox-running-training-guide",
+      "asset_type": "official partner running guide",
+      "use_for_agent": "Running-specific progression and strength-running balance for HYROX athletes.",
+      "notes": "Runna is listed as an official HYROX online training partner."
+    },
+    {
+      "title": "Centr x HYROX Training Partner Page",
+      "url": "https://hyrox.com/training-partner/centr/",
+      "asset_type": "official partner program",
+      "use_for_agent": "Certified 12-week starter and accelerator reference for plan length and program scope.",
+      "notes": "Centr is described by HYROX as a certified training program and official competition equipment ecosystem."
+    },
+    {
+      "title": "PureGym - Free HYROX Training Plan",
+      "url": "https://www.puregym.com/us/blog/hyrox-training-plan-a-free-workout-plan-to-get-hyrox-ready",
+      "asset_type": "public training plan",
+      "use_for_agent": "Accessible beginner-to-intermediate 12-week public example for structure comparison.",
+      "notes": "Use as a public template reference, not as the canonical agent program."
+    }
+  ],
+  "podcasts_and_media": [
+    {
+      "title": "Rox Lyfe - The HYROX Podcast",
+      "url": "https://podcasts.apple.com/us/podcast/rox-lyfe-the-hyrox-podcast/id1648250425",
+      "asset_type": "podcast",
+      "use_for_agent": "Athlete interviews, expert coaching discussion, race strategy, and elite scene context.",
+      "notes": "High-signal source for tactics and athlete stories."
+    },
+    {
+      "title": "Fitness Racing Podcast",
+      "url": "https://podcasts.apple.com/gb/podcast/fitness-racing-podcast/id1606012623",
+      "asset_type": "podcast",
+      "use_for_agent": "Hybrid racing news, interviews, event reviews, and European HYROX context.",
+      "notes": "Long-running hybrid fitness racing show."
+    },
+    {
+      "title": "Hybrid Fitness Media",
+      "url": "https://podcasts.apple.com/us/podcast/hybrid-fitness-media/id1685720261",
+      "asset_type": "podcast",
+      "use_for_agent": "Race coverage, athlete interviews, event previews, and post-race analysis.",
+      "notes": "Useful for current competitive scene monitoring."
+    },
+    {
+      "title": "Race Brain Media",
+      "url": "https://www.racebrain.media/",
+      "asset_type": "media and podcast network",
+      "use_for_agent": "Elite race analysis, prediction context, and HYROX data commentary.",
+      "notes": "Use for performance-analysis ideas, not official rules."
+    },
+    {
+      "title": "HYROX Rundown presented by Race Brain",
+      "url": "https://open.spotify.com/show/62SiSBqkKt1Q1yOf8D2KnX",
+      "asset_type": "podcast",
+      "use_for_agent": "HYROX-specific elite and fan analysis.",
+      "notes": "Use for tactical context and current racing storylines."
+    },
+    {
+      "title": "Hybrid Coaching Podcast",
+      "url": "https://open.spotify.com/show/6qRPwW8T15oZpod4jSahc0",
+      "asset_type": "coaching podcast",
+      "use_for_agent": "Training breakdowns and coach conversation for hybrid fitness athletes.",
+      "notes": "Use as qualitative context alongside science and official rules."
+    }
+  ]
+}

@@ -1,0 +1,927 @@
+{
+  "meta": {
+    "title": "HYROX AI agent training program",
+    "version": "0.1.0",
+    "last_verified": "2026-06-10",
+    "design_goal": "Feasible progression from casual desk-based starter to elite HYROX athlete while preserving safety, adherence, and race specificity.",
+    "evidence_basis": [
+      "Official HYROX race format and division weights",
+      "HYROX preparation guidance: running, movement standards, pacing, rest, food, and hydration",
+      "Frontiers in Physiology 2025 HYROX study: hard to very hard event intensity, running-dominant time distribution, VO2max and endurance-volume association, and need for compromised running",
+      "ACSM and CDC general adult aerobic plus strength minimums"
+    ],
+    "safety": [
+      "This is training guidance, not medical advice.",
+      "For inactive users, start at casual level and keep at least two low-intensity weeks before hard intervals.",
+      "Pain that changes gait, chest pain, fainting, acute swelling, or unusual breathlessness overrides the plan.",
+      "Increase total weekly training load by small steps and deload every fourth week."
+    ]
+  },
+  "levels": {
+    "casual": {
+      "label": "Casual starter",
+      "duration_weeks": 12,
+      "weekly_sessions": "3 to 4",
+      "weekly_hours": "3 to 5",
+      "best_for": "Desk-based beginners, casual gamers, relay athletes, or first-time Open/Doubles finishers.",
+      "entry_checks": [
+        "Can walk briskly for 30 minutes",
+        "Can complete bodyweight squat, hinge, plank, and light carry without pain",
+        "No unresolved medical red flags"
+      ],
+      "success_target": "Finish healthy, understand every station, and keep run-walk rhythm under fatigue.",
+      "load_multiplier": 0.7
+    },
+    "recreational": {
+      "label": "Recreational Open",
+      "duration_weeks": 16,
+      "weekly_sessions": "4 to 5",
+      "weekly_hours": "5 to 7",
+      "best_for": "Active gym users or runners aiming for a strong Open or Doubles result.",
+      "entry_checks": [
+        "Can run 5 km continuously",
+        "Can train 4 days weekly for 4 weeks",
+        "Can safely move light sled, carries, lunges, row, and SkiErg"
+      ],
+      "success_target": "Strong Open finish with controlled pacing and no station breakdown.",
+      "load_multiplier": 1.0
+    },
+    "competitive": {
+      "label": "Competitive age-group",
+      "duration_weeks": 20,
+      "weekly_sessions": "5 to 6",
+      "weekly_hours": "7 to 10",
+      "best_for": "Experienced hybrid athletes targeting age-group competitiveness, Open PB, or first Pro attempt.",
+      "entry_checks": [
+        "Can run 10 km comfortably",
+        "Can complete race-standard Open loads safely",
+        "Can recover from two quality sessions weekly"
+      ],
+      "success_target": "Run consistently after stations, minimize transition losses, and approach Pro-load readiness.",
+      "load_multiplier": 1.25
+    },
+    "elite": {
+      "label": "Elite pathway",
+      "duration_weeks": 24,
+      "weekly_sessions": "7 to 10",
+      "weekly_hours": "10 to 14+",
+      "best_for": "Advanced racers with coach oversight, Pro-load competence, and results-driven goals.",
+      "entry_checks": [
+        "Can complete Pro loads to standard",
+        "Can tolerate double-session days",
+        "Has recent race, PFT, or time-trial benchmarks",
+        "Has a coach or experienced reviewer for technique and recovery"
+      ],
+      "success_target": "Elite-style pacing, high compromised-running economy, and qualification-oriented benchmarking.",
+      "load_multiplier": 1.5
+    }
+  },
+  "phase_rules": {
+    "casual": [
+      {
+        "phase": "foundation",
+        "start_week": 1,
+        "end_week": 4
+      },
+      {
+        "phase": "build",
+        "start_week": 5,
+        "end_week": 8
+      },
+      {
+        "phase": "specific",
+        "start_week": 9,
+        "end_week": 11
+      },
+      {
+        "phase": "peak",
+        "start_week": 12,
+        "end_week": 12
+      }
+    ],
+    "recreational": [
+      {
+        "phase": "foundation",
+        "start_week": 1,
+        "end_week": 5
+      },
+      {
+        "phase": "build",
+        "start_week": 6,
+        "end_week": 10
+      },
+      {
+        "phase": "specific",
+        "start_week": 11,
+        "end_week": 14
+      },
+      {
+        "phase": "peak",
+        "start_week": 15,
+        "end_week": 16
+      }
+    ],
+    "competitive": [
+      {
+        "phase": "foundation",
+        "start_week": 1,
+        "end_week": 6
+      },
+      {
+        "phase": "build",
+        "start_week": 7,
+        "end_week": 12
+      },
+      {
+        "phase": "specific",
+        "start_week": 13,
+        "end_week": 18
+      },
+      {
+        "phase": "peak",
+        "start_week": 19,
+        "end_week": 20
+      }
+    ],
+    "elite": [
+      {
+        "phase": "foundation",
+        "start_week": 1,
+        "end_week": 6
+      },
+      {
+        "phase": "build",
+        "start_week": 7,
+        "end_week": 14
+      },
+      {
+        "phase": "specific",
+        "start_week": 15,
+        "end_week": 22
+      },
+      {
+        "phase": "peak",
+        "start_week": 23,
+        "end_week": 24
+      }
+    ]
+  },
+  "phases": {
+    "foundation": {
+      "label": "Foundation",
+      "purpose": "Build aerobic base, movement literacy, basic strength, tissue tolerance, and repeatable training rhythm.",
+      "progression": "Most work stays easy. Add one short controlled quality exposure weekly after week 2."
+    },
+    "build": {
+      "label": "Build",
+      "purpose": "Add threshold running, station strength endurance, and controlled compromised running.",
+      "progression": "Two quality days weekly with one station-density session and one run-quality session."
+    },
+    "specific": {
+      "label": "Race specific",
+      "purpose": "Practice 1 km repeats under station fatigue, transitions, station standards, and goal race pacing.",
+      "progression": "One race-pace brick and one longer simulation weekly, scaled by level."
+    },
+    "peak": {
+      "label": "Peak and taper",
+      "purpose": "Keep sharpness, reduce fatigue, confirm standards, and arrive fresh.",
+      "progression": "Reduce volume 30 to 50 percent while keeping short race-pace touches."
+    }
+  },
+  "weekly_templates": {
+    "foundation": {
+      "monday": {
+        "title": "Reset mobility and aerobic walk",
+        "type": "recovery",
+        "intensity": "RPE 2-3",
+        "duration_minutes": {
+          "casual": 30,
+          "recreational": 40,
+          "competitive": 50,
+          "elite": 60
+        },
+        "warmup": [
+          "5 min nasal walk",
+          "Ankles, hips, thoracic spine, wrists"
+        ],
+        "main": [
+          "Easy walk, bike, or jog in conversational effort",
+          "10 min station-standard review: squat depth, lunge step, wall-ball target line"
+        ],
+        "cooldown": [
+          "5 min breathing downshift",
+          "Light calves, quads, hip flexors"
+        ],
+        "notes": [
+          "If Sunday left soreness above 6/10, make today mobility only.",
+          "Elite athletes may add an easy second aerobic session only if sleep and soreness are good."
+        ]
+      },
+      "tuesday": {
+        "title": "Easy run plus movement standards",
+        "type": "aerobic",
+        "intensity": "RPE 3-4",
+        "duration_minutes": {
+          "casual": 35,
+          "recreational": 50,
+          "competitive": 65,
+          "elite": 75
+        },
+        "warmup": [
+          "8 min easy jog or run-walk",
+          "3 x 20 sec relaxed strides"
+        ],
+        "main": [
+          "Easy run or run-walk",
+          "Then 3 rounds smooth: 10 air squats, 8 light kettlebell deadlifts, 6 inchworms"
+        ],
+        "cooldown": [
+          "5 min walk",
+          "Record average heart rate, RPE, and any niggles"
+        ],
+        "notes": [
+          "Casual level may use 3 min jog / 2 min walk.",
+          "Do not chase pace yet; build repeatability."
+        ]
+      },
+      "wednesday": {
+        "title": "Strength base: squat, hinge, push, pull, carry",
+        "type": "strength",
+        "intensity": "RPE 5-6",
+        "duration_minutes": {
+          "casual": 40,
+          "recreational": 55,
+          "competitive": 70,
+          "elite": 80
+        },
+        "warmup": [
+          "5 min row or SkiErg easy",
+          "2 rounds: 8 lunges, 8 glute bridges, 8 scap push-ups"
+        ],
+        "main": [
+          "Goblet squat or front squat 3-5 x 6",
+          "Romanian deadlift 3-5 x 6",
+          "Push-up or bench press 3-4 x 8",
+          "Row or pull-up variation 3-4 x 8",
+          "Farmers carry 4-8 x 30 m"
+        ],
+        "cooldown": [
+          "Easy 5 min bike",
+          "Forearm, lats, glutes"
+        ],
+        "notes": [
+          "Casual level uses lighter loads and perfect reps.",
+          "Competitive and elite can finish with 4 x 20 m low sled push if technique is clean."
+        ]
+      },
+      "thursday": {
+        "title": "Erg aerobic intervals",
+        "type": "aerobic intervals",
+        "intensity": "RPE 4-6",
+        "duration_minutes": {
+          "casual": 30,
+          "recreational": 45,
+          "competitive": 60,
+          "elite": 70
+        },
+        "warmup": [
+          "8 min easy row or SkiErg",
+          "3 x 20 sec technique build"
+        ],
+        "main": [
+          "6-10 x 2 min steady erg / 1 min easy",
+          "Alternate row and SkiErg if both are available"
+        ],
+        "cooldown": [
+          "5 min easy",
+          "Lat and hamstring mobility"
+        ],
+        "notes": [
+          "Keep stroke mechanics smooth.",
+          "This builds aerobic work without adding running impact."
+        ]
+      },
+      "friday": {
+        "title": "Rest or easy mobility",
+        "type": "rest",
+        "intensity": "RPE 1-2",
+        "duration_minutes": {
+          "casual": 20,
+          "recreational": 25,
+          "competitive": 30,
+          "elite": 35
+        },
+        "warmup": [
+          "Easy walk"
+        ],
+        "main": [
+          "Mobility for calves, hips, thoracic spine, wrists",
+          "Optional 15-25 min zone 1 bike"
+        ],
+        "cooldown": [
+          "Sleep, hydration, and food check"
+        ],
+        "notes": [
+          "Do not turn today into conditioning.",
+          "If resting heart rate is elevated, keep it complete rest."
+        ]
+      },
+      "saturday": {
+        "title": "Intro compromised running",
+        "type": "hyrox brick",
+        "intensity": "RPE 5-7",
+        "duration_minutes": {
+          "casual": 40,
+          "recreational": 55,
+          "competitive": 75,
+          "elite": 90
+        },
+        "warmup": [
+          "10 min easy run",
+          "Movement prep for lunges, burpees, carries"
+        ],
+        "main": [
+          "3-6 rounds: 400-800 m easy run, then one station skill at controlled effort",
+          "Rotate station skills: SkiErg, row, light carry, light sandbag lunge, wall-ball mechanics"
+        ],
+        "cooldown": [
+          "10 min easy walk or bike",
+          "Write down which station disrupted running most"
+        ],
+        "notes": [
+          "This is not a race simulation yet.",
+          "Stop a station set before technique breaks."
+        ]
+      },
+      "sunday": {
+        "title": "Long easy aerobic",
+        "type": "long aerobic",
+        "intensity": "RPE 3-4",
+        "duration_minutes": {
+          "casual": 45,
+          "recreational": 65,
+          "competitive": 85,
+          "elite": 100
+        },
+        "warmup": [
+          "5-10 min walk/jog progression"
+        ],
+        "main": [
+          "Continuous easy run, run-walk, bike, or mixed aerobic session",
+          "Keep the last 10 min as easy as the first 10 min"
+        ],
+        "cooldown": [
+          "5 min walk",
+          "Refuel with protein plus carbs"
+        ],
+        "notes": [
+          "The goal is time on feet, not speed.",
+          "Casual athletes can split into two shorter walks."
+        ]
+      }
+    },
+    "build": {
+      "monday": {
+        "title": "Rest and readiness check",
+        "type": "rest",
+        "intensity": "RPE 1-2",
+        "duration_minutes": {
+          "casual": 20,
+          "recreational": 25,
+          "competitive": 30,
+          "elite": 40
+        },
+        "warmup": [
+          "Short walk"
+        ],
+        "main": [
+          "Mobility plus readiness score: sleep, soreness, mood, resting heart rate if available"
+        ],
+        "cooldown": [
+          "Plan the week and confirm equipment access"
+        ],
+        "notes": [
+          "If readiness is poor, reduce Tuesday intensity one step."
+        ]
+      },
+      "tuesday": {
+        "title": "Threshold 1 km rhythm",
+        "type": "run quality",
+        "intensity": "RPE 7-8 on reps",
+        "duration_minutes": {
+          "casual": 40,
+          "recreational": 60,
+          "competitive": 75,
+          "elite": 90
+        },
+        "warmup": [
+          "12 min easy jog",
+          "4 x 20 sec strides"
+        ],
+        "main": [
+          "3-8 x 1 km at controlled threshold with 2 min easy jog or walk",
+          "Finish with 2 sets of 15-30 wall balls or wall-ball substitutes"
+        ],
+        "cooldown": [
+          "10 min easy jog or bike",
+          "Calf and quad reset"
+        ],
+        "notes": [
+          "Casual athletes use 4 x 3 min instead of full 1 km repeats.",
+          "Elite athletes may add a second easy aerobic session later in the day."
+        ]
+      },
+      "wednesday": {
+        "title": "Sled and lower-body strength endurance",
+        "type": "strength endurance",
+        "intensity": "RPE 6-8",
+        "duration_minutes": {
+          "casual": 45,
+          "recreational": 60,
+          "competitive": 80,
+          "elite": 95
+        },
+        "warmup": [
+          "8 min bike or row",
+          "Sled marching drills or hill walk"
+        ],
+        "main": [
+          "Sled push technique 4-8 x 12.5-25 m",
+          "Sled pull technique 4-8 x 12.5-25 m",
+          "Sandbag lunge 3-5 x 20-40 m",
+          "Single-leg accessory 2-4 sets"
+        ],
+        "cooldown": [
+          "Easy bike",
+          "Feet, calves, hip flexors"
+        ],
+        "notes": [
+          "No sled? Use hill pushes, heavy prowler substitute, backward drags, and loaded step-ups.",
+          "Load should never force unsafe spine position."
+        ]
+      },
+      "thursday": {
+        "title": "Easy run and erg technique",
+        "type": "recovery aerobic",
+        "intensity": "RPE 3-4",
+        "duration_minutes": {
+          "casual": 35,
+          "recreational": 50,
+          "competitive": 65,
+          "elite": 75
+        },
+        "warmup": [
+          "5 min easy"
+        ],
+        "main": [
+          "Easy run or run-walk",
+          "Then 10-15 min alternating SkiErg and row technique"
+        ],
+        "cooldown": [
+          "5 min breathing and mobility"
+        ],
+        "notes": [
+          "This should make Saturday better, not worse."
+        ]
+      },
+      "friday": {
+        "title": "Station density circuit",
+        "type": "hyrox strength circuit",
+        "intensity": "RPE 6-7",
+        "duration_minutes": {
+          "casual": 35,
+          "recreational": 55,
+          "competitive": 75,
+          "elite": 90
+        },
+        "warmup": [
+          "8 min mixed erg",
+          "Movement standards for burpees, carries, lunges"
+        ],
+        "main": [
+          "3-6 rounds quality: 250 m SkiErg, 20 m carry, 10 burpee broad jumps, 250 m row, 20 m sandbag lunge",
+          "Rest enough to keep mechanics and breathing controlled"
+        ],
+        "cooldown": [
+          "Easy walk",
+          "Grip and hip mobility"
+        ],
+        "notes": [
+          "Do not add race pace running today if Saturday is the main brick.",
+          "Elite athletes can keep rests short but not sloppy."
+        ]
+      },
+      "saturday": {
+        "title": "Compromised run builder",
+        "type": "hyrox brick",
+        "intensity": "RPE 7-8",
+        "duration_minutes": {
+          "casual": 45,
+          "recreational": 70,
+          "competitive": 90,
+          "elite": 110
+        },
+        "warmup": [
+          "12 min easy run",
+          "Station-specific warmup"
+        ],
+        "main": [
+          "4-8 rounds: 800-1000 m run, then one station segment at planned race effort",
+          "Use a different station each round and record post-station run pace"
+        ],
+        "cooldown": [
+          "10 min easy",
+          "Carbs, fluids, and sodium if session exceeds 75 min"
+        ],
+        "notes": [
+          "This session teaches pace control after fatigue.",
+          "If run pace falls apart early, reduce station load before adding more running."
+        ]
+      },
+      "sunday": {
+        "title": "Long easy plus mobility",
+        "type": "long aerobic",
+        "intensity": "RPE 3-4",
+        "duration_minutes": {
+          "casual": 45,
+          "recreational": 70,
+          "competitive": 90,
+          "elite": 105
+        },
+        "warmup": [
+          "Easy progression"
+        ],
+        "main": [
+          "Long easy run, run-walk, or bike-run blend",
+          "Last 10 min includes relaxed cadence focus"
+        ],
+        "cooldown": [
+          "Mobility and nutrition"
+        ],
+        "notes": [
+          "If Saturday was very hard, swap this for bike or walk."
+        ]
+      }
+    },
+    "specific": {
+      "monday": {
+        "title": "Recovery and race-standard audit",
+        "type": "recovery",
+        "intensity": "RPE 1-3",
+        "duration_minutes": {
+          "casual": 20,
+          "recreational": 30,
+          "competitive": 40,
+          "elite": 50
+        },
+        "warmup": [
+          "Easy walk"
+        ],
+        "main": [
+          "Mobility and video review of last brick",
+          "Check station standards that caused no-rep risk"
+        ],
+        "cooldown": [
+          "Schedule equipment and race simulation details"
+        ],
+        "notes": [
+          "A standard audit saves more time than another hard workout."
+        ]
+      },
+      "tuesday": {
+        "title": "Race-pace 1 km repeats",
+        "type": "run quality",
+        "intensity": "RPE 7-8",
+        "duration_minutes": {
+          "casual": 40,
+          "recreational": 65,
+          "competitive": 80,
+          "elite": 95
+        },
+        "warmup": [
+          "15 min easy",
+          "4 strides"
+        ],
+        "main": [
+          "4-8 x 1 km at goal HYROX run pace with 90-120 sec easy recovery",
+          "After every second repeat: 15 wall balls or 100 m row easy-moderate"
+        ],
+        "cooldown": [
+          "10 min easy"
+        ],
+        "notes": [
+          "Goal race pace should feel controlled early.",
+          "If every rep is a sprint, the target is too aggressive."
+        ]
+      },
+      "wednesday": {
+        "title": "Race-load station endurance",
+        "type": "station endurance",
+        "intensity": "RPE 7-8",
+        "duration_minutes": {
+          "casual": 45,
+          "recreational": 65,
+          "competitive": 85,
+          "elite": 100
+        },
+        "warmup": [
+          "Erg easy",
+          "Station movement prep"
+        ],
+        "main": [
+          "Sled push and pull at race or scaled load",
+          "Farmers carry and sandbag lunge at race or scaled load",
+          "Wall-ball sets using planned race break strategy"
+        ],
+        "cooldown": [
+          "Easy erg",
+          "Grip, calves, hips"
+        ],
+        "notes": [
+          "The objective is standards under fatigue, not max strength.",
+          "Casual athletes stay scaled and prioritize continuous movement."
+        ]
+      },
+      "thursday": {
+        "title": "Easy aerobic and mobility",
+        "type": "recovery aerobic",
+        "intensity": "RPE 3",
+        "duration_minutes": {
+          "casual": 30,
+          "recreational": 45,
+          "competitive": 60,
+          "elite": 75
+        },
+        "warmup": [
+          "Easy"
+        ],
+        "main": [
+          "Easy run, bike, row, or SkiErg",
+          "10 min transition practice: enter station calmly, set equipment, first rep smooth"
+        ],
+        "cooldown": [
+          "Mobility"
+        ],
+        "notes": [
+          "Keep this genuinely easy so Friday and Saturday are useful."
+        ]
+      },
+      "friday": {
+        "title": "Controlled HYROX brick",
+        "type": "hyrox brick",
+        "intensity": "RPE 7-9",
+        "duration_minutes": {
+          "casual": 45,
+          "recreational": 70,
+          "competitive": 90,
+          "elite": 105
+        },
+        "warmup": [
+          "12 min easy run",
+          "Station warmup"
+        ],
+        "main": [
+          "Half to three-quarter HYROX: 4-6 x 1 km run plus 4-6 station segments",
+          "Use planned race pace, planned transitions, and planned wall-ball break strategy"
+        ],
+        "cooldown": [
+          "10 min easy",
+          "Write exact splits and station notes"
+        ],
+        "notes": [
+          "Casual athletes do a half simulation.",
+          "Elite athletes may alternate race-pace and faster-than-race station segments."
+        ]
+      },
+      "saturday": {
+        "title": "Long aerobic or full simulation slot",
+        "type": "simulation",
+        "intensity": "RPE 4-9 depending on week",
+        "duration_minutes": {
+          "casual": 50,
+          "recreational": 80,
+          "competitive": 105,
+          "elite": 125
+        },
+        "warmup": [
+          "10-15 min easy",
+          "Fuel and equipment rehearsal"
+        ],
+        "main": [
+          "Normal week: long easy aerobic with 4 x 20 sec strides",
+          "Simulation week: scaled or full HYROX rehearsal no closer than 14 days from race day"
+        ],
+        "cooldown": [
+          "Walk, refuel, review transitions"
+        ],
+        "notes": [
+          "Full simulations are optional for beginners and must not wreck the next week.",
+          "Elite athletes should use this slot for race modeling only when recovery is strong."
+        ]
+      },
+      "sunday": {
+        "title": "Rest and recovery score",
+        "type": "rest",
+        "intensity": "RPE 1-2",
+        "duration_minutes": {
+          "casual": 20,
+          "recreational": 25,
+          "competitive": 30,
+          "elite": 35
+        },
+        "warmup": [
+          "Walk"
+        ],
+        "main": [
+          "Mobility, food prep, sleep planning, and next-week load decision"
+        ],
+        "cooldown": [
+          "Write one training adjustment"
+        ],
+        "notes": [
+          "If soreness is still high by evening, reduce Monday and Tuesday."
+        ]
+      }
+    },
+    "peak": {
+      "monday": {
+        "title": "Rest and taper check",
+        "type": "rest",
+        "intensity": "RPE 1-2",
+        "duration_minutes": {
+          "casual": 15,
+          "recreational": 20,
+          "competitive": 25,
+          "elite": 30
+        },
+        "warmup": [
+          "Optional walk"
+        ],
+        "main": [
+          "No conditioning unless it improves readiness",
+          "Confirm race date, start time, kit, shoes, and nutrition"
+        ],
+        "cooldown": [
+          "Early sleep"
+        ],
+        "notes": [
+          "Fresh beats fit-but-fatigued in peak week."
+        ]
+      },
+      "tuesday": {
+        "title": "Race-pace sharpening",
+        "type": "run quality",
+        "intensity": "RPE 6-8",
+        "duration_minutes": {
+          "casual": 30,
+          "recreational": 45,
+          "competitive": 60,
+          "elite": 70
+        },
+        "warmup": [
+          "12 min easy",
+          "3 strides"
+        ],
+        "main": [
+          "3-5 x 1 km at goal race pace with generous recovery",
+          "Then 2 easy station touches: row or SkiErg plus wall-ball mechanics"
+        ],
+        "cooldown": [
+          "10 min easy"
+        ],
+        "notes": [
+          "Finish feeling like one more rep was possible."
+        ]
+      },
+      "wednesday": {
+        "title": "Light strength and standards",
+        "type": "light strength",
+        "intensity": "RPE 4-5",
+        "duration_minutes": {
+          "casual": 25,
+          "recreational": 35,
+          "competitive": 45,
+          "elite": 55
+        },
+        "warmup": [
+          "Easy erg"
+        ],
+        "main": [
+          "2-3 light sets each: squat, hinge, push, pull, carry",
+          "Light wall balls and lunges to confirm rhythm"
+        ],
+        "cooldown": [
+          "Mobility"
+        ],
+        "notes": [
+          "No heavy eccentric work.",
+          "No new shoes, grips, or station technique experiments."
+        ]
+      },
+      "thursday": {
+        "title": "Easy aerobic with strides",
+        "type": "easy aerobic",
+        "intensity": "RPE 3-4",
+        "duration_minutes": {
+          "casual": 25,
+          "recreational": 35,
+          "competitive": 45,
+          "elite": 55
+        },
+        "warmup": [
+          "Easy"
+        ],
+        "main": [
+          "Easy run or bike",
+          "4 x 15-20 sec relaxed strides if legs feel good"
+        ],
+        "cooldown": [
+          "Mobility"
+        ],
+        "notes": [
+          "Skip strides if they create tightness."
+        ]
+      },
+      "friday": {
+        "title": "Rest, race logistics, and fueling",
+        "type": "rest",
+        "intensity": "RPE 1-2",
+        "duration_minutes": {
+          "casual": 15,
+          "recreational": 20,
+          "competitive": 25,
+          "elite": 30
+        },
+        "warmup": [
+          "Optional walk"
+        ],
+        "main": [
+          "Pack kit, confirm transport, start wave, nutrition, hydration, warm-up area, and toilet timing",
+          "Visualize first 2 km controlled"
+        ],
+        "cooldown": [
+          "Sleep and hydration"
+        ],
+        "notes": [
+          "Do not test fitness today."
+        ]
+      },
+      "saturday": {
+        "title": "Race primer or race day",
+        "type": "primer",
+        "intensity": "RPE 4-7",
+        "duration_minutes": {
+          "casual": 20,
+          "recreational": 30,
+          "competitive": 40,
+          "elite": 45
+        },
+        "warmup": [
+          "10 min easy",
+          "Mobility and 2 strides"
+        ],
+        "main": [
+          "If race tomorrow: 2 rounds easy: 200 m run, 8 wall balls, 100 m row or SkiErg",
+          "If race today: use warm-up, pacing, transition, and fueling notes instead"
+        ],
+        "cooldown": [
+          "Stop while fresh"
+        ],
+        "notes": [
+          "Primer should reduce anxiety and sharpen rhythm, not create fatigue."
+        ]
+      },
+      "sunday": {
+        "title": "Post-race recovery or full rest",
+        "type": "recovery",
+        "intensity": "RPE 1-2",
+        "duration_minutes": {
+          "casual": 20,
+          "recreational": 25,
+          "competitive": 30,
+          "elite": 35
+        },
+        "warmup": [
+          "Easy walk"
+        ],
+        "main": [
+          "Post-race: walk, hydrate, protein plus carbs, note splits while memory is fresh",
+          "No race: full rest and readiness check"
+        ],
+        "cooldown": [
+          "Sleep"
+        ],
+        "notes": [
+          "Do not judge the next training block until soreness and emotions settle."
+        ]
+      }
+    }
+  },
+  "race_day_notes": [
+    "Start the first 1 km below ego pace; HYROX rewards even effort.",
+    "Use planned station break strategies before failure, especially wall balls.",
+    "Keep transitions boring: know where to enter, breathe before first rep, leave promptly.",
+    "Fuel and hydration should be rehearsed in training, not invented on race day.",
+    "If a judge calls no-reps, slow down and fix the standard immediately."
+  ]
+}

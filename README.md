@@ -14,6 +14,7 @@ This repository follows the [Awesome List](https://github.com/sindresorhus/aweso
 - [Sport Tags](#sport-tags)
 - [Enterprise-to-Open-Source Decomposition](#enterprise-to-open-source-decomposition)
 - [The Builder's Path](#the-builders-path)
+- [HYROX Training Agent](#hyrox-training-agent)
 - [Data, APIs, and Feeds](#data-apis-and-feeds)
 - [Analytics and Visualization](#analytics-and-visualization)
 - [Training and Performance](#training-and-performance)
@@ -110,6 +111,21 @@ Want to build your own automated match report? Here are the mono-tools you need.
 - [`stat-card-generator`](https://github.com/andrewRowlinson/mplsoccer) - Generate SVG cards for key moments and player stats. _Sports: Soccer._
 - [`match-report-md`](https://github.com/DataKnight1/football-match-intelligence) - Generate a readable Markdown report from events and summary metrics. _Sports: Soccer._
 
+## HYROX Training Agent
+
+The `app/hyrox` workstream turns HYROX race research into a practical AI-agent skill for daily training plans, safety checks, movement-standard reminders, and race-prep notes.
+
+- [HYROX professional training assets](docs/hyrox-professional-training-assets.md) - Official race references, rulebooks, training partners, science, videos, blogs, and podcasts. _Sports: Multi-sport, Running/Track._
+- [HYROX agent skill plan](docs/hyrox-agent-skill-plan.md) - Implementation roadmap for a daily training-plan agent from casual starter to elite pathway. _Sports: Multi-sport, Running/Track._
+- [`skills/hyrox/SKILL.md`](skills/hyrox/SKILL.md) - Agent workflow for level-aware HYROX training guidance. _Sports: Multi-sport, Running/Track._
+- [`hyrox-day-plan`](scripts/hyrox-day-plan.mjs) - Local CLI that renders a daily HYROX plan by level/week/day or by start date. _Sports: Multi-sport, Running/Track._
+
+Try it locally:
+
+```bash
+node scripts/hyrox-day-plan.mjs --level recreational --week 6 --day tuesday
+```
+
 ## Data, APIs, and Feeds
 
 Tools and services for sports schedules, scores, fixtures, rosters, odds, play-by-play data, stats, and live feeds.
@@ -144,6 +160,8 @@ Tools for coaching, athlete development, strength and conditioning, recovery, we
 - [AthleteLoadMonitor](https://github.com/SaxionAMI/AthleteLoadMonitor) - Monitors and predicts athlete load for team-sport coaches. _Sports: Multi-sport._
 - [Coroebus](https://github.com/prakashsellathurai/Coroebus) - Tracks training load, fitness, fatigue, and readiness for athletes. _Sports: Multi-sport._
 - [databallpy](https://github.com/Alek050/databallpy) - Reads, preprocesses, visualizes, and synchronizes soccer event and tracking data. _Sports: Soccer._
+- [HYROX Training Agent assets](docs/hyrox-professional-training-assets.md) - Curates official HYROX rules, training partners, science, videos, blogs, and podcasts for AI-agent training plans. _Sports: Multi-sport, Running/Track._
+- [HYROX Daily Plan CLI](scripts/hyrox-day-plan.mjs) - Renders level-aware daily HYROX sessions from structured program data. _Sports: Multi-sport, Running/Track._
 - [MMPose](https://github.com/open-mmlab/mmpose) - Provides an open-source pose estimation toolbox for biomechanics and movement analysis. _Sports: Multi-sport._
 - [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) - Detects real-time multi-person body, hand, face, and foot keypoints. _Sports: Multi-sport._
 
