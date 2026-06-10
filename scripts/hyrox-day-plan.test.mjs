@@ -16,10 +16,13 @@ const run = (args) =>
 test("renders a recreational build-phase Tuesday plan", () => {
   const output = run(["--level", "recreational", "--week", "6", "--day", "tuesday"]);
 
-  assert.match(output, /HYROX Daily Plan - Tuesday/);
-  assert.match(output, /Phase: Build/);
+  assert.match(output, /HYROX Daily Training Checklist/);
+  assert.match(output, /HYROX 每日训练清单/);
+  assert.match(output, /Phase \/ 阶段: Build \/ 建设期/);
   assert.match(output, /Threshold 1 km rhythm/);
-  assert.match(output, /Official preparation/);
+  assert.match(output, /Training Goal \/ 训练目标/);
+  assert.match(output, /Completion Target \/ 完成标准/);
+  assert.match(output, /Source Anchors \/ 来源/);
 });
 
 test("derives week and day from start date", () => {
@@ -48,4 +51,30 @@ test("rejects unknown levels", () => {
 
   assert.notEqual(result.status, 0);
   assert.match(result.stderr, /Unknown level/);
+});
+
+test("renders a bilingual seven-day checklist from a start date", () => {
+  const output = run([
+    "--level",
+    "recreational",
+    "--start-date",
+    "2026-06-10",
+    "--date",
+    "2026-06-10",
+    "--days",
+    "7"
+  ]);
+
+  assert.match(output, /2026-06-10 · Wednesday \/ 星期三/);
+  assert.match(output, /2026-06-16 · Tuesday \/ 星期二/);
+  assert.match(output, /Strength base: squat, hinge, push, pull, carry \/ 基础力量/);
+  assert.match(output, /Prescription \/ 具体安排/);
+  assert.match(output, /Readiness Adjustment \/ 状态调整/);
+});
+
+test("keeps the original basic renderer available", () => {
+  const output = run(["--level", "recreational", "--week", "6", "--day", "tuesday", "--format", "basic"]);
+
+  assert.match(output, /HYROX Daily Plan - Tuesday/);
+  assert.match(output, /Official preparation/);
 });

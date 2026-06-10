@@ -59,15 +59,46 @@ Date-based query:
 node scripts/hyrox-day-plan.mjs --level casual --start-date 2026-06-10 --date 2026-06-24
 ```
 
+Seven-day bilingual checklist:
+
+```bash
+node scripts/hyrox-day-plan.mjs --level recreational --start-date 2026-06-10 --date 2026-06-10 --days 7
+```
+
+Earlier plain Markdown output is still available:
+
+```bash
+node scripts/hyrox-day-plan.mjs --level recreational --week 6 --day tuesday --format basic
+```
+
+## Why The First Output Felt Unprofessional
+
+The earlier output had the right weekly intent but not enough workout prescription. It listed broad warm-up, main, cooldown, and notes, but it did not tell the athlete what each session should accomplish or what good execution looks like.
+
+Specific gaps:
+
+- No explicit daily training goal.
+- No completion target or quality standard.
+- No bilingual athlete-facing structure for English-native users who can also read Chinese.
+- Too many broad ranges without context for intensity, rest, and success criteria.
+- Coach notes were mixed with generic level comments instead of being framed as execution constraints.
+- Weekly output had no course-style checklist shape like `Complete`, `Zone`, work/rest, rounds, and finisher blocks.
+
+The professional output should therefore be a bilingual checklist: goal, completion target, warm-up prescription, main-work prescription, cooldown, coaching constraints, and green/yellow/red readiness adjustment.
+
 ## Agent Response Contract
 
 Every daily-plan answer should include:
 
-- Level, week, day, phase, and session name.
-- Warm-up, main work, cooldown, duration, and intensity.
-- One or two coach notes specific to the user's level.
-- Safety override and readiness adjustment.
+- Level, week, day, phase, and session name in English and Chinese.
+- A clear training goal, not only a movement list.
+- A completion target that tells the athlete what good execution means.
+- Warm-up, main work, cooldown, duration, intensity, work/rest, and round structure where available.
+- Coaching constraints specific to the session.
+- Readiness adjustment: green/yellow/red rules.
 - Source anchors only when useful; do not bury the user in links every day.
+
+The default CLI output is now a bilingual checklist for English-native users who can read Chinese context. Use `--format basic` only for the earlier plain Markdown plan.
 
 ## Implementation Tasks
 
@@ -78,7 +109,9 @@ Acceptance criteria:
 - [x] Agent can render a daily plan by level/week/day.
 - [x] Agent can derive week/day from start date and target date.
 - [x] Program data covers casual, recreational, competitive, and elite levels.
-- [x] Tests cover normal rendering, date derivation, and invalid level handling.
+- [x] Default output uses a bilingual professional checklist.
+- [x] Agent can render a seven-day checklist from a start date.
+- [x] Tests cover checklist rendering, date derivation, invalid level handling, weekly output, and basic-format compatibility.
 
 Verification:
 

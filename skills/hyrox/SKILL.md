@@ -54,7 +54,13 @@ or:
 node scripts/hyrox-day-plan.mjs --level <level> --start-date <YYYY-MM-DD> --date <YYYY-MM-DD>
 ```
 
-4. Summarize the output into a compact coach-style answer.
+For a seven-day checklist, call:
+
+```bash
+node scripts/hyrox-day-plan.mjs --level <level> --start-date <YYYY-MM-DD> --date <YYYY-MM-DD> --days 7
+```
+
+4. Preserve the bilingual checklist structure unless the user asks for a shorter answer.
 5. Add readiness adjustment:
    - Green: do as written.
    - Yellow: reduce load or rounds by 20-30 percent.
@@ -73,28 +79,28 @@ node scripts/hyrox-day-plan.mjs --level <level> --start-date <YYYY-MM-DD> --date
 
 ## Response Format
 
-For daily plans:
+For daily plans, use bilingual English/Chinese output:
 
 ```markdown
-**Today**
-Level: ...
-Week/Phase: ...
-Session: ...
-Duration/Intensity: ...
+**HYROX Daily Training Checklist / HYROX 每日训练清单**
+Level / 水平: ...
+Week / 周期: ...
+Phase / 阶段: ...
+Session / 课程: ...
+Duration / 时长: ...
+Intensity / 强度: ...
 
-Warm-up:
+Training Goal / 训练目标:
+- EN: ...
+- ZH: ...
+
+Completion Target / 完成标准:
 - ...
 
-Main:
+Session Prescription / 训练安排:
 - ...
 
-Cooldown:
-- ...
-
-Adjustments:
-- ...
-
-Watch-outs:
+Readiness Adjustment / 状态调整:
 - ...
 ```
 
