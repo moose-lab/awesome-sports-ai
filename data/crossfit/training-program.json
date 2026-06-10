@@ -1,0 +1,377 @@
+{
+  "meta": {
+    "title": "CrossFit AI agent training program",
+    "version": "0.1.0",
+    "last_verified": "2026-06-10",
+    "design_goal": "Generate daily CrossFit plans that preserve intended stimulus, mechanics-consistency-intensity progression, structured variance, and practical scaling for Chinese and English users.",
+    "evidence_basis": [
+      "Official CrossFit methodology: constantly varied functional movements performed at high intensity",
+      "CrossFit Level 1 concepts: mechanics, consistency, intensity; broad, general, inclusive fitness",
+      "Programming template concepts: variation across monostructural, gymnastics, and weightlifting domains plus time domains",
+      "Xiaohongshu creator-note themes: Scale path, movement economy, breathing, non-random variance, limiter diagnosis, and effective accessory work",
+      "Public professional and athlete video sources for movement context and competition pacing"
+    ],
+    "safety": [
+      "This is training guidance, not medical advice.",
+      "Pain that changes mechanics, acute injury, chest pain, fainting, neurological symptoms, or unusual shortness of breath overrides the plan.",
+      "New athletes should learn mechanics and consistency before chasing intensity.",
+      "Avoid increasing skill difficulty, load, speed, and volume in the same week.",
+      "High-skill gymnastics and Olympic lifts should be coached or scaled when technique is uncertain."
+    ]
+  },
+  "levels": {
+    "beginner": {
+      "label": "Beginner foundation",
+      "duration_weeks": 12,
+      "weekly_sessions": "3 to 4",
+      "weekly_hours": "3 to 5",
+      "best_for": "New CrossFit athletes, home trainees, return-from-break athletes, and people still learning basic mechanics.",
+      "entry_checks": [
+        "Can brisk walk or bike for 20-30 minutes",
+        "Can squat, hinge, press, plank, and carry light load without pain",
+        "Can keep breathing controlled during low-skill circuits"
+      ],
+      "success_target": "Understand class flow, scale every workout correctly, and finish sessions with clean mechanics.",
+      "load_multiplier": 0.7
+    },
+    "recreational": {
+      "label": "Recreational affiliate athlete",
+      "duration_weeks": 16,
+      "weekly_sessions": "4 to 5",
+      "weekly_hours": "5 to 7",
+      "best_for": "Regular affiliate members or general fitness athletes who can train most weeks.",
+      "entry_checks": [
+        "Can complete 4 weekly sessions for 4 weeks",
+        "Can perform common dumbbell, kettlebell, rowing, running, and basic gymnastics substitutions",
+        "Understands RPE and can stop before technical breakdown"
+      ],
+      "success_target": "Improve broad fitness while keeping weekly training repeatable and recoverable.",
+      "load_multiplier": 1.0
+    },
+    "competitive": {
+      "label": "Open and local competition prep",
+      "duration_weeks": 20,
+      "weekly_sessions": "5 to 6",
+      "weekly_hours": "7 to 10",
+      "best_for": "Experienced CrossFit athletes preparing for the Open, local competitions, or Rx benchmarks.",
+      "entry_checks": [
+        "Has recent benchmark scores",
+        "Can tolerate two to three quality sessions weekly",
+        "Can scale advanced gymnastics and Olympic lifts intelligently"
+      ],
+      "success_target": "Preserve intended stimulus across Rx and scaled choices, improve limiter-specific skills, and benchmark reliably.",
+      "load_multiplier": 1.2
+    },
+    "advanced": {
+      "label": "Advanced competitive pathway",
+      "duration_weeks": 24,
+      "weekly_sessions": "6 to 9",
+      "weekly_hours": "9 to 13+",
+      "best_for": "High-skill athletes with coach oversight, competition goals, and recovery tracking.",
+      "entry_checks": [
+        "Can recover from high-skill and heavy days",
+        "Has coach or experienced reviewer for technical movements",
+        "Has benchmarks for strength, gymnastics, engine, and mixed-modal pacing"
+      ],
+      "success_target": "Raise limiter ceilings while keeping movement economy and recovery trend stable.",
+      "load_multiplier": 1.4
+    }
+  },
+  "phase_rules": {
+    "beginner": [
+      { "phase": "foundation", "start_week": 1, "end_week": 5 },
+      { "phase": "build", "start_week": 6, "end_week": 9 },
+      { "phase": "integration", "start_week": 10, "end_week": 11 },
+      { "phase": "benchmark", "start_week": 12, "end_week": 12 }
+    ],
+    "recreational": [
+      { "phase": "foundation", "start_week": 1, "end_week": 5 },
+      { "phase": "build", "start_week": 6, "end_week": 10 },
+      { "phase": "integration", "start_week": 11, "end_week": 14 },
+      { "phase": "benchmark", "start_week": 15, "end_week": 16 }
+    ],
+    "competitive": [
+      { "phase": "foundation", "start_week": 1, "end_week": 6 },
+      { "phase": "build", "start_week": 7, "end_week": 12 },
+      { "phase": "integration", "start_week": 13, "end_week": 18 },
+      { "phase": "benchmark", "start_week": 19, "end_week": 20 }
+    ],
+    "advanced": [
+      { "phase": "foundation", "start_week": 1, "end_week": 6 },
+      { "phase": "build", "start_week": 7, "end_week": 14 },
+      { "phase": "integration", "start_week": 15, "end_week": 22 },
+      { "phase": "benchmark", "start_week": 23, "end_week": 24 }
+    ]
+  },
+  "phases": {
+    "foundation": {
+      "label": "Foundation",
+      "purpose": "Build mechanics, consistency, easy engine capacity, and a reliable Scale habit before adding intensity.",
+      "progression": "Most work is submaximal. Every mixed-modal day includes a defined stimulus and a scaling choice."
+    },
+    "build": {
+      "label": "Build",
+      "purpose": "Add strength skill, gymnastics density, weightlifting technique, and controlled intensity across time domains.",
+      "progression": "Two to three quality days weekly, with one limiter-focused accessory block."
+    },
+    "integration": {
+      "label": "Integration",
+      "purpose": "Blend strength, skill, and conditioning under fatigue while preserving movement economy and pacing.",
+      "progression": "Use benchmark-style formats and repeat split targets without turning every day into a test."
+    },
+    "benchmark": {
+      "label": "Benchmark and deload",
+      "purpose": "Sharpen, test selected benchmarks, and reduce fatigue so progress is measurable.",
+      "progression": "Reduce volume 25-45 percent while keeping short intensity touches and skill standards."
+    }
+  },
+  "weekly_templates": {
+    "foundation": {
+      "monday": {
+        "title": "Mechanics reset and easy engine",
+        "type": "recovery aerobic",
+        "intensity": "RPE 2-3",
+        "duration_minutes": { "beginner": 30, "recreational": 40, "competitive": 50, "advanced": 60 },
+        "modality": "M + movement prep",
+        "warmup": [
+          { "en": "5 min nasal breathing walk, bike, or easy row", "zh": "5 分钟鼻呼吸步行、骑车或轻松划船" },
+          { "en": "Ankles, hips, thoracic spine, wrists", "zh": "活动脚踝、髋、胸椎和手腕" }
+        ],
+        "skill_strength": [
+          { "en": "10 min air squat, hinge, push-up, ring-row or band-row mechanics", "zh": "10 分钟徒手深蹲、髋铰链、俯卧撑、吊环划船或弹力带划船机制练习" }
+        ],
+        "metcon": [
+          { "en": "20-35 min conversational bike, row, jog, or mixed easy aerobic", "zh": "20-35 分钟可对话强度骑车、划船、慢跑或混合轻松有氧" }
+        ],
+        "cooldown": [
+          { "en": "5 min breathing downshift", "zh": "5 分钟降速呼吸" },
+          { "en": "Record soreness, sleep, and the first position that felt limited", "zh": "记录酸痛、睡眠和第一个感觉受限的位置" }
+        ],
+        "intended_stimulus": {
+          "en": "Finish fresher, not destroyed; today restores mechanics and aerobic rhythm.",
+          "zh": "结束时应更清爽，不是被榨干；今天恢复动作机制和有氧节奏。"
+        },
+        "scaling_path": [
+          { "en": "Use bike or walk if running changes gait.", "zh": "如果跑步改变步态，改用骑车或步行。" },
+          { "en": "Keep all reps strict and slow enough to explain out loud.", "zh": "所有动作保持严格，速度慢到可以边做边说清楚。" }
+        ],
+        "notes": [
+          { "en": "Do not turn recovery into a conditioning test.", "zh": "不要把恢复课做成体能测试。" },
+          { "en": "This day follows the movement-economy theme from the Chinese creator-note review.", "zh": "本课对应中文笔记中的动作经济性主题。" }
+        ]
+      },
+      "tuesday": {
+        "title": "Squat, pull, press mechanics",
+        "type": "mechanics strength",
+        "intensity": "RPE 4-5",
+        "duration_minutes": { "beginner": 40, "recreational": 55, "competitive": 65, "advanced": 75 },
+        "modality": "G + W",
+        "warmup": [
+          { "en": "6 min easy row or bike", "zh": "6 分钟轻松划船或骑车" },
+          { "en": "2 rounds: 8 air squats, 8 band rows, 8 scap push-ups", "zh": "2 轮：8 次徒手深蹲、8 次弹力带划船、8 次肩胛俯卧撑" }
+        ],
+        "skill_strength": [
+          { "en": "Back squat or goblet squat 4 x 5 at technical load", "zh": "背蹲或高脚杯深蹲 4 组 x 5 次，使用技术重量" },
+          { "en": "Strict press or dumbbell press 3 x 8", "zh": "严格推举或哑铃推举 3 组 x 8 次" }
+        ],
+        "metcon": [
+          { "en": "8 min EMOM: odd min 8 ring rows, even min 10 box step-ups", "zh": "8 分钟 EMOM：奇数分钟 8 次吊环划船，偶数分钟 10 次箱上踏步" }
+        ],
+        "cooldown": [
+          { "en": "Lat, pec, hip flexor mobility", "zh": "背阔肌、胸肌、髋屈肌活动度" }
+        ],
+        "intended_stimulus": {
+          "en": "Quality strength practice plus low-panic breathing.",
+          "zh": "高质量力量练习，加上不失控的呼吸刺激。"
+        },
+        "scaling_path": [
+          { "en": "Reduce load before cutting range of motion.", "zh": "先降重量，再考虑缩短动作幅度。" },
+          { "en": "Use band rows or elevated rows if pulling mechanics break.", "zh": "拉力动作变形时，使用弹力带划船或升高角度划船。" }
+        ],
+        "notes": [
+          { "en": "Mechanics and consistency come before intensity.", "zh": "动作机制和稳定性优先于强度。" }
+        ]
+      },
+      "wednesday": {
+        "title": "Strength skill plus short mixed-modal workout",
+        "type": "strength + metcon",
+        "intensity": "RPE 5-6",
+        "duration_minutes": { "beginner": 45, "recreational": 60, "competitive": 70, "advanced": 80 },
+        "modality": "M + G + W",
+        "warmup": [
+          { "en": "5 min easy row", "zh": "5 分钟轻松划船" },
+          { "en": "3 rounds smooth: 6 deadlifts with empty bar, 6 inchworms, 8 sit-ups", "zh": "顺畅完成 3 轮：空杆硬拉 6 次、毛毛虫爬行 6 次、仰卧起坐 8 次" }
+        ],
+        "skill_strength": [
+          { "en": "Deadlift 5 x 3 at RPE 5-6, resetting every rep", "zh": "硬拉 5 组 x 3 次，RPE 5-6，每次重新建立起始位" },
+          { "en": "10 min skill: kipping swing positions or strict hollow/arch drill", "zh": "10 分钟技能：摆动引体位置练习，或严格 hollow/arch 练习" }
+        ],
+        "metcon": [
+          { "en": "10 min AMRAP: 8 kettlebell deadlifts, 8 push-ups, 10 cal row", "zh": "10 分钟 AMRAP：8 次壶铃硬拉、8 次俯卧撑、10 卡划船" }
+        ],
+        "cooldown": [
+          { "en": "Easy 5 min bike", "zh": "轻松骑车 5 分钟" },
+          { "en": "Write the first movement that forced you to slow down", "zh": "记录第一个让你不得不降速的动作" }
+        ],
+        "intended_stimulus": {
+          "en": "Short mixed-modal density with clean hinge mechanics and controlled breathing.",
+          "zh": "短时间混合模式密度训练，保持干净髋铰链和可控呼吸。"
+        },
+        "scaling_path": [
+          { "en": "Scale push-ups to elevated hands before reps turn into singles.", "zh": "俯卧撑变成单次挣扎前，先改为手撑高位。" },
+          { "en": "Keep the row smooth; damper higher is not automatically stronger.", "zh": "划船保持顺畅；风阻更高不等于更强。" },
+          { "en": "Preserve 3-4 rounds of steady work rather than chasing Rx load.", "zh": "优先保留 3-4 轮稳定输出，而不是追求 Rx 重量。" }
+        ],
+        "notes": [
+          { "en": "This session implements the Scale-path and deadlift-start-position themes from the Chinese note review.", "zh": "本课落实中文笔记中的 Scale 路径和硬拉起始位主题。" }
+        ]
+      },
+      "thursday": {
+        "title": "Monostructural pacing and breathing",
+        "type": "engine",
+        "intensity": "RPE 4-5",
+        "duration_minutes": { "beginner": 35, "recreational": 50, "competitive": 65, "advanced": 75 },
+        "modality": "M",
+        "warmup": [
+          { "en": "8 min easy bike, row, or jog", "zh": "8 分钟轻松骑车、划船或慢跑" },
+          { "en": "3 x 20 sec relaxed cadence pickups", "zh": "3 组 20 秒放松节奏提升" }
+        ],
+        "skill_strength": [
+          { "en": "Breathing drill: 4 x 2 min nasal or controlled exhale effort", "zh": "呼吸练习：4 组 2 分钟鼻呼吸或控制呼气输出" }
+        ],
+        "metcon": [
+          { "en": "6-10 x 2 min steady / 1 min easy on rower, bike, ski, or run", "zh": "划船、骑车、滑雪机或跑步 6-10 组：2 分钟稳定输出 / 1 分钟轻松恢复" }
+        ],
+        "cooldown": [
+          { "en": "5 min easy walk and note split drift", "zh": "5 分钟轻松步行，并记录分段漂移" }
+        ],
+        "intended_stimulus": {
+          "en": "Repeatable engine work where the final rep looks like the first.",
+          "zh": "可重复的心肺训练，最后一组应看起来像第一组。"
+        },
+        "scaling_path": [
+          { "en": "Shorten each interval to 90 sec if breathing becomes panicked.", "zh": "如果呼吸失控，将每组缩短到 90 秒。" },
+          { "en": "Choose one machine and keep technique quiet.", "zh": "选择一个器械并保持技术稳定安静。" }
+        ],
+        "notes": [
+          { "en": "Breathing is a performance signal, not decoration.", "zh": "呼吸是表现信号，不是装饰。" }
+        ]
+      },
+      "friday": {
+        "title": "Rest or mobility plus skill review",
+        "type": "rest",
+        "intensity": "RPE 1-2",
+        "duration_minutes": { "beginner": 20, "recreational": 30, "competitive": 40, "advanced": 45 },
+        "modality": "Recovery",
+        "warmup": [
+          { "en": "Easy walk", "zh": "轻松步行" }
+        ],
+        "skill_strength": [
+          { "en": "Optional 10 min positional review: squat bottom, overhead lockout, hollow body", "zh": "可选 10 分钟位置复盘：深蹲底部、过顶锁定、hollow body" }
+        ],
+        "metcon": [
+          { "en": "No conditioning today", "zh": "今天不做体能刺激" }
+        ],
+        "cooldown": [
+          { "en": "Sleep, hydration, and food check", "zh": "检查睡眠、补水和进食" }
+        ],
+        "intended_stimulus": {
+          "en": "Absorb training and protect the weekend mixed-modal session.",
+          "zh": "吸收训练，并保护周末混合模式训练质量。"
+        },
+        "scaling_path": [
+          { "en": "If soreness is above 6/10, make it full rest.", "zh": "如果酸痛超过 6/10，改为完全休息。" }
+        ],
+        "notes": [
+          { "en": "More training volume is not automatically more progress.", "zh": "更多训练量不自动等于更多进步。" }
+        ]
+      },
+      "saturday": {
+        "title": "Controlled class-style triplet",
+        "type": "mixed modal",
+        "intensity": "RPE 6",
+        "duration_minutes": { "beginner": 45, "recreational": 60, "competitive": 75, "advanced": 85 },
+        "modality": "M + G + W",
+        "warmup": [
+          { "en": "8 min general warm-up plus movement-specific rehearsal", "zh": "8 分钟通用热身，加当天动作专项预演" }
+        ],
+        "skill_strength": [
+          { "en": "12 min skill: wall-ball mechanics or medicine-ball clean progression", "zh": "12 分钟技能：墙球机制或药球翻站进阶" }
+        ],
+        "metcon": [
+          { "en": "3 rounds for quality: 400 m run or 500 m row, 15 wall balls or med-ball squats, 12 ring rows", "zh": "高质量完成 3 轮：400 米跑或 500 米划船、15 次墙球或药球深蹲、12 次吊环划船" }
+        ],
+        "cooldown": [
+          { "en": "Walk until breathing normalizes, then calves and lats", "zh": "步行到呼吸恢复正常，然后放松小腿和背阔肌" }
+        ],
+        "intended_stimulus": {
+          "en": "Class-style mixed work where movement economy improves as fatigue rises.",
+          "zh": "课堂式混合训练，疲劳上升时动作经济性仍要改善。"
+        },
+        "scaling_path": [
+          { "en": "Scale to 3 rounds that finish inside 18-22 minutes.", "zh": "调整为能在 18-22 分钟内完成的 3 轮。" },
+          { "en": "Choose a pull variation that keeps sets mostly unbroken.", "zh": "选择能基本连续完成的拉力动作变化。" }
+        ],
+        "notes": [
+          { "en": "Do not turn constantly varied into randomly exhausting.", "zh": "不要把不断变化做成随机累死。" }
+        ]
+      },
+      "sunday": {
+        "title": "Easy aerobic base and weekly review",
+        "type": "long easy",
+        "intensity": "RPE 3",
+        "duration_minutes": { "beginner": 35, "recreational": 55, "competitive": 70, "advanced": 85 },
+        "modality": "M",
+        "warmup": [
+          { "en": "5 min walk/jog progression", "zh": "5 分钟步行到慢跑递进" }
+        ],
+        "skill_strength": [
+          { "en": "No strength work unless it is rehab or mobility", "zh": "除康复或活动度外，不做力量训练" }
+        ],
+        "metcon": [
+          { "en": "Continuous easy walk, jog, bike, row, or mixed aerobic", "zh": "连续轻松步行、慢跑、骑车、划船或混合有氧" }
+        ],
+        "cooldown": [
+          { "en": "Review: best scale choice, worst limiter, next-week priority", "zh": "复盘：最佳 Scale 选择、最大短板、下周优先级" }
+        ],
+        "intended_stimulus": {
+          "en": "Build base capacity and turn the week into actionable feedback.",
+          "zh": "建立基础能力，并把本周训练转化为可执行反馈。"
+        },
+        "scaling_path": [
+          { "en": "Split into two walks if fatigue is high.", "zh": "疲劳高时拆成两次步行。" }
+        ],
+        "notes": [
+          { "en": "The review decides next week's accessory work.", "zh": "本次复盘决定下周辅助训练方向。" }
+        ]
+      }
+    },
+    "build": {
+      "monday": { "title": "Recovery and limiter audit", "type": "recovery", "intensity": "RPE 2-3", "duration_minutes": { "beginner": 25, "recreational": 35, "competitive": 45, "advanced": 55 }, "modality": "Recovery", "warmup": [{ "en": "Easy walk and joint prep", "zh": "轻松步行和关节准备" }], "skill_strength": [{ "en": "10 min limiter audit from last week", "zh": "10 分钟复盘上周短板" }], "metcon": [{ "en": "Optional zone 1 bike or row", "zh": "可选 1 区骑车或划船" }], "cooldown": [{ "en": "Plan this week's scale decisions", "zh": "规划本周 Scale 决策" }], "intended_stimulus": { "en": "Recover while identifying the real limiter.", "zh": "恢复的同时识别真实短板。" }, "scaling_path": [{ "en": "Rest fully if sleep or soreness is poor.", "zh": "睡眠或酸痛差时完全休息。" }], "notes": [{ "en": "Accessory work must solve a limiter.", "zh": "辅助训练必须解决短板。" }] },
+      "tuesday": { "title": "Strength plus gymnastics density", "type": "strength endurance", "intensity": "RPE 6-7", "duration_minutes": { "beginner": 45, "recreational": 60, "competitive": 75, "advanced": 90 }, "modality": "G + W", "warmup": [{ "en": "Row 5 min and shoulder/hip prep", "zh": "划船 5 分钟，加肩髋准备" }], "skill_strength": [{ "en": "Front squat 5 x 3 then strict pull or ring-row density", "zh": "前蹲 5 组 x 3 次，然后严格拉力或吊环划船密度训练" }], "metcon": [{ "en": "12 min EMOM: wall balls, pull variation, double-under or step-over practice", "zh": "12 分钟 EMOM：墙球、拉力变化、双摇或跨步练习" }], "cooldown": [{ "en": "Forearms, lats, quads", "zh": "放松前臂、背阔肌、股四头肌" }], "intended_stimulus": { "en": "Controlled strength endurance without gymnastics collapse.", "zh": "可控力量耐力，不让体操动作崩掉。" }, "scaling_path": [{ "en": "Scale gymnastics before shoulder position changes.", "zh": "肩部位置改变前先 Scale 体操动作。" }], "notes": [{ "en": "Keep one rep in reserve on skill sets.", "zh": "技能组保留 1 次余力。" }] },
+      "wednesday": { "title": "Weightlifting technique and short AMRAP", "type": "weightlifting + metcon", "intensity": "RPE 6", "duration_minutes": { "beginner": 45, "recreational": 60, "competitive": 75, "advanced": 90 }, "modality": "M + W", "warmup": [{ "en": "Empty-bar clean progression", "zh": "空杆翻站进阶" }], "skill_strength": [{ "en": "Power clean technique 8 x 2 at crisp load", "zh": "高翻技术 8 组 x 2 次，使用清爽重量" }], "metcon": [{ "en": "9 min AMRAP: 6 hang power cleans, 9 burpees, 12/10 cal row", "zh": "9 分钟 AMRAP：6 次悬垂高翻、9 次波比、12/10 卡划船" }], "cooldown": [{ "en": "Walk and note bar path under fatigue", "zh": "步行并记录疲劳下杠铃路径" }], "intended_stimulus": { "en": "Fast but technically honest barbell cycling.", "zh": "快速但技术诚实的杠铃循环。" }, "scaling_path": [{ "en": "Use dumbbells or medicine-ball cleans if receiving position is inconsistent.", "zh": "接杠位置不稳定时，改用哑铃或药球翻站。" }], "notes": [{ "en": "Medicine-ball clean can be the clean-learning entry point.", "zh": "药球翻站可作为学习 Clean 的入口。" }] },
+      "thursday": { "title": "Engine intervals and pace discipline", "type": "engine intervals", "intensity": "RPE 6", "duration_minutes": { "beginner": 40, "recreational": 55, "competitive": 70, "advanced": 85 }, "modality": "M", "warmup": [{ "en": "10 min progressive machine warm-up", "zh": "10 分钟器械递进热身" }], "skill_strength": [{ "en": "Damper and stroke-rate check", "zh": "风阻和桨频检查" }], "metcon": [{ "en": "5-8 x 3 min steady-hard / 2 min easy", "zh": "5-8 组：3 分钟稳定偏难 / 2 分钟轻松" }], "cooldown": [{ "en": "Record split drift and breathing control", "zh": "记录分段漂移和呼吸控制" }], "intended_stimulus": { "en": "Hard repeatable intervals, not one heroic first rep.", "zh": "偏难且可重复的间歇，不是一组英雄式开局。" }, "scaling_path": [{ "en": "Hold splits within 3-5 percent.", "zh": "分段控制在 3-5% 内。" }], "notes": [{ "en": "Stable rhythm saves energy.", "zh": "稳定节奏会更省力。" }] },
+      "friday": { "title": "Accessory that solves the limiter", "type": "accessory", "intensity": "RPE 4-5", "duration_minutes": { "beginner": 30, "recreational": 45, "competitive": 60, "advanced": 70 }, "modality": "Limiter", "warmup": [{ "en": "Targeted mobility for current limiter", "zh": "针对当前短板做活动度" }], "skill_strength": [{ "en": "3-4 focused accessory movements tied to this week's limiter", "zh": "3-4 个与本周短板直接相关的辅助动作" }], "metcon": [{ "en": "Optional 8 min easy flush, no score", "zh": "可选 8 分钟轻松恢复，不计成绩" }], "cooldown": [{ "en": "Note whether accessory changed positions", "zh": "记录辅助训练是否改变动作位置" }], "intended_stimulus": { "en": "Accessory work should make the next WOD better, not just longer.", "zh": "辅助训练应让下一次 WOD 更好，而不是单纯更长。" }, "scaling_path": [{ "en": "Cut volume if it creates soreness for Saturday.", "zh": "如果影响周六，减少训练量。" }], "notes": [{ "en": "Stop ineffective accessory work.", "zh": "停止无效辅助训练。" }] },
+      "saturday": { "title": "Benchmark-style mixed modal workout", "type": "benchmark style", "intensity": "RPE 7", "duration_minutes": { "beginner": 45, "recreational": 65, "competitive": 85, "advanced": 95 }, "modality": "M + G + W", "warmup": [{ "en": "Full class warm-up and movement rehearsal", "zh": "完整课堂热身和动作预演" }], "skill_strength": [{ "en": "Skill standard review for the highest-skill movement", "zh": "复盘最高技能动作的标准" }], "metcon": [{ "en": "For time, capped 18 min: 21-15-9 thrusters and pull variation, with 300 m run before each round", "zh": "计时，18 分钟封顶：21-15-9 推举深蹲和拉力变化，每轮前跑 300 米" }], "cooldown": [{ "en": "Walk and record if first round was too hot", "zh": "步行并记录第一轮是否过快" }], "intended_stimulus": { "en": "Classic couplet pressure with a run buy-in that rewards pacing.", "zh": "经典组合压力，加跑步门槛，奖励配速能力。" }, "scaling_path": [{ "en": "Choose load and pull option for 6-10 minute working sets, not failed reps.", "zh": "选择能在 6-10 分钟工作段内推进的重量和拉力动作，不要做到失败。" }], "notes": [{ "en": "Pacing limiter shows up early here.", "zh": "节奏短板会在这里很早暴露。" }] },
+      "sunday": { "title": "Long easy aerobic and fueling practice", "type": "long easy", "intensity": "RPE 3-4", "duration_minutes": { "beginner": 40, "recreational": 60, "competitive": 80, "advanced": 95 }, "modality": "M", "warmup": [{ "en": "Easy progression", "zh": "轻松递进" }], "skill_strength": [{ "en": "No heavy lifting", "zh": "不做重训" }], "metcon": [{ "en": "Easy continuous aerobic with optional carbs if over 60 min", "zh": "连续轻松有氧，超过 60 分钟可练习碳水补给" }], "cooldown": [{ "en": "Review recovery and fueling tolerance", "zh": "复盘恢复和补给耐受" }], "intended_stimulus": { "en": "Build base and stomach tolerance without adding joint stress.", "zh": "建立基础和肠胃耐受，不增加关节压力。" }, "scaling_path": [{ "en": "Use low-impact machine if joints are irritated.", "zh": "关节不适时使用低冲击器械。" }], "notes": [{ "en": "Longer competition prep includes gut training.", "zh": "更长比赛准备包含肠胃训练。" }] }
+    },
+    "integration": {
+      "monday": { "title": "Recovery and benchmark review", "type": "recovery", "intensity": "RPE 2", "duration_minutes": { "beginner": 25, "recreational": 35, "competitive": 45, "advanced": 55 }, "modality": "Recovery", "warmup": [{ "en": "Easy walk", "zh": "轻松步行" }], "skill_strength": [{ "en": "Review benchmark splits and limiter", "zh": "复盘基准分段和短板" }], "metcon": [{ "en": "No score", "zh": "不计成绩" }], "cooldown": [{ "en": "Plan the week's scale map", "zh": "规划本周 Scale 图" }], "intended_stimulus": { "en": "Recover and make the next hard day precise.", "zh": "恢复，并让下一次困难课更精准。" }, "scaling_path": [{ "en": "Complete rest is valid.", "zh": "完全休息也是有效选择。" }], "notes": [{ "en": "Benchmark data should guide work.", "zh": "基准数据指导训练。" }] },
+      "tuesday": { "title": "Open-style couplet intervals", "type": "Open prep", "intensity": "RPE 7-8", "duration_minutes": { "beginner": 45, "recreational": 65, "competitive": 85, "advanced": 95 }, "modality": "G + W", "warmup": [{ "en": "Workout-specific warm-up", "zh": "当天动作专项热身" }], "skill_strength": [{ "en": "Skill primer for pull, press, or squat standard", "zh": "拉、推或蹲标准技能激活" }], "metcon": [{ "en": "3 x 5 min AMRAP at sustainable Open pace / 3 min rest", "zh": "3 组 5 分钟 AMRAP，使用可持续 Open 配速 / 休息 3 分钟" }], "cooldown": [{ "en": "Record rounds and technical drift", "zh": "记录轮数和技术漂移" }], "intended_stimulus": { "en": "Repeat Open pressure without making each interval a collapse.", "zh": "重复 Open 压力，但每组都不能崩掉。" }, "scaling_path": [{ "en": "Scale to keep round counts within 10 percent.", "zh": "Scale 到每组轮数差距控制在 10% 内。" }], "notes": [{ "en": "Stimulus first, Rx second.", "zh": "目标刺激第一，Rx 第二。" }] },
+      "wednesday": { "title": "Heavy day plus skill EMOM", "type": "heavy + skill", "intensity": "RPE 6-7", "duration_minutes": { "beginner": 45, "recreational": 60, "competitive": 80, "advanced": 95 }, "modality": "G + W", "warmup": [{ "en": "General and barbell warm-up", "zh": "通用和杠铃热身" }], "skill_strength": [{ "en": "Heavy day: squat, press, deadlift, or clean variation 5 x 2-5", "zh": "重训日：深蹲、推举、硬拉或翻站变化 5 组 x 2-5 次" }], "metcon": [{ "en": "10 min EMOM low-fatigue skill practice", "zh": "10 分钟 EMOM 低疲劳技能练习" }], "cooldown": [{ "en": "Mobility for the loaded pattern", "zh": "当天负重模式活动度" }], "intended_stimulus": { "en": "Increase force production without burying skill quality.", "zh": "提高发力能力，但不埋掉技能质量。" }, "scaling_path": [{ "en": "Stop heavy sets when bar speed or receiving position slows sharply.", "zh": "杠速或接杠位置明显下降时停止重组。" }], "notes": [{ "en": "Do not hide strength weakness inside metcons.", "zh": "不要把力量短板藏在 MetCon 里。" }] },
+      "thursday": { "title": "Chipper pacing and movement economy", "type": "chipper", "intensity": "RPE 7", "duration_minutes": { "beginner": 45, "recreational": 65, "competitive": 85, "advanced": 100 }, "modality": "M + G + W", "warmup": [{ "en": "Rehearse every movement once", "zh": "每个动作预演一次" }], "skill_strength": [{ "en": "Break strategy practice", "zh": "拆组策略练习" }], "metcon": [{ "en": "For quality, capped 22 min: row, box step-over, dumbbell snatch, sit-up, carry", "zh": "高质量完成，22 分钟封顶：划船、箱上跨步、哑铃抓举、仰卧起坐、负重行走" }], "cooldown": [{ "en": "Note where rhythm got expensive", "zh": "记录哪个环节节奏开始变贵" }], "intended_stimulus": { "en": "Longer mixed-modal pacing where economy matters more than early speed.", "zh": "较长混合模式配速，动作经济性比早期速度更重要。" }, "scaling_path": [{ "en": "Scale reps to finish with steady movement instead of long stops.", "zh": "调整次数，确保稳定移动而不是长时间停顿。" }], "notes": [{ "en": "Steady rhythm saves energy.", "zh": "稳定节奏省力。" }] },
+      "friday": { "title": "Rest and tissue care", "type": "rest", "intensity": "RPE 1-2", "duration_minutes": { "beginner": 20, "recreational": 30, "competitive": 40, "advanced": 45 }, "modality": "Recovery", "warmup": [{ "en": "Easy walk", "zh": "轻松步行" }], "skill_strength": [{ "en": "Optional mobility only", "zh": "只做可选活动度" }], "metcon": [{ "en": "No conditioning", "zh": "不做体能刺激" }], "cooldown": [{ "en": "Sleep and food check", "zh": "检查睡眠和进食" }], "intended_stimulus": { "en": "Absorb the week.", "zh": "吸收本周训练。" }, "scaling_path": [{ "en": "Rest is the scale.", "zh": "休息就是 Scale。" }], "notes": [{ "en": "Protect Saturday quality.", "zh": "保护周六质量。" }] },
+      "saturday": { "title": "Full class simulation", "type": "simulation", "intensity": "RPE 7-8", "duration_minutes": { "beginner": 50, "recreational": 70, "competitive": 90, "advanced": 110 }, "modality": "M + G + W", "warmup": [{ "en": "Full warm-up and standards brief", "zh": "完整热身和标准说明" }], "skill_strength": [{ "en": "Skill or strength touch, not max effort", "zh": "技能或力量触碰，不做最大努力" }], "metcon": [{ "en": "Class-style WOD with a clear score and a planned scale option", "zh": "课堂式 WOD，有明确成绩和预设 Scale 选项" }], "cooldown": [{ "en": "Score, scale, limiter, and pacing review", "zh": "成绩、Scale、短板和配速复盘" }], "intended_stimulus": { "en": "Practice the full CrossFit class arc under fatigue.", "zh": "在疲劳下练习完整 CrossFit 课堂弧线。" }, "scaling_path": [{ "en": "Choose the scale before the clock starts.", "zh": "计时开始前先选好 Scale。" }], "notes": [{ "en": "A WOD needs a reason, not just sweat.", "zh": "WOD 需要理由，不只是流汗。" }] },
+      "sunday": { "title": "Easy aerobic and mobility", "type": "easy aerobic", "intensity": "RPE 3", "duration_minutes": { "beginner": 35, "recreational": 55, "competitive": 75, "advanced": 90 }, "modality": "M + recovery", "warmup": [{ "en": "Easy start", "zh": "轻松开始" }], "skill_strength": [{ "en": "Mobility for the week's tightest positions", "zh": "针对本周最紧的位置做活动度" }], "metcon": [{ "en": "Continuous zone 2", "zh": "连续 2 区有氧" }], "cooldown": [{ "en": "Weekly review", "zh": "周复盘" }], "intended_stimulus": { "en": "Restore and build base.", "zh": "恢复并建立基础。" }, "scaling_path": [{ "en": "Low impact when joints complain.", "zh": "关节不适时低冲击。" }], "notes": [{ "en": "Keep the next week possible.", "zh": "让下周还能继续。" }] }
+    },
+    "benchmark": {
+      "monday": { "title": "Rest and benchmark selection", "type": "rest", "intensity": "RPE 1-2", "duration_minutes": { "beginner": 20, "recreational": 30, "competitive": 35, "advanced": 40 }, "modality": "Recovery", "warmup": [{ "en": "Easy walk", "zh": "轻松步行" }], "skill_strength": [{ "en": "Select one benchmark and one limiter metric", "zh": "选择一个基准和一个短板指标" }], "metcon": [{ "en": "No score", "zh": "不计成绩" }], "cooldown": [{ "en": "Sleep plan", "zh": "睡眠计划" }], "intended_stimulus": { "en": "Arrive fresh enough to measure progress.", "zh": "以足够清爽的状态衡量进步。" }, "scaling_path": [{ "en": "Do less than you want.", "zh": "做得比你想做的少。" }], "notes": [{ "en": "Testing is not training volume.", "zh": "测试不是训练量。" }] },
+      "tuesday": { "title": "Benchmark primer", "type": "primer", "intensity": "RPE 5-6", "duration_minutes": { "beginner": 35, "recreational": 50, "competitive": 65, "advanced": 75 }, "modality": "M + G + W", "warmup": [{ "en": "Specific warm-up", "zh": "专项热身" }], "skill_strength": [{ "en": "2-3 light sets of benchmark movements", "zh": "基准动作轻重量 2-3 组" }], "metcon": [{ "en": "3 short rounds at planned pace, stop fresh", "zh": "按计划配速做 3 个短轮，清爽停止" }], "cooldown": [{ "en": "Confirm scale and target splits", "zh": "确认 Scale 和目标分段" }], "intended_stimulus": { "en": "Sharpen without fatigue.", "zh": "激活但不疲劳。" }, "scaling_path": [{ "en": "No failed reps today.", "zh": "今天不出现失败动作。" }], "notes": [{ "en": "Primer is practice, not proof.", "zh": "激活课是练习，不是证明。" }] },
+      "wednesday": { "title": "Light strength and standards", "type": "light strength", "intensity": "RPE 4-5", "duration_minutes": { "beginner": 35, "recreational": 45, "competitive": 60, "advanced": 70 }, "modality": "G + W", "warmup": [{ "en": "Joint prep", "zh": "关节准备" }], "skill_strength": [{ "en": "Light positional work for the benchmark standard", "zh": "针对基准标准做轻位置练习" }], "metcon": [{ "en": "Optional 6 min easy flow", "zh": "可选 6 分钟轻松流动" }], "cooldown": [{ "en": "Mobility and breathing", "zh": "活动度和呼吸" }], "intended_stimulus": { "en": "Feel sharp and technically certain.", "zh": "感觉敏锐且技术确定。" }, "scaling_path": [{ "en": "Keep all work easy.", "zh": "所有训练保持轻松。" }], "notes": [{ "en": "Standards decide the score.", "zh": "标准决定成绩。" }] },
+      "thursday": { "title": "Short engine sharpening", "type": "engine", "intensity": "RPE 5", "duration_minutes": { "beginner": 30, "recreational": 40, "competitive": 50, "advanced": 60 }, "modality": "M", "warmup": [{ "en": "Easy progressive machine", "zh": "轻松递机器械" }], "skill_strength": [{ "en": "Breathing and cadence check", "zh": "呼吸和节奏检查" }], "metcon": [{ "en": "6 x 45 sec at target pace / 75 sec easy", "zh": "6 组：45 秒目标配速 / 75 秒轻松" }], "cooldown": [{ "en": "Walk", "zh": "步行" }], "intended_stimulus": { "en": "Keep the engine awake.", "zh": "保持心肺醒着。" }, "scaling_path": [{ "en": "Stop if legs feel heavy.", "zh": "腿沉就停止。" }], "notes": [{ "en": "No hero intervals.", "zh": "不做英雄式间歇。" }] },
+      "friday": { "title": "Rest and logistics", "type": "rest", "intensity": "RPE 1", "duration_minutes": { "beginner": 15, "recreational": 20, "competitive": 30, "advanced": 35 }, "modality": "Recovery", "warmup": [{ "en": "Easy walk", "zh": "轻松步行" }], "skill_strength": [{ "en": "Equipment, warm-up, and scorecard check", "zh": "检查器械、热身和成绩记录" }], "metcon": [{ "en": "No workout", "zh": "不训练" }], "cooldown": [{ "en": "Early sleep", "zh": "早点睡" }], "intended_stimulus": { "en": "Reduce noise before test day.", "zh": "测试日前减少干扰。" }, "scaling_path": [{ "en": "Rest.", "zh": "休息。" }], "notes": [{ "en": "Fuel normally.", "zh": "正常补给。" }] },
+      "saturday": { "title": "Benchmark or Open-style test day", "type": "test", "intensity": "RPE 8-9", "duration_minutes": { "beginner": 40, "recreational": 60, "competitive": 80, "advanced": 95 }, "modality": "M + G + W", "warmup": [{ "en": "Full specific warm-up", "zh": "完整专项热身" }], "skill_strength": [{ "en": "Standards rehearsal only", "zh": "只复习动作标准" }], "metcon": [{ "en": "One selected benchmark or Open-style workout", "zh": "一个选定基准或 Open 风格训练" }], "cooldown": [{ "en": "Record score, scale, splits, and limiter", "zh": "记录成绩、Scale、分段和短板" }], "intended_stimulus": { "en": "Measure progress honestly.", "zh": "诚实衡量进步。" }, "scaling_path": [{ "en": "Use the pre-selected scale; do not improvise heavier mid-workout.", "zh": "使用预选 Scale；不要训练中临时加重。" }], "notes": [{ "en": "Testing should create feedback.", "zh": "测试应产出反馈。" }] },
+      "sunday": { "title": "Post-test recovery", "type": "recovery", "intensity": "RPE 1-2", "duration_minutes": { "beginner": 25, "recreational": 35, "competitive": 45, "advanced": 55 }, "modality": "Recovery", "warmup": [{ "en": "Easy walk", "zh": "轻松步行" }], "skill_strength": [{ "en": "Mobility only", "zh": "只做活动度" }], "metcon": [{ "en": "Optional easy flush", "zh": "可选轻松恢复" }], "cooldown": [{ "en": "Review lessons, not excuses", "zh": "复盘经验，不找借口" }], "intended_stimulus": { "en": "Recover and convert the test into next-cycle priorities.", "zh": "恢复，并把测试转化为下个周期优先级。" }, "scaling_path": [{ "en": "Rest if emotionally or physically drained.", "zh": "身心都累时休息。" }], "notes": [{ "en": "The next plan starts from evidence.", "zh": "下个计划从证据开始。" }] }
+    }
+  }
+}

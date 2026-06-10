@@ -15,6 +15,7 @@ This repository follows the [Awesome List](https://github.com/sindresorhus/aweso
 - [Enterprise-to-Open-Source Decomposition](#enterprise-to-open-source-decomposition)
 - [The Builder's Path](#the-builders-path)
 - [HYROX Training Agent](#hyrox-training-agent)
+- [CrossFit Training Agent](#crossfit-training-agent)
 - [Data, APIs, and Feeds](#data-apis-and-feeds)
 - [Analytics and Visualization](#analytics-and-visualization)
 - [Training and Performance](#training-and-performance)
@@ -139,6 +140,36 @@ Asset registry summary:
 node scripts/hyrox-day-plan.mjs --list-assets
 ```
 
+## CrossFit Training Agent
+
+The `app/crossfit` workstream turns CrossFit methodology, Chinese creator-note themes, and public coach/athlete references into a practical AI-agent skill for daily class-style training plans, scaling paths, limiter checks, and Open-prep notes.
+
+- [CrossFit professional training assets](docs/crossfit-professional-training-assets.md) - Official CrossFit methodology, the user-supplied Xiaohongshu source map, professional/athlete video sources, and safety references. _Sports: Multi-sport, Running/Track._
+- [CrossFit Xiaohongshu analysis](docs/crossfit-xiaohongshu-analysis.md) - Reproducible profile/search evidence, creator-note themes, and current extraction limits for the Chinese source layer. _Sports: Multi-sport._
+- [CrossFit overseas source analysis](docs/crossfit-overseas-source-analysis.md) - How official CrossFit, YouTube, professional coach, athlete, and safety sources translate into agent programming rules. _Sports: Multi-sport._
+- [CrossFit agent skill plan](docs/crossfit-agent-skill-plan.md) - Implementation roadmap for a daily CrossFit training-plan agent from beginner to competitive pathway. _Sports: Multi-sport._
+- [CrossFit skill architecture](docs/crossfit-skill-architecture.md) - File organization for profile-aware planning, scaling paths, and HTML visualization output. _Sports: Multi-sport._
+- [`skills/crossfit/SKILL.md`](skills/crossfit/SKILL.md) - Agent workflow for level-aware CrossFit training guidance. _Sports: Multi-sport._
+- [`crossfit-day-plan`](scripts/crossfit-day-plan.mjs) - Local CLI that renders a daily CrossFit plan by level/week/day or by start date, and lists the training asset registry. _Sports: Multi-sport._
+
+Try it locally:
+
+```bash
+node scripts/crossfit-day-plan.mjs --level recreational --week 1 --day wednesday
+```
+
+Personalized HTML output:
+
+```bash
+node scripts/crossfit-day-plan.mjs --goal open_prep --equipment affiliate --experience veteran --limiter gymnastics --start-date 2026-06-10 --date 2026-06-10 --format html --output /tmp/crossfit-plan.html
+```
+
+Asset registry summary:
+
+```bash
+node scripts/crossfit-day-plan.mjs --list-assets
+```
+
 ## Data, APIs, and Feeds
 
 Tools and services for sports schedules, scores, fixtures, rosters, odds, play-by-play data, stats, and live feeds.
@@ -173,6 +204,7 @@ Tools for coaching, athlete development, strength and conditioning, recovery, we
 - [AthleteLoadMonitor](https://github.com/SaxionAMI/AthleteLoadMonitor) - Monitors and predicts athlete load for team-sport coaches. _Sports: Multi-sport._
 - [Coroebus](https://github.com/prakashsellathurai/Coroebus) - Tracks training load, fitness, fatigue, and readiness for athletes. _Sports: Multi-sport._
 - [databallpy](https://github.com/Alek050/databallpy) - Reads, preprocesses, visualizes, and synchronizes soccer event and tracking data. _Sports: Soccer._
+- [CrossFit Daily Plan CLI](scripts/crossfit-day-plan.mjs) - Renders level-aware class-style CrossFit sessions with intended stimulus and scaling paths. _Sports: Multi-sport._
 - [HYROX Training Agent assets](docs/hyrox-professional-training-assets.md) - Curates official HYROX rules, training partners, science, videos, blogs, and podcasts for AI-agent training plans. _Sports: Multi-sport, Running/Track._
 - [HYROX Daily Plan CLI](scripts/hyrox-day-plan.mjs) - Renders level-aware daily HYROX sessions from structured program data. _Sports: Multi-sport, Running/Track._
 - [MMPose](https://github.com/open-mmlab/mmpose) - Provides an open-source pose estimation toolbox for biomechanics and movement analysis. _Sports: Multi-sport._

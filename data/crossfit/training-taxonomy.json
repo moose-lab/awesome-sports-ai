@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "title": "CrossFit training taxonomy and personalization rules",
+    "version": "0.1.0",
+    "last_verified": "2026-06-10",
+    "purpose": "Keep CrossFit goals, equipment contexts, experience defaults, and limiter rules out of renderer code."
+  },
+  "goals": {
+    "general_fitness": {
+      "label_en": "General fitness",
+      "label_zh": "综合体能",
+      "default_level": "recreational",
+      "coaching": [
+        {
+          "en": "General fitness rule: preserve long-term consistency before chasing benchmark scores.",
+          "zh": "综合体能规则：先保护长期稳定训练，再追求基准成绩。"
+        }
+      ]
+    },
+    "affiliate_class": {
+      "label_en": "Affiliate class",
+      "label_zh": "盒子团课",
+      "default_level": "recreational",
+      "coaching": [
+        {
+          "en": "Affiliate class rule: the day should feel like warm-up, skill or strength, metcon, and cooldown rather than a random circuit.",
+          "zh": "盒子团课规则：当天应像热身、技术或力量、MetCon、冷却的完整课堂，而不是随机循环。"
+        }
+      ]
+    },
+    "open_prep": {
+      "label_en": "CrossFit Open preparation",
+      "label_zh": "CrossFit Open 备赛",
+      "default_level": "competitive",
+      "coaching": [
+        {
+          "en": "Open-prep rule: Preserve the intended stimulus before chasing Rx.",
+          "zh": "Open 备赛规则：先保留目标刺激，再追 Rx。"
+        }
+      ]
+    },
+    "competition": {
+      "label_en": "Competition preparation",
+      "label_zh": "比赛备赛",
+      "default_level": "advanced",
+      "coaching": [
+        {
+          "en": "Competition rule: use recent benchmarks and coach review before adding extra volume.",
+          "zh": "比赛规则：增加训练量前，先用近期基准成绩和教练复盘判断。"
+        }
+      ]
+    }
+  },
+  "equipment": {
+    "home": {
+      "label_en": "Home or minimal equipment",
+      "label_zh": "家庭或少器械",
+      "coaching": [
+        {
+          "en": "Home-equipment rule: substitute equipment while preserving movement pattern, time domain, and breathing demand.",
+          "zh": "少器械规则：替换器械时保留动作模式、时间域和呼吸需求。"
+        }
+      ]
+    },
+    "minimal": {
+      "label_en": "Minimal gym",
+      "label_zh": "基础健身房",
+      "coaching": [
+        {
+          "en": "Minimal-gym rule: choose dumbbells, kettlebells, strict bodyweight work, and machines before forcing complex barbell work.",
+          "zh": "基础健身房规则：优先用哑铃、壶铃、严格自重和器械，不强行做复杂杠铃动作。"
+        }
+      ]
+    },
+    "affiliate": {
+      "label_en": "Affiliate gym",
+      "label_zh": "CrossFit 盒子",
+      "coaching": [
+        {
+          "en": "Affiliate-gym rule: use coach feedback and class standards to validate movement range and scaling.",
+          "zh": "盒子规则：用教练反馈和课堂标准确认动作幅度与 Scale。"
+        }
+      ]
+    },
+    "full": {
+      "label_en": "Full competition setup",
+      "label_zh": "完整比赛器械",
+      "coaching": [
+        {
+          "en": "Full-setup rule: more equipment is useful only when it improves the planned stimulus.",
+          "zh": "完整器械规则：更多器械只有在服务当天目标刺激时才有意义。"
+        }
+      ]
+    }
+  },
+  "experience": {
+    "newcomer": {
+      "label_en": "newcomer",
+      "label_zh": "新手",
+      "default_level": "beginner",
+      "coaching": [
+        {
+          "en": "Newcomer rule: mechanics and consistency override intensity every day.",
+          "zh": "新手规则：每天都以动作机制和稳定性优先于强度。"
+        }
+      ]
+    },
+    "recreational": {
+      "label_en": "recreational",
+      "label_zh": "普通训练者",
+      "default_level": "recreational",
+      "coaching": [
+        {
+          "en": "Recreational rule: progress only one variable at a time: load, skill difficulty, speed, or volume.",
+          "zh": "普通训练者规则：每次只推进一个变量：重量、技能难度、速度或训练量。"
+        }
+      ]
+    },
+    "veteran": {
+      "label_en": "veteran",
+      "label_zh": "老鸟",
+      "default_level": "competitive",
+      "coaching": [
+        {
+          "en": "Veteran rule: decide whether the limiter is skill, strength, engine, or pacing before adding work.",
+          "zh": "老鸟规则：加训练前先判断短板是技能、力量、心肺还是配速。"
+        }
+      ]
+    },
+    "competitive": {
+      "label_en": "competitive",
+      "label_zh": "竞技训练者",
+      "default_level": "advanced",
+      "coaching": [
+        {
+          "en": "Competitive rule: daily split quality and recovery trend override fixed volume.",
+          "zh": "竞技规则：每日分段质量和恢复趋势优先于固定训练量。"
+        }
+      ]
+    }
+  },
+  "limiters": {
+    "unknown": {
+      "label_en": "Unspecified",
+      "label_zh": "未指定",
+      "coaching": [
+        {
+          "en": "Limiter rule: record the movement that first breaks positions, pace, or breathing.",
+          "zh": "短板规则：记录最先破坏动作位置、节奏或呼吸的动作。"
+        }
+      ]
+    },
+    "engine": {
+      "label_en": "Engine",
+      "label_zh": "心肺",
+      "coaching": [
+        {
+          "en": "Engine limiter rule: keep cyclic pieces repeatable before adding all-out intervals.",
+          "zh": "心肺短板规则：先让循环动作可重复，再加入全力间歇。"
+        }
+      ]
+    },
+    "strength": {
+      "label_en": "Strength",
+      "label_zh": "力量",
+      "coaching": [
+        {
+          "en": "Strength limiter rule: use heavy days and low-fatigue strength work before hiding weakness inside metcons.",
+          "zh": "力量短板规则：先用重训日和低疲劳力量训练解决问题，不要把短板藏在 MetCon 里。"
+        }
+      ]
+    },
+    "gymnastics": {
+      "label_en": "Gymnastics",
+      "label_zh": "体操",
+      "coaching": [
+        {
+          "en": "Gymnastics limiter rule: scale range, angle, tempo, and volume before forcing high-skill reps under fatigue.",
+          "zh": "体操短板规则：先调整幅度、角度、节奏和训练量，不在疲劳下硬做高技能次数。"
+        }
+      ]
+    },
+    "weightlifting": {
+      "label_en": "Weightlifting",
+      "label_zh": "举重",
+      "coaching": [
+        {
+          "en": "Weightlifting limiter rule: bar path, receiving position, and bracing quality decide load, not ego.",
+          "zh": "举重短板规则：重量由杠铃路径、接杠位置和核心支撑质量决定，不由面子决定。"
+        }
+      ]
+    },
+    "pacing": {
+      "label_en": "Pacing",
+      "label_zh": "节奏",
+      "coaching": [
+        {
+          "en": "Pacing limiter rule: make the first third boring enough that the final third still has mechanics.",
+          "zh": "节奏短板规则：前三分之一要稳到无聊，后三分之一仍能保持动作机制。"
+        }
+      ]
+    }
+  }
+}

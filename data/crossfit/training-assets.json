@@ -1,0 +1,315 @@
+{
+  "meta": {
+    "title": "CrossFit training asset registry",
+    "version": "0.1.0",
+    "last_verified": "2026-06-10",
+    "scope": "Source map for a CrossFit training-plan agent that combines official CrossFit methodology, Chinese creator-note themes, public coach/athlete video sources, and safety guardrails.",
+    "xiaohongshu_status": "The user-supplied profile was retrieved through the local Xiaohongshu MCP. The stable query `CrossFit Scale 阿蛋` returned 22 results, including 12 creator-authored CrossFit notes plus adjacent community results. Direct note-detail extraction repeatedly failed for core notes with noteDetailMap lookup errors, so the agent stores title, interaction, and theme evidence and does not claim verbatim note coverage."
+  },
+  "xiaohongshu_retrieval": {
+    "evidence_file": "data/crossfit/xiaohongshu-search-evidence.json",
+    "profile_user_id": "5fb745a0000000000101e624",
+    "profile_nickname": "阿蛋CrossFit笔记",
+    "profile_red_id": "1077292348",
+    "profile_description": "中文CrossFit学习入口；持续分享CrossFit知识与训练理解；拆解训练逻辑。",
+    "stable_search_query": "CrossFit Scale 阿蛋",
+    "stable_search_result_count": 22,
+    "creator_note_count_in_stable_search": 12,
+    "retrieved_at": "2026-06-10",
+    "detail_extraction_status": "Direct get_feed_detail failed for core note ids 6a2211a900000000350304dd and 69b01286000000002602f64d with noteDetailMap lookup errors; broader topic tracking stalled while loading comments; direct Playwright navigation to a note URL redirected to Xiaohongshu login.",
+    "analysis_boundary": "Use title, interaction, and theme evidence only unless future MCP runs retrieve full note bodies."
+  },
+  "official_crossfit_methodology": [
+    {
+      "title": "CrossFit - What Is CrossFit?",
+      "url": "https://www.crossfit.com/what-is-crossfit",
+      "asset_type": "official methodology page",
+      "use_for": "Definition of CrossFit as constantly varied functional movements performed at high intensity."
+    },
+    {
+      "title": "CrossFit Workout of the Day",
+      "url": "https://www.crossfit.com/workouts/",
+      "asset_type": "official daily workout archive",
+      "use_for": "Current and historical workout structure, scaling examples, and intended-stimulus reading."
+    },
+    {
+      "title": "CrossFit Level 1 Training Guide",
+      "url": "https://library.crossfit.com/free/pdf/CFJ_English_Level1_TrainingGuide.pdf",
+      "asset_type": "official training guide",
+      "use_for": "Foundational methodology: mechanics, consistency, intensity; movements; programming principles."
+    },
+    {
+      "title": "CrossFit Education Resources",
+      "url": "https://www.crossfit.com/education/resources",
+      "asset_type": "official education resource hub",
+      "use_for": "Current downloadable study materials, Level 1 and Level 2 guide references, and certification study links."
+    },
+    {
+      "title": "CrossFit Level 2 Training Guide and Workbook",
+      "url": "https://library.crossfit.com/free/pdf/CFJ_English_L2_TrainingGuide.pdf",
+      "asset_type": "official training guide",
+      "use_for": "Class structure, lesson planning, scaling, seeing and correcting faults, and benchmark recording practices."
+    },
+    {
+      "title": "A Theoretical Template for CrossFit Programming",
+      "url": "https://www.crossfit.com/essentials/a-theoretical-template-for-crossfit-programming",
+      "asset_type": "official programming article",
+      "use_for": "Modal-domain and time-domain variation without random programming."
+    },
+    {
+      "title": "CrossFit Essentials - Scaling",
+      "url": "https://www.crossfit.com/essentials/scaling-crossfit-workouts",
+      "asset_type": "official scaling guidance",
+      "use_for": "Preserve intended stimulus while modifying load, reps, range of motion, and skill demand."
+    },
+    {
+      "title": "CrossFit Essentials - Mechanics, Consistency, Intensity",
+      "url": "https://www.crossfit.com/essentials/mechanics-consistency-and-intensity",
+      "asset_type": "official coaching principle",
+      "use_for": "Safety and progression order for daily plans."
+    },
+    {
+      "title": "CrossFit Journal - What Is Fitness?",
+      "url": "https://library.crossfit.com/free/pdf/CFJ-trial.pdf",
+      "asset_type": "official methodology article",
+      "use_for": "Broad, general, inclusive fitness and ten physical skills."
+    },
+    {
+      "title": "CrossFit Exercises and Movement Demos",
+      "url": "https://www.crossfit.com/exercises",
+      "asset_type": "official movement reference",
+      "use_for": "Movement standards and substitutions for gymnastics, weightlifting, and monostructural work."
+    }
+  ],
+  "chinese_creator_notes": [
+    {
+      "title": "阿蛋CrossFit笔记 profile",
+      "url": "https://www.xiaohongshu.com/user/profile/5fb745a0000000000101e624",
+      "asset_type": "creator profile",
+      "use_for": "Chinese CrossFit learning-entry positioning and training-logic decomposition.",
+      "evidence": {
+        "red_id": "1077292348",
+        "fans": "1万+",
+        "likes_and_collections": "1万+"
+      }
+    },
+    {
+      "title": "CrossFit 的 Scale，不是降低难度而是……",
+      "asset_type": "Xiaohongshu note title",
+      "note_id": "6a2211a900000000350304dd",
+      "likes": 17,
+      "collections": 7,
+      "comments": 1,
+      "shares": 4,
+      "use_for": "Scaling should preserve the training stimulus, not merely make a workout easier."
+    },
+    {
+      "title": "CrossFit 的不断变化不等于随机乱练",
+      "asset_type": "Xiaohongshu note title",
+      "note_id": "6a09abcf00000000350232d6",
+      "likes": 72,
+      "collections": 46,
+      "comments": 5,
+      "shares": 14,
+      "use_for": "Programming variety needs structure across modal domains, intensity, and time domains."
+    },
+    {
+      "title": "阿蛋拆解｜你练的，根本就不叫CrossFit！",
+      "asset_type": "Xiaohongshu note title",
+      "note_id": "69b01286000000002602f64d",
+      "likes": 641,
+      "collections": 463,
+      "comments": 37,
+      "shares": 286,
+      "use_for": "Avoid reducing CrossFit to random fatigue, isolated strength, or generic HIIT."
+    },
+    {
+      "title": "阿蛋拆解｜CrossFit训练，进步停滞的八大因素",
+      "asset_type": "Xiaohongshu note title",
+      "note_id": "694ca19f000000001e007b1e",
+      "likes": 488,
+      "collections": 337,
+      "comments": 45,
+      "shares": 261,
+      "use_for": "Diagnose plateaus through recovery, technique, intensity, volume, and limiter mismatch."
+    },
+    {
+      "title": "阿蛋拆解｜最被忽略的进步驱动力：动作经济性",
+      "asset_type": "Xiaohongshu note title",
+      "note_id": "69d8ca37000000002200c649",
+      "likes": 98,
+      "collections": 41,
+      "comments": 6,
+      "shares": 33,
+      "use_for": "Prioritize efficient reps and repeatable positions before adding volume."
+    },
+    {
+      "title": "阿蛋拆解｜体能的底层逻辑：呼吸，才是核心能",
+      "asset_type": "Xiaohongshu note title",
+      "note_id": "69495f60000000001e016e59",
+      "likes": 245,
+      "collections": 158,
+      "comments": 9,
+      "shares": 95,
+      "use_for": "Use breathing control as a pacing and recovery signal."
+    },
+    {
+      "title": "怎么同时让力量、举重、体操、体能都进步？",
+      "asset_type": "Xiaohongshu note title",
+      "note_id": "69ed59ee0000000035030cb4",
+      "likes": 229,
+      "collections": 145,
+      "comments": 18,
+      "shares": 86,
+      "use_for": "Balance domains across the week instead of cramming all limiters into every day."
+    },
+    {
+      "title": "阿蛋拆解｜请立刻停止无效的辅助训练！",
+      "asset_type": "Xiaohongshu note title",
+      "note_id": "69783fb70000000009039f5c",
+      "likes": 191,
+      "collections": 148,
+      "comments": 20,
+      "shares": 60,
+      "use_for": "Accessory work must solve a visible limiter in the workout, not add random fatigue."
+    },
+    {
+      "title": "阿蛋拆解｜为什么训练量总是被高估",
+      "asset_type": "Xiaohongshu note title",
+      "note_id": "69de4c4800000000230210ec",
+      "likes": 125,
+      "collections": 48,
+      "comments": 5,
+      "shares": 56,
+      "use_for": "Do not equate more work with better progress; track quality and recovery."
+    },
+    {
+      "title": "阿蛋拆解｜力量耐力卡住了：深度解读背后原理",
+      "asset_type": "Xiaohongshu note title",
+      "note_id": "6960ef1c0000000009039074",
+      "likes": 377,
+      "collections": 286,
+      "comments": 22,
+      "shares": 154,
+      "use_for": "Strength endurance needs load selection, density, and pacing progressions."
+    },
+    {
+      "title": "194｜如何调整倒立撑的强度",
+      "asset_type": "Xiaohongshu note title",
+      "note_id": "6902c36000000000070339f3",
+      "likes": 84,
+      "collections": 72,
+      "comments": 0,
+      "shares": 15,
+      "use_for": "Gymnastics scaling should adjust range, angle, volume, and fatigue exposure."
+    },
+    {
+      "title": "为什么 CrossFit 不把摆动引体当作弊？",
+      "asset_type": "Xiaohongshu note title",
+      "use_for": "Distinguish strict strength, kipping skill, and workout-specific efficiency."
+    },
+    {
+      "title": "风阻开得越大，不代表你划得越强",
+      "asset_type": "Xiaohongshu note title",
+      "use_for": "Erg setup should match athlete size, stroke mechanics, and target stimulus."
+    },
+    {
+      "title": "真实课堂拆解：L4 教练如何设计T2B 专项热身",
+      "asset_type": "Xiaohongshu note title",
+      "use_for": "Skill warm-ups should prepare the specific positions and rhythm of the workout."
+    },
+    {
+      "title": "药球翻站，为什么是学习 Clean 的最好入口？",
+      "asset_type": "Xiaohongshu note title",
+      "use_for": "Use medicine-ball clean progressions before complex barbell receiving positions."
+    },
+    {
+      "title": "为什么别人两把到顶，你爬绳却特别费力？",
+      "asset_type": "Xiaohongshu note title",
+      "use_for": "Rope-climb scaling should solve foot lock, pull timing, and grip fatigue."
+    },
+    {
+      "title": "知识卡片｜硬拉起始位，为什么不是越直越好？",
+      "asset_type": "Xiaohongshu note title",
+      "use_for": "Teach start-position mechanics by balance, bracing, and bar path rather than a single visual cue."
+    },
+    {
+      "title": "知识卡片｜为什么节奏越稳，身体会更省力？",
+      "asset_type": "Xiaohongshu note title",
+      "use_for": "Use pacing consistency as a skill, especially in cyclic and mixed-modal work."
+    },
+    {
+      "title": "知识卡片｜为什么耐力选手要训练肠胃",
+      "asset_type": "Xiaohongshu note title",
+      "use_for": "Longer sessions and competitions need fueling tolerance, not just engine work."
+    },
+    {
+      "title": "WOD拆解×会员成长×Scale路径 Toolkit上线",
+      "asset_type": "Xiaohongshu note title",
+      "use_for": "Represent daily plans as WOD decomposition plus member growth and scaling path."
+    },
+    {
+      "title": "什么都在练，为什么没有一起进步？",
+      "asset_type": "Xiaohongshu note title",
+      "use_for": "Avoid unmanaged concurrent training; decide the priority stimulus for each day."
+    }
+  ],
+  "professional_and_athlete_video": [
+    {
+      "title": "CrossFit YouTube",
+      "url": "https://www.youtube.com/@CrossFit",
+      "asset_type": "official YouTube channel",
+      "use_for": "Movement demos, coaching education, workout previews, and athlete context."
+    },
+    {
+      "title": "CrossFit Games YouTube",
+      "url": "https://www.youtube.com/@CrossFitGamesTV",
+      "asset_type": "official sport channel",
+      "use_for": "Competition workouts, pacing examples, standards, and elite athlete footage."
+    },
+    {
+      "title": "Mayhem Athlete",
+      "url": "https://www.youtube.com/@MayhemAthlete",
+      "asset_type": "coach and athlete training media",
+      "use_for": "Public training discussion and competitive CrossFit context."
+    },
+    {
+      "title": "PRVN Fitness",
+      "url": "https://www.youtube.com/@PRVNFitness",
+      "asset_type": "coach and athlete training media",
+      "use_for": "Public training, Open preparation, and elite athlete context."
+    },
+    {
+      "title": "Invictus Fitness",
+      "url": "https://www.youtube.com/@CrossFitInvictus",
+      "asset_type": "coach education media",
+      "use_for": "Movement progressions, scaling, gymnastics, and weightlifting skill references."
+    },
+    {
+      "title": "Training Think Tank",
+      "url": "https://www.youtube.com/@TrainingThinkTank",
+      "asset_type": "coach education media",
+      "use_for": "Competitive CrossFit strategy, limiter analysis, and skill-development discussion."
+    }
+  ],
+  "science_and_safety": [
+    {
+      "title": "ACSM Physical Activity Guidelines",
+      "url": "https://acsm.org/education-resources/trending-topics-resources/physical-activity-guidelines/",
+      "asset_type": "health guideline",
+      "use_for": "Baseline adult aerobic and strength minimums."
+    },
+    {
+      "title": "CDC Adult Physical Activity Guidelines",
+      "url": "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html",
+      "asset_type": "health guideline",
+      "use_for": "General adult safety baseline for weekly activity."
+    },
+    {
+      "title": "Feito et al. - A 4-Year Analysis of the Incidence of Injuries Among CrossFit-Trained Participants",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6201188/",
+      "asset_type": "peer-reviewed study",
+      "use_for": "Safety reminders around skill progression, coaching, and load management."
+    }
+  ]
+}
