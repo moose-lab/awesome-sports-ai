@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "title": "HYROX event taxonomy and personalization rules",
+    "version": "0.1.0",
+    "last_verified": "2026-06-10",
+    "purpose": "Keep athlete profile, division standards, age groups, and experience-based defaults out of renderer code."
+  },
+  "sexes": {
+    "men": {
+      "label_en": "Men",
+      "label_zh": "男子"
+    },
+    "women": {
+      "label_en": "Women",
+      "label_zh": "女子"
+    },
+    "mixed": {
+      "label_en": "Mixed",
+      "label_zh": "混合"
+    },
+    "unknown": {
+      "label_en": "Unspecified",
+      "label_zh": "未指定"
+    }
+  },
+  "divisions": {
+    "open": {
+      "label_en": "Open",
+      "label_zh": "Open",
+      "default_level": "recreational",
+      "standards": {
+        "men": [
+          "Open station loads: sled push 152 kg incl. sled, sled pull 103 kg incl. sled, farmers carry 2 x 24 kg, sandbag lunges 20 kg, wall balls 6 kg.",
+          "开放组动作重量：推雪橇 152 kg 含雪橇、拉雪橇 103 kg 含雪橇、农夫走 2 x 24 kg、沙袋弓步 20 kg、墙球 6 kg。"
+        ],
+        "women": [
+          "Open station loads: sled push 102 kg incl. sled, sled pull 78 kg incl. sled, farmers carry 2 x 16 kg, sandbag lunges 10 kg, wall balls 4 kg.",
+          "开放组动作重量：推雪橇 102 kg 含雪橇、拉雪橇 78 kg 含雪橇、农夫走 2 x 16 kg、沙袋弓步 10 kg、墙球 4 kg。"
+        ],
+        "mixed": [
+          "Open training should follow each athlete's registered sex/category loads.",
+          "开放组训练应按每位运动员实际报名性别/类别重量执行。"
+        ],
+        "unknown": [
+          "Open training uses scalable station loads until the athlete confirms registered sex/category.",
+          "未确认报名性别/类别前，开放组训练使用可缩放站点重量。"
+        ]
+      }
+    },
+    "pro": {
+      "label_en": "Pro",
+      "label_zh": "Pro",
+      "default_level": "competitive",
+      "standards": {
+        "men": [
+          "Pro station loads: sled push 202 kg incl. sled, sled pull 153 kg incl. sled, farmers carry 2 x 32 kg, sandbag lunges 30 kg, wall balls 9 kg.",
+          "Pro 组动作重量：推雪橇 202 kg 含雪橇、拉雪橇 153 kg 含雪橇、农夫走 2 x 32 kg、沙袋弓步 30 kg、墙球 9 kg。"
+        ],
+        "women": [
+          "Pro station loads: sled push 152 kg incl. sled, sled pull 103 kg incl. sled, farmers carry 2 x 24 kg, sandbag lunges 20 kg, wall balls 6 kg.",
+          "Pro 组动作重量：推雪橇 152 kg 含雪橇、拉雪橇 103 kg 含雪橇、农夫走 2 x 24 kg、沙袋弓步 20 kg、墙球 6 kg。"
+        ],
+        "mixed": [
+          "Pro training requires individual load confirmation; do not use mixed averages for race standards.",
+          "Pro 训练必须确认个人报名重量，不使用混合平均重量作为比赛标准。"
+        ],
+        "unknown": [
+          "Pro training requires confirmed registered category before race-load station work.",
+          "Pro 训练在进行比赛重量站点课前，必须确认实际报名类别。"
+        ]
+      }
+    },
+    "doubles": {
+      "label_en": "Doubles",
+      "label_zh": "双人组",
+      "default_level": "recreational",
+      "standards": {
+        "men": [
+          "Doubles planning should include shared station strategy, partner transitions, and each athlete's registered load rules.",
+          "双人组计划需要包含分工策略、搭档交接和每名运动员的报名重量规则。"
+        ],
+        "women": [
+          "Doubles planning should include shared station strategy, partner transitions, and each athlete's registered load rules.",
+          "双人组计划需要包含分工策略、搭档交接和每名运动员的报名重量规则。"
+        ],
+        "mixed": [
+          "Mixed doubles training should separate each partner's station loads and practice handoffs under fatigue.",
+          "混双训练应区分每位搭档的站点重量，并练习疲劳下交接。"
+        ],
+        "unknown": [
+          "Doubles training needs partner profile before precise station-load prescription.",
+          "双人组需要搭档画像后才能精确制定站点重量。"
+        ]
+      }
+    },
+    "relay": {
+      "label_en": "Relay",
+      "label_zh": "接力组",
+      "default_level": "casual",
+      "standards": {
+        "men": [
+          "Relay planning should match each athlete to the station that best fits their current limiter.",
+          "接力组计划应按每名运动员当前短板分配最合适站点。"
+        ],
+        "women": [
+          "Relay planning should match each athlete to the station that best fits their current limiter.",
+          "接力组计划应按每名运动员当前短板分配最合适站点。"
+        ],
+        "mixed": [
+          "Relay planning should match station order, athlete handoff, and warm-up timing.",
+          "接力组计划应匹配站点顺序、队友交接和热身时间。"
+        ],
+        "unknown": [
+          "Relay training stays general until the athlete's assigned stations are known.",
+          "未确认接力站点前，接力训练保持通用准备。"
+        ]
+      }
+    }
+  },
+  "age_groups": [
+    "16-24",
+    "25-29",
+    "30-34",
+    "35-39",
+    "40-44",
+    "45-49",
+    "50-54",
+    "55-59",
+    "60-64",
+    "65-69",
+    "70+"
+  ],
+  "experience": {
+    "newcomer": {
+      "label_en": "newcomer",
+      "label_zh": "新手",
+      "default_level": "casual",
+      "coaching": [
+        "Newcomer rule: cap hard work at one main quality session this week.",
+        "新手规则：本周主要质量课最多一次。"
+      ]
+    },
+    "recreational": {
+      "label_en": "recreational",
+      "label_zh": "普通训练者",
+      "default_level": "recreational",
+      "coaching": [
+        "Recreational rule: progress only one variable at a time: load, pace, or volume.",
+        "普通训练者规则：每次只推进一个变量：重量、配速或训练量。"
+      ]
+    },
+    "veteran": {
+      "label_en": "veteran",
+      "label_zh": "老鸟",
+      "default_level": "competitive",
+      "coaching": [
+        "Veteran rule: use benchmark splits to decide whether to add volume or preserve quality.",
+        "老鸟规则：用基准分段判断该增加训练量还是保护质量。"
+      ]
+    },
+    "elite": {
+      "label_en": "elite",
+      "label_zh": "精英",
+      "default_level": "elite",
+      "coaching": [
+        "Elite rule: daily readiness and split quality override fixed volume.",
+        "精英规则：每日状态和分段质量优先于固定训练量。"
+      ]
+    }
+  }
+}

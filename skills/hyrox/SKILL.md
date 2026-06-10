@@ -13,6 +13,10 @@ Prefer local structured data first:
 
 - `data/hyrox/training-assets.json`
 - `data/hyrox/training-program.json`
+- `data/hyrox/event-taxonomy.json`
+- `src/hyrox/assets.mjs`
+- `src/hyrox/profile.mjs`
+- `src/hyrox/html-renderer.mjs`
 - `scripts/hyrox-day-plan.mjs`
 
 Refresh the public web when the user asks about current rules, current weights, current race dates, current rankings, Elite 15 status, partner availability, or anything that may have changed after the local `last_verified` date.
@@ -24,7 +28,10 @@ Ask for missing fields only when needed. For today's plan, use defaults and cont
 Useful profile fields:
 
 - Race date or start date.
-- Target division: Open, Pro, Doubles, Relay, Adaptive, or unknown.
+- Target division: Open, Pro, Doubles, Relay, or unknown.
+- Sex/category: men, women, mixed, or unknown.
+- Age group: 16-24, 25-29, 30-34, 35-39, 40-44, 45-49, 50-54, 55-59, 60-64, 65-69, or 70+.
+- Experience: newcomer, recreational, veteran, or elite.
 - Level: casual, recreational, competitive, or elite.
 - Current running ability: 5 km time or continuous-run duration.
 - Equipment access: sled, SkiErg, rower, kettlebells, sandbag, wall-ball target.
@@ -45,7 +52,7 @@ Default when unspecified:
 3. Call:
 
 ```bash
-node scripts/hyrox-day-plan.mjs --level <level> --week <week> --day <day>
+node scripts/hyrox-day-plan.mjs --division <open|pro|doubles|relay> --sex <men|women|mixed|unknown> --age-group <age-group> --experience <newcomer|recreational|veteran|elite> --week <week> --day <day>
 ```
 
 or:
@@ -58,6 +65,18 @@ For a seven-day checklist, call:
 
 ```bash
 node scripts/hyrox-day-plan.mjs --level <level> --start-date <YYYY-MM-DD> --date <YYYY-MM-DD> --days 7
+```
+
+For a course-style HTML visualization, call:
+
+```bash
+node scripts/hyrox-day-plan.mjs --division <division> --sex <sex> --age-group <age-group> --experience <experience> --start-date <YYYY-MM-DD> --date <YYYY-MM-DD> --format html --output /tmp/hyrox-plan.html
+```
+
+To inspect available professional training sources, call:
+
+```bash
+node scripts/hyrox-day-plan.mjs --list-assets
 ```
 
 4. Preserve the bilingual checklist structure unless the user asks for a shorter answer.
@@ -84,6 +103,9 @@ For daily plans, use bilingual English/Chinese output:
 ```markdown
 **HYROX Daily Training Checklist / HYROX 每日训练清单**
 Level / 水平: ...
+Profile / 用户画像: ...
+Age Group / 年龄组: ...
+Experience / 经验: ...
 Week / 周期: ...
 Phase / 阶段: ...
 Session / 课程: ...
@@ -97,10 +119,16 @@ Training Goal / 训练目标:
 Completion Target / 完成标准:
 - ...
 
+Division Standard / 组别标准:
+- ...
+
 Session Prescription / 训练安排:
 - ...
 
 Readiness Adjustment / 状态调整:
+- ...
+
+Source Anchors / 来源:
 - ...
 ```
 

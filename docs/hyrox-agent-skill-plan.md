@@ -44,8 +44,13 @@ Implemented in this branch:
 
 - `data/hyrox/training-assets.json` - source registry.
 - `data/hyrox/training-program.json` - phase and daily training data.
-- `scripts/hyrox-day-plan.mjs` - no-dependency daily-plan renderer.
+- `data/hyrox/event-taxonomy.json` - HYROX divisions, sex/category labels, age groups, experience tracks, and division standards.
+- `src/hyrox/assets.mjs` - professional asset retrieval and source-anchor helpers.
+- `src/hyrox/profile.mjs` - user profile normalization and level inference.
+- `src/hyrox/html-renderer.mjs` - course-style HTML visualization renderer.
+- `scripts/hyrox-day-plan.mjs` - no-dependency CLI for Markdown, JSON, and HTML output.
 - `skills/hyrox/SKILL.md` - agent workflow for intake, planning, and daily response.
+- `docs/hyrox-skill-architecture.md` - extension map for future agents.
 
 Example:
 
@@ -69,6 +74,24 @@ Earlier plain Markdown output is still available:
 
 ```bash
 node scripts/hyrox-day-plan.mjs --level recreational --week 6 --day tuesday --format basic
+```
+
+Personalized race-category query:
+
+```bash
+node scripts/hyrox-day-plan.mjs --division pro --sex men --age-group 30-34 --experience veteran --start-date 2026-06-10 --date 2026-06-10
+```
+
+HTML visualization:
+
+```bash
+node scripts/hyrox-day-plan.mjs --division open --sex women --age-group 25-29 --experience newcomer --start-date 2026-06-10 --date 2026-06-10 --format html --output /tmp/hyrox-plan.html
+```
+
+Professional source registry:
+
+```bash
+node scripts/hyrox-day-plan.mjs --list-assets
 ```
 
 ## Why The First Output Felt Unprofessional
@@ -111,7 +134,9 @@ Acceptance criteria:
 - [x] Program data covers casual, recreational, competitive, and elite levels.
 - [x] Default output uses a bilingual professional checklist.
 - [x] Agent can render a seven-day checklist from a start date.
-- [x] Tests cover checklist rendering, date derivation, invalid level handling, weekly output, and basic-format compatibility.
+- [x] Agent can personalize output from division, sex/category, age group, and experience.
+- [x] Agent can render course-style HTML visualizations.
+- [x] Tests cover checklist rendering, date derivation, invalid level handling, weekly output, basic-format compatibility, profile personalization, and HTML output.
 
 Verification:
 
@@ -121,14 +146,15 @@ Verification:
 
 Acceptance criteria:
 
-- [ ] Store user profile fields: race date, division, sex/category, current 5 km time, PFT result, injury flags, equipment access, preferred training days, and time budget.
-- [ ] Auto-select level from profile and allow explicit override.
-- [ ] Generate a 7-day preview and today-only summary.
+- [x] Store initial user profile fields: division, sex/category, age group, experience, and optional level override.
+- [x] Auto-select level from profile and allow explicit override.
+- [x] Generate a 7-day preview and today-only summary.
+- [ ] Add race date, current 5 km time, PFT result, injury flags, equipment access, preferred training days, and time budget.
 - [ ] Respect unavailable days and cap weekly hard sessions.
 
 Verification:
 
-- [ ] Add tests for profile-to-level mapping.
+- [x] Add tests for profile-to-level mapping.
 - [ ] Add tests for race-date taper placement.
 
 ### Phase 3: Adaptive Readiness

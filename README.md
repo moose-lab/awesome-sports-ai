@@ -117,13 +117,26 @@ The `app/hyrox` workstream turns HYROX race research into a practical AI-agent s
 
 - [HYROX professional training assets](docs/hyrox-professional-training-assets.md) - Official race references, rulebooks, training partners, science, videos, blogs, and podcasts. _Sports: Multi-sport, Running/Track._
 - [HYROX agent skill plan](docs/hyrox-agent-skill-plan.md) - Implementation roadmap for a daily training-plan agent from casual starter to elite pathway. _Sports: Multi-sport, Running/Track._
+- [HYROX skill architecture](docs/hyrox-skill-architecture.md) - File organization for profile-aware planning, HYROX divisions, and HTML visualization output. _Sports: Multi-sport, Running/Track._
 - [`skills/hyrox/SKILL.md`](skills/hyrox/SKILL.md) - Agent workflow for level-aware HYROX training guidance. _Sports: Multi-sport, Running/Track._
-- [`hyrox-day-plan`](scripts/hyrox-day-plan.mjs) - Local CLI that renders a daily HYROX plan by level/week/day or by start date. _Sports: Multi-sport, Running/Track._
+- [`hyrox-day-plan`](scripts/hyrox-day-plan.mjs) - Local CLI that renders a daily HYROX plan by level/week/day or by start date, and lists the professional training asset registry. _Sports: Multi-sport, Running/Track._
 
 Try it locally:
 
 ```bash
 node scripts/hyrox-day-plan.mjs --level recreational --week 6 --day tuesday
+```
+
+Personalized HTML output:
+
+```bash
+node scripts/hyrox-day-plan.mjs --division pro --sex men --age-group 30-34 --experience veteran --start-date 2026-06-10 --date 2026-06-10 --format html --output /tmp/hyrox-plan.html
+```
+
+Asset registry summary:
+
+```bash
+node scripts/hyrox-day-plan.mjs --list-assets
 ```
 
 ## Data, APIs, and Feeds

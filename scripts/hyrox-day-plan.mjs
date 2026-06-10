@@ -1,13 +1,15 @@
-import { readFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { recommendedSourceAnchors, renderAssetSummaryLines } from "../src/hyrox/assets.mjs";
+import { renderHtmlDocument } from "../src/hyrox/html-renderer.mjs";
+import { renderProfileMarkdownLines, resolveAthleteProfile, taxonomySummary } from "../src/hyrox/profile.mjs";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const programPath = join(root, "data", "hyrox", "training-program.json");
-const assetsPath = join(root, "data", "hyrox", "training-assets.json");
 
 const program = JSON.parse(readFileSync(programPath, "utf8"));
-const assets = JSON.parse(readFileSync(assetsPath, "utf8"));
+const sourceAnchors = recommendedSourceAnchors();
 
 const dayNames = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 const zhDayNames = {
@@ -257,7 +259,7 @@ function parseArgs(argv) {
       throw new Error(`Unexpected argument: ${value}`);
     }
     const key = value.slice(2);
-    if (key === "json" || key === "list-levels" || key === "help") {
+    if (key === "json" || key === "list-levels" || key === "list-assets" || key === "help") {
       args[key] = true;
       continue;
     }
@@ -377,9 +379,7 @@ function renderMarkdown(plan) {
     ...program.meta.safety.map((item) => `- ${item}`),
     "",
     "## Source Anchors",
-    `- Race format: ${assets.official_reference[0].url}`,
-    `- Official preparation: ${assets.official_reference[3].url}`,
-    `- Science basis: ${assets.science_and_methodology[0].url}`
+    ...sourceAnchors.slice(0, 3).map((asset) => `- ${asset.title}: ${asset.url}`)
   ];
   return `${lines.join("\n")}\n`;
 }
@@ -410,6 +410,47 @@ function renderChecklistBlock(labelEn, labelZh, key, items) {
   ];
 }
 
+function translatedItems(items) {
+  return items.map((item) => `${item} / ${translateItem(item)}`);
+}
+
+function displayPlan(plan) {
+  const objective = sessionObjective(plan.session);
+  const dateLabel = plan.date ? `${plan.date} · ` : "";
+  return {
+    dateLine: `${dateLabel}${titleCase(plan.day)} / ${zhDayNames[plan.day]}`,
+    sessionTitle: `${plan.session.title} / ${zhTitles[plan.session.title] ?? "训练课"}`,
+    profileLine: `${plan.profile.label_en} / ${plan.profile.label_zh}`,
+    ageLine: `Age Group / 年龄组: ${plan.profile.age_group}`,
+    experienceLine: `Experience / 经验: ${plan.profile.experience_label_en} / ${plan.profile.experience_label_zh}`,
+    phaseLine: `Phase / 阶段: ${plan.phase.label} / ${zhPhaseLabels[plan.phase_key]}`,
+    durationLine: `Duration / 时长: ${plan.duration_minutes} min / ${plan.duration_minutes} 分钟`,
+    intensityLine: `Intensity / 强度: ${plan.session.intensity}`,
+    divisionStandard: `${plan.profile.standards[0]} / ${plan.profile.standards[1]}`,
+    goal: objective.goal,
+    target: objective.target,
+    blocks: [
+      {
+        title: "Warm-up / 热身",
+        purpose: `${blockPurposes.warmup.en} / ${blockPurposes.warmup.zh}`,
+        items: translatedItems(plan.session.warmup)
+      },
+      {
+        title: "Main Work / 主训练",
+        purpose: `${blockPurposes.main.en} / ${blockPurposes.main.zh}`,
+        items: translatedItems(plan.session.main)
+      },
+      {
+        title: "Cooldown / 放松",
+        purpose: `${blockPurposes.cooldown.en} / ${blockPurposes.cooldown.zh}`,
+        items: translatedItems(plan.session.cooldown)
+      }
+    ],
+    constraints: [...plan.profile.coaching.map((item, index) => index % 2 === 0 ? `${item} / ${plan.profile.coaching[index + 1] ?? ""}` : null).filter(Boolean), ...translatedItems(plan.session.notes)],
+    sources: sourceAnchors.map((asset) => `${asset.title} (${asset.category_label}): ${asset.url}`)
+  };
+}
+
 function renderChecklist(plan, options = {}) {
   const objective = sessionObjective(plan.session);
   const dateLabel = plan.date ? `${plan.date} · ` : "";
@@ -418,6 +459,7 @@ function renderChecklist(plan, options = {}) {
     `# HYROX Daily Training Checklist / HYROX 每日训练清单 - ${dateLabel}${titleCase(plan.day)} / ${zhDayNames[plan.day]}`,
     "",
     `Level / 水平: ${plan.level.label} / ${zhLevelLabels[plan.level_key]}`,
+    ...renderProfileMarkdownLines(plan.profile),
     `Week / 周期: Week ${plan.week} of ${plan.level.duration_weeks} / 第 ${plan.week} 周，共 ${plan.level.duration_weeks} 周`,
     `Phase / 阶段: ${plan.phase.label} / ${zhPhaseLabels[plan.phase_key]}`,
     `Session / 课程: ${plan.session.title} / ${zhTitles[plan.session.title] ?? "训练课"}`,
@@ -433,6 +475,10 @@ function renderChecklist(plan, options = {}) {
     `EN: ${objective.target.en}`,
     `ZH: ${objective.target.zh}`,
     "",
+    "## Division Standard / 组别标准",
+    `EN: ${plan.profile.standards[0]}`,
+    `ZH: ${plan.profile.standards[1]}`,
+    "",
     "## Session Prescription / 训练安排",
     ...renderChecklistBlock("Warm-up", "热身", "warmup", plan.session.warmup),
     "",
@@ -441,6 +487,7 @@ function renderChecklist(plan, options = {}) {
     ...renderChecklistBlock("Cooldown", "放松", "cooldown", plan.session.cooldown),
     "",
     "## Coaching Constraints / 教练限制",
+    ...plan.profile.coaching.map((item, index) => index % 2 === 0 ? `- [ ] ${item} / ${plan.profile.coaching[index + 1] ?? ""}` : null).filter(Boolean),
     ...plan.session.notes.map((item) => `- [ ] ${item} / ${translateItem(item)}`),
     "",
     "## Readiness Adjustment / 状态调整",
@@ -453,9 +500,7 @@ function renderChecklist(plan, options = {}) {
     lines.push(
       "",
       "## Source Anchors / 来源",
-      `- Race format / 赛制: ${assets.official_reference[0].url}`,
-      `- Official preparation / 官方备赛: ${assets.official_reference[3].url}`,
-      `- Science basis / 科学依据: ${assets.science_and_methodology[0].url}`
+      ...sourceAnchors.slice(0, 3).map((asset) => `- ${asset.title} / ${asset.category_label}: ${asset.url}`)
     );
   }
 
@@ -463,7 +508,8 @@ function renderChecklist(plan, options = {}) {
 }
 
 function buildPlan(args) {
-  const levelKey = args.level ?? "recreational";
+  const profile = resolveAthleteProfile(args, program.levels);
+  const levelKey = profile.level_key;
   const level = program.levels[levelKey];
   if (!level) {
     throw new Error(`Unknown level: ${levelKey}. Use one of: ${Object.keys(program.levels).join(", ")}`);
@@ -479,6 +525,7 @@ function buildPlan(args) {
     generated_at: new Date().toISOString(),
     level_key: levelKey,
     level,
+    profile,
     week: boundedWeek,
     day,
     date,
@@ -514,8 +561,11 @@ function renderPlans(plans, args) {
   if ((args.format ?? "checklist") === "basic") {
     return plans.map((plan) => renderMarkdown(plan)).join("\n---\n");
   }
+  if (args.format === "html") {
+    return renderHtmlDocument(plans.map(displayPlan));
+  }
   if (args.format && args.format !== "checklist") {
-    throw new Error(`Unknown format: ${args.format}. Use checklist or basic.`);
+    throw new Error(`Unknown format: ${args.format}. Use checklist, basic, or html.`);
   }
   return plans.map((plan) => renderChecklist(plan, { compact: plans.length > 1 })).join("\n---\n");
 }
@@ -526,11 +576,16 @@ function usage() {
   node scripts/hyrox-day-plan.mjs --level casual --start-date 2026-06-10 --date 2026-06-24
   node scripts/hyrox-day-plan.mjs --level recreational --start-date 2026-06-10 --date 2026-06-10 --days 7
   node scripts/hyrox-day-plan.mjs --level recreational --week 6 --day tuesday --format basic
+  node scripts/hyrox-day-plan.mjs --division pro --sex men --age-group 30-34 --experience veteran --format html --output /tmp/hyrox-plan.html
+  node scripts/hyrox-day-plan.mjs --list-assets
   node scripts/hyrox-day-plan.mjs --list-levels
 
 Levels: ${Object.keys(program.levels).join(", ")}
 Days: ${dayNames.join(", ")}
-Formats: checklist, basic
+Divisions: ${taxonomySummary().divisions.join(", ")}
+Sexes: ${taxonomySummary().sexes.join(", ")}
+Experience: ${taxonomySummary().experience.join(", ")}
+Formats: checklist, basic, html
 `;
 }
 
@@ -540,12 +595,26 @@ try {
     process.stdout.write(usage());
   } else if (args["list-levels"]) {
     process.stdout.write(`${listLevels()}\n`);
+  } else if (args["list-assets"]) {
+    process.stdout.write(`${renderAssetSummaryLines().join("\n")}\n`);
   } else {
     const plans = buildPlans(args);
     if (args.json) {
-      process.stdout.write(`${JSON.stringify(plans.length === 1 ? plans[0] : { plans }, null, 2)}\n`);
+      const rendered = `${JSON.stringify(plans.length === 1 ? plans[0] : { plans }, null, 2)}\n`;
+      if (args.output) {
+        writeFileSync(args.output, rendered);
+        process.stdout.write(`Wrote ${args.output}\n`);
+      } else {
+        process.stdout.write(rendered);
+      }
     } else {
-      process.stdout.write(renderPlans(plans, args));
+      const rendered = renderPlans(plans, args);
+      if (args.output) {
+        writeFileSync(args.output, rendered);
+        process.stdout.write(`Wrote ${args.output}\n`);
+      } else {
+        process.stdout.write(rendered);
+      }
     }
   }
 } catch (error) {
