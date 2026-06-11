@@ -16,17 +16,17 @@ const regenerate = () => {
   });
 };
 
-test("event SVGs reflect the June 9, 2026 event state", () => {
+test("event SVGs reflect the June 11, 2026 event state", () => {
   regenerate();
 
   const nba = read("visualizations/nba-finals-2026.svg");
-  assert.match(nba, /Updated June 9, 2026/);
-  assert.match(nba, /2-1/);
-  assert.match(nba, /SAS 115 - NYK 111/);
-  assert.match(nba, /Game 4 tie chance/);
+  assert.match(nba, /Updated June 11, 2026/);
+  assert.match(nba, /3-1/);
+  assert.match(nba, /NYK 107 - SAS 106/);
+  assert.match(nba, /Game 5 clinch chance/);
 
   const fifa = read("visualizations/fifa-world-cup-2026.svg");
-  assert.match(fifa, /Updated June 9, 2026/);
+  assert.match(fifa, /Updated June 11, 2026/);
   assert.match(fifa, /Opening confirmed fixtures/);
   assert.match(fifa, /Mexico v South Africa/);
   assert.match(fifa, /USA v Paraguay/);
