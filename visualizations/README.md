@@ -17,7 +17,7 @@ node scripts/generate-visualizations.mjs
 
 ## Sources
 
-- NBA Finals schedule: https://api-hub.nba.com/news/2026-nba-finals-schedule
+- NBA Finals hub: https://www.nba.com/playoffs/2026/nba-finals
 - NBA Stats: https://www.nba.com/stats
 - FIFA match schedule: https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums
 - FIFA tournament hub: https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026

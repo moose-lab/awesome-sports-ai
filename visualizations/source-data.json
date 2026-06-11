@@ -1,9 +1,9 @@
 {
-  "generatedDate": "2026-06-09",
+  "generatedDate": "2026-06-11",
   "nbaFinals": {
     "title": "NBA Finals 2026",
     "subtitle": "New York Knicks vs San Antonio Spurs",
-    "updated": "Updated June 9, 2026",
+    "updated": "Updated June 11, 2026",
     "teams": [
       {
         "name": "New York Knicks",
@@ -11,10 +11,11 @@
         "seed": "East champion",
         "color": "#f97316",
         "accent": "#0f4c81",
-        "seriesWins": 2,
+        "seriesWins": 3,
         "finalsWins": [
           "G1",
-          "G2"
+          "G2",
+          "G4"
         ]
       },
       {
@@ -31,32 +32,32 @@
     ],
     "series": {
       "leader": "New York Knicks",
-      "record": "2-1",
-      "winsNeeded": "NYK needs 2 more wins",
-      "pressure": "SAS can tie the series before it returns to Texas",
-      "momentum": "Spurs answered in New York; Game 4 can reset the Finals"
+      "record": "3-1",
+      "winsNeeded": "NYK needs 1 more win",
+      "pressure": "SAS must win three straight to extend the Finals",
+      "momentum": "Knicks stole Game 4 by one and can clinch in Texas"
     },
     "signals": [
       {
         "label": "Series state",
-        "value": "2-1 NYK",
-        "detail": "Knicks still lead, Spurs now have a Finals win."
+        "value": "3-1 NYK",
+        "detail": "Knicks are one win from the title."
       },
       {
-        "label": "Game 3 swing",
-        "value": "SAS by 4",
-        "detail": "San Antonio took a 115-111 road win."
+        "label": "Game 4 swing",
+        "value": "NYK by 1",
+        "detail": "New York edged San Antonio 107-106."
       },
       {
         "label": "Next leverage",
-        "value": "Game 4 tie chance",
-        "detail": "Spurs can even the series in New York."
+        "value": "Game 5 clinch chance",
+        "detail": "Knicks can finish it in San Antonio."
       }
     ],
     "links": [
       {
-        "label": "NBA Finals schedule",
-        "url": "https://api-hub.nba.com/news/2026-nba-finals-schedule"
+        "label": "NBA Finals hub",
+        "url": "https://www.nba.com/playoffs/2026/nba-finals"
       },
       {
         "label": "NBA Stats",
@@ -98,11 +99,11 @@
         "game": "G4",
         "date": "Jun 10",
         "venue": "New York",
-        "status": "8:30 PM ET",
-        "score": "Scheduled",
-        "winner": "",
-        "margin": "",
-        "insight": "Game 4 tie chance"
+        "status": "Final",
+        "score": "NYK 107 - SAS 106",
+        "winner": "NYK",
+        "margin": "+1",
+        "insight": "Knicks seize control"
       },
       {
         "game": "G5",
@@ -112,7 +113,7 @@
         "score": "Scheduled",
         "winner": "",
         "margin": "",
-        "insight": "Guaranteed return"
+        "insight": "Game 5 clinch chance"
       },
       {
         "game": "G6",
@@ -139,7 +140,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 9, 2026",
+    "updated": "Updated June 11, 2026",
     "links": [
       {
         "label": "FIFA match schedule",

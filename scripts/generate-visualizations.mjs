@@ -156,7 +156,7 @@ function renderNba(finals) {
   ${signalCards}
   ${text(42, 282, "Game-by-game read", { size: 18, weight: 950, fill: "#0f2544" })}
   ${gameCards}
-  ${text(42, 642, "Generated from source-data.json. Official hubs: NBA Finals schedule + NBA Stats.", { size: 12, weight: 600, fill: "#64748b" })}
+  ${text(42, 642, "Generated from source-data.json. Official hubs: NBA Finals hub + NBA Stats.", { size: 12, weight: 600, fill: "#64748b" })}
 `
   );
 }
