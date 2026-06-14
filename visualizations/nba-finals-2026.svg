@@ -18,18 +18,18 @@
 
   <rect x="0" y="0" width="1100" height="690" rx="0" fill="url(#nbaBg)" stroke="none" stroke-width="1" opacity="1"/>
   <rect x="24" y="24" width="1052" height="642" rx="22" fill="#ffffff" stroke="#dfe6f0" stroke-width="1" opacity="0.94"/>
-  <text x="42" y="72" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="900" fill="#0f2544" text-anchor="start">NBA Finals 2026</text>
+  <text x="42" y="72" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="900" fill="#0f2544" text-anchor="start">NBA Finals 2026: Knicks Champions</text>
   <text x="42" y="100" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="650" fill="#526174" text-anchor="start">New York Knicks vs San Antonio Spurs</text>
-  <rect x="860" y="50" width="192" height="28" rx="14" fill="#0f4c81" stroke="#0f4c81" stroke-width="1" opacity="1"/><text x="956" y="69" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Updated June 11, 2026</text>
+  <rect x="860" y="50" width="192" height="28" rx="14" fill="#0f4c81" stroke="#0f4c81" stroke-width="1" opacity="1"/><text x="956" y="69" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Updated June 14, 2026</text>
 
 
   <g>
     <circle cx="766" cy="104" r="38" fill="#f97316" stroke="#0f4c81" stroke-width="5"/>
     <circle cx="766" cy="104" r="28" fill="#ffffff" opacity="0.9"/>
     <text x="766" y="111" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="950" fill="#0f4c81" text-anchor="middle">NYK</text>
-    <text x="766" y="162" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#0f4c81" text-anchor="middle">3 wins</text>
+    <text x="766" y="162" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="800" fill="#0f4c81" text-anchor="middle">4 wins</text>
   </g>
-  <text x="836" y="108" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="950" fill="#0f2544" text-anchor="middle">3-1</text>
+  <text x="836" y="108" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="950" fill="#0f2544" text-anchor="middle">4-1</text>
 
   <g>
     <circle cx="912" cy="104" r="38" fill="#9ca3af" stroke="#111827" stroke-width="2"/>
@@ -39,9 +39,9 @@
   </g>
 
   <rect x="42" y="122" width="636" height="38" rx="14" fill="#eef6ff" stroke="#c9ddf4" stroke-width="1" opacity="1"/>
-  <text x="62" y="147" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="800" fill="#0f2544" text-anchor="start">NYK needs 1 more win · Knicks stole Game 4 by one and can clinch in Texas</text>
+  <text x="62" y="147" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="800" fill="#0f2544" text-anchor="start">NYK wins the title · 94-90 Game 5 closeout in San Antonio</text>
 
-  <rect x="42" y="168" width="306" height="82" rx="16" fill="#ffffff" stroke="#f97316" stroke-width="1" opacity="1"/><text x="62" y="194" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="850" fill="#64748b" text-anchor="start">Series state</text><text x="62" y="222" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="950" fill="#0f4c81" text-anchor="start">3-1 NYK</text><text x="62" y="242" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="650" fill="#526174" text-anchor="start">Knicks are one win from the title.</text><rect x="382" y="168" width="306" height="82" rx="16" fill="#ffffff" stroke="#dfe6f0" stroke-width="1" opacity="1"/><text x="402" y="194" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="850" fill="#64748b" text-anchor="start">Game 4 swing</text><text x="402" y="222" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="950" fill="#0f2544" text-anchor="start">NYK by 1</text><text x="402" y="242" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="650" fill="#526174" text-anchor="start">New York edged San Antonio 107-106.</text><rect x="722" y="168" width="306" height="82" rx="16" fill="#ffffff" stroke="#dfe6f0" stroke-width="1" opacity="1"/><text x="742" y="194" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="850" fill="#64748b" text-anchor="start">Next leverage</text><text x="742" y="222" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="950" fill="#0f2544" text-anchor="start">Game 5 clinch chance</text><text x="742" y="242" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="650" fill="#526174" text-anchor="start">Knicks can finish it in San Antonio.</text>
+  <rect x="42" y="168" width="306" height="82" rx="16" fill="#ffffff" stroke="#f97316" stroke-width="1" opacity="1"/><text x="62" y="194" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="850" fill="#64748b" text-anchor="start">Series state</text><text x="62" y="222" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="950" fill="#0f4c81" text-anchor="start">4-1 NYK</text><text x="62" y="242" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="650" fill="#526174" text-anchor="start">Knicks are 2026 NBA champions.</text><rect x="382" y="168" width="306" height="82" rx="16" fill="#ffffff" stroke="#dfe6f0" stroke-width="1" opacity="1"/><text x="402" y="194" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="850" fill="#64748b" text-anchor="start">Game 5 closeout</text><text x="402" y="222" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="950" fill="#0f2544" text-anchor="start">NYK by 4</text><text x="402" y="242" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="650" fill="#526174" text-anchor="start">New York beat San Antonio 94-90.</text><rect x="722" y="168" width="306" height="82" rx="16" fill="#ffffff" stroke="#dfe6f0" stroke-width="1" opacity="1"/><text x="742" y="194" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="850" fill="#64748b" text-anchor="start">Title drought</text><text x="742" y="222" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="950" fill="#0f2544" text-anchor="start">First since 1973</text><text x="742" y="242" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="650" fill="#526174" text-anchor="start">New York ends a 53-year wait.</text>
   <text x="42" y="282" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="950" fill="#0f2544" text-anchor="start">Game-by-game read</text>
 
   <g>
@@ -105,23 +105,28 @@
     <text x="998" y="400" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="950" fill="#0f4c81" text-anchor="start">NYK +1</text>
   </g>
   <g>
-    <rect x="42" y="432" width="236" height="112" rx="16" fill="#f8fafc" stroke="#dfe6f0" stroke-width="1" opacity="1"/>
+    <rect x="42" y="432" width="236" height="112" rx="16" fill="#fff7ed" stroke="#f97316" stroke-width="2" opacity="1"/>
     <text x="60" y="460" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" font-weight="950" fill="#0f4c81" text-anchor="start">G5</text>
     <text x="110" y="459" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#152033" text-anchor="start">Jun 13</text>
     <text x="60" y="483" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#526174" text-anchor="start">San Antonio</text>
-    <text x="60" y="510" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="750" fill="#526174" text-anchor="start">Scheduled</text>
-    <text x="60" y="533" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#64748b" text-anchor="start">Game 5 clinch chance</text>
-    <rect x="164" y="448" width="104" height="28" rx="14" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1" opacity="1"/><text x="216" y="467" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">8:30 PM ET</text>
+    <text x="60" y="510" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="900" fill="#0f2544" text-anchor="start">NYK 94 - SAS 90</text>
+    <text x="60" y="533" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#b45309" text-anchor="start">Title clincher</text>
 
+  <g transform="rotate(-10 238 470)">
+    <circle cx="238" cy="470" r="26" fill="#f97316" stroke="#0f4c81" stroke-width="3"/>
+    <circle cx="238" cy="470" r="18" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
+    <text x="238" y="475" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="950" fill="#ffffff" text-anchor="middle">WIN</text>
+  </g>
+    <text x="224" y="534" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="950" fill="#0f4c81" text-anchor="start">NYK +4</text>
   </g>
   <g>
     <rect x="300" y="432" width="236" height="112" rx="16" fill="#f8fafc" stroke="#dfe6f0" stroke-width="1" opacity="1"/>
     <text x="318" y="460" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" font-weight="950" fill="#0f4c81" text-anchor="start">G6</text>
     <text x="368" y="459" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#152033" text-anchor="start">Jun 16</text>
     <text x="318" y="483" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#526174" text-anchor="start">New York</text>
-    <text x="318" y="510" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="750" fill="#526174" text-anchor="start">8:30 PM ET</text>
-    <text x="318" y="533" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#64748b" text-anchor="start">Home closeout chance</text>
-    <rect x="406" y="448" width="120" height="28" rx="14" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1" opacity="1"/><text x="466" y="467" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">If necessary</text>
+    <text x="318" y="510" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="750" fill="#526174" text-anchor="start">Series ended</text>
+    <text x="318" y="533" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#64748b" text-anchor="start">Knicks won in five</text>
+    <rect x="422" y="448" width="104" height="28" rx="14" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1" opacity="1"/><text x="474" y="467" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">Not needed</text>
 
   </g>
   <g>
@@ -129,9 +134,9 @@
     <text x="576" y="460" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" font-weight="950" fill="#0f4c81" text-anchor="start">G7</text>
     <text x="626" y="459" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#152033" text-anchor="start">Jun 19</text>
     <text x="576" y="483" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#526174" text-anchor="start">San Antonio</text>
-    <text x="576" y="510" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="750" fill="#526174" text-anchor="start">8:30 PM ET</text>
-    <text x="576" y="533" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#64748b" text-anchor="start">Winner-take-all</text>
-    <rect x="664" y="448" width="120" height="28" rx="14" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1" opacity="1"/><text x="724" y="467" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">If necessary</text>
+    <text x="576" y="510" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="750" fill="#526174" text-anchor="start">Series ended</text>
+    <text x="576" y="533" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#64748b" text-anchor="start">No Game 7 needed</text>
+    <rect x="680" y="448" width="104" height="28" rx="14" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1" opacity="1"/><text x="732" y="467" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">Not needed</text>
 
   </g>
   <text x="42" y="642" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#64748b" text-anchor="start">Generated from source-data.json. Official hubs: NBA Finals hub + NBA Stats.</text>
