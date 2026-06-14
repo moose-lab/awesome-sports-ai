@@ -16,14 +16,14 @@ const regenerate = () => {
   });
 };
 
-test("event SVGs reflect the June 11, 2026 event state", () => {
+test("event SVGs reflect the June 14, 2026 event state", () => {
   regenerate();
 
   const nba = read("visualizations/nba-finals-2026.svg");
-  assert.match(nba, /Updated June 11, 2026/);
-  assert.match(nba, /3-1/);
-  assert.match(nba, /NYK 107 - SAS 106/);
-  assert.match(nba, /Game 5 clinch chance/);
+  assert.match(nba, /Updated June 14, 2026/);
+  assert.match(nba, /4-1/);
+  assert.match(nba, /NYK 94 - SAS 90/);
+  assert.match(nba, /Title clincher/);
 
   const fifa = read("visualizations/fifa-world-cup-2026.svg");
   assert.match(fifa, /Updated June 11, 2026/);
@@ -37,6 +37,7 @@ test("event SVGs reflect the June 11, 2026 event state", () => {
 test("README exposes direct event tags for visualization assets", () => {
   const readme = read("README.md");
 
-  assert.match(readme, /\[NBA Finals 2026\]\(visualizations\/nba-finals-2026\.svg\)/);
+  assert.match(readme, /\[NBA Finals 2026: Knicks Champions\]\(visualizations\/nba-finals-2026\.svg\)/);
+  assert.match(readme, /Congratulations, New York Knicks: 2026 NBA Champions!/);
   assert.match(readme, /\[FIFA World Cup 2026\]\(visualizations\/fifa-world-cup-2026\.svg\)/);
 });

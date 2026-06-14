@@ -1,9 +1,9 @@
 {
-  "generatedDate": "2026-06-11",
+  "generatedDate": "2026-06-14",
   "nbaFinals": {
-    "title": "NBA Finals 2026",
+    "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
-    "updated": "Updated June 11, 2026",
+    "updated": "Updated June 14, 2026",
     "teams": [
       {
         "name": "New York Knicks",
@@ -11,11 +11,12 @@
         "seed": "East champion",
         "color": "#f97316",
         "accent": "#0f4c81",
-        "seriesWins": 3,
+        "seriesWins": 4,
         "finalsWins": [
           "G1",
           "G2",
-          "G4"
+          "G4",
+          "G5"
         ]
       },
       {
@@ -32,26 +33,26 @@
     ],
     "series": {
       "leader": "New York Knicks",
-      "record": "3-1",
-      "winsNeeded": "NYK needs 1 more win",
-      "pressure": "SAS must win three straight to extend the Finals",
-      "momentum": "Knicks stole Game 4 by one and can clinch in Texas"
+      "record": "4-1",
+      "winsNeeded": "NYK wins the title",
+      "pressure": "Knicks close out the Finals in San Antonio",
+      "momentum": "94-90 Game 5 closeout in San Antonio"
     },
     "signals": [
       {
         "label": "Series state",
-        "value": "3-1 NYK",
-        "detail": "Knicks are one win from the title."
+        "value": "4-1 NYK",
+        "detail": "Knicks are 2026 NBA champions."
       },
       {
-        "label": "Game 4 swing",
-        "value": "NYK by 1",
-        "detail": "New York edged San Antonio 107-106."
+        "label": "Game 5 closeout",
+        "value": "NYK by 4",
+        "detail": "New York beat San Antonio 94-90."
       },
       {
-        "label": "Next leverage",
-        "value": "Game 5 clinch chance",
-        "detail": "Knicks can finish it in San Antonio."
+        "label": "Title drought",
+        "value": "First since 1973",
+        "detail": "New York ends a 53-year wait."
       }
     ],
     "links": [
@@ -109,31 +110,31 @@
         "game": "G5",
         "date": "Jun 13",
         "venue": "San Antonio",
-        "status": "8:30 PM ET",
-        "score": "Scheduled",
-        "winner": "",
-        "margin": "",
-        "insight": "Game 5 clinch chance"
+        "status": "Final",
+        "score": "NYK 94 - SAS 90",
+        "winner": "NYK",
+        "margin": "+4",
+        "insight": "Title clincher"
       },
       {
         "game": "G6",
         "date": "Jun 16",
         "venue": "New York",
-        "status": "If necessary",
-        "score": "8:30 PM ET",
+        "status": "Not needed",
+        "score": "Series ended",
         "winner": "",
         "margin": "",
-        "insight": "Home closeout chance"
+        "insight": "Knicks won in five"
       },
       {
         "game": "G7",
         "date": "Jun 19",
         "venue": "San Antonio",
-        "status": "If necessary",
-        "score": "8:30 PM ET",
+        "status": "Not needed",
+        "score": "Series ended",
         "winner": "",
         "margin": "",
-        "insight": "Winner-take-all"
+        "insight": "No Game 7 needed"
       }
     ]
   },

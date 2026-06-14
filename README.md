@@ -11,6 +11,7 @@ This repository follows the [Awesome List](https://github.com/sindresorhus/aweso
 ## Contents
 
 - [Featured Now](#featured-now)
+- [Congratulations, New York Knicks: 2026 NBA Champions!](#congratulations-new-york-knicks-2026-nba-champions)
 - [Sport Tags](#sport-tags)
 - [Enterprise-to-Open-Source Decomposition](#enterprise-to-open-source-decomposition)
 - [The Builder's Path](#the-builders-path)
@@ -30,11 +31,15 @@ This repository follows the [Awesome List](https://github.com/sindresorhus/aweso
 
 Generated event visuals live in [visualizations/](visualizations/). Regenerate them with `node scripts/generate-visualizations.mjs`.
 
-Direct visualization tags: [NBA Finals 2026](visualizations/nba-finals-2026.svg) · [FIFA World Cup 2026](visualizations/fifa-world-cup-2026.svg)
+Direct visualization tags: [NBA Finals 2026: Knicks Champions](visualizations/nba-finals-2026.svg) · [FIFA World Cup 2026](visualizations/fifa-world-cup-2026.svg)
 
-[![NBA Finals 2026 schedule and stats visualization](visualizations/nba-finals-2026.svg)](visualizations/nba-finals-2026.svg)
+[![NBA Finals 2026 Knicks championship visualization](visualizations/nba-finals-2026.svg)](visualizations/nba-finals-2026.svg)
 
 [![FIFA World Cup 2026 visualization](visualizations/fifa-world-cup-2026.svg)](visualizations/fifa-world-cup-2026.svg)
+
+## Congratulations, New York Knicks: 2026 NBA Champions!
+
+The Knicks closed the 2026 NBA Finals 4-1 over the San Antonio Spurs with a 94-90 Game 5 win on June 13, 2026, ending a 53-year championship wait.
 
 ## Sport Tags
 
