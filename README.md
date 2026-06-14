@@ -35,7 +35,7 @@ Direct visualization tags: [NBA Finals 2026: Knicks Champions](visualizations/nb
 
 [![NBA Finals 2026 Knicks championship visualization](visualizations/nba-finals-2026.svg)](visualizations/nba-finals-2026.svg)
 
-[![FIFA World Cup 2026 visualization](visualizations/fifa-world-cup-2026.svg)](visualizations/fifa-world-cup-2026.svg)
+[![FIFA World Cup 2026 live score visualization](visualizations/fifa-world-cup-2026.svg)](visualizations/fifa-world-cup-2026.svg)
 
 ## Congratulations, New York Knicks: 2026 NBA Champions!
 

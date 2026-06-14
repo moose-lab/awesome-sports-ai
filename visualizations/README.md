@@ -6,7 +6,7 @@ Generated event visuals used by the main README.
 
 - Direct tags: [NBA Finals 2026: Knicks Champions](nba-finals-2026.svg) · [FIFA World Cup 2026](fifa-world-cup-2026.svg)
 - [nba-finals-2026.svg](nba-finals-2026.svg) - NBA Finals championship snapshot with team stamps, win seals, margin labels, and game-by-game context.
-- [fifa-world-cup-2026.svg](fifa-world-cup-2026.svg) - FIFA World Cup 2026 tournament scale and confirmed opening-fixture snapshot.
+- [fifa-world-cup-2026.svg](fifa-world-cup-2026.svg) - FIFA World Cup 2026 live group-stage snapshot with final scores, in-progress status, and today's upcoming fixtures.
 - [source-data.json](source-data.json) - Structured data used to generate the SVG assets.
 
 ## Regenerate

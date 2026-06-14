@@ -181,15 +181,24 @@ function renderFifa(worldCup) {
       const x = 42 + col * 340;
       const y = 318 + row * 88;
       const color = groupColors[row % groupColors.length];
-      const featured = fixture.tag === "Opener" || fixture.tag === "Host" || fixture.tag === "Marquee";
+      const status = fixture.status ?? fixture.tag;
+      const featured =
+        status === "HT" ||
+        status === "Live" ||
+        fixture.tag === "Opener" ||
+        fixture.tag === "Host" ||
+        fixture.tag === "Marquee";
+      const statusFill =
+        status === "Final" ? "#086c5b" : status === "HT" || status === "Live" ? "#be123c" : "#e2e8f0";
+      const statusColor = status === "Today" ? "#475569" : "#ffffff";
       return `
   <g>
     ${rect(x, y, 320, 74, { fill: featured ? "#f7fffb" : "#ffffff", stroke: color, radius: 14, strokeWidth: featured ? 2 : 1 })}
     ${pill(x + 16, y + 12, fixture.date, color)}
     ${text(x + 102, y + 31, fixture.group, { size: 12, weight: 900, fill: color })}
-    ${pill(x + 230, y + 12, fixture.tag, featured ? "#0f766e" : "#e2e8f0", featured ? "#ffffff" : "#475569")}
+    ${pill(x + 230, y + 12, status, statusFill, statusColor)}
     ${text(x + 18, y + 55, fixture.match, { size: 14, weight: 950, fill: "#12342f" })}
-    ${text(x + 18, y + 70, fixture.venue, { size: 10, weight: 650, fill: "#64748b" })}
+    ${text(x + 18, y + 70, `${fixture.score ?? fixture.venue} · ${fixture.insight ?? fixture.venue}`, { size: 10, weight: 750, fill: status === "HT" || status === "Live" ? "#be123c" : "#64748b" })}
   </g>`;
     })
     .join("");

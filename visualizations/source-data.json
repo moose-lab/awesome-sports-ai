@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 11, 2026",
+    "updated": "Updated June 14, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -154,26 +154,26 @@
     ],
     "stats": [
       {
-        "label": "Qualified teams",
-        "value": "48/48"
+        "label": "Final results",
+        "value": "7"
       },
       {
-        "label": "Matches",
-        "value": "104"
+        "label": "Live match",
+        "value": "AUS 1-0"
       },
       {
-        "label": "Host cities",
-        "value": "16"
+        "label": "Today ahead",
+        "value": "4"
       },
       {
-        "label": "Opening window",
-        "value": "Jun 11-17"
+        "label": "Tournament field",
+        "value": "48 teams"
       }
     ],
     "fixtureSummary": {
-      "label": "Opening confirmed fixtures",
-      "window": "Jun 11-17",
-      "detail": "Opening-week matchups have named teams, groups, and venues after the final draw."
+      "label": "Group-stage live snapshot",
+      "window": "Jun 11-14",
+      "detail": "Seven matches are final, Australia leads Turkiye 1-0 at half-time, and four June 14 fixtures are still ahead."
     },
     "confirmedFixtures": [
       {
@@ -181,84 +181,120 @@
         "match": "Mexico v South Africa",
         "group": "Group A",
         "venue": "Mexico City Stadium",
-        "tag": "Opener"
+        "tag": "Opener",
+        "status": "Final",
+        "score": "MEX 2 - RSA 0",
+        "insight": "Opening win"
       },
       {
         "date": "Jun 11",
         "match": "Korea Republic v Czechia",
         "group": "Group A",
         "venue": "Estadio Guadalajara",
-        "tag": "Group A"
+        "tag": "Group A",
+        "status": "Final",
+        "score": "KOR 2 - CZE 1",
+        "insight": "Group A early edge"
       },
       {
         "date": "Jun 12",
         "match": "Canada v Bosnia and Herzegovina",
         "group": "Group B",
         "venue": "Toronto Stadium",
-        "tag": "Host"
+        "tag": "Host",
+        "status": "Final",
+        "score": "CAN 1 - BIH 1",
+        "insight": "Host draw"
       },
       {
         "date": "Jun 12",
         "match": "USA v Paraguay",
         "group": "Group D",
         "venue": "Los Angeles Stadium",
-        "tag": "Host"
-      },
-      {
-        "date": "Jun 13",
-        "match": "Haiti v Scotland",
-        "group": "Group C",
-        "venue": "Boston Stadium",
-        "tag": "Group C"
-      },
-      {
-        "date": "Jun 13",
-        "match": "Australia v Turkiye",
-        "group": "Group D",
-        "venue": "BC Place Vancouver",
-        "tag": "Group D"
-      },
-      {
-        "date": "Jun 13",
-        "match": "Brazil v Morocco",
-        "group": "Group C",
-        "venue": "New York New Jersey Stadium",
-        "tag": "Marquee"
+        "tag": "Host",
+        "status": "Final",
+        "score": "USA 4 - PAR 1",
+        "insight": "Co-host statement"
       },
       {
         "date": "Jun 13",
         "match": "Qatar v Switzerland",
         "group": "Group B",
         "venue": "San Francisco Bay Area Stadium",
-        "tag": "Group B"
+        "tag": "Group B",
+        "status": "Final",
+        "score": "QAT 1 - SUI 1",
+        "insight": "Late Qatar equalizer"
       },
       {
-        "date": "Jun 14",
-        "match": "Cote d'Ivoire v Ecuador",
-        "group": "Group E",
-        "venue": "Philadelphia Stadium",
-        "tag": "Group E"
+        "date": "Jun 13",
+        "match": "Brazil v Morocco",
+        "group": "Group C",
+        "venue": "New York New Jersey Stadium",
+        "tag": "Marquee",
+        "status": "Final",
+        "score": "BRA 1 - MAR 1",
+        "insight": "Vinicius Junior equalizer"
+      },
+      {
+        "date": "Jun 13",
+        "match": "Haiti v Scotland",
+        "group": "Group C",
+        "venue": "Boston Stadium",
+        "tag": "Group C",
+        "status": "Final",
+        "score": "HAI 0 - SCO 1",
+        "insight": "Scotland opener"
+      },
+      {
+        "date": "Jun 13",
+        "match": "Australia v Turkiye",
+        "group": "Group D",
+        "venue": "BC Place Vancouver",
+        "tag": "Group D",
+        "status": "HT",
+        "score": "AUS 1 - TUR 0",
+        "insight": "Irankunda counterattack"
       },
       {
         "date": "Jun 14",
         "match": "Germany v Curacao",
         "group": "Group E",
         "venue": "Houston Stadium",
-        "tag": "Group E"
+        "tag": "Group E",
+        "status": "Today",
+        "score": "1 p.m. ET",
+        "insight": "Houston"
       },
       {
         "date": "Jun 14",
         "match": "Netherlands v Japan",
         "group": "Group F",
         "venue": "Dallas Stadium",
-        "tag": "Group F"
+        "tag": "Group F",
+        "status": "Today",
+        "score": "4 p.m. ET",
+        "insight": "Arlington"
       },
       {
-        "date": "Jun 17",
-        "match": "England v Croatia",
-        "group": "Group L",
-        "venue": "Dallas Stadium",
-        "tag": "Marquee"
+        "date": "Jun 14",
+        "match": "Cote d'Ivoire v Ecuador",
+        "group": "Group E",
+        "venue": "Philadelphia Stadium",
+        "tag": "Group E",
+        "status": "Today",
+        "score": "7 p.m. ET",
+        "insight": "Philadelphia"
+      },
+      {
+        "date": "Jun 14",
+        "match": "Sweden v Tunisia",
+        "group": "Group F",
+        "venue": "Estadio Monterrey",
+        "tag": "Group F",
+        "status": "Today",
+        "score": "10 p.m. ET",
+        "insight": "Monterrey"
       }
     ],
     "milestones": [
