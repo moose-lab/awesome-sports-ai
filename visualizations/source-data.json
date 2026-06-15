@@ -155,11 +155,11 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "11"
+        "value": "12"
       },
       {
         "label": "Live match",
-        "value": "SWE 2-1"
+        "value": "None"
       },
       {
         "label": "Scheduled next",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-16",
-      "detail": "11 matches are final, Sweden leads Tunisia 2-1 live, and 7 fixtures are scheduled next."
+      "detail": "12 matches are final, no match is live, and 7 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -282,9 +282,9 @@
         "group": "Group F",
         "venue": "Estadio BBVA",
         "tag": "Group F",
-        "status": "Live",
-        "score": "SWE 2 - TUN 1",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "SWE 5 - TUN 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 14",
