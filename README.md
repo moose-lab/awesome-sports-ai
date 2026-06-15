@@ -170,6 +170,7 @@ Tools for communities, fantasy sports, fan engagement, memberships, loyalty, liv
 - [dynastyprocess/data](https://github.com/dynastyprocess/data) - Provides open fantasy football data maintained by DynastyProcess. _Sports: American Football._
 - [fantasy-football-wrapped](https://github.com/kt474/fantasy-football-wrapped) - Generates fantasy league insights and charts for Sleeper and ESPN leagues. _Sports: American Football._
 - [fantasy-manager](https://github.com/lukasdotcom/fantasy-manager) - Provides an open-source self-hosted fantasy manager. _Sports: Multi-sport._
+- [Stonk Striker](https://stonk-striker.vercel.app/) - Turns stock and crypto price charts into a browser football striking game with market-shaped terrain. _Sports: Soccer._
 - [yahoo-fantasy-sports-api-go](https://github.com/n-ae/yahoo-fantasy-sports-api-go) - Provides Go bindings for Yahoo Fantasy Sports APIs. _Sports: Multi-sport._
 
 ## Media, Highlights, and Content
