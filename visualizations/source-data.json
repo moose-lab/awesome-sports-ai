@@ -159,11 +159,11 @@
       },
       {
         "label": "Live match",
-        "value": "None"
+        "value": "ESP 0-0"
       },
       {
         "label": "Scheduled next",
-        "value": "7"
+        "value": "6"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-16",
-      "detail": "12 matches are final, no match is live, and 7 fixtures are scheduled next."
+      "detail": "12 matches are final, Spain leads Cabo Verde 0-0 live, and 6 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -332,9 +332,9 @@
         "group": "Group H",
         "venue": "Mercedes-Benz Stadium",
         "tag": "Group H",
-        "status": "Scheduled",
-        "score": "12 p.m. ET",
-        "insight": "Atlanta"
+        "status": "Live",
+        "score": "ESP 0 - CPV 0",
+        "insight": "Live window"
       },
       {
         "date": "Jun 16",
