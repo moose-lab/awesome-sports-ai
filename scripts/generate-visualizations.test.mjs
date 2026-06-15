@@ -8,6 +8,8 @@ import { fileURLToPath } from "node:url";
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 
 const read = (path) => readFileSync(join(root, path), "utf8");
+const readJson = (path) => JSON.parse(read(path));
+const escapeRegExp = (value) => String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 const regenerate = () => {
   execFileSync(process.execPath, [join(root, "scripts", "generate-visualizations.mjs")], {
@@ -16,26 +18,30 @@ const regenerate = () => {
   });
 };
 
-test("event SVGs reflect the June 14, 2026 event state", () => {
+test("event SVGs reflect the source data event state", () => {
   regenerate();
 
+  const source = readJson("visualizations/source-data.json");
   const nba = read("visualizations/nba-finals-2026.svg");
-  assert.match(nba, /Updated June 14, 2026/);
-  assert.match(nba, /4-1/);
-  assert.match(nba, /NYK 94 - SAS 90/);
-  assert.match(nba, /Title clincher/);
+  assert.match(nba, new RegExp(escapeRegExp(source.nbaFinals.updated)));
+  assert.match(nba, new RegExp(escapeRegExp(source.nbaFinals.series.record)));
+  assert.match(nba, new RegExp(escapeRegExp(source.nbaFinals.games[4].score)));
+  assert.match(nba, new RegExp(escapeRegExp(source.nbaFinals.games[4].insight)));
 
   const fifa = read("visualizations/fifa-world-cup-2026.svg");
-  assert.match(fifa, /Updated June 14, 2026/);
-  assert.match(fifa, /Group-stage live snapshot/);
-  assert.match(fifa, /Seven matches are final/);
-  assert.match(fifa, /Mexico v South Africa/);
-  assert.match(fifa, /MEX 2 - RSA 0/);
-  assert.match(fifa, /USA v Paraguay/);
-  assert.match(fifa, /USA 4 - PAR 1/);
-  assert.match(fifa, /Brazil v Morocco/);
-  assert.match(fifa, /AUS 1 - TUR 0/);
-  assert.match(fifa, /Sweden v Tunisia/);
+  const featuredFixtures = [
+    source.fifaWorldCup.confirmedFixtures[0],
+    source.fifaWorldCup.confirmedFixtures.find((fixture) => fixture.status === "Live"),
+    source.fifaWorldCup.confirmedFixtures.find((fixture) => fixture.status === "Scheduled"),
+  ].filter(Boolean);
+
+  assert.match(fifa, new RegExp(escapeRegExp(source.fifaWorldCup.updated)));
+  assert.match(fifa, new RegExp(escapeRegExp(source.fifaWorldCup.fixtureSummary.label)));
+  assert.match(fifa, new RegExp(escapeRegExp(source.fifaWorldCup.fixtureSummary.detail)));
+  featuredFixtures.forEach((fixture) => {
+    assert.match(fifa, new RegExp(escapeRegExp(fixture.match)));
+    assert.match(fifa, new RegExp(escapeRegExp(fixture.score)));
+  });
 });
 
 test("README exposes direct event tags for visualization assets", () => {

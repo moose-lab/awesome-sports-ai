@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-06-14",
+  "generatedDate": "2026-06-15",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 14, 2026",
+    "updated": "Updated June 15, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "7"
+        "value": "11"
       },
       {
         "label": "Live match",
-        "value": "AUS 1-0"
+        "value": "SWE 2-1"
       },
       {
-        "label": "Today ahead",
-        "value": "4"
+        "label": "Scheduled next",
+        "value": "7"
       },
       {
         "label": "Tournament field",
@@ -172,8 +172,8 @@
     ],
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
-      "window": "Jun 11-14",
-      "detail": "Seven matches are final, Australia leads Turkiye 1-0 at half-time, and four June 14 fixtures are still ahead."
+      "window": "Jun 11-16",
+      "detail": "11 matches are final, Sweden leads Tunisia 2-1 live, and 7 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -247,54 +247,124 @@
         "insight": "Scotland opener"
       },
       {
-        "date": "Jun 13",
-        "match": "Australia v Turkiye",
-        "group": "Group D",
-        "venue": "BC Place Vancouver",
-        "tag": "Group D",
-        "status": "HT",
-        "score": "AUS 1 - TUR 0",
-        "insight": "Irankunda counterattack"
-      },
-      {
         "date": "Jun 14",
         "match": "Germany v Curacao",
         "group": "Group E",
-        "venue": "Houston Stadium",
+        "venue": "NRG Stadium",
         "tag": "Group E",
-        "status": "Today",
-        "score": "1 p.m. ET",
-        "insight": "Houston"
+        "status": "Final",
+        "score": "GER 7 - CUW 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 14",
         "match": "Netherlands v Japan",
         "group": "Group F",
-        "venue": "Dallas Stadium",
+        "venue": "AT&T Stadium",
         "tag": "Group F",
-        "status": "Today",
-        "score": "4 p.m. ET",
-        "insight": "Arlington"
+        "status": "Final",
+        "score": "NED 2 - JPN 2",
+        "insight": "Full time"
       },
       {
         "date": "Jun 14",
         "match": "Cote d'Ivoire v Ecuador",
         "group": "Group E",
-        "venue": "Philadelphia Stadium",
+        "venue": "Lincoln Financial Field",
         "tag": "Group E",
-        "status": "Today",
-        "score": "7 p.m. ET",
-        "insight": "Philadelphia"
+        "status": "Final",
+        "score": "CIV 1 - ECU 0",
+        "insight": "Full time"
       },
       {
         "date": "Jun 14",
         "match": "Sweden v Tunisia",
         "group": "Group F",
-        "venue": "Estadio Monterrey",
+        "venue": "Estadio BBVA",
         "tag": "Group F",
-        "status": "Today",
-        "score": "10 p.m. ET",
-        "insight": "Monterrey"
+        "status": "Live",
+        "score": "SWE 2 - TUN 1",
+        "insight": "Live window"
+      },
+      {
+        "date": "Jun 14",
+        "match": "Australia v Turkiye",
+        "group": "Group D",
+        "venue": "BC Place",
+        "tag": "Group D",
+        "status": "Final",
+        "score": "AUS 2 - TUR 0",
+        "insight": "Full time"
+      },
+      {
+        "date": "Jun 15",
+        "match": "Belgium v Egypt",
+        "group": "Group G",
+        "venue": "Lumen Field",
+        "tag": "Group G",
+        "status": "Scheduled",
+        "score": "3 p.m. ET",
+        "insight": "Seattle"
+      },
+      {
+        "date": "Jun 15",
+        "match": "Saudi Arabia v Uruguay",
+        "group": "Group H",
+        "venue": "Hard Rock Stadium",
+        "tag": "Group H",
+        "status": "Scheduled",
+        "score": "6 p.m. ET",
+        "insight": "Miami Gardens"
+      },
+      {
+        "date": "Jun 15",
+        "match": "Iran v New Zealand",
+        "group": "Group G",
+        "venue": "SoFi Stadium",
+        "tag": "Group G",
+        "status": "Scheduled",
+        "score": "9 p.m. ET",
+        "insight": "Inglewood"
+      },
+      {
+        "date": "Jun 15",
+        "match": "Spain v Cabo Verde",
+        "group": "Group H",
+        "venue": "Mercedes-Benz Stadium",
+        "tag": "Group H",
+        "status": "Scheduled",
+        "score": "12 p.m. ET",
+        "insight": "Atlanta"
+      },
+      {
+        "date": "Jun 16",
+        "match": "France v Senegal",
+        "group": "Group I",
+        "venue": "MetLife Stadium",
+        "tag": "Group I",
+        "status": "Scheduled",
+        "score": "3 p.m. ET",
+        "insight": "East Rutherford"
+      },
+      {
+        "date": "Jun 16",
+        "match": "Iraq v Norway",
+        "group": "Group I",
+        "venue": "Gillette Stadium",
+        "tag": "Group I",
+        "status": "Scheduled",
+        "score": "6 p.m. ET",
+        "insight": "Foxborough"
+      },
+      {
+        "date": "Jun 16",
+        "match": "Argentina v Algeria",
+        "group": "Group J",
+        "venue": "GEHA Field at Arrowhead Stadium",
+        "tag": "Group J",
+        "status": "Scheduled",
+        "score": "9 p.m. ET",
+        "insight": "Kansas City"
       }
     ],
     "milestones": [

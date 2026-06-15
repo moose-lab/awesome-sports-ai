@@ -162,6 +162,17 @@ function renderNba(finals) {
 }
 
 function renderFifa(worldCup) {
+  const fixtureColumns = 3;
+  const fixtureStartY = 318;
+  const fixtureRowGap = 88;
+  const fixtureCardHeight = 74;
+  const fixtureRows = Math.ceil(worldCup.confirmedFixtures.length / fixtureColumns);
+  const svgHeight = Math.max(
+    760,
+    fixtureStartY + (fixtureRows - 1) * fixtureRowGap + fixtureCardHeight + 68
+  );
+  const footerY = svgHeight - 42;
+
   const statCards = worldCup.stats
     .map((stat, index) => {
       const x = 42 + index * 252;
@@ -176,12 +187,13 @@ function renderFifa(worldCup) {
   const groupColors = ["#086c5b", "#1d4ed8", "#b45309", "#7c3aed", "#be123c", "#0f766e"];
   const fixtureCards = worldCup.confirmedFixtures
     .map((fixture, index) => {
-      const col = index % 3;
-      const row = Math.floor(index / 3);
+      const col = index % fixtureColumns;
+      const row = Math.floor(index / fixtureColumns);
       const x = 42 + col * 340;
-      const y = 318 + row * 88;
+      const y = fixtureStartY + row * fixtureRowGap;
       const color = groupColors[row % groupColors.length];
       const status = fixture.status ?? fixture.tag;
+      const statusX = x + 304 - pillWidth(status);
       const featured =
         status === "HT" ||
         status === "Live" ||
@@ -190,13 +202,13 @@ function renderFifa(worldCup) {
         fixture.tag === "Marquee";
       const statusFill =
         status === "Final" ? "#086c5b" : status === "HT" || status === "Live" ? "#be123c" : "#e2e8f0";
-      const statusColor = status === "Today" ? "#475569" : "#ffffff";
+      const statusColor = status === "Final" || status === "HT" || status === "Live" ? "#ffffff" : "#475569";
       return `
   <g>
     ${rect(x, y, 320, 74, { fill: featured ? "#f7fffb" : "#ffffff", stroke: color, radius: 14, strokeWidth: featured ? 2 : 1 })}
     ${pill(x + 16, y + 12, fixture.date, color)}
     ${text(x + 102, y + 31, fixture.group, { size: 12, weight: 900, fill: color })}
-    ${pill(x + 230, y + 12, status, statusFill, statusColor)}
+    ${pill(statusX, y + 12, status, statusFill, statusColor)}
     ${text(x + 18, y + 55, fixture.match, { size: 14, weight: 950, fill: "#12342f" })}
     ${text(x + 18, y + 70, `${fixture.score ?? fixture.venue} · ${fixture.insight ?? fixture.venue}`, { size: 10, weight: 750, fill: status === "HT" || status === "Live" ? "#be123c" : "#64748b" })}
   </g>`;
@@ -205,10 +217,10 @@ function renderFifa(worldCup) {
 
   return svgFrame(
     1100,
-    760,
+    svgHeight,
     `
-  ${rect(0, 0, 1100, 760, { fill: "url(#fifaBg)", stroke: "none", radius: 0 })}
-  ${rect(24, 24, 1052, 712, { fill: "#ffffff", stroke: "#dfe6f0", radius: 22, opacity: 0.94 })}
+  ${rect(0, 0, 1100, svgHeight, { fill: "url(#fifaBg)", stroke: "none", radius: 0 })}
+  ${rect(24, 24, 1052, svgHeight - 48, { fill: "#ffffff", stroke: "#dfe6f0", radius: 22, opacity: 0.94 })}
   ${text(42, 72, worldCup.title, { size: 30, weight: 900, fill: "#12342f" })}
   ${text(42, 100, worldCup.subtitle, { size: 16, weight: 650, fill: "#526174" })}
   ${pill(860, 50, worldCup.updated, "#086c5b")}
@@ -219,7 +231,7 @@ function renderFifa(worldCup) {
   ${text(62, 274, worldCup.fixtureSummary.detail, { size: 12, weight: 650, fill: "#526174" })}
 
   ${fixtureCards}
-  ${text(42, 718, "Generated from source-data.json. Official hubs: FIFA match schedule + tournament hub.", { size: 12, weight: 600, fill: "#64748b" })}
+  ${text(42, footerY, "Generated from source-data.json. Official hubs: FIFA match schedule + tournament hub.", { size: 12, weight: 600, fill: "#64748b" })}
 `
   );
 }
