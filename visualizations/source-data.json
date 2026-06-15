@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "12"
+        "value": "14"
       },
       {
         "label": "Live match",
-        "value": "ESP 0-0"
+        "value": "None"
       },
       {
         "label": "Scheduled next",
-        "value": "6"
+        "value": "5"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-16",
-      "detail": "12 matches are final, Spain leads Cabo Verde 0-0 live, and 6 fixtures are scheduled next."
+      "detail": "14 matches are final, no match is live, and 5 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -302,9 +302,9 @@
         "group": "Group G",
         "venue": "Lumen Field",
         "tag": "Group G",
-        "status": "Scheduled",
-        "score": "3 p.m. ET",
-        "insight": "Seattle"
+        "status": "Final",
+        "score": "BEL 1 - EGY 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 15",
@@ -332,9 +332,9 @@
         "group": "Group H",
         "venue": "Mercedes-Benz Stadium",
         "tag": "Group H",
-        "status": "Live",
+        "status": "Final",
         "score": "ESP 0 - CPV 0",
-        "insight": "Live window"
+        "insight": "Full time"
       },
       {
         "date": "Jun 16",
