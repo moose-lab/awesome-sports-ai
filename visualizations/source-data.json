@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-06-15",
+  "generatedDate": "2026-06-16",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 15, 2026",
+    "updated": "Updated June 16, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -155,7 +155,7 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "14"
+        "value": "16"
       },
       {
         "label": "Live match",
@@ -163,7 +163,7 @@
       },
       {
         "label": "Scheduled next",
-        "value": "5"
+        "value": "8"
       },
       {
         "label": "Tournament field",
@@ -172,8 +172,8 @@
     ],
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
-      "window": "Jun 11-16",
-      "detail": "14 matches are final, no match is live, and 5 fixtures are scheduled next."
+      "window": "Jun 11-17",
+      "detail": "16 matches are final, no match is live, and 8 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -312,9 +312,9 @@
         "group": "Group H",
         "venue": "Hard Rock Stadium",
         "tag": "Group H",
-        "status": "Scheduled",
-        "score": "6 p.m. ET",
-        "insight": "Miami Gardens"
+        "status": "Final",
+        "score": "KSA 1 - URU 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 15",
@@ -322,9 +322,9 @@
         "group": "Group G",
         "venue": "SoFi Stadium",
         "tag": "Group G",
-        "status": "Scheduled",
-        "score": "9 p.m. ET",
-        "insight": "Inglewood"
+        "status": "Final",
+        "score": "IRN 2 - NZL 2",
+        "insight": "Full time"
       },
       {
         "date": "Jun 15",
@@ -365,6 +365,56 @@
         "status": "Scheduled",
         "score": "9 p.m. ET",
         "insight": "Kansas City"
+      },
+      {
+        "date": "Jun 17",
+        "match": "Austria v Jordan",
+        "group": "Group J",
+        "venue": "Levi's Stadium",
+        "tag": "Group J",
+        "status": "Scheduled",
+        "score": "12 a.m. ET",
+        "insight": "Santa Clara"
+      },
+      {
+        "date": "Jun 17",
+        "match": "Portugal v Congo DR",
+        "group": "Group K",
+        "venue": "NRG Stadium",
+        "tag": "Group K",
+        "status": "Scheduled",
+        "score": "1 p.m. ET",
+        "insight": "Houston"
+      },
+      {
+        "date": "Jun 17",
+        "match": "England v Croatia",
+        "group": "Group L",
+        "venue": "AT&T Stadium",
+        "tag": "Group L",
+        "status": "Scheduled",
+        "score": "4 p.m. ET",
+        "insight": "Arlington"
+      },
+      {
+        "date": "Jun 17",
+        "match": "Ghana v Panama",
+        "group": "Group L",
+        "venue": "BMO Field",
+        "tag": "Group L",
+        "status": "Scheduled",
+        "score": "7 p.m. ET",
+        "insight": "Toronto"
+      },
+      {
+        "date": "Jun 17",
+        "match": "Uzbekistan v Colombia",
+        "group": "Group K",
+        "venue": "Estadio Banorte",
+        "tag": "Group K",
+        "status": "Scheduled",
+        "score": "10 p.m. ET",
+        "insight": "Mexico City"
       }
     ],
     "milestones": [
