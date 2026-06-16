@@ -155,7 +155,7 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "16"
+        "value": "17"
       },
       {
         "label": "Live match",
@@ -163,7 +163,7 @@
       },
       {
         "label": "Scheduled next",
-        "value": "8"
+        "value": "7"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-17",
-      "detail": "16 matches are final, no match is live, and 8 fixtures are scheduled next."
+      "detail": "17 matches are final, no match is live, and 7 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -342,9 +342,9 @@
         "group": "Group I",
         "venue": "MetLife Stadium",
         "tag": "Group I",
-        "status": "Scheduled",
-        "score": "3 p.m. ET",
-        "insight": "East Rutherford"
+        "status": "Final",
+        "score": "FRA 3 - SEN 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 16",
