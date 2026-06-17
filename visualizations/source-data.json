@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-06-16",
+  "generatedDate": "2026-06-17",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 16, 2026",
+    "updated": "Updated June 17, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "17"
+        "value": "19"
       },
       {
         "label": "Live match",
-        "value": "None"
+        "value": "AUT 1-1"
       },
       {
         "label": "Scheduled next",
-        "value": "7"
+        "value": "8"
       },
       {
         "label": "Tournament field",
@@ -172,8 +172,8 @@
     ],
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
-      "window": "Jun 11-17",
-      "detail": "17 matches are final, no match is live, and 7 fixtures are scheduled next."
+      "window": "Jun 11-18",
+      "detail": "19 matches are final, Austria leads Jordan 1-1 live, and 8 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -352,9 +352,9 @@
         "group": "Group I",
         "venue": "Gillette Stadium",
         "tag": "Group I",
-        "status": "Scheduled",
-        "score": "6 p.m. ET",
-        "insight": "Foxborough"
+        "status": "Final",
+        "score": "IRQ 1 - NOR 4",
+        "insight": "Full time"
       },
       {
         "date": "Jun 16",
@@ -362,9 +362,9 @@
         "group": "Group J",
         "venue": "GEHA Field at Arrowhead Stadium",
         "tag": "Group J",
-        "status": "Scheduled",
-        "score": "9 p.m. ET",
-        "insight": "Kansas City"
+        "status": "Final",
+        "score": "ARG 3 - ALG 0",
+        "insight": "Full time"
       },
       {
         "date": "Jun 17",
@@ -372,9 +372,9 @@
         "group": "Group J",
         "venue": "Levi's Stadium",
         "tag": "Group J",
-        "status": "Scheduled",
-        "score": "12 a.m. ET",
-        "insight": "Santa Clara"
+        "status": "Live",
+        "score": "AUT 1 - JOR 1",
+        "insight": "Live window"
       },
       {
         "date": "Jun 17",
@@ -415,6 +415,46 @@
         "status": "Scheduled",
         "score": "10 p.m. ET",
         "insight": "Mexico City"
+      },
+      {
+        "date": "Jun 18",
+        "match": "Czechia v South Africa",
+        "group": "Group A",
+        "venue": "Mercedes-Benz Stadium",
+        "tag": "Group A",
+        "status": "Scheduled",
+        "score": "12 p.m. ET",
+        "insight": "Atlanta"
+      },
+      {
+        "date": "Jun 18",
+        "match": "Switzerland v Bosnia-Herzegovina",
+        "group": "Group B",
+        "venue": "SoFi Stadium",
+        "tag": "Group B",
+        "status": "Scheduled",
+        "score": "3 p.m. ET",
+        "insight": "Inglewood"
+      },
+      {
+        "date": "Jun 18",
+        "match": "Canada v Qatar",
+        "group": "Group B",
+        "venue": "BC Place",
+        "tag": "Group B",
+        "status": "Scheduled",
+        "score": "6 p.m. ET",
+        "insight": "Vancouver"
+      },
+      {
+        "date": "Jun 18",
+        "match": "Mexico v South Korea",
+        "group": "Group A",
+        "venue": "Estadio Akron",
+        "tag": "Group A",
+        "status": "Scheduled",
+        "score": "9 p.m. ET",
+        "insight": "Guadalajara"
       }
     ],
     "milestones": [
