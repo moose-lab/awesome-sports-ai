@@ -155,11 +155,11 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "19"
+        "value": "20"
       },
       {
         "label": "Live match",
-        "value": "AUT 1-1"
+        "value": "None"
       },
       {
         "label": "Scheduled next",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-18",
-      "detail": "19 matches are final, Austria leads Jordan 1-1 live, and 8 fixtures are scheduled next."
+      "detail": "20 matches are final, no match is live, and 8 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -372,9 +372,9 @@
         "group": "Group J",
         "venue": "Levi's Stadium",
         "tag": "Group J",
-        "status": "Live",
-        "score": "AUT 1 - JOR 1",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "AUT 3 - JOR 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 17",
