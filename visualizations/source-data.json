@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "20"
+        "value": "21"
       },
       {
         "label": "Live match",
-        "value": "None"
+        "value": "ENG 1-0"
       },
       {
         "label": "Scheduled next",
-        "value": "8"
+        "value": "6"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-18",
-      "detail": "20 matches are final, no match is live, and 8 fixtures are scheduled next."
+      "detail": "21 matches are final, England leads Croatia 1-0 live, and 6 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -382,9 +382,9 @@
         "group": "Group K",
         "venue": "NRG Stadium",
         "tag": "Group K",
-        "status": "Scheduled",
-        "score": "1 p.m. ET",
-        "insight": "Houston"
+        "status": "Final",
+        "score": "POR 1 - COD 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 17",
@@ -392,9 +392,9 @@
         "group": "Group L",
         "venue": "AT&T Stadium",
         "tag": "Group L",
-        "status": "Scheduled",
-        "score": "4 p.m. ET",
-        "insight": "Arlington"
+        "status": "Live",
+        "score": "ENG 1 - CRO 0",
+        "insight": "Live window"
       },
       {
         "date": "Jun 17",
