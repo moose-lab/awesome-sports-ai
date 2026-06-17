@@ -155,11 +155,11 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "21"
+        "value": "22"
       },
       {
         "label": "Live match",
-        "value": "ENG 1-0"
+        "value": "None"
       },
       {
         "label": "Scheduled next",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-18",
-      "detail": "21 matches are final, England leads Croatia 1-0 live, and 6 fixtures are scheduled next."
+      "detail": "22 matches are final, no match is live, and 6 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -392,9 +392,9 @@
         "group": "Group L",
         "venue": "AT&T Stadium",
         "tag": "Group L",
-        "status": "Live",
-        "score": "ENG 1 - CRO 0",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "ENG 4 - CRO 2",
+        "insight": "Full time"
       },
       {
         "date": "Jun 17",
