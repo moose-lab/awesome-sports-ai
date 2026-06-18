@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "25"
+        "value": "26"
       },
       {
         "label": "Live match",
-        "value": "SUI 1-0"
+        "value": "CAN 3-0"
       },
       {
         "label": "Scheduled next",
-        "value": "6"
+        "value": "5"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-19",
-      "detail": "25 matches are final, Switzerland leads Bosnia-Herzegovina 1-0 live, and 6 fixtures are scheduled next."
+      "detail": "26 matches are final, Canada leads Qatar 3-0 live, and 5 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -432,9 +432,9 @@
         "group": "Group B",
         "venue": "SoFi Stadium",
         "tag": "Group B",
-        "status": "Live",
-        "score": "SUI 1 - BIH 0",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "SUI 4 - BIH 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 18",
@@ -442,9 +442,9 @@
         "group": "Group B",
         "venue": "BC Place",
         "tag": "Group B",
-        "status": "Scheduled",
-        "score": "6 p.m. ET",
-        "insight": "Vancouver"
+        "status": "Live",
+        "score": "CAN 3 - QAT 0",
+        "insight": "Live window"
       },
       {
         "date": "Jun 18",
