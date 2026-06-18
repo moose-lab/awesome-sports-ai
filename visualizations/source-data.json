@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-06-17",
+  "generatedDate": "2026-06-18",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 17, 2026",
+    "updated": "Updated June 18, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -155,7 +155,7 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "22"
+        "value": "24"
       },
       {
         "label": "Live match",
@@ -163,7 +163,7 @@
       },
       {
         "label": "Scheduled next",
-        "value": "6"
+        "value": "8"
       },
       {
         "label": "Tournament field",
@@ -172,8 +172,8 @@
     ],
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
-      "window": "Jun 11-18",
-      "detail": "22 matches are final, no match is live, and 6 fixtures are scheduled next."
+      "window": "Jun 11-19",
+      "detail": "24 matches are final, no match is live, and 8 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -402,9 +402,9 @@
         "group": "Group L",
         "venue": "BMO Field",
         "tag": "Group L",
-        "status": "Scheduled",
-        "score": "7 p.m. ET",
-        "insight": "Toronto"
+        "status": "Final",
+        "score": "GHA 1 - PAN 0",
+        "insight": "Full time"
       },
       {
         "date": "Jun 17",
@@ -412,9 +412,9 @@
         "group": "Group K",
         "venue": "Estadio Banorte",
         "tag": "Group K",
-        "status": "Scheduled",
-        "score": "10 p.m. ET",
-        "insight": "Mexico City"
+        "status": "Final",
+        "score": "UZB 1 - COL 3",
+        "insight": "Full time"
       },
       {
         "date": "Jun 18",
@@ -455,6 +455,46 @@
         "status": "Scheduled",
         "score": "9 p.m. ET",
         "insight": "Guadalajara"
+      },
+      {
+        "date": "Jun 19",
+        "match": "United States v Australia",
+        "group": "Group D",
+        "venue": "Lumen Field",
+        "tag": "Group D",
+        "status": "Scheduled",
+        "score": "3 p.m. ET",
+        "insight": "Seattle"
+      },
+      {
+        "date": "Jun 19",
+        "match": "Scotland v Morocco",
+        "group": "Group C",
+        "venue": "Gillette Stadium",
+        "tag": "Group C",
+        "status": "Scheduled",
+        "score": "6 p.m. ET",
+        "insight": "Foxborough"
+      },
+      {
+        "date": "Jun 19",
+        "match": "Brazil v Haiti",
+        "group": "Group C",
+        "venue": "Lincoln Financial Field",
+        "tag": "Group C",
+        "status": "Scheduled",
+        "score": "8:30 p.m. ET",
+        "insight": "Philadelphia"
+      },
+      {
+        "date": "Jun 19",
+        "match": "Turkiye v Paraguay",
+        "group": "Group D",
+        "venue": "Levi's Stadium",
+        "tag": "Group D",
+        "status": "Scheduled",
+        "score": "11 p.m. ET",
+        "insight": "Santa Clara"
       }
     ],
     "milestones": [
