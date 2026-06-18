@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "24"
+        "value": "25"
       },
       {
         "label": "Live match",
-        "value": "None"
+        "value": "SUI 1-0"
       },
       {
         "label": "Scheduled next",
-        "value": "8"
+        "value": "6"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-19",
-      "detail": "24 matches are final, no match is live, and 8 fixtures are scheduled next."
+      "detail": "25 matches are final, Switzerland leads Bosnia-Herzegovina 1-0 live, and 6 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -422,9 +422,9 @@
         "group": "Group A",
         "venue": "Mercedes-Benz Stadium",
         "tag": "Group A",
-        "status": "Scheduled",
-        "score": "12 p.m. ET",
-        "insight": "Atlanta"
+        "status": "Final",
+        "score": "CZE 1 - RSA 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 18",
@@ -432,9 +432,9 @@
         "group": "Group B",
         "venue": "SoFi Stadium",
         "tag": "Group B",
-        "status": "Scheduled",
-        "score": "3 p.m. ET",
-        "insight": "Inglewood"
+        "status": "Live",
+        "score": "SUI 1 - BIH 0",
+        "insight": "Live window"
       },
       {
         "date": "Jun 18",
