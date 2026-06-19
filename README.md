@@ -14,6 +14,7 @@ This repository follows the [Awesome List](https://github.com/sindresorhus/aweso
 - [Congratulations, New York Knicks: 2026 NBA Champions!](#congratulations-new-york-knicks-2026-nba-champions)
 - [Sport Tags](#sport-tags)
 - [Enterprise-to-Open-Source Decomposition](#enterprise-to-open-source-decomposition)
+- [2026 Strategic Roadmap](#2026-strategic-roadmap)
 - [The Builder's Path](#the-builders-path)
 - [Data, APIs, and Feeds](#data-apis-and-feeds)
 - [Analytics and Visualization](#analytics-and-visualization)
@@ -60,6 +61,12 @@ Example entry tags:
 Professional sports teams use expensive AI, video, tracking, scouting, and athlete-performance systems that are hard for individual builders to access. This repository decomposes those enterprise capabilities into small mono-tools the open-source community can build.
 
 See the [Enterprise-to-Open-Source Decomposition roadmap](docs/enterprise-to-open-source-decomposition.md) for the stack map and development roadmap.
+
+## 2026 Strategic Roadmap
+
+The sports AI industry is rapidly evolving, with a projected market size of nearly $50 billion by 2033. To align with the hottest trends of 2026—including the FIFA World Cup, the explosion of Women's Sports, Multimodal LLMs, and emerging sports like Pickleball and Esports—we have published the [2026 Strategic Roadmap](docs/roadmap-2026-strategy.md). 
+
+This roadmap outlines high-profile, early-stage open-source projects that developers can start building today to capitalize on these trends.
 
 ## The Builder's Path
 
@@ -114,6 +121,14 @@ Want to build your own automated match report? Here are the mono-tools you need.
 - [`win-probability-lite`](https://github.com/georgedouzas/sports-betting) - Estimate match-state pressure from score, time, and venue. _Sports: Multi-sport._
 - [`stat-card-generator`](https://github.com/andrewRowlinson/mplsoccer) - Generate SVG cards for key moments and player stats. _Sports: Soccer._
 - [`match-report-md`](https://github.com/DataKnight1/football-match-intelligence) - Generate a readable Markdown report from events and summary metrics. _Sports: Soccer._
+
+### Build Your Own 2026 Trending App
+
+Want to build a high-profile app for the hottest 2026 sports trends? Here are the mono-tools you need.
+
+- [`llm-match-commentator`](docs/roadmap-2026-strategy.md) - A RAG system that ingests live match event streams and generates localized, multi-language commentary. _Sports: Soccer, Multi-sport._
+- [`wnba-gravity-mapper`](docs/roadmap-2026-strategy.md) - Calculate player "gravity" using public WNBA play-by-play and tracking data. _Sports: Basketball._
+- [`pickleball-court-mapper`](docs/roadmap-2026-strategy.md) - Map pickleball court lines and track ball bounces for amateur match analysis. _Sports: Tennis/Racquet._
 
 ## Data, APIs, and Feeds
 

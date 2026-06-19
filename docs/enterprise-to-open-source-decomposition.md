@@ -23,6 +23,8 @@ The goal is not to clone enterprise vendors. The goal is to identify the capabil
 
 Start with small tools that can work with public or user-owned data. Each tool should have a clear input, output, and demo dataset before it is listed as ready.
 
+*Note: This roadmap has been updated to reflect the hottest trends in 2026, including the FIFA World Cup, the explosion of Women's Sports, and the rise of Multimodal LLMs and Emerging Sports.*
+
 ### Phase 1: Data Foundations
 
 - [ ] `fixture-normalizer` - Convert public fixture CSV or JSON files into a shared schedule schema.
@@ -57,6 +59,14 @@ Start with small tools that can work with public or user-owned data. Each tool s
 - [ ] `match-report-md` - Generate a Markdown match report from events and summary metrics.
 - [ ] `highlight-captioner` - Draft captions from tagged highlight metadata.
 - [ ] `scouting-report-template` - Create a repeatable player scouting report from profile data and clips.
+
+### Phase 6: 2026 High-Profile Trending Projects
+
+- [ ] `llm-match-commentator` - A RAG system that ingests live match event streams and generates localized, multi-language commentary. _Trend: GenAI & World Cup 2026._
+- [ ] `var-vision-lite` - A lightweight CV tool to calibrate camera angles and detect offside lines from broadcast footage. _Trend: World Cup 2026._
+- [ ] `wnba-gravity-mapper` - Calculate player "gravity" using public WNBA play-by-play and tracking data. _Trend: Women's Sports Analytics._
+- [ ] `pickleball-court-mapper` - Map pickleball court lines and track ball bounces for amateur match analysis. _Trend: Emerging Sports._
+- [ ] `esports-action-spotter` - Analyze streams to tag key events and generate coaching feedback. _Trend: Esports AI._
 
 ## Contribution Rules For Roadmap Items
 
