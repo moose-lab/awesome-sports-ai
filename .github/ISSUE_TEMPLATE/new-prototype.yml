@@ -1,0 +1,97 @@
+name: "🛠 New Prototype Proposal"
+description: "Propose a new sports AI mono-tool prototype for Phase 6+"
+title: "feat: [sport] [tool-name]"
+labels: ["prototype", "good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Sports AI Hub — Prototype Proposal
+        Thanks for contributing! Fill in the details below to propose a new mono-tool.
+        Each tool should decompose one enterprise sports AI capability into a runnable open-source script.
+
+  - type: dropdown
+    id: sport
+    attributes:
+      label: "Sport"
+      description: "Which sport does this tool target?"
+      options:
+        - "⚽ Football / Soccer"
+        - "🏀 Basketball (NBA/WNBA)"
+        - "🏈 American Football (NFL)"
+        - "⚾ Baseball / Softball"
+        - "🎾 Tennis / Pickleball / Padel"
+        - "🏃 Athletics / Track & Field"
+        - "🏊 Swimming / Aquatics"
+        - "🎮 Esports"
+        - "🏋️ Strength / Combat Sports"
+        - "🏒 Ice Hockey"
+        - "Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "AI Category"
+      description: "What type of AI capability does this tool implement?"
+      options:
+        - "Computer Vision — Pose / Tracking"
+        - "Computer Vision — Court / Field Detection"
+        - "NLP / LLM — Commentary / Analysis"
+        - "Predictive Analytics — Performance"
+        - "Predictive Analytics — Injury Risk"
+        - "Generative AI — Highlight / Summary"
+        - "Wearable / Biometric Processing"
+        - "Tactical / Strategy Analysis"
+        - "Referee / Rule Enforcement AI"
+        - "Fan Engagement / Personalization"
+    validations:
+      required: true
+
+  - type: textarea
+    id: enterprise-tool
+    attributes:
+      label: "Enterprise Tool Being Decomposed"
+      description: "What expensive enterprise system does this replace? (e.g., 'Genius Sports GeniusIQ gravity metric — $50K/yr')"
+      placeholder: "e.g., Second Spectrum player tracking — $80K/yr license"
+    validations:
+      required: true
+
+  - type: textarea
+    id: tool-description
+    attributes:
+      label: "Tool Description"
+      description: "One paragraph: what does it do, what is the input, what is the output?"
+      placeholder: "This tool takes a CSV of player X,Y coordinates and outputs a gravity score heatmap PNG..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: input-output
+    attributes:
+      label: "Input / Output Spec"
+      description: "Be specific about file formats and data shapes."
+      value: |
+        **Input:** 
+        **Output:** 
+        **Sample data included:** Yes / No
+
+  - type: textarea
+    id: stack
+    attributes:
+      label: "Proposed Tech Stack"
+      description: "Python libraries, models, APIs needed."
+      placeholder: "Python, OpenCV, pandas, matplotlib"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Contribution Checklist"
+      options:
+        - label: "I will include a `sample_data` file so the tool runs without external dependencies"
+        - label: "The tool runs end-to-end in under 5 minutes on a standard laptop"
+        - label: "I will write a README following the existing prototype template"
+        - label: "I have checked that no existing prototype already covers this capability"

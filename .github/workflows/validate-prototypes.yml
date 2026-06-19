@@ -1,0 +1,87 @@
+name: Validate Prototypes
+
+on:
+  push:
+    paths:
+      - 'prototypes/**'
+  pull_request:
+    paths:
+      - 'prototypes/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    name: Validate prototype structure and README
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install common dependencies
+        run: |
+          pip install pandas matplotlib scipy numpy opencv-python-headless
+
+      - name: Check each prototype has required files
+        run: |
+          python3 - <<'EOF'
+          import os, sys
+          required = ["README.md"]
+          errors = []
+          proto_dir = "prototypes"
+          if not os.path.isdir(proto_dir):
+              print("No prototypes/ directory found — skipping.")
+              sys.exit(0)
+          for name in os.listdir(proto_dir):
+              path = os.path.join(proto_dir, name)
+              if not os.path.isdir(path):
+                  continue
+              for f in required:
+                  if not os.path.exists(os.path.join(path, f)):
+                      errors.append(f"  ✗ {name}/ is missing {f}")
+          if errors:
+              print("Prototype validation failed:")
+              for e in errors:
+                  print(e)
+              sys.exit(1)
+          else:
+              print(f"✅ All {len(os.listdir(proto_dir))} prototypes have required files.")
+          EOF
+
+      - name: Run llm-match-commentator (dry run without API key)
+        run: |
+          cd prototypes/llm-match-commentator
+          python3 -c "
+          import json
+          with open('sample_events.json') as f:
+              data = json.load(f)
+          print(f'✅ Loaded {len(data[\"events\"])} events from sample_events.json')
+          "
+
+      - name: Run wnba-gravity-mapper
+        run: |
+          cd prototypes/wnba-gravity-mapper
+          python3 gravity_mapper.py
+          test -f gravity_map.png && echo "✅ gravity_map.png generated"
+          test -f gravity_scores.csv && echo "✅ gravity_scores.csv generated"
+
+      - name: Run pickleball-court-mapper
+        run: |
+          cd prototypes/pickleball-court-mapper
+          python3 court_mapper.py
+          test -f court_diagram.png && echo "✅ court_diagram.png generated"
+          test -f court_annotated.png && echo "✅ court_annotated.png generated"
+
+      - name: Upload prototype outputs as artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: prototype-outputs
+          path: |
+            prototypes/wnba-gravity-mapper/gravity_map.png
+            prototypes/wnba-gravity-mapper/gravity_scores.csv
+            prototypes/pickleball-court-mapper/court_diagram.png
+            prototypes/pickleball-court-mapper/court_annotated.png
