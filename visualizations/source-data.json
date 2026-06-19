@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "28"
+        "value": "29"
       },
       {
         "label": "Live match",
-        "value": "USA 2-0"
+        "value": "SCO 0-1"
       },
       {
         "label": "Scheduled next",
-        "value": "6"
+        "value": "5"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-20",
-      "detail": "28 matches are final, United States leads Australia 2-0 live, and 6 fixtures are scheduled next."
+      "detail": "29 matches are final, Scotland leads Morocco 0-1 live, and 5 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -462,9 +462,9 @@
         "group": "Group D",
         "venue": "Lumen Field",
         "tag": "Group D",
-        "status": "Live",
+        "status": "Final",
         "score": "USA 2 - AUS 0",
-        "insight": "Live window"
+        "insight": "Full time"
       },
       {
         "date": "Jun 19",
@@ -472,9 +472,9 @@
         "group": "Group C",
         "venue": "Gillette Stadium",
         "tag": "Group C",
-        "status": "Scheduled",
-        "score": "6 p.m. ET",
-        "insight": "Foxborough"
+        "status": "Live",
+        "score": "SCO 0 - MAR 1",
+        "insight": "Live window"
       },
       {
         "date": "Jun 19",
