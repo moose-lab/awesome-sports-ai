@@ -159,11 +159,11 @@
       },
       {
         "label": "Live match",
-        "value": "None"
+        "value": "USA 2-0"
       },
       {
         "label": "Scheduled next",
-        "value": "7"
+        "value": "6"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-20",
-      "detail": "28 matches are final, no match is live, and 7 fixtures are scheduled next."
+      "detail": "28 matches are final, United States leads Australia 2-0 live, and 6 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -462,9 +462,9 @@
         "group": "Group D",
         "venue": "Lumen Field",
         "tag": "Group D",
-        "status": "Scheduled",
-        "score": "3 p.m. ET",
-        "insight": "Seattle"
+        "status": "Live",
+        "score": "USA 2 - AUS 0",
+        "insight": "Live window"
       },
       {
         "date": "Jun 19",
