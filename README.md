@@ -3,6 +3,11 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/moose-lab/awesome-sports-ai?style=social)](https://github.com/moose-lab/awesome-sports-ai/stargazers)
+[![Sports AI Hub](https://img.shields.io/badge/%F0%9F%8C%90%20Sports%20AI%20Hub-Live-00FF87?style=flat&labelColor=0D0F14)](https://sports-ai-hub.manus.space)
+
+> **🌐 Interactive Showcase:** [sports-ai-hub.manus.space](https://sports-ai-hub.manus.space) — Live web app with prototype demos, 8-phase roadmap, trending sports heat chart, and contributor onboarding.
+>
+> **📦 Web App Source:** [github.com/moose-lab/sports-ai-hub](https://github.com/moose-lab/sports-ai-hub) — React + Vite + TypeScript frontend, MIT licensed. PRD: [`docs/PRD-awesome-sports-ai-2026.md`](docs/PRD-awesome-sports-ai-2026.md).
 
 A curated collection of sports tools, platforms, datasets, APIs, and resources for people building, analyzing, coaching, operating, and covering sports.
 
@@ -124,11 +129,11 @@ Want to build your own automated match report? Here are the mono-tools you need.
 
 ### Build Your Own 2026 Trending App
 
-Want to build a high-profile app for the hottest 2026 sports trends? Here are the mono-tools you need.
+Want to build a high-profile app for the hottest 2026 sports trends? Here are the mono-tools you need. **All three are live and runnable** — see the [Sports AI Hub](https://sports-ai-hub.manus.space) for interactive demos.
 
-- [`llm-match-commentator`](docs/roadmap-2026-strategy.md) - A RAG system that ingests live match event streams and generates localized, multi-language commentary. _Sports: Soccer, Multi-sport._
-- [`wnba-gravity-mapper`](docs/roadmap-2026-strategy.md) - Calculate player "gravity" using public WNBA play-by-play and tracking data. _Sports: Basketball._
-- [`pickleball-court-mapper`](docs/roadmap-2026-strategy.md) - Map pickleball court lines and track ball bounces for amateur match analysis. _Sports: Tennis/Racquet._
+- [`llm-match-commentator`](prototypes/llm-match-commentator/) - A RAG system that ingests live match event streams and generates localized, multi-language commentary. `python3 commentator.py` _Sports: Soccer, Multi-sport._
+- [`wnba-gravity-mapper`](prototypes/wnba-gravity-mapper/) - Calculate player "gravity" using public WNBA play-by-play and tracking data. Outputs heatmap PNG. `python3 gravity_mapper.py` _Sports: Basketball._
+- [`pickleball-court-mapper`](prototypes/pickleball-court-mapper/) - Map pickleball court lines and track ball bounces for amateur match analysis. `python3 court_mapper.py` _Sports: Tennis/Racquet._
 
 ## Data, APIs, and Feeds
 
