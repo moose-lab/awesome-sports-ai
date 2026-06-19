@@ -6,6 +6,12 @@ Thanks for helping improve Awesome Sports AI. This repository is meant to be a p
 
 Add tools, platforms, datasets, APIs, libraries, or resources that are directly useful for sports builders, analysts, coaches, operators, creators, or researchers.
 
+**🌟 2026 Focus Areas:** We are especially welcoming contributions related to the [2026 Strategic Roadmap](docs/roadmap-2026-strategy.md), including:
+- Generative AI & Multimodal LLMs for sports video/audio
+- Tools built for the FIFA World Cup 2026
+- Women's Sports analytics (WNBA, NWSL, etc.)
+- Emerging sports tech (Pickleball, Esports, Padel)
+
 A good entry should:
 
 - Be clearly related to sports or sports technology.
