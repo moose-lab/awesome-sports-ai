@@ -1,0 +1,24 @@
+{
+  "match": {
+    "home_team": "USA",
+    "away_team": "Mexico",
+    "competition": "FIFA World Cup 2026",
+    "venue": "MetLife Stadium, New Jersey",
+    "date": "2026-06-22"
+  },
+  "events": [
+    { "minute": 3,  "type": "pass",       "team": "USA",    "player": "Christian Pulisic",   "detail": "Long diagonal ball to the left flank" },
+    { "minute": 7,  "type": "shot",       "team": "Mexico", "player": "Hirving Lozano",      "detail": "Low drive from outside the box, saved by Turner" },
+    { "minute": 12, "type": "foul",       "team": "USA",    "player": "Tyler Adams",         "detail": "Tactical foul in midfield, yellow card shown" },
+    { "minute": 18, "type": "goal",       "team": "USA",    "player": "Folarin Balogun",     "detail": "Header from a corner kick, 1-0 USA" },
+    { "minute": 23, "type": "var_check",  "team": null,     "player": null,                  "detail": "VAR reviews potential offside on the goal, decision stands" },
+    { "minute": 31, "type": "shot",       "team": "USA",    "player": "Christian Pulisic",   "detail": "Curling effort hits the post" },
+    { "minute": 38, "type": "goal",       "team": "Mexico", "player": "Raul Jimenez",        "detail": "Penalty kick, 1-1" },
+    { "minute": 45, "type": "half_time",  "team": null,     "player": null,                  "detail": "Half time: USA 1 - 1 Mexico" },
+    { "minute": 52, "type": "substitution","team": "USA",   "player": "Gio Reyna on, Adams off", "detail": "Tactical change by the USA coach" },
+    { "minute": 67, "type": "shot",       "team": "Mexico", "player": "Hirving Lozano",      "detail": "Powerful shot, tipped over the bar by Turner" },
+    { "minute": 74, "type": "goal",       "team": "USA",    "player": "Gio Reyna",           "detail": "Brilliant solo run and finish, 2-1 USA" },
+    { "minute": 83, "type": "red_card",   "team": "Mexico", "player": "Edson Alvarez",       "detail": "Second yellow card, Mexico down to 10 men" },
+    { "minute": 90, "type": "full_time",  "team": null,     "player": null,                  "detail": "Full time: USA 2 - 1 Mexico" }
+  ]
+}

@@ -1,0 +1,57 @@
+name: "📌 Add Curated Tool"
+description: "Suggest a new tool, paper, or dataset to add to the awesome list"
+title: "add: [tool-name] — [sport]"
+labels: ["curation", "good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Add a Tool to the Awesome Sports AI List
+        Suggest a project, paper, dataset, or API that belongs in the curated list.
+
+  - type: input
+    id: tool-name
+    attributes:
+      label: "Tool / Project Name"
+      placeholder: "e.g., StatsBomb Open Data"
+    validations:
+      required: true
+
+  - type: input
+    id: tool-url
+    attributes:
+      label: "URL"
+      placeholder: "https://github.com/statsbomb/open-data"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Category"
+      options:
+        - "Open Datasets"
+        - "Computer Vision Libraries"
+        - "NLP / LLM Tools"
+        - "Analytics Frameworks"
+        - "Wearable / Sensor APIs"
+        - "Simulation / Game Engines"
+        - "Research Papers"
+        - "Commercial APIs (free tier)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "One-line Description"
+      description: "Max 120 characters. Be specific — what does it do and for which sport?"
+      placeholder: "Free event-level football data for 3,600+ matches from StatsBomb."
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: "Why does this belong in the list?"
+      description: "Is it widely used? Does it fill a gap? Is it the best open-source option in its category?"
