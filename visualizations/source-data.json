@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-06-18",
+  "generatedDate": "2026-06-19",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 18, 2026",
+    "updated": "Updated June 19, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "26"
+        "value": "28"
       },
       {
         "label": "Live match",
-        "value": "CAN 3-0"
+        "value": "None"
       },
       {
         "label": "Scheduled next",
-        "value": "5"
+        "value": "7"
       },
       {
         "label": "Tournament field",
@@ -172,8 +172,8 @@
     ],
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
-      "window": "Jun 11-19",
-      "detail": "26 matches are final, Canada leads Qatar 3-0 live, and 5 fixtures are scheduled next."
+      "window": "Jun 11-20",
+      "detail": "28 matches are final, no match is live, and 7 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -442,9 +442,9 @@
         "group": "Group B",
         "venue": "BC Place",
         "tag": "Group B",
-        "status": "Live",
-        "score": "CAN 3 - QAT 0",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "CAN 6 - QAT 0",
+        "insight": "Full time"
       },
       {
         "date": "Jun 18",
@@ -452,9 +452,9 @@
         "group": "Group A",
         "venue": "Estadio Akron",
         "tag": "Group A",
-        "status": "Scheduled",
-        "score": "9 p.m. ET",
-        "insight": "Guadalajara"
+        "status": "Final",
+        "score": "MEX 1 - KOR 0",
+        "insight": "Full time"
       },
       {
         "date": "Jun 19",
@@ -495,6 +495,36 @@
         "status": "Scheduled",
         "score": "11 p.m. ET",
         "insight": "Santa Clara"
+      },
+      {
+        "date": "Jun 20",
+        "match": "Netherlands v Sweden",
+        "group": "Group F",
+        "venue": "NRG Stadium",
+        "tag": "Group F",
+        "status": "Scheduled",
+        "score": "1 p.m. ET",
+        "insight": "Houston"
+      },
+      {
+        "date": "Jun 20",
+        "match": "Germany v Cote d'Ivoire",
+        "group": "Group E",
+        "venue": "BMO Field",
+        "tag": "Group E",
+        "status": "Scheduled",
+        "score": "4 p.m. ET",
+        "insight": "Toronto"
+      },
+      {
+        "date": "Jun 20",
+        "match": "Ecuador v Curacao",
+        "group": "Group E",
+        "venue": "GEHA Field at Arrowhead Stadium",
+        "tag": "Group E",
+        "status": "Scheduled",
+        "score": "8 p.m. ET",
+        "insight": "Kansas City"
       }
     ],
     "milestones": [
