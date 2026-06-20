@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-06-19",
+  "generatedDate": "2026-06-20",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 19, 2026",
+    "updated": "Updated June 20, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "29"
+        "value": "31"
       },
       {
         "label": "Live match",
-        "value": "SCO 0-1"
+        "value": "TUR 0-1"
       },
       {
         "label": "Scheduled next",
-        "value": "5"
+        "value": "8"
       },
       {
         "label": "Tournament field",
@@ -172,8 +172,8 @@
     ],
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
-      "window": "Jun 11-20",
-      "detail": "29 matches are final, Scotland leads Morocco 0-1 live, and 5 fixtures are scheduled next."
+      "window": "Jun 11-21",
+      "detail": "31 matches are final, Turkiye leads Paraguay 0-1 live, and 8 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -472,9 +472,9 @@
         "group": "Group C",
         "venue": "Gillette Stadium",
         "tag": "Group C",
-        "status": "Live",
+        "status": "Final",
         "score": "SCO 0 - MAR 1",
-        "insight": "Live window"
+        "insight": "Full time"
       },
       {
         "date": "Jun 19",
@@ -482,9 +482,9 @@
         "group": "Group C",
         "venue": "Lincoln Financial Field",
         "tag": "Group C",
-        "status": "Scheduled",
-        "score": "8:30 p.m. ET",
-        "insight": "Philadelphia"
+        "status": "Final",
+        "score": "BRA 3 - HAI 0",
+        "insight": "Full time"
       },
       {
         "date": "Jun 19",
@@ -492,9 +492,9 @@
         "group": "Group D",
         "venue": "Levi's Stadium",
         "tag": "Group D",
-        "status": "Scheduled",
-        "score": "11 p.m. ET",
-        "insight": "Santa Clara"
+        "status": "Live",
+        "score": "TUR 0 - PAR 1",
+        "insight": "Live window"
       },
       {
         "date": "Jun 20",
@@ -525,6 +525,56 @@
         "status": "Scheduled",
         "score": "8 p.m. ET",
         "insight": "Kansas City"
+      },
+      {
+        "date": "Jun 21",
+        "match": "Tunisia v Japan",
+        "group": "Group F",
+        "venue": "Estadio BBVA",
+        "tag": "Group F",
+        "status": "Scheduled",
+        "score": "12 a.m. ET",
+        "insight": "Guadalupe"
+      },
+      {
+        "date": "Jun 21",
+        "match": "Spain v Saudi Arabia",
+        "group": "Group H",
+        "venue": "Mercedes-Benz Stadium",
+        "tag": "Group H",
+        "status": "Scheduled",
+        "score": "12 p.m. ET",
+        "insight": "Atlanta"
+      },
+      {
+        "date": "Jun 21",
+        "match": "Belgium v Iran",
+        "group": "Group G",
+        "venue": "SoFi Stadium",
+        "tag": "Group G",
+        "status": "Scheduled",
+        "score": "3 p.m. ET",
+        "insight": "Inglewood"
+      },
+      {
+        "date": "Jun 21",
+        "match": "Uruguay v Cabo Verde",
+        "group": "Group H",
+        "venue": "Hard Rock Stadium",
+        "tag": "Group H",
+        "status": "Scheduled",
+        "score": "6 p.m. ET",
+        "insight": "Miami Gardens"
+      },
+      {
+        "date": "Jun 21",
+        "match": "New Zealand v Egypt",
+        "group": "Group G",
+        "venue": "BC Place",
+        "tag": "Group G",
+        "status": "Scheduled",
+        "score": "9 p.m. ET",
+        "insight": "Vancouver"
       }
     ],
     "milestones": [
