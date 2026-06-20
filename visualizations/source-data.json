@@ -155,11 +155,11 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "31"
+        "value": "32"
       },
       {
         "label": "Live match",
-        "value": "TUR 0-1"
+        "value": "None"
       },
       {
         "label": "Scheduled next",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-21",
-      "detail": "31 matches are final, Turkiye leads Paraguay 0-1 live, and 8 fixtures are scheduled next."
+      "detail": "32 matches are final, no match is live, and 8 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -492,9 +492,9 @@
         "group": "Group D",
         "venue": "Levi's Stadium",
         "tag": "Group D",
-        "status": "Live",
+        "status": "Final",
         "score": "TUR 0 - PAR 1",
-        "insight": "Live window"
+        "insight": "Full time"
       },
       {
         "date": "Jun 20",
