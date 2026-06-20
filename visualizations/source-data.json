@@ -155,7 +155,7 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "33"
+        "value": "34"
       },
       {
         "label": "Live match",
@@ -163,7 +163,7 @@
       },
       {
         "label": "Scheduled next",
-        "value": "7"
+        "value": "6"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-21",
-      "detail": "33 matches are final, no match is live, and 7 fixtures are scheduled next."
+      "detail": "34 matches are final, no match is live, and 6 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -512,9 +512,9 @@
         "group": "Group E",
         "venue": "BMO Field",
         "tag": "Group E",
-        "status": "Scheduled",
-        "score": "4 p.m. ET",
-        "insight": "Toronto"
+        "status": "Final",
+        "score": "GER 2 - CIV 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 20",
