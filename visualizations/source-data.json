@@ -155,7 +155,7 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "32"
+        "value": "33"
       },
       {
         "label": "Live match",
@@ -163,7 +163,7 @@
       },
       {
         "label": "Scheduled next",
-        "value": "8"
+        "value": "7"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-21",
-      "detail": "32 matches are final, no match is live, and 8 fixtures are scheduled next."
+      "detail": "33 matches are final, no match is live, and 7 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -502,9 +502,9 @@
         "group": "Group F",
         "venue": "NRG Stadium",
         "tag": "Group F",
-        "status": "Scheduled",
-        "score": "1 p.m. ET",
-        "insight": "Houston"
+        "status": "Final",
+        "score": "NED 5 - SWE 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 20",
