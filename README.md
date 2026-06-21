@@ -3,9 +3,9 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/moose-lab/awesome-sports-ai?style=social)](https://github.com/moose-lab/awesome-sports-ai/stargazers)
-[![Sports AI Hub](https://img.shields.io/badge/Sports%20AI%20Hub-Official%20Web%20App-00FF87?style=flat&labelColor=0D0F14)](https://moose-lab.github.io/sports-ai-hub/)
+[![Sports AI Hub](https://img.shields.io/badge/Sports%20AI%20Hub-Official%20Web%20App-00FF87?style=flat&labelColor=0D0F14)](https://sports-ai-hub.pages.dev/)
 
-> **Sports AI Hub:** [Open the official web app](https://moose-lab.github.io/sports-ai-hub/) - Interactive homepage for the awesome-sports-ai builder roadmap, prototypes, and project paths.
+> **Sports AI Hub:** [Open the official web app](https://sports-ai-hub.pages.dev/) - Interactive homepage for the awesome-sports-ai builder roadmap, prototypes, and project paths.
 >
 > **Hub Planning:** [`docs/PRD-awesome-sports-ai-2026.md`](docs/PRD-awesome-sports-ai-2026.md) — Product brief for the public Sports AI Hub direction.
 
@@ -36,7 +36,7 @@ This repository follows the [Awesome List](https://github.com/sindresorhus/aweso
 
 ## Official Web App
 
-Open [Sports AI Hub](https://moose-lab.github.io/sports-ai-hub/) for the interactive webapp version of this repository's roadmap, prototype paths, and builder navigation.
+Open [Sports AI Hub](https://sports-ai-hub.pages.dev/) for the interactive webapp version of this repository's roadmap, prototype paths, and builder navigation.
 
 ## Featured Now
 
@@ -134,7 +134,7 @@ Want to build your own automated match report? Here are the mono-tools you need.
 
 ### Build Your Own 2026 Trending App
 
-Want to build a high-profile app for the hottest 2026 sports trends? Here are the mono-tools you need. **All three are runnable from this repository** — open the [Sports AI Hub web app](https://moose-lab.github.io/sports-ai-hub/) for the interactive builder path.
+Want to build a high-profile app for the hottest 2026 sports trends? Here are the mono-tools you need. **All three are runnable from this repository** — open the [Sports AI Hub web app](https://sports-ai-hub.pages.dev/) for the interactive builder path.
 
 - [`llm-match-commentator`](prototypes/llm-match-commentator/) - A RAG system that ingests live match event streams and generates localized, multi-language commentary. `python3 commentator.py` _Sports: Soccer, Multi-sport._
 - [`wnba-gravity-mapper`](prototypes/wnba-gravity-mapper/) - Calculate player "gravity" using public WNBA play-by-play and tracking data. Outputs heatmap PNG. `python3 gravity_mapper.py` _Sports: Basketball._
