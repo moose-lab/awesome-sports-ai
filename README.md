@@ -37,6 +37,7 @@ This repository follows the [Awesome List](https://github.com/sindresorhus/aweso
 ## Official Web App
 
 Open [Sports AI Hub](https://moose-lab.github.io/sports-ai-hub/) for the interactive webapp version of this repository's roadmap, prototype paths, and builder navigation.
+
 ## Featured Now
 
 Generated event visuals live in [visualizations/](visualizations/). Regenerate them with `node scripts/generate-visualizations.mjs`.
