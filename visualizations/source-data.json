@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-06-20",
+  "generatedDate": "2026-06-21",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 20, 2026",
+    "updated": "Updated June 21, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "34"
+        "value": "35"
       },
       {
         "label": "Live match",
-        "value": "None"
+        "value": "TUN 0-2"
       },
       {
         "label": "Scheduled next",
-        "value": "6"
+        "value": "8"
       },
       {
         "label": "Tournament field",
@@ -172,8 +172,8 @@
     ],
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
-      "window": "Jun 11-21",
-      "detail": "34 matches are final, no match is live, and 6 fixtures are scheduled next."
+      "window": "Jun 11-22",
+      "detail": "35 matches are final, Tunisia leads Japan 0-2 live, and 8 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -522,9 +522,9 @@
         "group": "Group E",
         "venue": "GEHA Field at Arrowhead Stadium",
         "tag": "Group E",
-        "status": "Scheduled",
-        "score": "8 p.m. ET",
-        "insight": "Kansas City"
+        "status": "Final",
+        "score": "ECU 0 - CUW 0",
+        "insight": "Full time"
       },
       {
         "date": "Jun 21",
@@ -532,9 +532,9 @@
         "group": "Group F",
         "venue": "Estadio BBVA",
         "tag": "Group F",
-        "status": "Scheduled",
-        "score": "12 a.m. ET",
-        "insight": "Guadalupe"
+        "status": "Live",
+        "score": "TUN 0 - JPN 2",
+        "insight": "Live window"
       },
       {
         "date": "Jun 21",
@@ -575,6 +575,46 @@
         "status": "Scheduled",
         "score": "9 p.m. ET",
         "insight": "Vancouver"
+      },
+      {
+        "date": "Jun 22",
+        "match": "Argentina v Austria",
+        "group": "Group J",
+        "venue": "AT&T Stadium",
+        "tag": "Group J",
+        "status": "Scheduled",
+        "score": "1 p.m. ET",
+        "insight": "Arlington"
+      },
+      {
+        "date": "Jun 22",
+        "match": "France v Iraq",
+        "group": "Group I",
+        "venue": "Lincoln Financial Field",
+        "tag": "Group I",
+        "status": "Scheduled",
+        "score": "5 p.m. ET",
+        "insight": "Philadelphia"
+      },
+      {
+        "date": "Jun 22",
+        "match": "Norway v Senegal",
+        "group": "Group I",
+        "venue": "MetLife Stadium",
+        "tag": "Group I",
+        "status": "Scheduled",
+        "score": "8 p.m. ET",
+        "insight": "East Rutherford"
+      },
+      {
+        "date": "Jun 22",
+        "match": "Jordan v Algeria",
+        "group": "Group J",
+        "venue": "Levi's Stadium",
+        "tag": "Group J",
+        "status": "Scheduled",
+        "score": "11 p.m. ET",
+        "insight": "Santa Clara"
       }
     ],
     "milestones": [
