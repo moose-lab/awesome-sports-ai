@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "44"
+        "value": "45"
       },
       {
         "label": "Live match",
-        "value": "None"
+        "value": "ENG 0-0"
       },
       {
         "label": "Scheduled next",
-        "value": "10"
+        "value": "8"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-24",
-      "detail": "44 matches are final, no match is live, and 10 fixtures are scheduled next."
+      "detail": "45 matches are final, England leads Ghana 0-0 live, and 8 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -622,9 +622,9 @@
         "group": "Group K",
         "venue": "NRG Stadium",
         "tag": "Group K",
-        "status": "Scheduled",
-        "score": "1 p.m. ET",
-        "insight": "Houston"
+        "status": "Final",
+        "score": "POR 5 - UZB 0",
+        "insight": "Full time"
       },
       {
         "date": "Jun 23",
@@ -632,9 +632,9 @@
         "group": "Group L",
         "venue": "Gillette Stadium",
         "tag": "Group L",
-        "status": "Scheduled",
-        "score": "4 p.m. ET",
-        "insight": "Foxborough"
+        "status": "Live",
+        "score": "ENG 0 - GHA 0",
+        "insight": "Live window"
       },
       {
         "date": "Jun 23",
