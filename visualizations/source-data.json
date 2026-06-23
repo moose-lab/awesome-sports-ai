@@ -155,11 +155,11 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "45"
+        "value": "46"
       },
       {
         "label": "Live match",
-        "value": "ENG 0-0"
+        "value": "None"
       },
       {
         "label": "Scheduled next",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-24",
-      "detail": "45 matches are final, England leads Ghana 0-0 live, and 8 fixtures are scheduled next."
+      "detail": "46 matches are final, no match is live, and 8 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -632,9 +632,9 @@
         "group": "Group L",
         "venue": "Gillette Stadium",
         "tag": "Group L",
-        "status": "Live",
+        "status": "Final",
         "score": "ENG 0 - GHA 0",
-        "insight": "Live window"
+        "insight": "Full time"
       },
       {
         "date": "Jun 23",
