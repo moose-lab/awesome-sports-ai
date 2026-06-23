@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-06-21",
+  "generatedDate": "2026-06-23",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 21, 2026",
+    "updated": "Updated June 23, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "35"
+        "value": "44"
       },
       {
         "label": "Live match",
-        "value": "TUN 0-2"
+        "value": "None"
       },
       {
         "label": "Scheduled next",
-        "value": "8"
+        "value": "10"
       },
       {
         "label": "Tournament field",
@@ -172,8 +172,8 @@
     ],
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
-      "window": "Jun 11-22",
-      "detail": "35 matches are final, Tunisia leads Japan 0-2 live, and 8 fixtures are scheduled next."
+      "window": "Jun 11-24",
+      "detail": "44 matches are final, no match is live, and 10 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -532,9 +532,9 @@
         "group": "Group F",
         "venue": "Estadio BBVA",
         "tag": "Group F",
-        "status": "Live",
-        "score": "TUN 0 - JPN 2",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "TUN 0 - JPN 4",
+        "insight": "Full time"
       },
       {
         "date": "Jun 21",
@@ -542,9 +542,9 @@
         "group": "Group H",
         "venue": "Mercedes-Benz Stadium",
         "tag": "Group H",
-        "status": "Scheduled",
-        "score": "12 p.m. ET",
-        "insight": "Atlanta"
+        "status": "Final",
+        "score": "ESP 4 - KSA 0",
+        "insight": "Full time"
       },
       {
         "date": "Jun 21",
@@ -552,9 +552,9 @@
         "group": "Group G",
         "venue": "SoFi Stadium",
         "tag": "Group G",
-        "status": "Scheduled",
-        "score": "3 p.m. ET",
-        "insight": "Inglewood"
+        "status": "Final",
+        "score": "BEL 0 - IRN 0",
+        "insight": "Full time"
       },
       {
         "date": "Jun 21",
@@ -562,9 +562,9 @@
         "group": "Group H",
         "venue": "Hard Rock Stadium",
         "tag": "Group H",
-        "status": "Scheduled",
-        "score": "6 p.m. ET",
-        "insight": "Miami Gardens"
+        "status": "Final",
+        "score": "URU 2 - CPV 2",
+        "insight": "Full time"
       },
       {
         "date": "Jun 21",
@@ -572,9 +572,9 @@
         "group": "Group G",
         "venue": "BC Place",
         "tag": "Group G",
-        "status": "Scheduled",
-        "score": "9 p.m. ET",
-        "insight": "Vancouver"
+        "status": "Final",
+        "score": "NZL 1 - EGY 3",
+        "insight": "Full time"
       },
       {
         "date": "Jun 22",
@@ -582,9 +582,9 @@
         "group": "Group J",
         "venue": "AT&T Stadium",
         "tag": "Group J",
-        "status": "Scheduled",
-        "score": "1 p.m. ET",
-        "insight": "Arlington"
+        "status": "Final",
+        "score": "ARG 2 - AUT 0",
+        "insight": "Full time"
       },
       {
         "date": "Jun 22",
@@ -592,9 +592,9 @@
         "group": "Group I",
         "venue": "Lincoln Financial Field",
         "tag": "Group I",
-        "status": "Scheduled",
-        "score": "5 p.m. ET",
-        "insight": "Philadelphia"
+        "status": "Final",
+        "score": "FRA 3 - IRQ 0",
+        "insight": "Full time"
       },
       {
         "date": "Jun 22",
@@ -602,9 +602,9 @@
         "group": "Group I",
         "venue": "MetLife Stadium",
         "tag": "Group I",
-        "status": "Scheduled",
-        "score": "8 p.m. ET",
-        "insight": "East Rutherford"
+        "status": "Final",
+        "score": "NOR 3 - SEN 2",
+        "insight": "Full time"
       },
       {
         "date": "Jun 22",
@@ -612,9 +612,109 @@
         "group": "Group J",
         "venue": "Levi's Stadium",
         "tag": "Group J",
+        "status": "Final",
+        "score": "JOR 1 - ALG 2",
+        "insight": "Full time"
+      },
+      {
+        "date": "Jun 23",
+        "match": "Portugal v Uzbekistan",
+        "group": "Group K",
+        "venue": "NRG Stadium",
+        "tag": "Group K",
         "status": "Scheduled",
-        "score": "11 p.m. ET",
-        "insight": "Santa Clara"
+        "score": "1 p.m. ET",
+        "insight": "Houston"
+      },
+      {
+        "date": "Jun 23",
+        "match": "England v Ghana",
+        "group": "Group L",
+        "venue": "Gillette Stadium",
+        "tag": "Group L",
+        "status": "Scheduled",
+        "score": "4 p.m. ET",
+        "insight": "Foxborough"
+      },
+      {
+        "date": "Jun 23",
+        "match": "Panama v Croatia",
+        "group": "Group L",
+        "venue": "BMO Field",
+        "tag": "Group L",
+        "status": "Scheduled",
+        "score": "7 p.m. ET",
+        "insight": "Toronto"
+      },
+      {
+        "date": "Jun 23",
+        "match": "Colombia v Congo DR",
+        "group": "Group K",
+        "venue": "Estadio Akron",
+        "tag": "Group K",
+        "status": "Scheduled",
+        "score": "10 p.m. ET",
+        "insight": "Guadalajara"
+      },
+      {
+        "date": "Jun 24",
+        "match": "Bosnia-Herzegovina v Qatar",
+        "group": "Group B",
+        "venue": "Lumen Field",
+        "tag": "Group B",
+        "status": "Scheduled",
+        "score": "3 p.m. ET",
+        "insight": "Seattle"
+      },
+      {
+        "date": "Jun 24",
+        "match": "Switzerland v Canada",
+        "group": "Group B",
+        "venue": "BC Place",
+        "tag": "Group B",
+        "status": "Scheduled",
+        "score": "3 p.m. ET",
+        "insight": "Vancouver"
+      },
+      {
+        "date": "Jun 24",
+        "match": "Morocco v Haiti",
+        "group": "Group C",
+        "venue": "Mercedes-Benz Stadium",
+        "tag": "Group C",
+        "status": "Scheduled",
+        "score": "6 p.m. ET",
+        "insight": "Atlanta"
+      },
+      {
+        "date": "Jun 24",
+        "match": "Scotland v Brazil",
+        "group": "Group C",
+        "venue": "Hard Rock Stadium",
+        "tag": "Group C",
+        "status": "Scheduled",
+        "score": "6 p.m. ET",
+        "insight": "Miami Gardens"
+      },
+      {
+        "date": "Jun 24",
+        "match": "Czechia v Mexico",
+        "group": "Group A",
+        "venue": "Estadio Banorte",
+        "tag": "Group A",
+        "status": "Scheduled",
+        "score": "9 p.m. ET",
+        "insight": "Mexico City"
+      },
+      {
+        "date": "Jun 24",
+        "match": "South Africa v South Korea",
+        "group": "Group A",
+        "venue": "Estadio BBVA",
+        "tag": "Group A",
+        "status": "Scheduled",
+        "score": "9 p.m. ET",
+        "insight": "Guadalupe"
       }
     ],
     "milestones": [

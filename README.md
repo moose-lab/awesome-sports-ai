@@ -38,6 +38,8 @@ This repository follows the [Awesome List](https://github.com/sindresorhus/aweso
 
 Open [Sports AI Hub](https://sports-ai-hub.pages.dev/) for the interactive webapp version of this repository's roadmap, prototype paths, and builder navigation.
 
+Public builder-path fallback: [Build Your Own 2026 Trending App](https://github.com/moose-lab/awesome-sports-ai#build-your-own-2026-trending-app).
+
 ## Featured Now
 
 Generated event visuals live in [visualizations/](visualizations/). Regenerate them with `node scripts/generate-visualizations.mjs`.

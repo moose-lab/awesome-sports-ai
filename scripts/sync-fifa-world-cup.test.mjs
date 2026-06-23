@@ -155,8 +155,9 @@ const sourceData = {
   },
 };
 
-test("buildDateWindow covers yesterday, today, and tomorrow in UTC", () => {
+test("buildDateWindow covers the stale-live catch-up window in UTC", () => {
   assert.deepEqual(buildDateWindow(new Date("2026-06-15T05:00:00Z")), [
+    "20260613",
     "20260614",
     "20260615",
     "20260616",
