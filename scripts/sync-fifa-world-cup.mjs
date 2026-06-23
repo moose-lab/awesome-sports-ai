@@ -155,6 +155,7 @@ const liveSummary = (fixture) => {
 };
 
 export const buildDateWindow = (now = new Date()) => [
+  formatApiDate(addUtcDays(now, -2)),
   formatApiDate(addUtcDays(now, -1)),
   formatApiDate(addUtcDays(now, 0)),
   formatApiDate(addUtcDays(now, 1)),
