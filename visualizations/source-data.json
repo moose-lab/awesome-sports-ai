@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-06-23",
+  "generatedDate": "2026-06-24",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 23, 2026",
+    "updated": "Updated June 24, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -155,7 +155,7 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "46"
+        "value": "48"
       },
       {
         "label": "Live match",
@@ -163,7 +163,7 @@
       },
       {
         "label": "Scheduled next",
-        "value": "8"
+        "value": "12"
       },
       {
         "label": "Tournament field",
@@ -172,8 +172,8 @@
     ],
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
-      "window": "Jun 11-24",
-      "detail": "46 matches are final, no match is live, and 8 fixtures are scheduled next."
+      "window": "Jun 11-25",
+      "detail": "48 matches are final, no match is live, and 12 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -642,9 +642,9 @@
         "group": "Group L",
         "venue": "BMO Field",
         "tag": "Group L",
-        "status": "Scheduled",
-        "score": "7 p.m. ET",
-        "insight": "Toronto"
+        "status": "Final",
+        "score": "PAN 0 - CRO 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 23",
@@ -652,9 +652,9 @@
         "group": "Group K",
         "venue": "Estadio Akron",
         "tag": "Group K",
-        "status": "Scheduled",
-        "score": "10 p.m. ET",
-        "insight": "Guadalajara"
+        "status": "Final",
+        "score": "COL 1 - COD 0",
+        "insight": "Full time"
       },
       {
         "date": "Jun 24",
@@ -715,6 +715,66 @@
         "status": "Scheduled",
         "score": "9 p.m. ET",
         "insight": "Guadalupe"
+      },
+      {
+        "date": "Jun 25",
+        "match": "Curacao v Cote d'Ivoire",
+        "group": "Group E",
+        "venue": "Lincoln Financial Field",
+        "tag": "Group E",
+        "status": "Scheduled",
+        "score": "4 p.m. ET",
+        "insight": "Philadelphia"
+      },
+      {
+        "date": "Jun 25",
+        "match": "Ecuador v Germany",
+        "group": "Group E",
+        "venue": "MetLife Stadium",
+        "tag": "Group E",
+        "status": "Scheduled",
+        "score": "4 p.m. ET",
+        "insight": "East Rutherford"
+      },
+      {
+        "date": "Jun 25",
+        "match": "Japan v Sweden",
+        "group": "Group F",
+        "venue": "AT&T Stadium",
+        "tag": "Group F",
+        "status": "Scheduled",
+        "score": "7 p.m. ET",
+        "insight": "Arlington"
+      },
+      {
+        "date": "Jun 25",
+        "match": "Tunisia v Netherlands",
+        "group": "Group F",
+        "venue": "GEHA Field at Arrowhead Stadium",
+        "tag": "Group F",
+        "status": "Scheduled",
+        "score": "7 p.m. ET",
+        "insight": "Kansas City"
+      },
+      {
+        "date": "Jun 25",
+        "match": "Paraguay v Australia",
+        "group": "Group D",
+        "venue": "Levi's Stadium",
+        "tag": "Group D",
+        "status": "Scheduled",
+        "score": "10 p.m. ET",
+        "insight": "Santa Clara"
+      },
+      {
+        "date": "Jun 25",
+        "match": "Turkiye v United States",
+        "group": "Group D",
+        "venue": "SoFi Stadium",
+        "tag": "Group D",
+        "status": "Scheduled",
+        "score": "10 p.m. ET",
+        "insight": "Inglewood"
       }
     ],
     "milestones": [
