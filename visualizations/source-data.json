@@ -159,11 +159,11 @@
       },
       {
         "label": "Live match",
-        "value": "None"
+        "value": "BIH 2-1"
       },
       {
         "label": "Scheduled next",
-        "value": "12"
+        "value": "10"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-25",
-      "detail": "48 matches are final, no match is live, and 12 fixtures are scheduled next."
+      "detail": "48 matches are final, Bosnia-Herzegovina leads Qatar 2-1 live, and 10 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -662,9 +662,9 @@
         "group": "Group B",
         "venue": "Lumen Field",
         "tag": "Group B",
-        "status": "Scheduled",
-        "score": "3 p.m. ET",
-        "insight": "Seattle"
+        "status": "Live",
+        "score": "BIH 2 - QAT 1",
+        "insight": "Live window"
       },
       {
         "date": "Jun 24",
@@ -672,9 +672,9 @@
         "group": "Group B",
         "venue": "BC Place",
         "tag": "Group B",
-        "status": "Scheduled",
-        "score": "3 p.m. ET",
-        "insight": "Vancouver"
+        "status": "Live",
+        "score": "SUI 1 - CAN 0",
+        "insight": "Live window"
       },
       {
         "date": "Jun 24",
