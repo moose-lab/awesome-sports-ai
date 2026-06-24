@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "48"
+        "value": "50"
       },
       {
         "label": "Live match",
-        "value": "BIH 2-1"
+        "value": "MAR 1-1"
       },
       {
         "label": "Scheduled next",
-        "value": "10"
+        "value": "8"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-25",
-      "detail": "48 matches are final, Bosnia-Herzegovina leads Qatar 2-1 live, and 10 fixtures are scheduled next."
+      "detail": "50 matches are final, Morocco leads Haiti 1-1 live, and 8 fixtures are scheduled next."
     },
     "confirmedFixtures": [
       {
@@ -662,9 +662,9 @@
         "group": "Group B",
         "venue": "Lumen Field",
         "tag": "Group B",
-        "status": "Live",
-        "score": "BIH 2 - QAT 1",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "BIH 3 - QAT 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 24",
@@ -672,9 +672,9 @@
         "group": "Group B",
         "venue": "BC Place",
         "tag": "Group B",
-        "status": "Live",
-        "score": "SUI 1 - CAN 0",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "SUI 2 - CAN 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 24",
@@ -682,9 +682,9 @@
         "group": "Group C",
         "venue": "Mercedes-Benz Stadium",
         "tag": "Group C",
-        "status": "Scheduled",
-        "score": "6 p.m. ET",
-        "insight": "Atlanta"
+        "status": "Live",
+        "score": "MAR 1 - HAI 1",
+        "insight": "Live window"
       },
       {
         "date": "Jun 24",
@@ -692,9 +692,9 @@
         "group": "Group C",
         "venue": "Hard Rock Stadium",
         "tag": "Group C",
-        "status": "Scheduled",
-        "score": "6 p.m. ET",
-        "insight": "Miami Gardens"
+        "status": "Live",
+        "score": "SCO 0 - BRA 1",
+        "insight": "Live window"
       },
       {
         "date": "Jun 24",
