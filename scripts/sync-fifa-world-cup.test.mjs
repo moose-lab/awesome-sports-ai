@@ -129,6 +129,15 @@ const sourceData = {
       window: "Jun 14",
       detail: "Old detail",
     },
+    updateStream: {
+      label: "Live update stream",
+      cadence: "Every 3 hours during match windows",
+      currentWindow: "Jun 14",
+      source: "ESPN FIFA World Cup scoreboard API",
+      lastVerifiedAt: "2026-06-14",
+      status: "Pending refresh",
+      consumers: ["Sports AI Hub", "README visualization", "Match Center route"],
+    },
     confirmedFixtures: [
       {
         date: "Jun 14",
@@ -210,6 +219,85 @@ test("syncSourceData updates only the FIFA snapshot and preserves NBA data", () 
   assert.match(data.fifaWorldCup.fixtureSummary.detail, /One match is final/);
   assert.match(data.fifaWorldCup.fixtureSummary.detail, /Sweden leads Tunisia 2-0 live/);
   assert.match(data.fifaWorldCup.fixtureSummary.detail, /one fixture is scheduled next/);
+  assert.equal(data.fifaWorldCup.updateStream.currentWindow, "Jun 14-15");
+  assert.equal(data.fifaWorldCup.updateStream.lastVerifiedAt, "2026-06-15");
+  assert.equal(data.fifaWorldCup.updateStream.status, "Live coverage active");
+});
+
+test("syncSourceData describes away-leading live matches correctly", () => {
+  const awayLeadingScoreboard = {
+    events: [
+      event({
+        id: "760499",
+        date: "2026-06-25T22:00:00Z",
+        homeName: "Czechia",
+        homeAbbr: "CZE",
+        homeScore: "0",
+        awayName: "Mexico",
+        awayAbbr: "MEX",
+        awayScore: "3",
+        state: "in",
+        shortDetail: "63'",
+        venue: "Mexico City Stadium",
+        city: "Mexico City",
+        group: "Group A",
+      }),
+    ],
+  };
+
+  const { data } = syncSourceData(
+    {
+      ...sourceData,
+      fifaWorldCup: {
+        ...sourceData.fifaWorldCup,
+        confirmedFixtures: [],
+      },
+    },
+    [awayLeadingScoreboard],
+    {
+      now: new Date("2026-06-25T23:00:00Z"),
+    }
+  );
+
+  assert.match(data.fifaWorldCup.fixtureSummary.detail, /Mexico leads Czechia 3-0 live/);
+});
+
+test("syncSourceData describes tied live matches correctly", () => {
+  const tiedScoreboard = {
+    events: [
+      event({
+        id: "760500",
+        date: "2026-06-25T20:00:00Z",
+        homeName: "Morocco",
+        homeAbbr: "MAR",
+        homeScore: "1",
+        awayName: "Haiti",
+        awayAbbr: "HAI",
+        awayScore: "1",
+        state: "in",
+        shortDetail: "52'",
+        venue: "MetLife Stadium",
+        city: "East Rutherford",
+        group: "Group C",
+      }),
+    ],
+  };
+
+  const { data } = syncSourceData(
+    {
+      ...sourceData,
+      fifaWorldCup: {
+        ...sourceData.fifaWorldCup,
+        confirmedFixtures: [],
+      },
+    },
+    [tiedScoreboard],
+    {
+      now: new Date("2026-06-25T21:00:00Z"),
+    }
+  );
+
+  assert.match(data.fifaWorldCup.fixtureSummary.detail, /Morocco and Haiti are tied 1-1 live/);
 });
 
 test("syncSourceData is idempotent for the same scoreboard payload", () => {
