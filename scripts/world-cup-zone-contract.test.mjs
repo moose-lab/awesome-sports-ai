@@ -18,7 +18,7 @@ test("FIFA World Cup zone publishes a live update stream contract", () => {
 
   assert.ok(stream, "missing fifaWorldCup.updateStream");
   assert.equal(stream.label, "Live update stream");
-  assert.equal(stream.cadence, "Every 3 hours during match windows");
+  assert.equal(stream.cadence, "Every 5 minutes during the tournament window");
   assert.match(stream.currentWindow, /^Jun \d{1,2}/);
   assert.equal(stream.source, "ESPN FIFA World Cup scoreboard API");
   assert.match(stream.lastVerifiedAt, /^2026-/);
