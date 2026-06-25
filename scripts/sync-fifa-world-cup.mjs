@@ -359,12 +359,16 @@ export const syncFifaWorldCupFile = async (options = {}) => {
 const isCli = process.argv[1] === fileURLToPath(import.meta.url);
 
 if (isCli) {
-  syncFifaWorldCupFile()
-    .then(({ changed }) => {
-      console.log(changed ? "Updated visualizations/source-data.json" : "No FIFA World Cup data changes");
-    })
-    .catch((error) => {
-      console.error(error);
-      process.exitCode = 1;
-    });
+  if (!isWithinTournamentWindow(new Date())) {
+    console.log("Outside FIFA World Cup window; skipping ESPN sync.");
+  } else {
+    syncFifaWorldCupFile()
+      .then(({ changed }) => {
+        console.log(changed ? "Updated visualizations/source-data.json" : "No FIFA World Cup data changes");
+      })
+      .catch((error) => {
+        console.error(error);
+        process.exitCode = 1;
+      });
+  }
 }
