@@ -151,7 +151,15 @@ const liveSummary = (fixture) => {
   if (!score) {
     return `${fixture.match} is live`;
   }
-  return `${home} leads ${away} ${score[1]}-${score[2]} live`;
+  const homeScore = Number(score[1]);
+  const awayScore = Number(score[2]);
+  if (homeScore === awayScore) {
+    return `${home} and ${away} are tied ${homeScore}-${awayScore} live`;
+  }
+  if (homeScore > awayScore) {
+    return `${home} leads ${away} ${homeScore}-${awayScore} live`;
+  }
+  return `${away} leads ${home} ${awayScore}-${homeScore} live`;
 };
 
 export const buildDateWindow = (now = new Date()) => [
@@ -267,19 +275,45 @@ const buildFixtureSummary = (existingSummary, fixtures) => {
   };
 };
 
+const streamStatus = (fixtures) => {
+  if (fixtures.some((fixture) => fixture.status === "Live")) {
+    return "Live coverage active";
+  }
+  if (fixtures.some((fixture) => fixture.status === "Scheduled")) {
+    return "Pre-match coverage queued";
+  }
+  return "Post-match snapshot";
+};
+
+const buildUpdateStream = (existingStream, fixtures, fixtureSummary, now) => {
+  if (!existingStream) {
+    return undefined;
+  }
+
+  return {
+    ...existingStream,
+    currentWindow: fixtureSummary.window,
+    lastVerifiedAt: formatGeneratedDate(now),
+    status: streamStatus(fixtures),
+  };
+};
+
 export const syncSourceData = (sourceData, scoreboards, options = {}) => {
   const now = options.now ?? new Date();
   const data = clone(sourceData);
   const incomingFixtures = normalizeScoreboardEvents(scoreboards);
   const fifaWorldCup = data.fifaWorldCup;
   const fixtures = mergeFixtures(fifaWorldCup.confirmedFixtures ?? [], incomingFixtures);
+  const fixtureSummary = buildFixtureSummary(fifaWorldCup.fixtureSummary, fixtures);
+  const updateStream = buildUpdateStream(fifaWorldCup.updateStream, fixtures, fixtureSummary, now);
 
   data.generatedDate = formatGeneratedDate(now);
   data.fifaWorldCup = {
     ...fifaWorldCup,
     updated: `Updated ${formatLongDate(now)}`,
     stats: buildStats(fixtures),
-    fixtureSummary: buildFixtureSummary(fifaWorldCup.fixtureSummary, fixtures),
+    fixtureSummary,
+    ...(updateStream ? { updateStream } : {}),
     confirmedFixtures: fixtures,
   };
 

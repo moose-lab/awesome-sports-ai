@@ -37,6 +37,11 @@ const rect = (x, y, width, height, options = {}) => {
 
 const pillWidth = (label) => Math.max(72, label.length * 8 + 24);
 
+const truncate = (value, maxLength) => {
+  const content = String(value ?? "");
+  return content.length > maxLength ? `${content.slice(0, maxLength - 3)}...` : content;
+};
+
 const pill = (x, y, label, fill, color = "#ffffff") => {
   const width = pillWidth(label);
   return [
@@ -167,9 +172,12 @@ function renderFifa(worldCup) {
   const fixtureRowGap = 88;
   const fixtureCardHeight = 74;
   const fixtureRows = Math.ceil(worldCup.confirmedFixtures.length / fixtureColumns);
+  const fixtureEndY = fixtureStartY + (fixtureRows - 1) * fixtureRowGap + fixtureCardHeight;
+  const operationsStartY = fixtureEndY + 32;
+  const operationsHeight = worldCup.updateStream || worldCup.toolkit?.length ? 238 : 0;
   const svgHeight = Math.max(
     760,
-    fixtureStartY + (fixtureRows - 1) * fixtureRowGap + fixtureCardHeight + 68
+    fixtureEndY + operationsHeight + 100
   );
   const footerY = svgHeight - 42;
 
@@ -215,6 +223,32 @@ function renderFifa(worldCup) {
     })
     .join("");
 
+  const toolkitLanes = (worldCup.toolkit ?? []).slice(0, 3);
+  const operationsPanel =
+    worldCup.updateStream || toolkitLanes.length
+      ? `
+  ${rect(42, operationsStartY, 1016, 204, { fill: "#f8fafc", stroke: "#cbd5e1", radius: 16 })}
+  ${text(62, operationsStartY + 34, worldCup.updateStream?.label ?? "World Cup coverage system", { size: 18, weight: 950, fill: "#12342f" })}
+  ${pill(854, operationsStartY + 16, worldCup.updateStream?.status ?? "Coverage ready", "#be123c")}
+  ${text(62, operationsStartY + 60, `${worldCup.updateStream?.cadence ?? "Manual refresh"} · ${worldCup.updateStream?.currentWindow ?? worldCup.fixtureSummary.window}`, { size: 13, weight: 800, fill: "#0f766e" })}
+  ${text(62, operationsStartY + 82, `Source: ${worldCup.updateStream?.source ?? "source-data.json"} · Verified ${worldCup.updateStream?.lastVerifiedAt ?? worldCup.updated.replace("Updated ", "")}`, { size: 12, weight: 650, fill: "#526174" })}
+  ${text(62, operationsStartY + 116, "Assistant toolkit lanes", { size: 14, weight: 950, fill: "#12342f" })}
+  ${toolkitLanes
+    .map((lane, index) => {
+      const x = 62 + index * 326;
+      const y = operationsStartY + 132;
+      const tools = lane.tools?.slice(0, 2).map((tool) => tool.name).join(" + ") ?? "";
+      return `
+  <g>
+    ${rect(x, y, 300, 56, { fill: "#ffffff", stroke: "#dbe7ef", radius: 12 })}
+    ${text(x + 16, y + 23, lane.title, { size: 13, weight: 900, fill: "#12342f" })}
+    ${text(x + 16, y + 43, truncate(tools || lane.matchdayUse, 44), { size: 11, weight: 700, fill: "#64748b" })}
+  </g>`;
+    })
+    .join("")}
+`
+      : "";
+
   return svgFrame(
     1100,
     svgHeight,
@@ -231,6 +265,7 @@ function renderFifa(worldCup) {
   ${text(62, 274, worldCup.fixtureSummary.detail, { size: 12, weight: 650, fill: "#526174" })}
 
   ${fixtureCards}
+  ${operationsPanel}
   ${text(42, footerY, "Generated from source-data.json. Official hubs: FIFA match schedule + tournament hub.", { size: 12, weight: 600, fill: "#64748b" })}
 `
   );

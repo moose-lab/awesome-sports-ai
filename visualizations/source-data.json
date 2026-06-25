@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-06-24",
+  "generatedDate": "2026-06-25",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 24, 2026",
+    "updated": "Updated June 25, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "50"
+        "value": "54"
       },
       {
         "label": "Live match",
-        "value": "MAR 1-1"
+        "value": "None"
       },
       {
         "label": "Scheduled next",
-        "value": "8"
+        "value": "12"
       },
       {
         "label": "Tournament field",
@@ -172,9 +172,166 @@
     ],
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
-      "window": "Jun 11-25",
-      "detail": "50 matches are final, Morocco leads Haiti 1-1 live, and 8 fixtures are scheduled next."
+      "window": "Jun 11-26",
+      "detail": "54 matches are final, no match is live, and 12 fixtures are scheduled next."
     },
+    "updateStream": {
+      "label": "Live update stream",
+      "cadence": "Every 3 hours during match windows",
+      "currentWindow": "Jun 11-26",
+      "source": "ESPN FIFA World Cup scoreboard API",
+      "lastVerifiedAt": "2026-06-25",
+      "status": "Pre-match coverage queued",
+      "consumers": [
+        "Sports AI Hub",
+        "README visualization",
+        "Match Center route"
+      ],
+      "fields": [
+        "date",
+        "match",
+        "group",
+        "venue",
+        "status",
+        "score",
+        "insight"
+      ]
+    },
+    "matchdayZones": [
+      {
+        "slug": "live-strip",
+        "title": "Live Strip",
+        "audience": "Fans and builders checking the repository or Sports AI Hub homepage",
+        "output": "Compact ticker with current score, final count, next fixtures, and generated SVG"
+      },
+      {
+        "slug": "match-center",
+        "title": "Match Center",
+        "audience": "Users following a matchday window",
+        "output": "Fixture cards, standings-ready feed fields, score states, and source provenance"
+      },
+      {
+        "slug": "analyst-workbench",
+        "title": "Analyst Workbench",
+        "audience": "Developers building match reports and tactical tools",
+        "output": "Tool lanes for live-data, match-intelligence, xg-and-shot-quality, video-and-vision, scouting-and-reports, and media-and-localization"
+      },
+      {
+        "slug": "contributor-backlog",
+        "title": "Contributor Backlog",
+        "audience": "Open-source contributors looking for World Cup 2026 tasks",
+        "output": "Small project ideas mapped to existing prototypes and awesome-list categories"
+      }
+    ],
+    "toolkit": [
+      {
+        "slug": "live-data",
+        "title": "Live Data and Scoreboard Normalization",
+        "matchdayUse": "Ingest fixture windows, normalize teams, preserve status, and publish source-backed live snapshots.",
+        "tools": [
+          {
+            "name": "sync-fifa-world-cup",
+            "href": "scripts/sync-fifa-world-cup.mjs",
+            "role": "Refreshes the ESPN FIFA World Cup scoreboard window into source-data.json."
+          },
+          {
+            "name": "football.json",
+            "href": "https://github.com/openfootball/football.json",
+            "role": "Provides public-domain football schedule and result examples for schema comparison."
+          },
+          {
+            "name": "Kloppy",
+            "href": "https://github.com/PySport/kloppy",
+            "role": "Normalizes vendor football event data into reusable Python objects."
+          }
+        ]
+      },
+      {
+        "slug": "match-intelligence",
+        "title": "Match Intelligence Reports",
+        "matchdayUse": "Turn fixture, event, and status data into readable match briefs for fans, analysts, and editors.",
+        "tools": [
+          {
+            "name": "llm-match-commentator",
+            "href": "prototypes/llm-match-commentator/",
+            "role": "Repository prototype for localized commentary from match event streams."
+          },
+          {
+            "name": "football-match-intelligence",
+            "href": "https://github.com/DataKnight1/football-match-intelligence",
+            "role": "Reference project for football match intelligence dashboards and reporting."
+          }
+        ]
+      },
+      {
+        "slug": "xg-and-shot-quality",
+        "title": "xG and Shot Quality",
+        "matchdayUse": "Add shot-quality context once an event feed with locations, body part, and situation is available.",
+        "tools": [
+          {
+            "name": "soccer_xg",
+            "href": "https://github.com/ML-KULeuven/soccer_xg",
+            "role": "Trains baseline expected-goals models from public football event data."
+          },
+          {
+            "name": "mplsoccer",
+            "href": "https://github.com/andrewRowlinson/mplsoccer",
+            "role": "Renders shot maps, pitches, and football analytics graphics."
+          }
+        ]
+      },
+      {
+        "slug": "video-and-vision",
+        "title": "Video and Vision Review",
+        "matchdayUse": "Support coaching review, broadcast-style clips, and user-owned match video annotation.",
+        "tools": [
+          {
+            "name": "soccer-video-analytics",
+            "href": "https://github.com/tryolabs/soccer-video-analytics",
+            "role": "Demonstrates soccer possession and video analytics workflows."
+          },
+          {
+            "name": "Roboflow Sports",
+            "href": "https://github.com/roboflow/sports",
+            "role": "Provides sports computer-vision examples for detection, tracking, and analysis."
+          }
+        ]
+      },
+      {
+        "slug": "scouting-and-reports",
+        "title": "Scouting and Player Reports",
+        "matchdayUse": "Connect players, teams, and match notes into repeatable scouting and post-match reports.",
+        "tools": [
+          {
+            "name": "socceraction",
+            "href": "https://github.com/ML-KULeuven/socceraction",
+            "role": "Converts football event streams to SPADL and supports action valuation."
+          },
+          {
+            "name": "football_scout_rag",
+            "href": "https://github.com/yotambraun/football_scout_rag",
+            "role": "Reference for generating scouting reports with retrieval-augmented workflows."
+          }
+        ]
+      },
+      {
+        "slug": "media-and-localization",
+        "title": "Media and Localization",
+        "matchdayUse": "Create multilingual commentary, captions, and social-ready summaries from source-backed match context.",
+        "tools": [
+          {
+            "name": "OpenAI Whisper",
+            "href": "https://github.com/openai/whisper",
+            "role": "Transcribes commentary, interviews, and review audio for media workflows."
+          },
+          {
+            "name": "llm-match-commentator",
+            "href": "prototypes/llm-match-commentator/",
+            "role": "Generates localized commentary text from structured match events."
+          }
+        ]
+      }
+    ],
     "confirmedFixtures": [
       {
         "date": "Jun 11",
@@ -682,9 +839,9 @@
         "group": "Group C",
         "venue": "Mercedes-Benz Stadium",
         "tag": "Group C",
-        "status": "Live",
-        "score": "MAR 1 - HAI 1",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "MAR 4 - HAI 2",
+        "insight": "Full time"
       },
       {
         "date": "Jun 24",
@@ -692,9 +849,9 @@
         "group": "Group C",
         "venue": "Hard Rock Stadium",
         "tag": "Group C",
-        "status": "Live",
-        "score": "SCO 0 - BRA 1",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "SCO 0 - BRA 3",
+        "insight": "Full time"
       },
       {
         "date": "Jun 24",
@@ -702,9 +859,9 @@
         "group": "Group A",
         "venue": "Estadio Banorte",
         "tag": "Group A",
-        "status": "Scheduled",
-        "score": "9 p.m. ET",
-        "insight": "Mexico City"
+        "status": "Final",
+        "score": "CZE 0 - MEX 3",
+        "insight": "Full time"
       },
       {
         "date": "Jun 24",
@@ -712,9 +869,9 @@
         "group": "Group A",
         "venue": "Estadio BBVA",
         "tag": "Group A",
-        "status": "Scheduled",
-        "score": "9 p.m. ET",
-        "insight": "Guadalupe"
+        "status": "Final",
+        "score": "RSA 1 - KOR 0",
+        "insight": "Full time"
       },
       {
         "date": "Jun 25",
@@ -775,6 +932,66 @@
         "status": "Scheduled",
         "score": "10 p.m. ET",
         "insight": "Inglewood"
+      },
+      {
+        "date": "Jun 26",
+        "match": "Norway v France",
+        "group": "Group I",
+        "venue": "Gillette Stadium",
+        "tag": "Group I",
+        "status": "Scheduled",
+        "score": "3 p.m. ET",
+        "insight": "Foxborough"
+      },
+      {
+        "date": "Jun 26",
+        "match": "Senegal v Iraq",
+        "group": "Group I",
+        "venue": "BMO Field",
+        "tag": "Group I",
+        "status": "Scheduled",
+        "score": "3 p.m. ET",
+        "insight": "Toronto"
+      },
+      {
+        "date": "Jun 26",
+        "match": "Cabo Verde v Saudi Arabia",
+        "group": "Group H",
+        "venue": "NRG Stadium",
+        "tag": "Group H",
+        "status": "Scheduled",
+        "score": "8 p.m. ET",
+        "insight": "Houston"
+      },
+      {
+        "date": "Jun 26",
+        "match": "Uruguay v Spain",
+        "group": "Group H",
+        "venue": "Estadio Akron",
+        "tag": "Group H",
+        "status": "Scheduled",
+        "score": "8 p.m. ET",
+        "insight": "Guadalajara"
+      },
+      {
+        "date": "Jun 26",
+        "match": "Egypt v Iran",
+        "group": "Group G",
+        "venue": "Lumen Field",
+        "tag": "Group G",
+        "status": "Scheduled",
+        "score": "11 p.m. ET",
+        "insight": "Seattle"
+      },
+      {
+        "date": "Jun 26",
+        "match": "New Zealand v Belgium",
+        "group": "Group G",
+        "venue": "BC Place",
+        "tag": "Group G",
+        "status": "Scheduled",
+        "score": "11 p.m. ET",
+        "insight": "Vancouver"
       }
     ],
     "milestones": [
