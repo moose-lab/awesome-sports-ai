@@ -3,6 +3,7 @@ import test from "node:test";
 
 import {
   buildDateWindow,
+  isWithinTournamentWindow,
   normalizeScoreboardEvents,
   syncSourceData,
 } from "./sync-fifa-world-cup.mjs";
@@ -310,4 +311,15 @@ test("syncSourceData is idempotent for the same scoreboard payload", () => {
 
   assert.equal(second.changed, false);
   assert.deepEqual(second.data, first.data);
+});
+
+test("isWithinTournamentWindow is true during the tournament", () => {
+  assert.equal(isWithinTournamentWindow(new Date("2026-06-25T12:00:00Z")), true);
+  assert.equal(isWithinTournamentWindow(new Date("2026-06-11T00:00:00Z")), true);
+  assert.equal(isWithinTournamentWindow(new Date("2026-07-19T20:00:00Z")), true);
+});
+
+test("isWithinTournamentWindow is false outside the tournament", () => {
+  assert.equal(isWithinTournamentWindow(new Date("2026-05-01T12:00:00Z")), false);
+  assert.equal(isWithinTournamentWindow(new Date("2026-08-01T12:00:00Z")), false);
 });

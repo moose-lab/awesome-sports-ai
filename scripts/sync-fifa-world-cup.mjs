@@ -20,6 +20,14 @@ const formatApiDate = (date) =>
 const formatGeneratedDate = (date) =>
   `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, "0")}-${String(date.getUTCDate()).padStart(2, "0")}`;
 
+// Tournament window with a small margin around the Jun 11 opener and Jul 19 final.
+export const isWithinTournamentWindow = (now = new Date()) => {
+  const t = now.getTime();
+  const start = Date.UTC(2026, 5, 10, 0, 0, 0); // Jun 10, 2026 UTC
+  const end = Date.UTC(2026, 6, 20, 23, 59, 59); // Jul 20, 2026 UTC
+  return t >= start && t <= end;
+};
+
 const formatLongDate = (date) =>
   new Intl.DateTimeFormat("en-US", {
     timeZone: "UTC",
