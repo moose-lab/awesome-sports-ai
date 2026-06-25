@@ -177,7 +177,7 @@
     },
     "updateStream": {
       "label": "Live update stream",
-      "cadence": "Every 3 hours during match windows",
+      "cadence": "Every 5 minutes during the tournament window",
       "currentWindow": "Jun 11-26",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-06-25",
