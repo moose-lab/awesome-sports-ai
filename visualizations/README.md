@@ -6,8 +6,8 @@ Generated event visuals used by the main README.
 
 - Direct tags: [NBA Finals 2026: Knicks Champions](nba-finals-2026.svg) · [FIFA World Cup 2026](fifa-world-cup-2026.svg)
 - [nba-finals-2026.svg](nba-finals-2026.svg) - NBA Finals championship snapshot with team stamps, win seals, margin labels, and game-by-game context.
-- [fifa-world-cup-2026.svg](fifa-world-cup-2026.svg) - FIFA World Cup 2026 live group-stage snapshot with final scores, in-progress status, and upcoming fixtures.
-- [source-data.json](source-data.json) - Structured data used to generate the SVG assets.
+- [fifa-world-cup-2026.svg](fifa-world-cup-2026.svg) - FIFA World Cup 2026 live group-stage snapshot with final scores, in-progress status, upcoming fixtures, update-stream status, and assistant toolkit lanes.
+- [source-data.json](source-data.json) - Structured data used to generate the SVG assets and feed the World Cup zone contract.
 
 ## Regenerate
 
@@ -29,6 +29,15 @@ The remote repository also has a scheduled workflow at `.github/workflows/sync-f
 It runs every three hours with `17 */3 * * *` UTC, can be started manually with
 `workflow_dispatch`, and commits generated visualization changes only when the sync changes
 `visualizations/source-data.json` or generated SVG assets.
+
+## FIFA World Cup Zone Contract
+
+The FIFA payload also powers [the World Cup zone](../docs/world-cup-2026-zone.md) and [assistant toolkit](../docs/world-cup-2026-toolkit.md).
+
+- `fifaWorldCup.updateStream` defines cadence, source, current window, status, consumers, and exported fields for the live update stream.
+- `fifaWorldCup.matchdayZones` maps the product surfaces: live strip, Match Center, analyst workbench, and contributor backlog.
+- `fifaWorldCup.toolkit` lists matchday assistant lanes for live data, match intelligence, xG, video review, scouting, and localization.
+- `fifaWorldCup.confirmedFixtures` remains the source-backed fixture list rendered into the SVG.
 
 ## Sources
 

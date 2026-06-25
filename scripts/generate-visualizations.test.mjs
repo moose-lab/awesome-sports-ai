@@ -38,6 +38,11 @@ test("event SVGs reflect the source data event state", () => {
   assert.match(fifa, new RegExp(escapeRegExp(source.fifaWorldCup.updated)));
   assert.match(fifa, new RegExp(escapeRegExp(source.fifaWorldCup.fixtureSummary.label)));
   assert.match(fifa, new RegExp(escapeRegExp(source.fifaWorldCup.fixtureSummary.detail)));
+  assert.ok(source.fifaWorldCup.updateStream, "missing fifaWorldCup.updateStream");
+  assert.ok(source.fifaWorldCup.toolkit?.[0], "missing first fifaWorldCup.toolkit lane");
+  assert.match(fifa, new RegExp(escapeRegExp(source.fifaWorldCup.updateStream.label)));
+  assert.match(fifa, new RegExp(escapeRegExp(source.fifaWorldCup.updateStream.cadence)));
+  assert.match(fifa, new RegExp(escapeRegExp(source.fifaWorldCup.toolkit[0].title)));
   featuredFixtures.forEach((fixture) => {
     assert.match(fifa, new RegExp(escapeRegExp(fixture.match)));
     assert.match(fifa, new RegExp(escapeRegExp(fixture.score)));

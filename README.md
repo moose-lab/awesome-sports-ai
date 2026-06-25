@@ -17,6 +17,7 @@ This repository follows the [Awesome List](https://github.com/sindresorhus/aweso
 
 - [Official Web App](#official-web-app)
 - [Featured Now](#featured-now)
+- [2026 FIFA World Cup Zone](#2026-fifa-world-cup-zone)
 - [Congratulations, New York Knicks: 2026 NBA Champions!](#congratulations-new-york-knicks-2026-nba-champions)
 - [Sport Tags](#sport-tags)
 - [Enterprise-to-Open-Source Decomposition](#enterprise-to-open-source-decomposition)
@@ -49,6 +50,15 @@ Direct visualization tags: [NBA Finals 2026: Knicks Champions](visualizations/nb
 [![NBA Finals 2026 Knicks championship visualization](visualizations/nba-finals-2026.svg)](visualizations/nba-finals-2026.svg)
 
 [![FIFA World Cup 2026 live score visualization](visualizations/fifa-world-cup-2026.svg)](visualizations/fifa-world-cup-2026.svg)
+
+## 2026 FIFA World Cup Zone
+
+The World Cup lane now has a source-backed live update contract, a matchday coverage structure, and a football assistant toolkit for builders supporting the 2026 Canada, Mexico, and United States tournament.
+
+- [World Cup 2026 zone plan](docs/world-cup-2026-zone.md) - Live stream cadence, Match Center contract, matchday zones, and operations checklist.
+- [World Cup 2026 assistant toolkit](docs/world-cup-2026-toolkit.md) - Practical tools for live data, match intelligence, xG, video review, scouting, and localization.
+- [FIFA World Cup live visualization](visualizations/fifa-world-cup-2026.svg) - Generated from `visualizations/source-data.json`.
+- [Source data contract](visualizations/source-data.json) - Fixtures, update stream metadata, matchday zones, and toolkit lanes for Sports AI Hub consumers.
 
 ## Congratulations, New York Knicks: 2026 NBA Champions!
 
