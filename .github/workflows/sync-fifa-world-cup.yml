@@ -2,7 +2,9 @@ name: Sync FIFA World Cup Data
 
 on:
   schedule:
-    - cron: "17 */3 * * *"
+    # Every 5 min (GitHub Actions minimum); the script no-ops outside the
+    # tournament window and skips commits when ESPN reports no change.
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
