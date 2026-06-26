@@ -159,11 +159,11 @@
       },
       {
         "label": "Live match",
-        "value": "None"
+        "value": "NOR 1-3"
       },
       {
         "label": "Scheduled next",
-        "value": "12"
+        "value": "10"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-27",
-      "detail": "60 matches are final, no match is live, and 12 fixtures are scheduled next."
+      "detail": "60 matches are final, France leads Norway 3-1 live, and 10 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Live update stream",
@@ -181,7 +181,7 @@
       "currentWindow": "Jun 11-27",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-06-26",
-      "status": "Pre-match coverage queued",
+      "status": "Live coverage active",
       "consumers": [
         "Sports AI Hub",
         "README visualization",
@@ -939,9 +939,9 @@
         "group": "Group I",
         "venue": "Gillette Stadium",
         "tag": "Group I",
-        "status": "Scheduled",
-        "score": "3 p.m. ET",
-        "insight": "Foxborough"
+        "status": "Live",
+        "score": "NOR 1 - FRA 3",
+        "insight": "Live window"
       },
       {
         "date": "Jun 26",
@@ -949,9 +949,9 @@
         "group": "Group I",
         "venue": "BMO Field",
         "tag": "Group I",
-        "status": "Scheduled",
-        "score": "3 p.m. ET",
-        "insight": "Toronto"
+        "status": "Live",
+        "score": "SEN 1 - IRQ 0",
+        "insight": "Live window"
       },
       {
         "date": "Jun 26",
