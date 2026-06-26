@@ -155,11 +155,11 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "58"
+        "value": "60"
       },
       {
         "label": "Live match",
-        "value": "PAR 0-0"
+        "value": "None"
       },
       {
         "label": "Scheduled next",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-27",
-      "detail": "58 matches are final, Paraguay and Australia are tied 0-0 live, and 12 fixtures are scheduled next."
+      "detail": "60 matches are final, no match is live, and 12 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Live update stream",
@@ -181,7 +181,7 @@
       "currentWindow": "Jun 11-27",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-06-26",
-      "status": "Live coverage active",
+      "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
         "README visualization",
@@ -919,9 +919,9 @@
         "group": "Group D",
         "venue": "Levi's Stadium",
         "tag": "Group D",
-        "status": "Live",
+        "status": "Final",
         "score": "PAR 0 - AUS 0",
-        "insight": "Live window"
+        "insight": "Full time"
       },
       {
         "date": "Jun 25",
@@ -929,9 +929,9 @@
         "group": "Group D",
         "venue": "SoFi Stadium",
         "tag": "Group D",
-        "status": "Live",
-        "score": "TUR 2 - USA 1",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "TUR 3 - USA 2",
+        "insight": "Full time"
       },
       {
         "date": "Jun 26",
