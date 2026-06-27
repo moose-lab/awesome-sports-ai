@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "66"
+        "value": "68"
       },
       {
         "label": "Live match",
-        "value": "CRO 2-1"
+        "value": "COL 0-0"
       },
       {
         "label": "Scheduled next",
-        "value": "5"
+        "value": "3"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-28",
-      "detail": "66 matches are final, Croatia leads Ghana 2-1 live, and 5 fixtures are scheduled next."
+      "detail": "68 matches are final, Colombia and Portugal are tied 0-0 live, and 3 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Live update stream",
@@ -999,9 +999,9 @@
         "group": "Group L",
         "venue": "Lincoln Financial Field",
         "tag": "Group L",
-        "status": "Live",
+        "status": "Final",
         "score": "CRO 2 - GHA 1",
-        "insight": "Live window"
+        "insight": "Full time"
       },
       {
         "date": "Jun 27",
@@ -1009,9 +1009,9 @@
         "group": "Group L",
         "venue": "MetLife Stadium",
         "tag": "Group L",
-        "status": "Live",
+        "status": "Final",
         "score": "PAN 0 - ENG 2",
-        "insight": "Live window"
+        "insight": "Full time"
       },
       {
         "date": "Jun 27",
@@ -1019,9 +1019,9 @@
         "group": "Group K",
         "venue": "Hard Rock Stadium",
         "tag": "Group K",
-        "status": "Scheduled",
-        "score": "7:30 p.m. ET",
-        "insight": "Miami Gardens"
+        "status": "Live",
+        "score": "COL 0 - POR 0",
+        "insight": "Live window"
       },
       {
         "date": "Jun 27",
@@ -1029,9 +1029,9 @@
         "group": "Group K",
         "venue": "Mercedes-Benz Stadium",
         "tag": "Group K",
-        "status": "Scheduled",
-        "score": "7:30 p.m. ET",
-        "insight": "Atlanta"
+        "status": "Live",
+        "score": "COD 0 - UZB 1",
+        "insight": "Live window"
       },
       {
         "date": "Jun 27",
