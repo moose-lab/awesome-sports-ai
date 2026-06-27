@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-06-26",
+  "generatedDate": "2026-06-27",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 26, 2026",
+    "updated": "Updated June 27, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -159,11 +159,11 @@
       },
       {
         "label": "Live match",
-        "value": "None"
+        "value": "CPV 0-0"
       },
       {
         "label": "Scheduled next",
-        "value": "10"
+        "value": "9"
       },
       {
         "label": "Tournament field",
@@ -172,16 +172,16 @@
     ],
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
-      "window": "Jun 11-27",
-      "detail": "62 matches are final, no match is live, and 10 fixtures are scheduled next."
+      "window": "Jun 11-28",
+      "detail": "62 matches are final, Cabo Verde and Saudi Arabia are tied 0-0 live, and 9 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Live update stream",
       "cadence": "Every 5 minutes during the tournament window",
-      "currentWindow": "Jun 11-27",
+      "currentWindow": "Jun 11-28",
       "source": "ESPN FIFA World Cup scoreboard API",
-      "lastVerifiedAt": "2026-06-26",
-      "status": "Pre-match coverage queued",
+      "lastVerifiedAt": "2026-06-27",
+      "status": "Live coverage active",
       "consumers": [
         "Sports AI Hub",
         "README visualization",
@@ -959,9 +959,9 @@
         "group": "Group H",
         "venue": "NRG Stadium",
         "tag": "Group H",
-        "status": "Scheduled",
-        "score": "8 p.m. ET",
-        "insight": "Houston"
+        "status": "Live",
+        "score": "CPV 0 - KSA 0",
+        "insight": "Live window"
       },
       {
         "date": "Jun 26",
@@ -969,9 +969,9 @@
         "group": "Group H",
         "venue": "Estadio Akron",
         "tag": "Group H",
-        "status": "Scheduled",
-        "score": "8 p.m. ET",
-        "insight": "Guadalajara"
+        "status": "Live",
+        "score": "URU 0 - ESP 0",
+        "insight": "Live window"
       },
       {
         "date": "Jun 26",
@@ -1052,6 +1052,16 @@
         "status": "Scheduled",
         "score": "10 p.m. ET",
         "insight": "Arlington"
+      },
+      {
+        "date": "Jun 28",
+        "match": "South Africa v Canada",
+        "group": "Group stage",
+        "venue": "SoFi Stadium",
+        "tag": "Group stage",
+        "status": "Scheduled",
+        "score": "3 p.m. ET",
+        "insight": "Inglewood"
       }
     ],
     "milestones": [
