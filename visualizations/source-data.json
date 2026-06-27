@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "62"
+        "value": "64"
       },
       {
         "label": "Live match",
-        "value": "CPV 0-0"
+        "value": "EGY 1-1"
       },
       {
         "label": "Scheduled next",
-        "value": "9"
+        "value": "7"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-28",
-      "detail": "62 matches are final, Cabo Verde and Saudi Arabia are tied 0-0 live, and 9 fixtures are scheduled next."
+      "detail": "64 matches are final, Egypt and Iran are tied 1-1 live, and 7 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Live update stream",
@@ -959,9 +959,9 @@
         "group": "Group H",
         "venue": "NRG Stadium",
         "tag": "Group H",
-        "status": "Live",
+        "status": "Final",
         "score": "CPV 0 - KSA 0",
-        "insight": "Live window"
+        "insight": "Full time"
       },
       {
         "date": "Jun 26",
@@ -969,9 +969,9 @@
         "group": "Group H",
         "venue": "Estadio Akron",
         "tag": "Group H",
-        "status": "Live",
-        "score": "URU 0 - ESP 0",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "URU 0 - ESP 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 26",
@@ -979,9 +979,9 @@
         "group": "Group G",
         "venue": "Lumen Field",
         "tag": "Group G",
-        "status": "Scheduled",
-        "score": "11 p.m. ET",
-        "insight": "Seattle"
+        "status": "Live",
+        "score": "EGY 1 - IRN 1",
+        "insight": "Live window"
       },
       {
         "date": "Jun 26",
@@ -989,9 +989,9 @@
         "group": "Group G",
         "venue": "BC Place",
         "tag": "Group G",
-        "status": "Scheduled",
-        "score": "11 p.m. ET",
-        "insight": "Vancouver"
+        "status": "Live",
+        "score": "NZL 0 - BEL 2",
+        "insight": "Live window"
       },
       {
         "date": "Jun 27",
