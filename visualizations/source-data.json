@@ -159,11 +159,11 @@
       },
       {
         "label": "Live match",
-        "value": "None"
+        "value": "CRO 1-0"
       },
       {
         "label": "Scheduled next",
-        "value": "7"
+        "value": "5"
       },
       {
         "label": "Tournament field",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-28",
-      "detail": "66 matches are final, no match is live, and 7 fixtures are scheduled next."
+      "detail": "66 matches are final, Croatia leads Ghana 1-0 live, and 5 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Live update stream",
@@ -181,7 +181,7 @@
       "currentWindow": "Jun 11-28",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-06-27",
-      "status": "Pre-match coverage queued",
+      "status": "Live coverage active",
       "consumers": [
         "Sports AI Hub",
         "README visualization",
@@ -999,9 +999,9 @@
         "group": "Group L",
         "venue": "Lincoln Financial Field",
         "tag": "Group L",
-        "status": "Scheduled",
-        "score": "5 p.m. ET",
-        "insight": "Philadelphia"
+        "status": "Live",
+        "score": "CRO 1 - GHA 0",
+        "insight": "Live window"
       },
       {
         "date": "Jun 27",
@@ -1009,9 +1009,9 @@
         "group": "Group L",
         "venue": "MetLife Stadium",
         "tag": "Group L",
-        "status": "Scheduled",
-        "score": "5 p.m. ET",
-        "insight": "East Rutherford"
+        "status": "Live",
+        "score": "PAN 0 - ENG 0",
+        "insight": "Live window"
       },
       {
         "date": "Jun 27",
