@@ -155,11 +155,11 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "64"
+        "value": "66"
       },
       {
         "label": "Live match",
-        "value": "EGY 1-1"
+        "value": "None"
       },
       {
         "label": "Scheduled next",
@@ -173,7 +173,7 @@
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
       "window": "Jun 11-28",
-      "detail": "64 matches are final, Egypt and Iran are tied 1-1 live, and 7 fixtures are scheduled next."
+      "detail": "66 matches are final, no match is live, and 7 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Live update stream",
@@ -181,7 +181,7 @@
       "currentWindow": "Jun 11-28",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-06-27",
-      "status": "Live coverage active",
+      "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
         "README visualization",
@@ -979,9 +979,9 @@
         "group": "Group G",
         "venue": "Lumen Field",
         "tag": "Group G",
-        "status": "Live",
+        "status": "Final",
         "score": "EGY 1 - IRN 1",
-        "insight": "Live window"
+        "insight": "Full time"
       },
       {
         "date": "Jun 26",
@@ -989,9 +989,9 @@
         "group": "Group G",
         "venue": "BC Place",
         "tag": "Group G",
-        "status": "Live",
-        "score": "NZL 0 - BEL 2",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "NZL 1 - BEL 5",
+        "insight": "Full time"
       },
       {
         "date": "Jun 27",
