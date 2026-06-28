@@ -1,6 +1,6 @@
 # Contributing
-
 Thanks for helping improve Awesome Sports AI. This repository is meant to be a practical, high-signal directory for people building sports AI tools, so every contribution should make the list easier to search, understand, and reuse.
+To create a new prototype, please use the reusable README template located at [docs/README_TEMPLATE.md](docs/README_TEMPLATE.md)
 
 ## What Belongs Here
 
