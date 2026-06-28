@@ -18,8 +18,12 @@ test("README presents a developer-focused awesome list path", () => {
     /resource-type-first awesome list for Sports & AI builders/i,
   );
   assert.match(readme, /## Quick Start for Builders/);
+  assert.match(readme, /## Who This Is For/);
+  assert.match(readme, /Developers building sports AI apps/);
+  assert.match(readme, /Tool users who want to find a working project/);
   assert.match(readme, /## Vibe-Coding Lookup Paths/);
   assert.match(readme, /## Sports & AI Relevance Rule/);
+  assert.match(readme, /World Cup 2026 Knockout Toolkit/);
   assert.match(readme, /\[`data\/catalog\.json`\]\(data\/catalog\.json\)/);
   assert.match(readme, /\[`llm-match-commentator`\]\(prototypes\/llm-match-commentator\/\)/);
   assert.match(readme, /\[`wnba-gravity-mapper`\]\(prototypes\/wnba-gravity-mapper\/\)/);
@@ -31,6 +35,8 @@ test("README presents a developer-focused awesome list path", () => {
     /The open-source toolkit for decomposing enterprise sports AI into runnable mono-tools\./,
   );
   assert.doesNotMatch(readme, /docs\/assets\/readme\/llm-match-commentator-output\.svg/);
+  assert.doesNotMatch(readme, /visualizations\/fifa-world-cup-2026\.svg/);
+  assert.doesNotMatch(readme, /Congratulations, New York Knicks/);
   assert.doesNotMatch(readme, /Build Your Own 2026 Trending App/);
   assert.doesNotMatch(readme, /#build-your-own-2026-trending-app/);
 });

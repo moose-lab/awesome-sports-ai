@@ -277,7 +277,7 @@ const buildFixtureSummary = (existingSummary, fixtures) => {
 
   return {
     ...existingSummary,
-    label: existingSummary?.label ?? "Group-stage live snapshot",
+    label: existingSummary?.label ?? "Knockout-stage tool contract",
     window: firstDate === lastDate ? firstDate : `${firstDate}-${lastDate.replace(/^[A-Z][a-z]{2} /, "")}`,
     detail: `${finalPhrase}, ${liveSummary(liveFixture)}, and ${scheduledPhrase}.`,
   };

@@ -126,18 +126,18 @@ const sourceData = {
     links: [],
     stats: [],
     fixtureSummary: {
-      label: "Group-stage live snapshot",
-      window: "Jun 14",
+      label: "Knockout-stage tool contract",
+      window: "Round of 32",
       detail: "Old detail",
     },
     updateStream: {
-      label: "Live update stream",
-      cadence: "Every 3 hours during match windows",
-      currentWindow: "Jun 14",
+      label: "Knockout update stream",
+      cadence: "Every 5 minutes during the tournament window",
+      currentWindow: "Round of 32",
       source: "ESPN FIFA World Cup scoreboard API",
       lastVerifiedAt: "2026-06-14",
       status: "Pending refresh",
-      consumers: ["Sports AI Hub", "README visualization", "Match Center route"],
+      consumers: ["Sports AI Hub", "Knockout tool map", "Match Center route"],
     },
     confirmedFixtures: [
       {
@@ -174,7 +174,7 @@ test("buildDateWindow covers the stale-live catch-up window in UTC", () => {
   ]);
 });
 
-test("normalizes ESPN scoreboard events into FIFA visualization fixtures", () => {
+test("normalizes ESPN scoreboard events into FIFA source-data fixtures", () => {
   const fixtures = normalizeScoreboardEvents([scoreboard]);
 
   assert.deepEqual(fixtures.map((fixture) => fixture.match), [

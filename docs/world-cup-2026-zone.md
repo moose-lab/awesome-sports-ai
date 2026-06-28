@@ -1,15 +1,28 @@
 # 2026 FIFA World Cup Zone
 
-This document turns the FIFA World Cup refresh into a product contract for Sports AI Hub and this repository. The zone stays source-backed: live coverage uses fields available in `visualizations/source-data.json`, while advanced football analysis appears as assistant-tool lanes until richer event or tracking feeds are connected.
+This document turns the FIFA World Cup refresh into a source-backed contract for Sports AI Hub and this repository. The README should frame World Cup 2026 as a knockout-stage toolkit for developers and tool users, not as a group-stage SVG showcase.
 
-## Live Update Stream
+## Knockout Format
 
-The live update stream is the compact, repeatable contract for the homepage ticker, README visualization, and Match Center route.
+The 2026 tournament uses a 48-team group phase followed by a 32-team single-elimination bracket. The knockout workflow should support:
 
-- Cadence: every 3 hours during match windows.
+- Round of 32
+- Round of 16
+- Quarterfinals
+- Semifinals
+- Third-place match
+- Final
+
+Treat the bracket as an operating surface for tools: source-backed score state first, then assistant-tool lanes for commentary, xG, video review, scouting, and media.
+
+## Knockout Update Stream
+
+The knockout update stream is the compact, repeatable contract for Sports AI Hub and Match Center surfaces.
+
+- Cadence: every 5 minutes during tournament windows.
 - Source: ESPN FIFA World Cup scoreboard API, with FIFA schedule and tournament pages as official reference links.
-- Current fields: `date`, `match`, `group`, `venue`, `status`, `score`, and `insight`.
-- Consumers: Sports AI Hub, README visualization, and Match Center route.
+- Current fields: `date`, `match`, `round`, `venue`, `status`, `score`, and `insight`.
+- Consumers: Sports AI Hub, Knockout tool map, and Match Center route.
 - Last verification field: `fifaWorldCup.updateStream.lastVerifiedAt`.
 
 The stream should not claim unavailable fields such as scorers, lineups, xG, substitutions, or win probability unless a future upstream source publishes them and tests are added for that contract.
@@ -18,28 +31,29 @@ The stream should not claim unavailable fields such as scorers, lineups, xG, sub
 
 The zone is split into four reader-facing surfaces.
 
-- `live-strip`: compact score, final-count, live-match, and next-fixture state for the top of a page.
-- `match-center`: fixture cards, source provenance, and state-aware score display for live match windows.
-- `analyst-workbench`: deeper builder paths using live-data, match-intelligence, xg-and-shot-quality, video-and-vision, scouting-and-reports, and media-and-localization lanes.
+- `knockout-scoreboard`: source-backed score state, round labels, venue context, and provenance.
+- `bracket-and-match-center`: bracket-ready fixture cards, elimination context, score states, and source provenance.
+- `analyst-workbench`: deeper builder paths using knockout-data, bracket-and-scenarios, match-intelligence, xg-and-shot-quality, video-and-vision, scouting-and-reports, and media-and-localization lanes.
 - `contributor-backlog`: small open-source project ideas tied to the World Cup moment.
 
 ## Data Contract
 
-`visualizations/source-data.json` is the handoff payload. Sports AI Hub should treat these keys as the stable contract:
+[`visualizations/source-data.json`](../visualizations/source-data.json) is the handoff payload. Sports AI Hub should treat these keys as the stable contract:
 
-- `fifaWorldCup.stats`: four summary cards for final results, live match, scheduled next, and tournament field.
-- `fifaWorldCup.fixtureSummary`: a readable window summary for the live zone.
+- `fifaWorldCup.knockoutFormat`: stage order and single-elimination tournament model.
+- `fifaWorldCup.stats`: summary cards for knockout field, format, next stage, and tournament field.
+- `fifaWorldCup.fixtureSummary`: a readable window summary for the knockout tool contract.
 - `fifaWorldCup.updateStream`: cadence, current window, source, verification date, status, consumers, and field list.
 - `fifaWorldCup.matchdayZones`: product surfaces and expected outputs.
 - `fifaWorldCup.toolkit`: assistant lanes and concrete tools for builder navigation.
-- `fifaWorldCup.confirmedFixtures`: normalized fixture cards.
+- `fifaWorldCup.confirmedFixtures`: normalized source-backed fixture cards.
 
 ## Match Center Integration
 
 The Match Center should render only source-backed fields by default. A practical page order is:
 
-1. Live strip from `stats`, `fixtureSummary`, and `updateStream`.
-2. Fixture cards from `confirmedFixtures`.
+1. Knockout scoreboard from `stats`, `fixtureSummary`, and `updateStream`.
+2. Bracket-ready fixture cards from `confirmedFixtures`.
 3. Tool lanes from `toolkit` for builders who want to create analysis or media workflows.
 4. Source notes from `links` and `visualizations/README.md`.
 
@@ -48,7 +62,7 @@ Advanced match tools can link from the page, but they should be visually separat
 ## Operations Checklist
 
 - Run `node scripts/sync-fifa-world-cup.mjs` to refresh the scoreboard window.
-- Run `node scripts/generate-visualizations.mjs` to rebuild SVG assets.
+- Run `node scripts/generate-visualizations.mjs` to remove stale World Cup SVG output and rebuild remaining visualization assets.
 - Run `node --test scripts/*.test.mjs` before publishing.
 - Confirm `fifaWorldCup.updateStream.lastVerifiedAt` matches the sync date.
-- Confirm the SVG and README point to `docs/world-cup-2026-toolkit.md` for assistant tooling.
+- Confirm README points to `docs/world-cup-2026-toolkit.md` for knockout-stage assistant tooling.
