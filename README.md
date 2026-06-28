@@ -5,27 +5,75 @@
 [![GitHub stars](https://img.shields.io/github/stars/moose-lab/awesome-sports-ai?style=social)](https://github.com/moose-lab/awesome-sports-ai/stargazers)
 [![Sports AI Hub](https://img.shields.io/badge/Sports%20AI%20Hub-Official%20Web%20App-00FF87?style=flat&labelColor=0D0F14)](https://sports-ai-hub.pages.dev/)
 
-> **Sports AI Hub:** [Open the official web app](https://sports-ai-hub.pages.dev/) for the interactive builder roadmap, prototypes, and project paths.
->
-> **Structured catalog:** [`data/catalog.json`](data/catalog.json) is the canonical taxonomy for categories, sport tags, AI capabilities, openness labels, tools, and builder recipes.
+**The open-source toolkit for decomposing enterprise sports AI into runnable mono-tools.**
 
-A resource-type-first directory of AI + sports tools for developers who want to discover useful projects quickly and build their own sports AI products.
+Enterprise sports AI is powerful, but most of it sits behind expensive data rights, vendor contracts, and team-only workflows. Second Spectrum, Stats Perform, Genius Sports, Hudl, Wyscout, and similar systems are not realistically accessible to most coaches, analysts, students, and indie developers.
 
-This repository follows the [Awesome List](https://github.com/sindresorhus/awesome) style: entries should be useful, specific, reachable, neutral, and grouped into one canonical category.
+Awesome Sports AI turns those capabilities into smaller open-source building blocks: scripts you can run locally, sample data you can inspect, and prototype paths you can extend into your own sports AI product.
 
-## Contents
+**Start here:** run a prototype, inspect the output, then fork the smallest piece you want to improve.
 
-- [How to Use This Directory](#how-to-use-this-directory)
-- [Resource-Type Directory](#resource-type-directory)
-- [Builder Recipes](#builder-recipes)
-- [Featured Event Toolkits](#featured-event-toolkits)
-- [Sport Tags](#sport-tags)
-- [Contribution Rules](#contribution-rules)
-- [Roadmap and Project Context](#roadmap-and-project-context)
-- [Contributing](#contributing)
-- [License](#license)
+- [Open Sports AI Hub](https://sports-ai-hub.pages.dev/) for the interactive project surface.
+- [Browse the prototype factory](prototypes/) for runnable mono-tools.
+- **[Start contributing](CONTRIBUTING.md)** or pick a [`good first issue`](https://github.com/moose-lab/awesome-sports-ai/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
 
-## How to Use This Directory
+## Build From The Factory Floor
+
+The catalog is the shop window. [`/prototypes`](prototypes/) is the factory floor. These three examples show the project direction: each one decomposes a professional sports AI capability into a runnable mono-tool with local input and visible output.
+
+### [llm-match-commentator](prototypes/llm-match-commentator/)
+
+Builds a localized match-commentary stream from structured soccer events. It shows how a live data feed can become bilingual markdown commentary without a broadcast production stack.
+
+Replaces the first slice of automated recap/commentary systems from vendors like Stats Perform and WSC Sport: event stream in, audience-ready text out.
+
+```bash
+cd prototypes/llm-match-commentator
+python3 commentator.py
+```
+
+![LLM Match Commentator output](docs/assets/readme/llm-match-commentator-output.svg)
+
+### [wnba-gravity-mapper](prototypes/wnba-gravity-mapper/)
+
+Builds a player gravity map from tracking-style CSV coordinates. It calculates which offensive players draw defenders and renders both a half-court heatmap and a ranked score chart.
+
+Replaces the first slice of proprietary spacing and gravity metrics from optical tracking platforms: player positions in, tactical attention map out.
+
+```bash
+cd prototypes/wnba-gravity-mapper
+python3 gravity_mapper.py
+```
+
+![WNBA Gravity Mapper heatmap](prototypes/wnba-gravity-mapper/gravity_map.png)
+
+### [pickleball-court-mapper](prototypes/pickleball-court-mapper/)
+
+Builds a court-geometry mapper from a pickleball court image. It detects court lines, annotates the source image, and generates a clean diagram for downstream analytics.
+
+Replaces the first slice of proprietary court-calibration and ball-tracking systems: user-owned court image in, mapped court geometry out.
+
+```bash
+cd prototypes/pickleball-court-mapper
+python3 court_mapper.py
+```
+
+![Pickleball Court Mapper diagram](prototypes/pickleball-court-mapper/court_diagram.png)
+
+## Why This Exists
+
+Professional sports organizations buy integrated AI stacks that combine tracking hardware, licensed feeds, video operations, modeling, dashboards, and support. Individual builders usually cannot access those stacks directly.
+
+This repository asks a more useful question: what is the smallest open-source version of each capability that someone can run, understand, and extend?
+
+- Coaches get local-first tools they can adapt to owned footage or simple CSVs.
+- Analysts get starter models, schemas, and visualizations they can audit.
+- Indie developers get product-shaped prototypes instead of abstract lists.
+- Contributors get concrete issues where one small improvement can become the next reusable sports AI building block.
+
+## Catalog As Discovery Layer
+
+The catalog is not the product by itself. It is the discovery layer that helps builders find datasets, APIs, libraries, papers, and references that can become mono-tools.
 
 Use resource type first, then narrow by sport, AI capability, and openness:
 
@@ -35,7 +83,7 @@ Use resource type first, then narrow by sport, AI capability, and openness:
 - Need reproducible research? Start with [Research Benchmarks](#research-benchmarks).
 - Need matchday context or demos? Start with [Event Toolkits](#event-toolkits) and [Builder Recipes](#builder-recipes).
 
-Entries use this metadata pattern: `_Sports: ... . AI: ... . Access: ... ._`
+[`data/catalog.json`](data/catalog.json) is the canonical taxonomy for categories, sport tags, AI capabilities, openness labels, tools, and builder recipes. README entries use this metadata pattern: `_Sports: ... . AI: ... . Access: ... ._`
 
 ## Resource-Type Directory
 

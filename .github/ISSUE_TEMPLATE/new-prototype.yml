@@ -68,7 +68,7 @@ body:
     id: tool-description
     attributes:
       label: Tool description
-      description: One paragraph: what does it do, who uses it, what is the input, and what is the output?
+      description: "One paragraph: what does it do, who uses it, what is the input, and what is the output?"
       placeholder: "This tool takes a CSV of player X,Y coordinates and outputs a gravity score heatmap PNG."
     validations:
       required: true
