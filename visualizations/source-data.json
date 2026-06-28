@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-06-27",
+  "generatedDate": "2026-06-28",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 27, 2026",
+    "updated": "Updated June 28, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -155,15 +155,15 @@
     "stats": [
       {
         "label": "Final results",
-        "value": "68"
+        "value": "72"
       },
       {
         "label": "Live match",
-        "value": "COL 0-0"
+        "value": "None"
       },
       {
         "label": "Scheduled next",
-        "value": "3"
+        "value": "4"
       },
       {
         "label": "Tournament field",
@@ -172,16 +172,16 @@
     ],
     "fixtureSummary": {
       "label": "Group-stage live snapshot",
-      "window": "Jun 11-28",
-      "detail": "68 matches are final, Colombia and Portugal are tied 0-0 live, and 3 fixtures are scheduled next."
+      "window": "Jun 11-29",
+      "detail": "72 matches are final, no match is live, and 4 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Live update stream",
       "cadence": "Every 5 minutes during the tournament window",
-      "currentWindow": "Jun 11-28",
+      "currentWindow": "Jun 11-29",
       "source": "ESPN FIFA World Cup scoreboard API",
-      "lastVerifiedAt": "2026-06-27",
-      "status": "Live coverage active",
+      "lastVerifiedAt": "2026-06-28",
+      "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
         "README visualization",
@@ -1019,9 +1019,9 @@
         "group": "Group K",
         "venue": "Hard Rock Stadium",
         "tag": "Group K",
-        "status": "Live",
+        "status": "Final",
         "score": "COL 0 - POR 0",
-        "insight": "Live window"
+        "insight": "Full time"
       },
       {
         "date": "Jun 27",
@@ -1029,9 +1029,9 @@
         "group": "Group K",
         "venue": "Mercedes-Benz Stadium",
         "tag": "Group K",
-        "status": "Live",
-        "score": "COD 0 - UZB 1",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "COD 3 - UZB 1",
+        "insight": "Full time"
       },
       {
         "date": "Jun 27",
@@ -1039,9 +1039,9 @@
         "group": "Group J",
         "venue": "GEHA Field at Arrowhead Stadium",
         "tag": "Group J",
-        "status": "Scheduled",
-        "score": "10 p.m. ET",
-        "insight": "Kansas City"
+        "status": "Final",
+        "score": "ALG 3 - AUT 3",
+        "insight": "Full time"
       },
       {
         "date": "Jun 27",
@@ -1049,9 +1049,9 @@
         "group": "Group J",
         "venue": "AT&T Stadium",
         "tag": "Group J",
-        "status": "Scheduled",
-        "score": "10 p.m. ET",
-        "insight": "Arlington"
+        "status": "Final",
+        "score": "JOR 1 - ARG 3",
+        "insight": "Full time"
       },
       {
         "date": "Jun 28",
@@ -1062,6 +1062,36 @@
         "status": "Scheduled",
         "score": "3 p.m. ET",
         "insight": "Inglewood"
+      },
+      {
+        "date": "Jun 29",
+        "match": "Brazil v Japan",
+        "group": "Group stage",
+        "venue": "NRG Stadium",
+        "tag": "Group stage",
+        "status": "Scheduled",
+        "score": "1 p.m. ET",
+        "insight": "Houston"
+      },
+      {
+        "date": "Jun 29",
+        "match": "Germany v Paraguay",
+        "group": "Group stage",
+        "venue": "Gillette Stadium",
+        "tag": "Group stage",
+        "status": "Scheduled",
+        "score": "4:30 p.m. ET",
+        "insight": "Foxborough"
+      },
+      {
+        "date": "Jun 29",
+        "match": "Netherlands v Morocco",
+        "group": "Group stage",
+        "venue": "Estadio BBVA",
+        "tag": "Group stage",
+        "status": "Scheduled",
+        "score": "9 p.m. ET",
+        "insight": "Guadalupe"
       }
     ],
     "milestones": [

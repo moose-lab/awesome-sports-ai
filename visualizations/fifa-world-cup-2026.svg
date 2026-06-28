@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1100" height="2842" viewBox="0 0 1100 2842" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
+<svg width="1100" height="2930" viewBox="0 0 1100 2930" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
   <title id="title">Awesome Sports AI event visualization</title>
   <desc id="desc">Generated sports event visualization for the repository README.</desc>
   <defs>
@@ -16,16 +16,16 @@
     </filter>
   </defs>
 
-  <rect x="0" y="0" width="1100" height="2842" rx="0" fill="url(#fifaBg)" stroke="none" stroke-width="1" opacity="1"/>
-  <rect x="24" y="24" width="1052" height="2794" rx="22" fill="#ffffff" stroke="#dfe6f0" stroke-width="1" opacity="0.94"/>
+  <rect x="0" y="0" width="1100" height="2930" rx="0" fill="url(#fifaBg)" stroke="none" stroke-width="1" opacity="1"/>
+  <rect x="24" y="24" width="1052" height="2882" rx="22" fill="#ffffff" stroke="#dfe6f0" stroke-width="1" opacity="0.94"/>
   <text x="42" y="72" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="900" fill="#12342f" text-anchor="start">FIFA World Cup 2026</text>
   <text x="42" y="100" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16" font-weight="650" fill="#526174" text-anchor="start">Canada, Mexico, United States</text>
-  <rect x="860" y="50" width="192" height="28" rx="14" fill="#086c5b" stroke="#086c5b" stroke-width="1" opacity="1"/><text x="956" y="69" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Updated June 27, 2026</text>
-  <rect x="42" y="124" width="228" height="84" rx="14" fill="#ffffff" stroke="#d8e7df" stroke-width="1" opacity="1"/><text x="64" y="156" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="900" fill="#086c5b" text-anchor="start">68</text><text x="64" y="184" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#526174" text-anchor="start">Final results</text><rect x="294" y="124" width="228" height="84" rx="14" fill="#ffffff" stroke="#d8e7df" stroke-width="1" opacity="1"/><text x="316" y="156" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="900" fill="#086c5b" text-anchor="start">COL 0-0</text><text x="316" y="184" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#526174" text-anchor="start">Live match</text><rect x="546" y="124" width="228" height="84" rx="14" fill="#ffffff" stroke="#d8e7df" stroke-width="1" opacity="1"/><text x="568" y="156" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="900" fill="#086c5b" text-anchor="start">3</text><text x="568" y="184" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#526174" text-anchor="start">Scheduled next</text><rect x="798" y="124" width="228" height="84" rx="14" fill="#ffffff" stroke="#d8e7df" stroke-width="1" opacity="1"/><text x="820" y="156" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="900" fill="#086c5b" text-anchor="start">48 teams</text><text x="820" y="184" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#526174" text-anchor="start">Tournament field</text>
+  <rect x="860" y="50" width="192" height="28" rx="14" fill="#086c5b" stroke="#086c5b" stroke-width="1" opacity="1"/><text x="956" y="69" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Updated June 28, 2026</text>
+  <rect x="42" y="124" width="228" height="84" rx="14" fill="#ffffff" stroke="#d8e7df" stroke-width="1" opacity="1"/><text x="64" y="156" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="900" fill="#086c5b" text-anchor="start">72</text><text x="64" y="184" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#526174" text-anchor="start">Final results</text><rect x="294" y="124" width="228" height="84" rx="14" fill="#ffffff" stroke="#d8e7df" stroke-width="1" opacity="1"/><text x="316" y="156" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="900" fill="#086c5b" text-anchor="start">None</text><text x="316" y="184" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#526174" text-anchor="start">Live match</text><rect x="546" y="124" width="228" height="84" rx="14" fill="#ffffff" stroke="#d8e7df" stroke-width="1" opacity="1"/><text x="568" y="156" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="900" fill="#086c5b" text-anchor="start">4</text><text x="568" y="184" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#526174" text-anchor="start">Scheduled next</text><rect x="798" y="124" width="228" height="84" rx="14" fill="#ffffff" stroke="#d8e7df" stroke-width="1" opacity="1"/><text x="820" y="156" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="30" font-weight="900" fill="#086c5b" text-anchor="start">48 teams</text><text x="820" y="184" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#526174" text-anchor="start">Tournament field</text>
 
   <rect x="42" y="228" width="1016" height="58" rx="16" fill="#f4fbf8" stroke="#cfe5dc" stroke-width="1" opacity="1"/>
-  <text x="62" y="252" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" font-weight="950" fill="#12342f" text-anchor="start">Group-stage live snapshot · Jun 11-28</text>
-  <text x="62" y="274" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="650" fill="#526174" text-anchor="start">68 matches are final, Colombia and Portugal are tied 0-0 live, and 3 fixtures are scheduled next.</text>
+  <text x="62" y="252" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="17" font-weight="950" fill="#12342f" text-anchor="start">Group-stage live snapshot · Jun 11-29</text>
+  <text x="62" y="274" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="650" fill="#526174" text-anchor="start">72 matches are final, no match is live, and 4 fixtures are scheduled next.</text>
 
 
   <g>
@@ -573,36 +573,36 @@
     <text x="400" y="2324" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="750" fill="#64748b" text-anchor="start">PAN 0 - ENG 2 · Full time</text>
   </g>
   <g>
-    <rect x="722" y="2254" width="320" height="74" rx="14" fill="#f7fffb" stroke="#be123c" stroke-width="2" opacity="1"/>
+    <rect x="722" y="2254" width="320" height="74" rx="14" fill="#ffffff" stroke="#be123c" stroke-width="1" opacity="1"/>
     <rect x="738" y="2266" width="72" height="28" rx="14" fill="#be123c" stroke="#be123c" stroke-width="1" opacity="1"/><text x="774" y="2285" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Jun 27</text>
     <text x="824" y="2285" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="900" fill="#be123c" text-anchor="start">Group K</text>
-    <rect x="954" y="2266" width="72" height="28" rx="14" fill="#be123c" stroke="#be123c" stroke-width="1" opacity="1"/><text x="990" y="2285" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Live</text>
+    <rect x="954" y="2266" width="72" height="28" rx="14" fill="#086c5b" stroke="#086c5b" stroke-width="1" opacity="1"/><text x="990" y="2285" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Final</text>
     <text x="740" y="2309" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="950" fill="#12342f" text-anchor="start">Colombia v Portugal</text>
-    <text x="740" y="2324" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="750" fill="#be123c" text-anchor="start">COL 0 - POR 0 · Live window</text>
+    <text x="740" y="2324" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="750" fill="#64748b" text-anchor="start">COL 0 - POR 0 · Full time</text>
   </g>
   <g>
-    <rect x="42" y="2342" width="320" height="74" rx="14" fill="#f7fffb" stroke="#0f766e" stroke-width="2" opacity="1"/>
+    <rect x="42" y="2342" width="320" height="74" rx="14" fill="#ffffff" stroke="#0f766e" stroke-width="1" opacity="1"/>
     <rect x="58" y="2354" width="72" height="28" rx="14" fill="#0f766e" stroke="#0f766e" stroke-width="1" opacity="1"/><text x="94" y="2373" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Jun 27</text>
     <text x="144" y="2373" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="900" fill="#0f766e" text-anchor="start">Group K</text>
-    <rect x="274" y="2354" width="72" height="28" rx="14" fill="#be123c" stroke="#be123c" stroke-width="1" opacity="1"/><text x="310" y="2373" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Live</text>
+    <rect x="274" y="2354" width="72" height="28" rx="14" fill="#086c5b" stroke="#086c5b" stroke-width="1" opacity="1"/><text x="310" y="2373" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Final</text>
     <text x="60" y="2397" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="950" fill="#12342f" text-anchor="start">Congo DR v Uzbekistan</text>
-    <text x="60" y="2412" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="750" fill="#be123c" text-anchor="start">COD 0 - UZB 1 · Live window</text>
+    <text x="60" y="2412" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="750" fill="#64748b" text-anchor="start">COD 3 - UZB 1 · Full time</text>
   </g>
   <g>
     <rect x="382" y="2342" width="320" height="74" rx="14" fill="#ffffff" stroke="#0f766e" stroke-width="1" opacity="1"/>
     <rect x="398" y="2354" width="72" height="28" rx="14" fill="#0f766e" stroke="#0f766e" stroke-width="1" opacity="1"/><text x="434" y="2373" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Jun 27</text>
     <text x="484" y="2373" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="900" fill="#0f766e" text-anchor="start">Group J</text>
-    <rect x="590" y="2354" width="96" height="28" rx="14" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1" opacity="1"/><text x="638" y="2373" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">Scheduled</text>
+    <rect x="614" y="2354" width="72" height="28" rx="14" fill="#086c5b" stroke="#086c5b" stroke-width="1" opacity="1"/><text x="650" y="2373" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Final</text>
     <text x="400" y="2397" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="950" fill="#12342f" text-anchor="start">Algeria v Austria</text>
-    <text x="400" y="2412" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="750" fill="#64748b" text-anchor="start">10 p.m. ET · Kansas City</text>
+    <text x="400" y="2412" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="750" fill="#64748b" text-anchor="start">ALG 3 - AUT 3 · Full time</text>
   </g>
   <g>
     <rect x="722" y="2342" width="320" height="74" rx="14" fill="#ffffff" stroke="#0f766e" stroke-width="1" opacity="1"/>
     <rect x="738" y="2354" width="72" height="28" rx="14" fill="#0f766e" stroke="#0f766e" stroke-width="1" opacity="1"/><text x="774" y="2373" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Jun 27</text>
     <text x="824" y="2373" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="900" fill="#0f766e" text-anchor="start">Group J</text>
-    <rect x="930" y="2354" width="96" height="28" rx="14" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1" opacity="1"/><text x="978" y="2373" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">Scheduled</text>
+    <rect x="954" y="2354" width="72" height="28" rx="14" fill="#086c5b" stroke="#086c5b" stroke-width="1" opacity="1"/><text x="990" y="2373" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Final</text>
     <text x="740" y="2397" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="950" fill="#12342f" text-anchor="start">Jordan v Argentina</text>
-    <text x="740" y="2412" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="750" fill="#64748b" text-anchor="start">10 p.m. ET · Arlington</text>
+    <text x="740" y="2412" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="750" fill="#64748b" text-anchor="start">JOR 1 - ARG 3 · Full time</text>
   </g>
   <g>
     <rect x="42" y="2430" width="320" height="74" rx="14" fill="#ffffff" stroke="#086c5b" stroke-width="1" opacity="1"/>
@@ -612,30 +612,54 @@
     <text x="60" y="2485" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="950" fill="#12342f" text-anchor="start">South Africa v Canada</text>
     <text x="60" y="2500" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="750" fill="#64748b" text-anchor="start">3 p.m. ET · Inglewood</text>
   </g>
-
-  <rect x="42" y="2536" width="1016" height="204" rx="16" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" opacity="1"/>
-  <text x="62" y="2570" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="950" fill="#12342f" text-anchor="start">Live update stream</text>
-  <rect x="854" y="2552" width="184" height="28" rx="14" fill="#be123c" stroke="#be123c" stroke-width="1" opacity="1"/><text x="946" y="2571" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Live coverage active</text>
-  <text x="62" y="2596" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#0f766e" text-anchor="start">Every 5 minutes during the tournament window · Jun 11-28</text>
-  <text x="62" y="2618" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="650" fill="#526174" text-anchor="start">Source: ESPN FIFA World Cup scoreboard API · Verified 2026-06-27</text>
-  <text x="62" y="2652" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="950" fill="#12342f" text-anchor="start">Assistant toolkit lanes</text>
-
   <g>
-    <rect x="62" y="2668" width="300" height="56" rx="12" fill="#ffffff" stroke="#dbe7ef" stroke-width="1" opacity="1"/>
-    <text x="78" y="2691" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="900" fill="#12342f" text-anchor="start">Live Data and Scoreboard Normalization</text>
-    <text x="78" y="2711" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#64748b" text-anchor="start">sync-fifa-world-cup + football.json</text>
+    <rect x="382" y="2430" width="320" height="74" rx="14" fill="#ffffff" stroke="#086c5b" stroke-width="1" opacity="1"/>
+    <rect x="398" y="2442" width="72" height="28" rx="14" fill="#086c5b" stroke="#086c5b" stroke-width="1" opacity="1"/><text x="434" y="2461" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Jun 29</text>
+    <text x="484" y="2461" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="900" fill="#086c5b" text-anchor="start">Group stage</text>
+    <rect x="590" y="2442" width="96" height="28" rx="14" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1" opacity="1"/><text x="638" y="2461" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">Scheduled</text>
+    <text x="400" y="2485" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="950" fill="#12342f" text-anchor="start">Brazil v Japan</text>
+    <text x="400" y="2500" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="750" fill="#64748b" text-anchor="start">1 p.m. ET · Houston</text>
   </g>
   <g>
-    <rect x="388" y="2668" width="300" height="56" rx="12" fill="#ffffff" stroke="#dbe7ef" stroke-width="1" opacity="1"/>
-    <text x="404" y="2691" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="900" fill="#12342f" text-anchor="start">Match Intelligence Reports</text>
-    <text x="404" y="2711" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#64748b" text-anchor="start">llm-match-commentator + football-match-in...</text>
+    <rect x="722" y="2430" width="320" height="74" rx="14" fill="#ffffff" stroke="#086c5b" stroke-width="1" opacity="1"/>
+    <rect x="738" y="2442" width="72" height="28" rx="14" fill="#086c5b" stroke="#086c5b" stroke-width="1" opacity="1"/><text x="774" y="2461" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Jun 29</text>
+    <text x="824" y="2461" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="900" fill="#086c5b" text-anchor="start">Group stage</text>
+    <rect x="930" y="2442" width="96" height="28" rx="14" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1" opacity="1"/><text x="978" y="2461" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">Scheduled</text>
+    <text x="740" y="2485" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="950" fill="#12342f" text-anchor="start">Germany v Paraguay</text>
+    <text x="740" y="2500" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="750" fill="#64748b" text-anchor="start">4:30 p.m. ET · Foxborough</text>
   </g>
   <g>
-    <rect x="714" y="2668" width="300" height="56" rx="12" fill="#ffffff" stroke="#dbe7ef" stroke-width="1" opacity="1"/>
-    <text x="730" y="2691" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="900" fill="#12342f" text-anchor="start">xG and Shot Quality</text>
-    <text x="730" y="2711" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#64748b" text-anchor="start">soccer_xg + mplsoccer</text>
+    <rect x="42" y="2518" width="320" height="74" rx="14" fill="#ffffff" stroke="#1d4ed8" stroke-width="1" opacity="1"/>
+    <rect x="58" y="2530" width="72" height="28" rx="14" fill="#1d4ed8" stroke="#1d4ed8" stroke-width="1" opacity="1"/><text x="94" y="2549" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Jun 29</text>
+    <text x="144" y="2549" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="900" fill="#1d4ed8" text-anchor="start">Group stage</text>
+    <rect x="250" y="2530" width="96" height="28" rx="14" fill="#e2e8f0" stroke="#e2e8f0" stroke-width="1" opacity="1"/><text x="298" y="2549" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#475569" text-anchor="middle">Scheduled</text>
+    <text x="60" y="2573" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="950" fill="#12342f" text-anchor="start">Netherlands v Morocco</text>
+    <text x="60" y="2588" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="10" font-weight="750" fill="#64748b" text-anchor="start">9 p.m. ET · Guadalupe</text>
   </g>
 
-  <text x="42" y="2800" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#64748b" text-anchor="start">Generated from source-data.json. Official hubs: FIFA match schedule + tournament hub.</text>
+  <rect x="42" y="2624" width="1016" height="204" rx="16" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" opacity="1"/>
+  <text x="62" y="2658" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18" font-weight="950" fill="#12342f" text-anchor="start">Live update stream</text>
+  <rect x="854" y="2640" width="224" height="28" rx="14" fill="#be123c" stroke="#be123c" stroke-width="1" opacity="1"/><text x="966" y="2659" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Pre-match coverage queued</text>
+  <text x="62" y="2684" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="800" fill="#0f766e" text-anchor="start">Every 5 minutes during the tournament window · Jun 11-29</text>
+  <text x="62" y="2706" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="650" fill="#526174" text-anchor="start">Source: ESPN FIFA World Cup scoreboard API · Verified 2026-06-28</text>
+  <text x="62" y="2740" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="950" fill="#12342f" text-anchor="start">Assistant toolkit lanes</text>
+
+  <g>
+    <rect x="62" y="2756" width="300" height="56" rx="12" fill="#ffffff" stroke="#dbe7ef" stroke-width="1" opacity="1"/>
+    <text x="78" y="2779" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="900" fill="#12342f" text-anchor="start">Live Data and Scoreboard Normalization</text>
+    <text x="78" y="2799" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#64748b" text-anchor="start">sync-fifa-world-cup + football.json</text>
+  </g>
+  <g>
+    <rect x="388" y="2756" width="300" height="56" rx="12" fill="#ffffff" stroke="#dbe7ef" stroke-width="1" opacity="1"/>
+    <text x="404" y="2779" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="900" fill="#12342f" text-anchor="start">Match Intelligence Reports</text>
+    <text x="404" y="2799" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#64748b" text-anchor="start">llm-match-commentator + football-match-in...</text>
+  </g>
+  <g>
+    <rect x="714" y="2756" width="300" height="56" rx="12" fill="#ffffff" stroke="#dbe7ef" stroke-width="1" opacity="1"/>
+    <text x="730" y="2779" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="13" font-weight="900" fill="#12342f" text-anchor="start">xG and Shot Quality</text>
+    <text x="730" y="2799" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="700" fill="#64748b" text-anchor="start">soccer_xg + mplsoccer</text>
+  </g>
+
+  <text x="42" y="2888" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#64748b" text-anchor="start">Generated from source-data.json. Official hubs: FIFA match schedule + tournament hub.</text>
 
 </svg>
