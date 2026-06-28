@@ -7,6 +7,8 @@
 
 A resource-type-first awesome list for Sports & AI builders who need high-signal tools, datasets, libraries, models, benchmarks, and runnable prototypes.
 
+This repository follows the [Awesome List](https://github.com/sindresorhus/awesome) style: entries should be useful, specific, reachable, neutral, and grouped into one canonical category.
+
 This README is the human-readable directory. [`data/catalog.json`](data/catalog.json) is the machine-readable source of truth for categories, sport tags, AI capabilities, openness labels, tools, and builder recipes. README entries use this metadata pattern: `_Sports: ... . AI: ... . Access: ... ._`
 
 ## Quick Start for Builders
