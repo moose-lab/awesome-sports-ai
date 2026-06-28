@@ -1,5 +1,5 @@
 name: Submit a Tool
-description: Suggest a sports tool, API, dataset, platform, or resource without opening a pull request.
+description: Suggest a sports AI app, project, dataset, API, library, model, benchmark, event toolkit, or learning resource.
 title: "[Tool]: "
 labels: ["tool submission"]
 body:
@@ -8,13 +8,13 @@ body:
       value: |
         Thanks for helping improve Awesome Sports AI.
 
-        Use this form when you want to suggest a tool but do not want to edit the README or open a pull request. A maintainer can review the suggestion, normalize the category and sport tags, and add the entry if it fits the list.
+        Use this form when you want to suggest a tool but do not want to edit the catalog and README yourself. A maintainer can review the suggestion, normalize the category and metadata, and add the entry if it fits the directory.
 
   - type: input
     id: tool-name
     attributes:
       label: Tool name
-      description: What is the public name of the tool, platform, dataset, API, or resource?
+      description: What is the public name of the tool, platform, dataset, API, project, model, benchmark, or resource?
       placeholder: "Example: nba_api"
     validations:
       required: true
@@ -40,18 +40,17 @@ body:
   - type: dropdown
     id: suggested-category
     attributes:
-      label: Suggested category
-      description: Pick the best README category. Choose "Not sure" if you want maintainers to place it.
+      label: Suggested resource category
+      description: Pick the best catalog category. Choose "Not sure" if you want maintainers to place it.
       options:
-        - Data, APIs, and Feeds
-        - Analytics and Visualization
-        - Training and Performance
-        - Team and League Operations
-        - Fan Experience and Community
-        - Media, Highlights, and Content
-        - Developer Tools
-        - Datasets and Research
-        - Other Sports Collections
+        - Apps & Products
+        - Open-Source Projects
+        - Datasets/APIs/Feeds
+        - Developer Libraries/SDKs
+        - AI Models/Components
+        - Research Benchmarks
+        - Event Toolkits
+        - Learning Collections
         - Not sure / maintainer can choose
     validations:
       required: true
@@ -80,6 +79,43 @@ body:
         - Motorsport
         - Esports
         - Multi-sport
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ai-capabilities
+    attributes:
+      label: AI capability tag(s)
+      description: Select the core capability or capabilities this tool supports.
+      multiple: true
+      options:
+        - Data ingestion
+        - Computer vision
+        - Tracking
+        - Analytics/modeling
+        - LLM/NLP
+        - Media generation
+        - Training load
+        - Operations
+        - Simulation/RL
+        - Benchmarking
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: openness
+    attributes:
+      label: Access / openness
+      description: Pick the best access label.
+      options:
+        - open-source
+        - open-data
+        - open-api
+        - free-dev-tier
+        - paper-benchmark
+        - commercial-reference
         - Not sure
     validations:
       required: true
@@ -114,5 +150,5 @@ body:
           required: true
         - label: The description is neutral and not promotional copy.
           required: true
-        - label: I checked that this tool is not already listed in the README.
+        - label: I checked that this tool is not already listed in the README or data/catalog.json.
           required: true
