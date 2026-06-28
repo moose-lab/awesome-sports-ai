@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
@@ -18,7 +18,7 @@ const regenerate = () => {
   });
 };
 
-test("event SVGs reflect the source data event state", () => {
+test("NBA event SVG reflects the source data event state", () => {
   regenerate();
 
   const source = readJson("visualizations/source-data.json");
@@ -27,33 +27,19 @@ test("event SVGs reflect the source data event state", () => {
   assert.match(nba, new RegExp(escapeRegExp(source.nbaFinals.series.record)));
   assert.match(nba, new RegExp(escapeRegExp(source.nbaFinals.games[4].score)));
   assert.match(nba, new RegExp(escapeRegExp(source.nbaFinals.games[4].insight)));
-
-  const fifa = read("visualizations/fifa-world-cup-2026.svg");
-  const featuredFixtures = [
-    source.fifaWorldCup.confirmedFixtures[0],
-    source.fifaWorldCup.confirmedFixtures.find((fixture) => fixture.status === "Live"),
-    source.fifaWorldCup.confirmedFixtures.find((fixture) => fixture.status === "Scheduled"),
-  ].filter(Boolean);
-
-  assert.match(fifa, new RegExp(escapeRegExp(source.fifaWorldCup.updated)));
-  assert.match(fifa, new RegExp(escapeRegExp(source.fifaWorldCup.fixtureSummary.label)));
-  assert.match(fifa, new RegExp(escapeRegExp(source.fifaWorldCup.fixtureSummary.detail)));
-  assert.ok(source.fifaWorldCup.updateStream, "missing fifaWorldCup.updateStream");
-  assert.ok(source.fifaWorldCup.toolkit?.[0], "missing first fifaWorldCup.toolkit lane");
-  assert.match(fifa, new RegExp(escapeRegExp(source.fifaWorldCup.updateStream.label)));
-  assert.match(fifa, new RegExp(escapeRegExp(source.fifaWorldCup.updateStream.cadence)));
-  assert.match(fifa, new RegExp(escapeRegExp(source.fifaWorldCup.toolkit[0].title)));
-  featuredFixtures.forEach((fixture) => {
-    assert.match(fifa, new RegExp(escapeRegExp(fixture.match)));
-    assert.match(fifa, new RegExp(escapeRegExp(fixture.score)));
-  });
 });
 
-test("README exposes direct event tags for visualization assets", () => {
+test("README does not expose the old World Cup group-stage visualization", () => {
+  regenerate();
+
   const readme = read("README.md");
 
-  assert.match(readme, /\[NBA Finals 2026: Knicks Champions\]\(visualizations\/nba-finals-2026\.svg\)/);
-  assert.match(readme, /Congratulations, New York Knicks: 2026 NBA Champions!/);
-  assert.match(readme, /\[FIFA World Cup 2026\]\(visualizations\/fifa-world-cup-2026\.svg\)/);
-  assert.match(readme, /FIFA World Cup 2026 live score visualization/);
+  assert.equal(existsSync(join(root, "visualizations", "fifa-world-cup-2026.svg")), false);
+  assert.doesNotMatch(readme, /fifa-world-cup-2026\.svg/);
+  assert.doesNotMatch(readme, /group-stage snapshot/i);
+  assert.doesNotMatch(readme, /FIFA World Cup 2026 live score visualization/);
+  assert.doesNotMatch(readme, /Congratulations, New York Knicks/);
+  assert.match(readme, /World Cup 2026 Knockout Toolkit/);
+  assert.match(readme, /Round of 32/);
+  assert.match(readme, /Bracket and Elimination Scenarios/);
 });

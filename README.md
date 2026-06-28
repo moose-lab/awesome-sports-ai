@@ -5,37 +5,50 @@
 [![GitHub stars](https://img.shields.io/github/stars/moose-lab/awesome-sports-ai?style=social)](https://github.com/moose-lab/awesome-sports-ai/stargazers)
 [![Sports AI Hub](https://img.shields.io/badge/Sports%20AI%20Hub-Official%20Web%20App-00FF87?style=flat&labelColor=0D0F14)](https://sports-ai-hub.pages.dev/)
 
-> **Sports AI Hub:** [Open the official web app](https://sports-ai-hub.pages.dev/) for the interactive builder roadmap, prototypes, and project paths.
->
-> **Structured catalog:** [`data/catalog.json`](data/catalog.json) is the canonical taxonomy for categories, sport tags, AI capabilities, openness labels, tools, and builder recipes.
-
-A resource-type-first directory of AI + sports tools for developers who want to discover useful projects quickly and build their own sports AI products.
+A resource-type-first awesome list for Sports & AI builders who need high-signal tools, datasets, libraries, models, benchmarks, and runnable prototypes.
 
 This repository follows the [Awesome List](https://github.com/sindresorhus/awesome) style: entries should be useful, specific, reachable, neutral, and grouped into one canonical category.
 
-## Contents
+This README is the human-readable directory. [`data/catalog.json`](data/catalog.json) is the machine-readable source of truth for categories, sport tags, AI capabilities, openness labels, tools, and builder recipes. README entries use this metadata pattern: `_Sports: ... . AI: ... . Access: ... ._`
 
-- [How to Use This Directory](#how-to-use-this-directory)
-- [Resource-Type Directory](#resource-type-directory)
-- [Builder Recipes](#builder-recipes)
-- [Featured Event Toolkits](#featured-event-toolkits)
-- [Sport Tags](#sport-tags)
-- [Contribution Rules](#contribution-rules)
-- [Roadmap and Project Context](#roadmap-and-project-context)
-- [Contributing](#contributing)
-- [License](#license)
+## Who This Is For
 
-## How to Use This Directory
+- Developers building sports AI apps, prototypes, datasets, and automation workflows.
+- Analysts, coaches, editors, and operators looking for usable tools they can run or adapt.
+- Tool users who want to find a working project, understand the inputs and outputs, and decide whether it fits their sport workflow.
+- Contributors who want small, concrete issues that improve the catalog, prototypes, or docs.
 
-Use resource type first, then narrow by sport, AI capability, and openness:
+## Quick Start for Builders
 
-- Need runnable code? Start with [Open-Source Projects](#open-source-projects).
+- Need runnable code? Start with [Open-Source Projects](#open-source-projects), especially [`llm-match-commentator`](prototypes/llm-match-commentator/), [`wnba-gravity-mapper`](prototypes/wnba-gravity-mapper/), and [`pickleball-court-mapper`](prototypes/pickleball-court-mapper/).
+- Need a tool you can use or adapt today? Start with [Apps & Products](#apps-products), then check the matching open-source project or SDK category.
 - Need raw material? Start with [Datasets/APIs/Feeds](#datasetsapisfeeds).
-- Need building blocks? Start with [Developer Libraries/SDKs](#developer-librariessdks) and [AI Models/Components](#ai-modelscomponents).
-- Need reproducible research? Start with [Research Benchmarks](#research-benchmarks).
-- Need matchday context or demos? Start with [Event Toolkits](#event-toolkits) and [Builder Recipes](#builder-recipes).
+- Need implementation building blocks? Start with [Developer Libraries/SDKs](#developer-librariessdks) and [AI Models/Components](#ai-modelscomponents).
+- Need evaluation references? Start with [Research Benchmarks](#research-benchmarks).
+- Need event or demo context? Start with [Event Toolkits](#event-toolkits) and [Builder Recipes](#builder-recipes).
+- **Contribute:** [CONTRIBUTING.md](CONTRIBUTING.md) - or pick a [`good first issue`](https://github.com/moose-lab/awesome-sports-ai/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
 
-Entries use this metadata pattern: `_Sports: ... . AI: ... . Access: ... ._`
+## Vibe-Coding Lookup Paths
+
+Use these paths when you want to move from idea to working prototype quickly:
+
+- Match commentary app: [`llm-match-commentator`](prototypes/llm-match-commentator/) + [OpenAI Whisper](#ai-modelscomponents) + [StatsBomb Open Data](#datasetsapisfeeds).
+- Basketball spacing tool: [`wnba-gravity-mapper`](prototypes/wnba-gravity-mapper/) + [Metrica Sports Sample Data](#datasetsapisfeeds) + [sportypy](#developer-librariessdks).
+- Court vision prototype: [`pickleball-court-mapper`](prototypes/pickleball-court-mapper/) + [OpenCV](#developer-librariessdks) + [Roboflow Sports](#ai-modelscomponents).
+- Soccer analytics report: [StatsBomb Open Data](#datasetsapisfeeds) + [socceraction](#developer-librariessdks) + [mplsoccer](#developer-librariessdks).
+- World Cup knockout tracker: [Competition Factory](#open-source-projects) + [Challonge API](#datasetsapisfeeds) + [World Cup 2026 assistant toolkit](docs/world-cup-2026-toolkit.md).
+
+## Sports & AI Relevance Rule
+
+Every entry should connect a sport-specific workflow to AI, data, automation, video, modeling, benchmarking, or developer infrastructure. Generic tools belong here only when they unlock a clear sports AI use case.
+
+Open-source projects, open datasets, open APIs, reproducible research, and free developer paths should lead each category. Commercial systems can stay when they help builders understand the professional reference point, but they should be labeled `commercial-reference`.
+
+## How To Use This Directory
+
+Use resource type first, then narrow by sport, AI capability, and openness. The catalog is organized this way so a developer can quickly answer: "Do I need an app reference, source data, a library, a model component, a benchmark, or a runnable prototype?"
+
+Promotion-friendly description: Awesome Sports AI is a resource-type-first awesome list for developers building sports AI tools with open code, public data, reproducible references, and compact prototype paths.
 
 ## Resource-Type Directory
 
@@ -111,10 +124,9 @@ Entries use this metadata pattern: `_Sports: ... . AI: ... . Access: ... ._`
 
 ### Event Toolkits
 
-- <!-- catalog:world-cup-2026-zone --> [World Cup 2026 zone plan](docs/world-cup-2026-zone.md) - Defines live stream cadence, Match Center contract, matchday zones, and operations checklist. _Sports: Soccer. AI: Operations, data ingestion. Access: open-source._
-- <!-- catalog:world-cup-2026-toolkit --> [World Cup 2026 assistant toolkit](docs/world-cup-2026-toolkit.md) - Collects practical lanes for live data, match intelligence, xG, video review, scouting, and localization. _Sports: Soccer. AI: Data ingestion, analytics/modeling, LLM/NLP. Access: open-source._
-- <!-- catalog:fifa-world-cup-2026-visualization --> [FIFA World Cup 2026 live score visualization](visualizations/fifa-world-cup-2026.svg) - Shows a generated World Cup 2026 live group-stage snapshot from the source data contract. _Sports: Soccer. AI: Media generation, data ingestion. Access: open-source._
-- <!-- catalog:nba-finals-2026-visualization --> [NBA Finals 2026: Knicks Champions](visualizations/nba-finals-2026.svg) - Shows a generated Knicks championship snapshot with game-by-game context. _Sports: Basketball. AI: Media generation, analytics/modeling. Access: open-source._
+- <!-- catalog:world-cup-2026-zone --> [World Cup 2026 zone plan](docs/world-cup-2026-zone.md) - Defines the knockout-stage data contract, Match Center handoff, toolkit lanes, and operations checklist. _Sports: Soccer. AI: Operations, data ingestion. Access: open-source._
+- <!-- catalog:world-cup-2026-toolkit --> [World Cup 2026 assistant toolkit](docs/world-cup-2026-toolkit.md) - Classifies tools for Round of 32-to-Final workflows: data normalization, bracket scenarios, reports, xG, video, scouting, and localization. _Sports: Soccer. AI: Data ingestion, analytics/modeling, LLM/NLP. Access: open-source._
+- <!-- catalog:world-cup-2026-knockout-tool-map --> [World Cup 2026 knockout-stage tool map](docs/world-cup-2026-toolkit.md) - Maps single tools to practical knockout use cases, including bracket state, match briefs, shot-quality context, video review, and multilingual media. _Sports: Soccer. AI: Operations, data ingestion, analytics/modeling, LLM/NLP. Access: open-source._
 
 ### Learning Collections
 
@@ -158,36 +170,29 @@ Normalize fixture and event data into an automated match report with model outpu
 
 Use: football_analytics, socceraction, sports-betting, mplsoccer, and football-match-intelligence.
 
-### Build Your Own 2026 Trending App
+### Build Your Own Sports AI Prototype Launch Pack
 
-Start from runnable prototypes and event kits for World Cup, women's basketball, and emerging sports ideas.
+Start from runnable prototypes and event kits when you want a compact demo that can be forked, explained, and shared.
 
 Use: llm-match-commentator, wnba-gravity-mapper, pickleball-court-mapper, and the World Cup 2026 assistant toolkit.
 
-Public builder-path fallback: [Build Your Own 2026 Trending App](https://github.com/moose-lab/awesome-sports-ai#build-your-own-2026-trending-app).
+## World Cup 2026 Knockout Toolkit
 
-## Featured Event Toolkits
+The World Cup lane is an event toolkit, not the identity of the directory. Use it as a concrete build surface for the knockout phase: Round of 32, Round of 16, Quarterfinals, Semifinals, Third-place match, and Final.
 
-Generated event visuals live in [visualizations/](visualizations/). Regenerate them with `node scripts/generate-visualizations.mjs`.
+- [World Cup 2026 zone plan](docs/world-cup-2026-zone.md) - Source-backed contract for knockout data, Match Center handoff, and operations.
+- [World Cup 2026 assistant toolkit](docs/world-cup-2026-toolkit.md) - Tool categories and single-tool notes for developers and tool users.
+- [Source data contract](visualizations/source-data.json) - Stores knockout format metadata, update-stream metadata, toolkit lanes, and source-backed fixture fields.
 
-Direct visualization tags: [NBA Finals 2026: Knicks Champions](visualizations/nba-finals-2026.svg) | [FIFA World Cup 2026](visualizations/fifa-world-cup-2026.svg)
+Tool categories for World Cup builders:
 
-[![NBA Finals 2026 Knicks championship visualization](visualizations/nba-finals-2026.svg)](visualizations/nba-finals-2026.svg)
-
-[![FIFA World Cup 2026 live score visualization](visualizations/fifa-world-cup-2026.svg)](visualizations/fifa-world-cup-2026.svg)
-
-### 2026 FIFA World Cup Zone
-
-The World Cup lane is now an event toolkit rather than the whole directory. It has a source-backed live update contract, a matchday coverage structure, and a football assistant toolkit for builders supporting the 2026 Canada, Mexico, and United States tournament.
-
-- [World Cup 2026 zone plan](docs/world-cup-2026-zone.md) - Live stream cadence, Match Center contract, matchday zones, and operations checklist.
-- [World Cup 2026 assistant toolkit](docs/world-cup-2026-toolkit.md) - Practical tools for live data, match intelligence, xG, video review, scouting, and localization.
-- [FIFA World Cup live visualization](visualizations/fifa-world-cup-2026.svg) - Generated from `visualizations/source-data.json`.
-- [Source data contract](visualizations/source-data.json) - Fixtures, update stream metadata, matchday zones, and toolkit lanes for Sports AI Hub consumers.
-
-### Congratulations, New York Knicks: 2026 NBA Champions!
-
-The Knicks closed the 2026 NBA Finals 4-1 over the San Antonio Spurs with a 94-90 Game 5 win on June 13, 2026, ending a 53-year championship wait.
+- **Knockout Data and Scoreboard Normalization** - Use `sync-fifa-world-cup`, `football.json`, and Kloppy to normalize fixtures, teams, status, and score states.
+- **Bracket and Elimination Scenarios** - Use Competition Factory, Challonge API, and `bracket` to model Round of 32 paths, future opponents, and elimination handoffs.
+- **Knockout Match Intelligence Reports** - Use `llm-match-commentator` and football-match-intelligence to turn event streams and score states into readable match briefs.
+- **xG and Shot Quality** - Use soccer_xg and mplsoccer when an event feed includes shot locations, body part, situation, and game-state context.
+- **Video and Vision Review** - Use soccer-video-analytics and Roboflow Sports for possession review, clips, detection, and tracking workflows.
+- **Scouting and Player Reports** - Use socceraction and football_scout_rag to connect player profiles, match notes, and action values into repeatable reports.
+- **Media and Localization** - Use OpenAI Whisper and `llm-match-commentator` for captions, multilingual commentary, and social-ready summaries.
 
 ## Sport Tags
 

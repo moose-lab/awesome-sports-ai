@@ -37,7 +37,7 @@ We will build lightweight, functional prototypes for the top 2026 trends. These 
 * **Description**: A modern, interactive web dashboard to replace/supplement the static README. It will display the categorized awesome list, the 2026 roadmap, and live visualizations.
 * **Features**:
   * Interactive categorization and search for sports AI tools.
-  * Live display of the generated SVGs (e.g., FIFA World Cup sync, WNBA gravity maps).
+  * Display source-backed toolkit surfaces such as the World Cup knockout tool map and prototype outputs like WNBA gravity maps.
   * Direct links to the GitHub repository and "Good First Issues".
 * **Tech Stack**: Vite + React + TypeScript + TailwindCSS (via `webdev_init_project`).
 

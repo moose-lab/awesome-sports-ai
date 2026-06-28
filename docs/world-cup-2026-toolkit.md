@@ -1,18 +1,39 @@
 # World Cup 2026 Assistant Toolkit
 
-This toolkit collects practical football tools for builders supporting the 2026 FIFA World Cup zone. Each lane maps to `fifaWorldCup.toolkit` in `visualizations/source-data.json`.
+This toolkit collects practical football tools for developers and tool users building around the 2026 FIFA World Cup knockout phase. The tournament moves from 12 groups into a 32-team single-elimination bracket: Round of 32, Round of 16, Quarterfinals, Semifinals, Third-place match, and Final.
 
-### Live Data and Scoreboard Normalization
+Each lane maps to `fifaWorldCup.toolkit` in [`visualizations/source-data.json`](../visualizations/source-data.json). The README should point builders here instead of embedding a group-stage SVG.
 
-Use this lane to ingest fixture windows, normalize team names, preserve match status, and publish a source-backed live snapshot.
+## Tool Categories
+
+Use these categories to move from a World Cup idea to a runnable workflow:
+
+- Score and status data: normalize fixtures, score states, teams, venues, and source provenance.
+- Bracket and elimination logic: represent Round of 32 paths, future opponents, and knockout handoffs.
+- Match intelligence: turn events and statuses into readable briefs, commentary, and match reports.
+- Shot quality and tactics: add xG, shot maps, pitch maps, and action valuation when event data supports it.
+- Video and vision: analyze user-owned clips, possessions, tracking, and broadcast-style review.
+- Scouting and media: produce player reports, multilingual summaries, captions, and social-ready outputs.
+
+### Knockout Data and Scoreboard Normalization
+
+Use this lane to ingest knockout fixture windows, normalize team names, preserve round/status, and publish source-backed match states.
 
 - [`sync-fifa-world-cup`](../scripts/sync-fifa-world-cup.mjs) - Refreshes the ESPN FIFA World Cup scoreboard window into `source-data.json`.
 - [football.json](https://github.com/openfootball/football.json) - Public-domain football schedules and results for schema comparison.
 - [Kloppy](https://github.com/PySport/kloppy) - Normalizes vendor football event data into reusable Python objects.
 
-### Match Intelligence Reports
+### Bracket and Elimination Scenarios
 
-Use this lane to turn fixture, event, and status data into readable match briefs for fans, analysts, and editors.
+Use this lane to model the knockout bracket without inventing unavailable match facts.
+
+- [Competition Factory](https://github.com/CourtHive/competition-factory) - Manipulates draws and competition structures that can model knockout brackets.
+- [Challonge API](https://api.challonge.com/) - Reference API for creating tournaments, updating brackets, and reporting scores programmatically.
+- [bracket](https://github.com/evroon/bracket) - Self-hosted tournament system for bracket-first workflows and admin surfaces.
+
+### Knockout Match Intelligence Reports
+
+Use this lane to turn fixture, event, round, and status data into readable match briefs for fans, analysts, editors, and product surfaces.
 
 - [`llm-match-commentator`](../prototypes/llm-match-commentator/) - Repository prototype for localized commentary from match event streams.
 - [football-match-intelligence](https://github.com/DataKnight1/football-match-intelligence) - Reference project for football match intelligence dashboards and reporting.

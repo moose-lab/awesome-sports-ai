@@ -13,16 +13,27 @@ const safeRead = (path) => {
 const escapeRegExp = (value) => String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const source = JSON.parse(read("visualizations/source-data.json"));
 
-test("FIFA World Cup zone publishes a live update stream contract", () => {
+test("FIFA World Cup zone publishes a knockout-stage contract", () => {
+  const format = source.fifaWorldCup.knockoutFormat;
   const stream = source.fifaWorldCup.updateStream;
 
+  assert.ok(format, "missing fifaWorldCup.knockoutFormat");
+  assert.equal(format.teams, "32 teams");
+  assert.deepEqual(format.stageOrder, [
+    "Round of 32",
+    "Round of 16",
+    "Quarterfinals",
+    "Semifinals",
+    "Third-place match",
+    "Final",
+  ]);
   assert.ok(stream, "missing fifaWorldCup.updateStream");
-  assert.equal(stream.label, "Live update stream");
+  assert.equal(stream.label, "Knockout update stream");
   assert.equal(stream.cadence, "Every 5 minutes during the tournament window");
-  assert.match(stream.currentWindow, /^Jun \d{1,2}/);
+  assert.match(stream.currentWindow, /Round of 32/);
   assert.equal(stream.source, "ESPN FIFA World Cup scoreboard API");
   assert.match(stream.lastVerifiedAt, /^2026-/);
-  assert.deepEqual(stream.consumers, ["Sports AI Hub", "README visualization", "Match Center route"]);
+  assert.deepEqual(stream.consumers, ["Sports AI Hub", "Knockout tool map", "Match Center route"]);
 });
 
 test("FIFA World Cup zone publishes matchday zones and toolkit lanes", () => {
@@ -34,7 +45,8 @@ test("FIFA World Cup zone publishes matchday zones and toolkit lanes", () => {
   assert.ok(zones.length >= 4);
   assert.ok(toolkit.length >= 6);
   assert.deepEqual(toolkit.map((lane) => lane.slug), [
-    "live-data",
+    "knockout-data",
+    "bracket-and-scenarios",
     "match-intelligence",
     "xg-and-shot-quality",
     "video-and-vision",
@@ -53,10 +65,13 @@ test("World Cup docs and README expose every toolkit lane", () => {
   const zoneDoc = safeRead("docs/world-cup-2026-zone.md");
   const toolkitDoc = safeRead("docs/world-cup-2026-toolkit.md");
 
-  assert.match(readme, /2026 FIFA World Cup Zone/);
+  assert.match(readme, /World Cup 2026 Knockout Toolkit/);
+  assert.match(readme, /Round of 32/);
   assert.match(readme, /docs\/world-cup-2026-zone\.md/);
   assert.match(readme, /docs\/world-cup-2026-toolkit\.md/);
+  assert.doesNotMatch(readme, /fifa-world-cup-2026\.svg/);
   source.fifaWorldCup.toolkit.forEach((lane) => {
+    assert.match(readme, new RegExp(escapeRegExp(lane.title)));
     assert.match(toolkitDoc, new RegExp(`### ${escapeRegExp(lane.title)}`));
     assert.match(zoneDoc, new RegExp(escapeRegExp(lane.slug)));
   });

@@ -152,18 +152,32 @@
         "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026"
       }
     ],
+    "knockoutFormat": {
+      "label": "Knockout stage format",
+      "teams": "32 teams",
+      "entryRule": "Top two teams from each group plus the eight best third-place teams advance after the 12-group opening phase.",
+      "matchModel": "Single-elimination bracket from Round of 32 through the Final, with a Third-place match.",
+      "stageOrder": [
+        "Round of 32",
+        "Round of 16",
+        "Quarterfinals",
+        "Semifinals",
+        "Third-place match",
+        "Final"
+      ]
+    },
     "stats": [
       {
-        "label": "Final results",
-        "value": "72"
+        "label": "Knockout field",
+        "value": "32 teams"
       },
       {
-        "label": "Live match",
-        "value": "None"
+        "label": "Format",
+        "value": "Single elimination"
       },
       {
-        "label": "Scheduled next",
-        "value": "4"
+        "label": "Next stage",
+        "value": "Round of 32"
       },
       {
         "label": "Tournament field",
@@ -171,26 +185,26 @@
       }
     ],
     "fixtureSummary": {
-      "label": "Group-stage live snapshot",
-      "window": "Jun 11-29",
-      "detail": "72 matches are final, no match is live, and 4 fixtures are scheduled next."
+      "label": "Knockout-stage tool contract",
+      "window": "Round of 32-Final",
+      "detail": "Use source-backed fixtures to power bracket state, match intelligence, video review, scouting, and media workflows."
     },
     "updateStream": {
-      "label": "Live update stream",
+      "label": "Knockout update stream",
       "cadence": "Every 5 minutes during the tournament window",
-      "currentWindow": "Jun 11-29",
+      "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-06-28",
-      "status": "Pre-match coverage queued",
+      "status": "Knockout coverage model",
       "consumers": [
         "Sports AI Hub",
-        "README visualization",
+        "Knockout tool map",
         "Match Center route"
       ],
       "fields": [
         "date",
         "match",
-        "group",
+        "round",
         "venue",
         "status",
         "score",
@@ -199,22 +213,22 @@
     },
     "matchdayZones": [
       {
-        "slug": "live-strip",
-        "title": "Live Strip",
-        "audience": "Fans and builders checking the repository or Sports AI Hub homepage",
-        "output": "Compact ticker with current score, final count, next fixtures, and generated SVG"
+        "slug": "knockout-scoreboard",
+        "title": "Knockout Scoreboard",
+        "audience": "Developers and tool users tracking Round of 32 through the Final",
+        "output": "Source-backed score state, round labels, venue context, and provenance"
       },
       {
-        "slug": "match-center",
-        "title": "Match Center",
-        "audience": "Users following a matchday window",
-        "output": "Fixture cards, standings-ready feed fields, score states, and source provenance"
+        "slug": "bracket-and-match-center",
+        "title": "Bracket and Match Center",
+        "audience": "Builders turning knockout fixtures into a browsable match workflow",
+        "output": "Bracket-ready fixture cards, elimination context, score states, and source provenance"
       },
       {
         "slug": "analyst-workbench",
         "title": "Analyst Workbench",
         "audience": "Developers building match reports and tactical tools",
-        "output": "Tool lanes for live-data, match-intelligence, xg-and-shot-quality, video-and-vision, scouting-and-reports, and media-and-localization"
+        "output": "Tool lanes for knockout-data, bracket-and-scenarios, match-intelligence, xg-and-shot-quality, video-and-vision, scouting-and-reports, and media-and-localization"
       },
       {
         "slug": "contributor-backlog",
@@ -225,9 +239,9 @@
     ],
     "toolkit": [
       {
-        "slug": "live-data",
-        "title": "Live Data and Scoreboard Normalization",
-        "matchdayUse": "Ingest fixture windows, normalize teams, preserve status, and publish source-backed live snapshots.",
+        "slug": "knockout-data",
+        "title": "Knockout Data and Scoreboard Normalization",
+        "matchdayUse": "Ingest knockout fixture windows, normalize teams, preserve round/status, and publish source-backed match states.",
         "tools": [
           {
             "name": "sync-fifa-world-cup",
@@ -247,9 +261,31 @@
         ]
       },
       {
+        "slug": "bracket-and-scenarios",
+        "title": "Bracket and Elimination Scenarios",
+        "matchdayUse": "Represent Round of 32 paths, elimination states, future opponents, and bracket handoffs without inventing unavailable match facts.",
+        "tools": [
+          {
+            "name": "Competition Factory",
+            "href": "https://github.com/CourtHive/competition-factory",
+            "role": "Manipulates draws and competition structures that can model knockout brackets."
+          },
+          {
+            "name": "Challonge API",
+            "href": "https://api.challonge.com/",
+            "role": "Reference API for creating tournaments, updating brackets, and reporting scores programmatically."
+          },
+          {
+            "name": "bracket",
+            "href": "https://github.com/evroon/bracket",
+            "role": "Self-hosted tournament system for bracket-first workflows and admin surfaces."
+          }
+        ]
+      },
+      {
         "slug": "match-intelligence",
-        "title": "Match Intelligence Reports",
-        "matchdayUse": "Turn fixture, event, and status data into readable match briefs for fans, analysts, and editors.",
+        "title": "Knockout Match Intelligence Reports",
+        "matchdayUse": "Turn fixture, event, round, and status data into readable match briefs for fans, analysts, and editors.",
         "tools": [
           {
             "name": "llm-match-commentator",

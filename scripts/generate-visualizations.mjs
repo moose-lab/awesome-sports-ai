@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -36,11 +36,6 @@ const rect = (x, y, width, height, options = {}) => {
 };
 
 const pillWidth = (label) => Math.max(72, label.length * 8 + 24);
-
-const truncate = (value, maxLength) => {
-  const content = String(value ?? "");
-  return content.length > maxLength ? `${content.slice(0, maxLength - 3)}...` : content;
-};
 
 const pill = (x, y, label, fill, color = "#ffffff") => {
   const width = pillWidth(label);
@@ -166,113 +161,8 @@ function renderNba(finals) {
   );
 }
 
-function renderFifa(worldCup) {
-  const fixtureColumns = 3;
-  const fixtureStartY = 318;
-  const fixtureRowGap = 88;
-  const fixtureCardHeight = 74;
-  const fixtureRows = Math.ceil(worldCup.confirmedFixtures.length / fixtureColumns);
-  const fixtureEndY = fixtureStartY + (fixtureRows - 1) * fixtureRowGap + fixtureCardHeight;
-  const operationsStartY = fixtureEndY + 32;
-  const operationsHeight = worldCup.updateStream || worldCup.toolkit?.length ? 238 : 0;
-  const svgHeight = Math.max(
-    760,
-    fixtureEndY + operationsHeight + 100
-  );
-  const footerY = svgHeight - 42;
-
-  const statCards = worldCup.stats
-    .map((stat, index) => {
-      const x = 42 + index * 252;
-      return [
-        rect(x, 124, 228, 84, { fill: "#ffffff", stroke: "#d8e7df", radius: 14 }),
-        text(x + 22, 156, stat.value, { size: 30, weight: 900, fill: "#086c5b" }),
-        text(x + 22, 184, stat.label, { size: 14, weight: 700, fill: "#526174" }),
-      ].join("");
-    })
-    .join("");
-
-  const groupColors = ["#086c5b", "#1d4ed8", "#b45309", "#7c3aed", "#be123c", "#0f766e"];
-  const fixtureCards = worldCup.confirmedFixtures
-    .map((fixture, index) => {
-      const col = index % fixtureColumns;
-      const row = Math.floor(index / fixtureColumns);
-      const x = 42 + col * 340;
-      const y = fixtureStartY + row * fixtureRowGap;
-      const color = groupColors[row % groupColors.length];
-      const status = fixture.status ?? fixture.tag;
-      const statusX = x + 304 - pillWidth(status);
-      const featured =
-        status === "HT" ||
-        status === "Live" ||
-        fixture.tag === "Opener" ||
-        fixture.tag === "Host" ||
-        fixture.tag === "Marquee";
-      const statusFill =
-        status === "Final" ? "#086c5b" : status === "HT" || status === "Live" ? "#be123c" : "#e2e8f0";
-      const statusColor = status === "Final" || status === "HT" || status === "Live" ? "#ffffff" : "#475569";
-      return `
-  <g>
-    ${rect(x, y, 320, 74, { fill: featured ? "#f7fffb" : "#ffffff", stroke: color, radius: 14, strokeWidth: featured ? 2 : 1 })}
-    ${pill(x + 16, y + 12, fixture.date, color)}
-    ${text(x + 102, y + 31, fixture.group, { size: 12, weight: 900, fill: color })}
-    ${pill(statusX, y + 12, status, statusFill, statusColor)}
-    ${text(x + 18, y + 55, fixture.match, { size: 14, weight: 950, fill: "#12342f" })}
-    ${text(x + 18, y + 70, `${fixture.score ?? fixture.venue} · ${fixture.insight ?? fixture.venue}`, { size: 10, weight: 750, fill: status === "HT" || status === "Live" ? "#be123c" : "#64748b" })}
-  </g>`;
-    })
-    .join("");
-
-  const toolkitLanes = (worldCup.toolkit ?? []).slice(0, 3);
-  const operationsPanel =
-    worldCup.updateStream || toolkitLanes.length
-      ? `
-  ${rect(42, operationsStartY, 1016, 204, { fill: "#f8fafc", stroke: "#cbd5e1", radius: 16 })}
-  ${text(62, operationsStartY + 34, worldCup.updateStream?.label ?? "World Cup coverage system", { size: 18, weight: 950, fill: "#12342f" })}
-  ${pill(854, operationsStartY + 16, worldCup.updateStream?.status ?? "Coverage ready", "#be123c")}
-  ${text(62, operationsStartY + 60, `${worldCup.updateStream?.cadence ?? "Manual refresh"} · ${worldCup.updateStream?.currentWindow ?? worldCup.fixtureSummary.window}`, { size: 13, weight: 800, fill: "#0f766e" })}
-  ${text(62, operationsStartY + 82, `Source: ${worldCup.updateStream?.source ?? "source-data.json"} · Verified ${worldCup.updateStream?.lastVerifiedAt ?? worldCup.updated.replace("Updated ", "")}`, { size: 12, weight: 650, fill: "#526174" })}
-  ${text(62, operationsStartY + 116, "Assistant toolkit lanes", { size: 14, weight: 950, fill: "#12342f" })}
-  ${toolkitLanes
-    .map((lane, index) => {
-      const x = 62 + index * 326;
-      const y = operationsStartY + 132;
-      const tools = lane.tools?.slice(0, 2).map((tool) => tool.name).join(" + ") ?? "";
-      return `
-  <g>
-    ${rect(x, y, 300, 56, { fill: "#ffffff", stroke: "#dbe7ef", radius: 12 })}
-    ${text(x + 16, y + 23, lane.title, { size: 13, weight: 900, fill: "#12342f" })}
-    ${text(x + 16, y + 43, truncate(tools || lane.matchdayUse, 44), { size: 11, weight: 700, fill: "#64748b" })}
-  </g>`;
-    })
-    .join("")}
-`
-      : "";
-
-  return svgFrame(
-    1100,
-    svgHeight,
-    `
-  ${rect(0, 0, 1100, svgHeight, { fill: "url(#fifaBg)", stroke: "none", radius: 0 })}
-  ${rect(24, 24, 1052, svgHeight - 48, { fill: "#ffffff", stroke: "#dfe6f0", radius: 22, opacity: 0.94 })}
-  ${text(42, 72, worldCup.title, { size: 30, weight: 900, fill: "#12342f" })}
-  ${text(42, 100, worldCup.subtitle, { size: 16, weight: 650, fill: "#526174" })}
-  ${pill(860, 50, worldCup.updated, "#086c5b")}
-  ${statCards}
-
-  ${rect(42, 228, 1016, 58, { fill: "#f4fbf8", stroke: "#cfe5dc", radius: 16 })}
-  ${text(62, 252, `${worldCup.fixtureSummary.label} · ${worldCup.fixtureSummary.window}`, { size: 17, weight: 950, fill: "#12342f" })}
-  ${text(62, 274, worldCup.fixtureSummary.detail, { size: 12, weight: 650, fill: "#526174" })}
-
-  ${fixtureCards}
-  ${operationsPanel}
-  ${text(42, footerY, "Generated from source-data.json. Official hubs: FIFA match schedule + tournament hub.", { size: 12, weight: 600, fill: "#64748b" })}
-`
-  );
-}
-
+rmSync(join(root, "visualizations", "fifa-world-cup-2026.svg"), { force: true });
 writeFileSync(join(root, "visualizations", "nba-finals-2026.svg"), cleanSvg(renderNba(data.nbaFinals)));
-writeFileSync(join(root, "visualizations", "fifa-world-cup-2026.svg"), cleanSvg(renderFifa(data.fifaWorldCup)));
 
 console.log("Generated visualizations/nba-finals-2026.svg");
-console.log("Generated visualizations/fifa-world-cup-2026.svg");
+console.log("Removed visualizations/fifa-world-cup-2026.svg");
