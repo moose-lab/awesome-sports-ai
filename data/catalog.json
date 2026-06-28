@@ -1,0 +1,763 @@
+{
+  "categories": [
+    {
+      "id": "apps-products",
+      "label": "Apps & Products",
+      "description": "User-facing apps, hosted products, and commercial references that help builders understand complete sports AI workflows."
+    },
+    {
+      "id": "open-source-projects",
+      "label": "Open-Source Projects",
+      "description": "Runnable repositories and prototypes that implement a sports AI workflow end to end."
+    },
+    {
+      "id": "datasets-apis-feeds",
+      "label": "Datasets/APIs/Feeds",
+      "description": "Public data, sports APIs, live feeds, and reference datasets for building sports AI products."
+    },
+    {
+      "id": "developer-libraries-sdks",
+      "label": "Developer Libraries/SDKs",
+      "description": "Packages, SDKs, and infrastructure libraries that help developers parse, normalize, visualize, and process sports data."
+    },
+    {
+      "id": "ai-models-components",
+      "label": "AI Models/Components",
+      "description": "Reusable AI components for computer vision, modeling, LLM/NLP, media, and training-load workflows."
+    },
+    {
+      "id": "research-benchmarks",
+      "label": "Research Benchmarks",
+      "description": "Papers, benchmark datasets, simulation environments, and reproducible research references."
+    },
+    {
+      "id": "event-toolkits",
+      "label": "Event Toolkits",
+      "description": "Event-specific builder kits, live data contracts, generated visuals, and matchday workflows."
+    },
+    {
+      "id": "learning-collections",
+      "label": "Learning Collections",
+      "description": "Awesome lists, handbooks, tutorials, and curated reference collections for sports AI builders."
+    }
+  ],
+  "sportTags": [
+    "Soccer",
+    "Basketball",
+    "American Football",
+    "Baseball/Softball",
+    "Tennis/Racquet",
+    "Running/Track",
+    "Cycling",
+    "Swimming",
+    "Ice Hockey",
+    "Rugby",
+    "Cricket",
+    "Volleyball",
+    "Golf",
+    "Combat Sports",
+    "Motorsport",
+    "Esports",
+    "Multi-sport"
+  ],
+  "aiCapabilities": [
+    {
+      "id": "data-ingestion",
+      "label": "Data ingestion"
+    },
+    {
+      "id": "computer-vision",
+      "label": "Computer vision"
+    },
+    {
+      "id": "tracking",
+      "label": "Tracking"
+    },
+    {
+      "id": "analytics-modeling",
+      "label": "Analytics/modeling"
+    },
+    {
+      "id": "llm-nlp",
+      "label": "LLM/NLP"
+    },
+    {
+      "id": "media-generation",
+      "label": "Media generation"
+    },
+    {
+      "id": "training-load",
+      "label": "Training load"
+    },
+    {
+      "id": "operations",
+      "label": "Operations"
+    },
+    {
+      "id": "simulation-rl",
+      "label": "Simulation/RL"
+    },
+    {
+      "id": "benchmarking",
+      "label": "Benchmarking"
+    }
+  ],
+  "openness": [
+    "open-source",
+    "open-data",
+    "open-api",
+    "free-dev-tier",
+    "paper-benchmark",
+    "commercial-reference"
+  ],
+  "tools": [
+    {
+      "id": "sports-ai-hub",
+      "title": "Sports AI Hub",
+      "url": "https://sports-ai-hub.pages.dev/",
+      "description": "Provides the public web app companion for this directory, including builder navigation, prototypes, and project paths.",
+      "categoryId": "apps-products",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["operations", "data-ingestion"],
+      "openness": "open-source"
+    },
+    {
+      "id": "stonk-striker",
+      "title": "Stonk Striker",
+      "url": "https://stonk-striker.vercel.app/",
+      "description": "Turns stock and crypto price charts into a browser football striking game with market-shaped terrain.",
+      "categoryId": "apps-products",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["media-generation", "analytics-modeling"],
+      "openness": "free-dev-tier"
+    },
+    {
+      "id": "fantasy-manager",
+      "title": "fantasy-manager",
+      "url": "https://github.com/lukasdotcom/fantasy-manager",
+      "description": "Provides an open-source self-hosted fantasy manager.",
+      "categoryId": "apps-products",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["operations", "analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "sportsengine-tourney",
+      "title": "SportsEngine Tourney",
+      "url": "https://www.sportsengine.com/tourney/",
+      "description": "Manages tournament scheduling, brackets, standings, score updates, registration, and team communication.",
+      "categoryId": "apps-products",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["operations"],
+      "openness": "commercial-reference"
+    },
+    {
+      "id": "second-spectrum",
+      "title": "Second Spectrum",
+      "url": "https://www.geniussports.com/newsroom/genius-sports-second-spectrum-tracking-technology-approved-by-fifa-quality-programme-for-epts/",
+      "description": "Provides optical tracking, tactical analytics, and augmented broadcast tools for professional leagues and teams.",
+      "categoryId": "apps-products",
+      "sportTags": ["Basketball", "Soccer"],
+      "aiCapabilities": ["tracking", "analytics-modeling", "media-generation"],
+      "openness": "commercial-reference"
+    },
+    {
+      "id": "llm-match-commentator",
+      "title": "llm-match-commentator",
+      "url": "./prototypes/llm-match-commentator/",
+      "description": "Generates localized match commentary from structured event streams.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["Soccer", "Multi-sport"],
+      "aiCapabilities": ["llm-nlp", "media-generation"],
+      "openness": "open-source"
+    },
+    {
+      "id": "wnba-gravity-mapper",
+      "title": "wnba-gravity-mapper",
+      "url": "./prototypes/wnba-gravity-mapper/",
+      "description": "Calculates player gravity from basketball tracking coordinates and renders a heatmap.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["Basketball"],
+      "aiCapabilities": ["tracking", "analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "pickleball-court-mapper",
+      "title": "pickleball-court-mapper",
+      "url": "./prototypes/pickleball-court-mapper/",
+      "description": "Detects pickleball court lines and generates annotated court diagrams.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["Tennis/Racquet"],
+      "aiCapabilities": ["computer-vision", "tracking"],
+      "openness": "open-source"
+    },
+    {
+      "id": "football-match-intelligence",
+      "title": "football-match-intelligence",
+      "url": "https://github.com/DataKnight1/football-match-intelligence",
+      "description": "Builds football match intelligence dashboards with pitch control, sprint efficiency, and tactical sequencing.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling", "tracking"],
+      "openness": "open-source"
+    },
+    {
+      "id": "soccer-video-analytics",
+      "title": "soccer-video-analytics",
+      "url": "https://github.com/tryolabs/soccer-video-analytics",
+      "description": "Demonstrates automatic soccer ball possession analysis from video.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["computer-vision", "tracking"],
+      "openness": "open-source"
+    },
+    {
+      "id": "video-tagging-events",
+      "title": "Video Tagging Events",
+      "url": "https://github.com/napo/videotaggingevents",
+      "description": "Tags specific segments of a video for sports review and analysis.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["operations", "media-generation"],
+      "openness": "open-source"
+    },
+    {
+      "id": "athlete-load-monitor",
+      "title": "AthleteLoadMonitor",
+      "url": "https://github.com/SaxionAMI/AthleteLoadMonitor",
+      "description": "Monitors and predicts athlete load for team-sport coaches.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["training-load", "analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "coroebus",
+      "title": "Coroebus",
+      "url": "https://github.com/prakashsellathurai/Coroebus",
+      "description": "Tracks training load, fitness, fatigue, and readiness for athletes.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["training-load", "analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "bracket",
+      "title": "bracket",
+      "url": "https://github.com/evroon/bracket",
+      "description": "Provides a self-hosted tournament system for creating and managing brackets.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["operations"],
+      "openness": "open-source"
+    },
+    {
+      "id": "competition-factory",
+      "title": "Competition Factory",
+      "url": "https://github.com/CourtHive/competition-factory",
+      "description": "Manipulates tournament and league documents, including draws and competition structures.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["Tennis/Racquet", "Multi-sport"],
+      "aiCapabilities": ["operations", "data-ingestion"],
+      "openness": "open-source"
+    },
+    {
+      "id": "ready2race",
+      "title": "Ready2Race",
+      "url": "https://github.com/lambda9-gmbh/ready2race",
+      "description": "Plans and executes competition events such as coastal rowing races.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["operations"],
+      "openness": "open-source"
+    },
+    {
+      "id": "fantasy-football-wrapped",
+      "title": "fantasy-football-wrapped",
+      "url": "https://github.com/kt474/fantasy-football-wrapped",
+      "description": "Generates fantasy league insights and charts for Sleeper and ESPN leagues.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["American Football"],
+      "aiCapabilities": ["analytics-modeling", "media-generation"],
+      "openness": "open-source"
+    },
+    {
+      "id": "football-scout-rag",
+      "title": "football_scout_rag",
+      "url": "https://github.com/yotambraun/football_scout_rag",
+      "description": "Generates repeatable football player scouting reports with retrieval-augmented workflows.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["llm-nlp", "analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "balldontlie",
+      "title": "balldontlie",
+      "url": "https://www.balldontlie.io/",
+      "description": "Provides API access to basketball teams, players, games, and box-score data.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["Basketball"],
+      "aiCapabilities": ["data-ingestion"],
+      "openness": "open-api"
+    },
+    {
+      "id": "collegefootballdata",
+      "title": "CollegeFootballData",
+      "url": "https://collegefootballdata.com/",
+      "description": "Provides college football API endpoints for games, drives, plays, rankings, ratings, and recruiting data.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["American Football"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
+      "openness": "open-api"
+    },
+    {
+      "id": "football-json",
+      "title": "football.json",
+      "url": "https://github.com/openfootball/football.json",
+      "description": "Provides public-domain football match data in JSON for schedules, leagues, clubs, and results.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion"],
+      "openness": "open-data"
+    },
+    {
+      "id": "statsbomb-open-data",
+      "title": "StatsBomb Open Data",
+      "url": "https://github.com/statsbomb/open-data",
+      "description": "Provides free soccer event data for public analysis and modeling.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion", "benchmarking"],
+      "openness": "open-data"
+    },
+    {
+      "id": "metrica-sports-sample-data",
+      "title": "Metrica Sports Sample Data",
+      "url": "https://github.com/metrica-sports/sample-data",
+      "description": "Provides sample soccer tracking and event data for analytics tutorials and reproducible analysis.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion", "tracking"],
+      "openness": "open-data"
+    },
+    {
+      "id": "dynastyprocess-data",
+      "title": "dynastyprocess/data",
+      "url": "https://github.com/dynastyprocess/data",
+      "description": "Provides open fantasy football data maintained by DynastyProcess.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["American Football"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
+      "openness": "open-data"
+    },
+    {
+      "id": "challonge-api",
+      "title": "Challonge API",
+      "url": "https://api.challonge.com/",
+      "description": "Lets developers create tournaments, update brackets, and report scores programmatically.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["operations", "data-ingestion"],
+      "openness": "open-api"
+    },
+    {
+      "id": "toornament-api",
+      "title": "Toornament API",
+      "url": "https://developer.toornament.com/",
+      "description": "Provides APIs for building tournament, match, calendar, ranking, and registration workflows.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["Esports", "Multi-sport"],
+      "aiCapabilities": ["operations", "data-ingestion"],
+      "openness": "open-api"
+    },
+    {
+      "id": "nba-api",
+      "title": "nba_api",
+      "url": "https://github.com/swar/nba_api",
+      "description": "Provides a Python client for NBA.com stats endpoints and basketball data workflows.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["Basketball"],
+      "aiCapabilities": ["data-ingestion"],
+      "openness": "open-source"
+    },
+    {
+      "id": "fastf1",
+      "title": "FastF1",
+      "url": "https://github.com/theOehrly/Fast-F1",
+      "description": "Loads Formula 1 timing, telemetry, session, schedule, and weather data in Python.",
+      "categoryId": "developer-libraries-sdks",
+      "sportTags": ["Motorsport"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "kloppy",
+      "title": "Kloppy",
+      "url": "https://github.com/PySport/kloppy",
+      "description": "Standardizes soccer tracking and event data into vendor-independent Python objects.",
+      "categoryId": "developer-libraries-sdks",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion", "tracking"],
+      "openness": "open-source"
+    },
+    {
+      "id": "statsbombpy",
+      "title": "statsbombpy",
+      "url": "https://github.com/statsbomb/statsbombpy",
+      "description": "Streams StatsBomb soccer data into Python for analysis and modeling.",
+      "categoryId": "developer-libraries-sdks",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "mplsoccer",
+      "title": "mplsoccer",
+      "url": "https://github.com/andrewRowlinson/mplsoccer",
+      "description": "Draws soccer pitches and common football analytics plots with Matplotlib.",
+      "categoryId": "developer-libraries-sdks",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling", "media-generation"],
+      "openness": "open-source"
+    },
+    {
+      "id": "socceraction",
+      "title": "socceraction",
+      "url": "https://github.com/ML-KULeuven/socceraction",
+      "description": "Converts soccer event streams to SPADL and values actions with VAEP or xT.",
+      "categoryId": "developer-libraries-sdks",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "soccerplots",
+      "title": "soccerplots",
+      "url": "https://github.com/slothfulwave/soccerplots",
+      "description": "Creates radar and pizza charts for football player analysis.",
+      "categoryId": "developer-libraries-sdks",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling", "media-generation"],
+      "openness": "open-source"
+    },
+    {
+      "id": "sportypy",
+      "title": "sportypy",
+      "url": "https://github.com/sportsdataverse/sportypy",
+      "description": "Draws regulation playing surfaces for several sports in Python.",
+      "categoryId": "developer-libraries-sdks",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["analytics-modeling", "media-generation"],
+      "openness": "open-source"
+    },
+    {
+      "id": "ffmpeg-python",
+      "title": "ffmpeg-python",
+      "url": "https://github.com/kkroening/ffmpeg-python",
+      "description": "Provides Python bindings for FFmpeg video processing and filtering.",
+      "categoryId": "developer-libraries-sdks",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["media-generation"],
+      "openness": "open-source"
+    },
+    {
+      "id": "floodlight",
+      "title": "floodlight",
+      "url": "https://github.com/floodlight-sports/floodlight",
+      "description": "Provides Python data structures, parsers, and analysis models for team-sport event and tracking data.",
+      "categoryId": "developer-libraries-sdks",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["data-ingestion", "tracking", "analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "opencv",
+      "title": "OpenCV",
+      "url": "https://github.com/opencv/opencv",
+      "description": "Provides open-source computer vision infrastructure for tracking, detection, and video analysis.",
+      "categoryId": "developer-libraries-sdks",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["computer-vision", "tracking"],
+      "openness": "open-source"
+    },
+    {
+      "id": "sportsdataverse-py",
+      "title": "sportsdataverse-py",
+      "url": "https://github.com/sportsdataverse/sportsdataverse-py",
+      "description": "Provides a Python package for loading and tidying data from several SportsDataverse ecosystems.",
+      "categoryId": "developer-libraries-sdks",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "databallpy",
+      "title": "databallpy",
+      "url": "https://github.com/Alek050/databallpy",
+      "description": "Reads, preprocesses, visualizes, and synchronizes soccer event and tracking data.",
+      "categoryId": "developer-libraries-sdks",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion", "tracking", "training-load"],
+      "openness": "open-source"
+    },
+    {
+      "id": "yahoo-fantasy-sports-api-go",
+      "title": "yahoo-fantasy-sports-api-go",
+      "url": "https://github.com/n-ae/yahoo-fantasy-sports-api-go",
+      "description": "Provides Go bindings for Yahoo Fantasy Sports APIs.",
+      "categoryId": "developer-libraries-sdks",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["data-ingestion"],
+      "openness": "open-source"
+    },
+    {
+      "id": "roboflow-sports",
+      "title": "Roboflow Sports",
+      "url": "https://github.com/roboflow/sports",
+      "description": "Provides computer-vision examples, models, and workflows for sports detection, tracking, and analytics.",
+      "categoryId": "ai-models-components",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["computer-vision", "tracking"],
+      "openness": "open-source"
+    },
+    {
+      "id": "soccer-xg",
+      "title": "soccer_xg",
+      "url": "https://github.com/ML-KULeuven/soccer_xg",
+      "description": "Trains and analyzes expected-goals models for soccer.",
+      "categoryId": "ai-models-components",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "mmpose",
+      "title": "MMPose",
+      "url": "https://github.com/open-mmlab/mmpose",
+      "description": "Provides an open-source pose estimation toolbox for biomechanics and movement analysis.",
+      "categoryId": "ai-models-components",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["computer-vision", "tracking", "training-load"],
+      "openness": "open-source"
+    },
+    {
+      "id": "openpose",
+      "title": "OpenPose",
+      "url": "https://github.com/CMU-Perceptual-Computing-Lab/openpose",
+      "description": "Detects real-time multi-person body, hand, face, and foot keypoints.",
+      "categoryId": "ai-models-components",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["computer-vision", "tracking"],
+      "openness": "open-source"
+    },
+    {
+      "id": "openai-whisper",
+      "title": "OpenAI Whisper",
+      "url": "https://github.com/openai/whisper",
+      "description": "Transcribes commentary, interviews, and review audio for sports media workflows.",
+      "categoryId": "ai-models-components",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["llm-nlp", "media-generation"],
+      "openness": "open-source"
+    },
+    {
+      "id": "acute-chronic-workload-ratio",
+      "title": "Acute_Chronic_Workload_Ratio",
+      "url": "https://github.com/ale-uy/Acute_Chronic_Workload_Ratio",
+      "description": "Calculates acute-to-chronic workload ratios in Python.",
+      "categoryId": "ai-models-components",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["training-load", "analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "sports-betting",
+      "title": "sports-betting",
+      "url": "https://github.com/georgedouzas/sports-betting",
+      "description": "Collects sports betting AI tools and prediction experiments.",
+      "categoryId": "ai-models-components",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "model-card-toolkit",
+      "title": "Model Card Toolkit",
+      "url": "https://github.com/tensorflow/model-card-toolkit",
+      "description": "Documents training data, assumptions, limitations, and evaluation results for machine learning models.",
+      "categoryId": "ai-models-components",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["benchmarking", "analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "google-research-football",
+      "title": "Google Research Football",
+      "url": "https://github.com/google-research/football",
+      "description": "Provides a reinforcement-learning football environment for AI research.",
+      "categoryId": "research-benchmarks",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["simulation-rl", "benchmarking"],
+      "openness": "open-source"
+    },
+    {
+      "id": "soccernet",
+      "title": "SoccerNet",
+      "url": "https://www.soccer-net.org/data",
+      "description": "Provides datasets and benchmarks for soccer video understanding, action spotting, tracking, and game-state reconstruction.",
+      "categoryId": "research-benchmarks",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["computer-vision", "tracking", "benchmarking"],
+      "openness": "paper-benchmark"
+    },
+    {
+      "id": "sportsmot",
+      "title": "SportsMOT",
+      "url": "https://deeperaction.github.io/datasets/sportsmot.html",
+      "description": "Provides a multi-object tracking dataset across basketball, football, and volleyball scenes.",
+      "categoryId": "research-benchmarks",
+      "sportTags": ["Basketball", "Soccer", "Volleyball"],
+      "aiCapabilities": ["tracking", "computer-vision", "benchmarking"],
+      "openness": "paper-benchmark"
+    },
+    {
+      "id": "tacticai",
+      "title": "TacticAI",
+      "url": "https://www.nature.com/articles/s41467-024-45965-x",
+      "description": "Describes a football tactics assistant for predicting and generating corner-kick tactical recommendations.",
+      "categoryId": "research-benchmarks",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling", "benchmarking"],
+      "openness": "paper-benchmark"
+    },
+    {
+      "id": "world-cup-2026-zone",
+      "title": "World Cup 2026 zone plan",
+      "url": "./docs/world-cup-2026-zone.md",
+      "description": "Defines live stream cadence, Match Center contract, matchday zones, and operations checklist.",
+      "categoryId": "event-toolkits",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["operations", "data-ingestion"],
+      "openness": "open-source"
+    },
+    {
+      "id": "world-cup-2026-toolkit",
+      "title": "World Cup 2026 assistant toolkit",
+      "url": "./docs/world-cup-2026-toolkit.md",
+      "description": "Collects practical lanes for live data, match intelligence, xG, video review, scouting, and localization.",
+      "categoryId": "event-toolkits",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling", "llm-nlp"],
+      "openness": "open-source"
+    },
+    {
+      "id": "fifa-world-cup-2026-visualization",
+      "title": "FIFA World Cup 2026 live score visualization",
+      "url": "./visualizations/fifa-world-cup-2026.svg",
+      "description": "Shows a generated World Cup 2026 live group-stage snapshot from the source data contract.",
+      "categoryId": "event-toolkits",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["media-generation", "data-ingestion"],
+      "openness": "open-source"
+    },
+    {
+      "id": "nba-finals-2026-visualization",
+      "title": "NBA Finals 2026: Knicks Champions",
+      "url": "./visualizations/nba-finals-2026.svg",
+      "description": "Shows a generated Knicks championship snapshot with game-by-game context.",
+      "categoryId": "event-toolkits",
+      "sportTags": ["Basketball"],
+      "aiCapabilities": ["media-generation", "analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "analytics-handbook",
+      "title": "analytics-handbook",
+      "url": "https://github.com/devinpleuler/analytics-handbook",
+      "description": "Introduces practical soccer analytics concepts and workflows.",
+      "categoryId": "learning-collections",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
+      "id": "awesome-football-analytics",
+      "title": "awesome-football-analytics",
+      "url": "https://github.com/diegopastor/awesome-football-analytics",
+      "description": "Curates football analytics resources, datasets, software, and learning material.",
+      "categoryId": "learning-collections",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling", "data-ingestion"],
+      "openness": "open-source"
+    },
+    {
+      "id": "awesome-soccer-analytics",
+      "title": "awesome-soccer-analytics",
+      "url": "https://github.com/matiasmascioto/awesome-soccer-analytics",
+      "description": "Collects soccer analytics resources in English and Spanish.",
+      "categoryId": "learning-collections",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling", "data-ingestion"],
+      "openness": "open-source"
+    },
+    {
+      "id": "awesome-sports-analytics",
+      "title": "awesome-sports-analytics",
+      "url": "https://github.com/AtomScott/awesome-sports-analytics",
+      "description": "Collects sports analytics datasets, tools, papers, and learning resources.",
+      "categoryId": "learning-collections",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["analytics-modeling", "data-ingestion"],
+      "openness": "open-source"
+    },
+    {
+      "id": "football-analytics",
+      "title": "football_analytics",
+      "url": "https://github.com/eddwebster/football_analytics",
+      "description": "Curates football analytics projects, data, and public resources.",
+      "categoryId": "learning-collections",
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling", "data-ingestion"],
+      "openness": "open-source"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "build-xg-model",
+      "title": "Build Your Own xG Model",
+      "goal": "Train and document a basic expected-goals model from public soccer event data.",
+      "toolIds": ["statsbomb-open-data", "kloppy", "mplsoccer", "soccer-xg", "model-card-toolkit"]
+    },
+    {
+      "id": "build-coaching-video-tagger",
+      "title": "Build Your Own Coaching Video Tagger",
+      "goal": "Create a simple sports video tagging and coach-note workflow from user-owned footage.",
+      "toolIds": ["ffmpeg-python", "video-tagging-events", "soccer-video-analytics", "analytics-handbook", "openai-whisper"]
+    },
+    {
+      "id": "build-player-scouting-board",
+      "title": "Build Your Own Player Scouting Board",
+      "goal": "Combine player profiles, public data, similarity charts, clips, and reports into a lightweight scouting board.",
+      "toolIds": ["socceraction", "nba-api", "soccerplots", "roboflow-sports", "football-scout-rag"]
+    },
+    {
+      "id": "build-athlete-load-dashboard",
+      "title": "Build Your Own Athlete Load Dashboard",
+      "goal": "Parse athlete-owned workload files, calculate load ratios, flag risk, and render a training dashboard.",
+      "toolIds": ["databallpy", "kloppy", "acute-chronic-workload-ratio", "athlete-load-monitor", "coroebus"]
+    },
+    {
+      "id": "build-match-intelligence-report",
+      "title": "Build Your Own Match Intelligence Report",
+      "goal": "Normalize fixture and event data into an automated match report with model outputs and stat cards.",
+      "toolIds": ["football-analytics", "socceraction", "sports-betting", "mplsoccer", "football-match-intelligence"]
+    },
+    {
+      "id": "build-2026-trending-app",
+      "title": "Build Your Own 2026 Trending App",
+      "goal": "Start from runnable prototypes and event kits for World Cup, women's basketball, and emerging sports ideas.",
+      "toolIds": ["llm-match-commentator", "wnba-gravity-mapper", "pickleball-court-mapper", "world-cup-2026-toolkit"]
+    }
+  ]
+}

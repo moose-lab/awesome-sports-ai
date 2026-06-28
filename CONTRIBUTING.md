@@ -1,24 +1,22 @@
 # Contributing
 
-Thanks for helping improve Awesome Sports AI. This repository is meant to be a practical, high-signal list, so every contribution should make the list easier to use.
+Thanks for helping improve Awesome Sports AI. This repository is meant to be a practical, high-signal directory for people building sports AI tools, so every contribution should make the list easier to search, understand, and reuse.
 
 ## What Belongs Here
 
-Add tools, platforms, datasets, APIs, libraries, or resources that are directly useful for sports builders, analysts, coaches, operators, creators, or researchers.
+Add tools, apps, open-source projects, datasets, APIs, developer libraries, AI models, research benchmarks, event toolkits, or learning collections that are directly useful for sports builders, analysts, coaches, operators, creators, or researchers.
 
-**🌟 2026 Focus Areas:** We are especially welcoming contributions related to the [2026 Strategic Roadmap](docs/roadmap-2026-strategy.md), including:
-- Generative AI & Multimodal LLMs for sports video/audio
-- Tools built for the FIFA World Cup 2026
-- Women's Sports analytics (WNBA, NWSL, etc.)
-- Emerging sports tech (Pickleball, Esports, Padel)
+This directory is open-source first. Strong fits include:
 
-A good entry should:
+- Open-source sports AI projects with runnable code.
+- Open datasets, public APIs, or feeds that can power sports products.
+- Developer libraries and SDKs for parsing, modeling, visualization, video, tracking, or operations.
+- AI models or components that can be reused in sports workflows.
+- Research benchmarks, reproducible papers, and simulation environments.
+- Event toolkits that help builders ship around major sports moments.
+- Learning collections that help builders get started quickly.
 
-- Be clearly related to sports or sports technology.
-- Have a stable public URL.
-- Be useful beyond a single private team or one-off campaign.
-- Include a neutral one-sentence description.
-- Fit an existing category, or justify a new category.
+Commercial or closed products can be included only when they are useful builder references and are clearly marked `commercial-reference`.
 
 Do not add:
 
@@ -29,53 +27,87 @@ Do not add:
 - Tools with unclear ownership, purpose, or availability.
 - Personal contact details or private data.
 
-## Entry Format
+## Catalog Source of Truth
 
-Use this format:
+[`data/catalog.json`](data/catalog.json) is the canonical catalog. Every README entry should have a matching catalog tool record and exactly one hidden marker in README:
 
 ```markdown
-- [Tool Name](https://example.com) - Clear one-sentence description of what it helps users do. _Sports: Basketball._
+- <!-- catalog:tool-id --> [Tool Name](https://example.com) - Clear one-sentence description. _Sports: Basketball. AI: Data ingestion. Access: open-api._
 ```
 
-Keep descriptions short, factual, and free of hype. Start descriptions with a capital letter and end the description sentence before the sport tag suffix.
+Use lowercase kebab-case IDs, for example `statsbomb-open-data` or `llm-match-commentator`.
+
+## Resource-Type Categories
+
+Choose one canonical category from `data/catalog.json`:
+
+- Apps & Products
+- Open-Source Projects
+- Datasets/APIs/Feeds
+- Developer Libraries/SDKs
+- AI Models/Components
+- Research Benchmarks
+- Event Toolkits
+- Learning Collections
+
+If a tool fits several categories, choose the category that describes what a developer primarily gets from the link. Use AI capability tags for secondary discovery instead of duplicating entries.
+
+## Sport Tags
+
+Every new entry must include the smallest accurate set of sport tags.
+
+Current sport tags: `Soccer`, `Basketball`, `American Football`, `Baseball/Softball`, `Tennis/Racquet`, `Running/Track`, `Cycling`, `Swimming`, `Ice Hockey`, `Rugby`, `Cricket`, `Volleyball`, `Golf`, `Combat Sports`, `Motorsport`, `Esports`, `Multi-sport`.
+
+Use `Multi-sport` for tools designed to work across many sports, generic APIs, infrastructure, visualization libraries, video tooling, and datasets not tied to one sport.
+
+## AI Capability Tags
+
+Choose one or more capability IDs from `data/catalog.json`:
+
+- `data-ingestion`
+- `computer-vision`
+- `tracking`
+- `analytics-modeling`
+- `llm-nlp`
+- `media-generation`
+- `training-load`
+- `operations`
+- `simulation-rl`
+- `benchmarking`
+
+## Openness Labels
+
+Choose one access label:
+
+- `open-source`
+- `open-data`
+- `open-api`
+- `free-dev-tier`
+- `paper-benchmark`
+- `commercial-reference`
+
+## Entry Quality
+
+A good entry should:
+
+- Be clearly related to sports or sports technology.
+- Have a stable public URL.
+- Be useful beyond a single private team or one-off campaign.
+- Include a neutral one-sentence description.
+- Fit one existing resource-type category.
+- Include visible sport, AI capability, and access metadata.
 
 Good:
 
 ```markdown
-- [Example Sports API](https://example.com) - Provides fixtures, scores, and team statistics for sports applications. _Sports: Multi-sport._
+- <!-- catalog:example-sports-api --> [Example Sports API](https://example.com) - Provides fixtures, scores, and team statistics for sports applications. _Sports: Multi-sport. AI: Data ingestion. Access: open-api._
 ```
 
 Needs work:
 
 ```markdown
-- [Example Sports API](https://example.com) - The best and most amazing sports platform ever!!! _Sports: Multi-sport._
+- [Example Sports API](https://example.com) - The best and most amazing sports platform ever!!!
 ```
-
-## Sport Tags
-
-Every new entry must include one canonical category placement and one sport fit. In your pull request, include:
-
-```markdown
-Category: Analytics and Visualization
-Sports: Soccer, Basketball
-```
-
-Use the current v1 sport tags: `Soccer`, `Basketball`, `American Football`, `Baseball/Softball`, `Tennis/Racquet`, `Running/Track`, `Cycling`, `Swimming`, `Ice Hockey`, `Rugby`, `Cricket`, `Volleyball`, `Golf`, `Combat Sports`, `Motorsport`, `Esports`, `Multi-sport`.
-
-- Contributors choose the initial sport tag.
-- Reviewers and auditors may normalize, add, or remove sport tags during review.
-- Prefer the smallest accurate tag set: one sport when specific, 2-4 sports when genuinely proven, and `Multi-sport` when the tool is sport-agnostic.
-- Use `Multi-sport` for tools designed to work across many sports, generic APIs, infrastructure, visualization libraries, video tooling, and datasets not tied to one sport.
-- Add a new sport tag only when at least two accepted entries need it or when a major sport is clearly missing from the v1 vocabulary.
-
-## Category Rules
-
-- Put each entry in the most specific category that fits.
-- Keep entries alphabetized within each category.
-- Add a new category only when at least two entries clearly belong there.
-- If a tool fits several categories, choose the category that describes its primary use.
-- Do not duplicate the same entry across categories just because it supports several sports; use sport tags for cross-sport discovery.
-- Keep category names short and easy to scan.
 
 ## Pull Request Checklist
 
@@ -84,11 +116,13 @@ Before opening a pull request, confirm that:
 - The link works.
 - The entry is not already listed.
 - The description is neutral and concise.
-- The entry is alphabetized inside its category.
-- The category is appropriate.
-- The entry includes a visible `_Sports: ..._` suffix.
-- The pull request includes `Category:` and `Sports:` metadata for review.
+- The entry has one canonical resource-type category.
+- The entry includes sport tags, AI capability tags, and an openness label.
+- The README entry includes exactly one `<!-- catalog:... -->` marker.
+- `data/catalog.json` includes the matching tool record.
+- Builder recipes reference existing catalog `toolIds` if changed.
 - Markdown renders cleanly.
+- `node --test scripts/*.test.mjs` passes.
 
 ## Review Process
 
