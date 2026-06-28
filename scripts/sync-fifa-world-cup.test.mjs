@@ -200,6 +200,12 @@ test("normalizes ESPN scoreboard events into FIFA source-data fixtures", () => {
     "Spain v Cabo Verde",
   ]);
   assert.deepEqual(fixtures.map((fixture) => fixture.status), ["Final", "Live", "Scheduled"]);
+  assert.deepEqual(fixtures.map((fixture) => fixture.round), [
+    "Opening phase",
+    "Opening phase",
+    "Opening phase",
+  ]);
+  assert.equal("group" in fixtures[0], false);
   assert.equal(fixtures[0].score, "GER 7 - CUW 1");
   assert.equal(fixtures[1].date, "Jun 14");
   assert.equal(fixtures[1].score, "SWE 2 - TUN 0");
@@ -241,6 +247,9 @@ test("syncSourceData updates only the FIFA snapshot and preserves NBA data", () 
   assert.equal(data.fifaWorldCup.updateStream.currentWindow, "Round of 32");
   assert.equal(data.fifaWorldCup.updateStream.lastVerifiedAt, "2026-06-15");
   assert.equal(data.fifaWorldCup.updateStream.status, "Live coverage active");
+  assert.equal(data.fifaWorldCup.confirmedFixtures.every((fixture) => !("group" in fixture)), true);
+  assert.equal(data.fifaWorldCup.confirmedFixtures[0].round, "Opening phase");
+  assert.equal(data.fifaWorldCup.confirmedFixtures[0].tag, "Opening phase");
 });
 
 test("syncSourceData describes away-leading live matches correctly", () => {

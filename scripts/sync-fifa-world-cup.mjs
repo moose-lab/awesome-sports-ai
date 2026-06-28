@@ -76,10 +76,43 @@ const venueCity = (competition) => {
   return city.split(",")[0] || competition.venue?.fullName || "TBD";
 };
 
-const groupFromNote = (competition) => {
+const openingPhaseRound = "Opening phase";
+
+const isLegacyGroupLabel = (value) => /^Group (?:[A-L]|stage)$/i.test(String(value ?? "").trim());
+
+const normalizeRoundLabel = (value) => {
+  const label = String(value ?? "").replace(/-/g, " ").replace(/\s+/g, " ").trim();
+  const lower = label.toLowerCase();
+
+  if (!label || isLegacyGroupLabel(label)) {
+    return openingPhaseRound;
+  }
+  if (lower === "round of 32") {
+    return "Round of 32";
+  }
+  if (lower === "round of 16") {
+    return "Round of 16";
+  }
+  if (lower === "quarterfinal" || lower === "quarterfinals") {
+    return "Quarterfinals";
+  }
+  if (lower === "semifinal" || lower === "semifinals") {
+    return "Semifinals";
+  }
+  if (lower === "third place match") {
+    return "Third-place match";
+  }
+  if (lower === "final") {
+    return "Final";
+  }
+
+  return label;
+};
+
+const roundFromNote = (competition) => {
   const note = competition.altGameNote ?? "";
-  const match = note.match(/Group [A-L]/);
-  return match?.[0] ?? "Group stage";
+  const match = note.match(/Round of 32|Round of 16|Quarterfinals?|Semi-?finals?|Third-?place match|Final/i);
+  return normalizeRoundLabel(match?.[0]);
 };
 
 const statusFromCompetition = (competition) => {
@@ -193,14 +226,14 @@ export const normalizeScoreboardEvents = (scoreboards) =>
 
       const eventDate = new Date(event.date);
       const status = statusFromCompetition(competition);
-      const group = groupFromNote(competition);
+      const round = roundFromNote(competition);
 
       return {
         date: formatFixtureDate(eventDate),
         match: `${normalizeTeamName(home.team.displayName)} v ${normalizeTeamName(away.team.displayName)}`,
-        group,
+        round,
         venue: competition.venue?.fullName ?? "TBD",
-        tag: group,
+        tag: round,
         status,
         score: scoreForFixture(status, home, away, eventDate),
         insight: status === "Scheduled" ? venueCity(competition) : status === "Live" ? "Live window" : "Full time",
@@ -211,24 +244,56 @@ export const normalizeScoreboardEvents = (scoreboards) =>
     .sort((a, b) => a.sortKey.localeCompare(b.sortKey))
     .map(publicFixture);
 
+const normalizeFixtureInsight = (insight) =>
+  /^Group [A-L] early edge$/i.test(String(insight ?? "")) ? "Opening phase result" : insight;
+
+const fixtureTag = (tag, round) => {
+  if (!tag || isLegacyGroupLabel(tag)) {
+    return round;
+  }
+  return tag;
+};
+
+const normalizeFixtureShape = (fixture) => {
+  const { group, round: fixtureRound, date, match, venue, tag, status, score, insight, ...rest } = fixture;
+  const round = normalizeRoundLabel(fixtureRound ?? group);
+
+  return {
+    date,
+    match,
+    round,
+    venue,
+    tag: fixtureTag(tag, round),
+    status,
+    score,
+    insight: normalizeFixtureInsight(insight),
+    ...rest,
+  };
+};
+
 const mergeFixtures = (existingFixtures, incomingFixtures) => {
   const fixturesByKey = new Map();
 
   existingFixtures.forEach((fixture, index) => {
-    fixturesByKey.set(fixtureKey(fixture), {
-      ...fixture,
+    const normalizedFixture = normalizeFixtureShape(fixture);
+    fixturesByKey.set(fixtureKey(normalizedFixture), {
+      ...normalizedFixture,
       sortKey: sortableDate(fixture),
       originalIndex: index,
     });
   });
 
   incomingFixtures.forEach((fixture) => {
-    const existing = fixturesByKey.get(fixtureKey(fixture));
-    fixturesByKey.set(fixtureKey(fixture), {
+    const normalizedFixture = normalizeFixtureShape(fixture);
+    const existing = fixturesByKey.get(fixtureKey(normalizedFixture));
+    fixturesByKey.set(fixtureKey(normalizedFixture), {
       ...existing,
-      ...fixture,
-      tag: existing?.tag && existing.tag !== existing.group ? existing.tag : fixture.tag,
-      sortKey: sortableDate(fixture),
+      ...normalizedFixture,
+      tag:
+        existing?.tag && existing.tag !== existing.round && !isLegacyGroupLabel(existing.tag)
+          ? existing.tag
+          : normalizedFixture.tag,
+      sortKey: sortableDate(normalizedFixture),
       originalIndex: existing?.originalIndex ?? existingFixtures.length,
     });
   });

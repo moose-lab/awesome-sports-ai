@@ -16,6 +16,7 @@ const source = JSON.parse(read("visualizations/source-data.json"));
 test("FIFA World Cup zone publishes a knockout-stage contract", () => {
   const format = source.fifaWorldCup.knockoutFormat;
   const stream = source.fifaWorldCup.updateStream;
+  const fixtures = source.fifaWorldCup.confirmedFixtures;
 
   assert.ok(format, "missing fifaWorldCup.knockoutFormat");
   assert.equal(format.teams, "32 teams");
@@ -34,6 +35,8 @@ test("FIFA World Cup zone publishes a knockout-stage contract", () => {
   assert.equal(stream.source, "ESPN FIFA World Cup scoreboard API");
   assert.match(stream.lastVerifiedAt, /^2026-/);
   assert.deepEqual(stream.consumers, ["Sports AI Hub", "Knockout tool map", "Match Center route"]);
+  assert.ok(fixtures.every((fixture) => fixture.round), "fixture cards must expose round labels");
+  assert.ok(fixtures.every((fixture) => !("group" in fixture)), "fixture cards must not expose legacy group fields");
 });
 
 test("FIFA World Cup zone publishes matchday zones and toolkit lanes", () => {

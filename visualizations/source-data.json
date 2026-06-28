@@ -372,7 +372,7 @@
       {
         "date": "Jun 11",
         "match": "Mexico v South Africa",
-        "group": "Group A",
+        "round": "Opening phase",
         "venue": "Mexico City Stadium",
         "tag": "Opener",
         "status": "Final",
@@ -382,17 +382,17 @@
       {
         "date": "Jun 11",
         "match": "Korea Republic v Czechia",
-        "group": "Group A",
+        "round": "Opening phase",
         "venue": "Estadio Guadalajara",
-        "tag": "Group A",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "KOR 2 - CZE 1",
-        "insight": "Group A early edge"
+        "insight": "Opening phase result"
       },
       {
         "date": "Jun 12",
         "match": "Canada v Bosnia and Herzegovina",
-        "group": "Group B",
+        "round": "Opening phase",
         "venue": "Toronto Stadium",
         "tag": "Host",
         "status": "Final",
@@ -402,7 +402,7 @@
       {
         "date": "Jun 12",
         "match": "USA v Paraguay",
-        "group": "Group D",
+        "round": "Opening phase",
         "venue": "Los Angeles Stadium",
         "tag": "Host",
         "status": "Final",
@@ -412,9 +412,9 @@
       {
         "date": "Jun 13",
         "match": "Qatar v Switzerland",
-        "group": "Group B",
+        "round": "Opening phase",
         "venue": "San Francisco Bay Area Stadium",
-        "tag": "Group B",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "QAT 1 - SUI 1",
         "insight": "Late Qatar equalizer"
@@ -422,7 +422,7 @@
       {
         "date": "Jun 13",
         "match": "Brazil v Morocco",
-        "group": "Group C",
+        "round": "Opening phase",
         "venue": "New York New Jersey Stadium",
         "tag": "Marquee",
         "status": "Final",
@@ -432,9 +432,9 @@
       {
         "date": "Jun 13",
         "match": "Haiti v Scotland",
-        "group": "Group C",
+        "round": "Opening phase",
         "venue": "Boston Stadium",
-        "tag": "Group C",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "HAI 0 - SCO 1",
         "insight": "Scotland opener"
@@ -442,9 +442,9 @@
       {
         "date": "Jun 14",
         "match": "Germany v Curacao",
-        "group": "Group E",
+        "round": "Opening phase",
         "venue": "NRG Stadium",
-        "tag": "Group E",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "GER 7 - CUW 1",
         "insight": "Full time"
@@ -452,9 +452,9 @@
       {
         "date": "Jun 14",
         "match": "Netherlands v Japan",
-        "group": "Group F",
+        "round": "Opening phase",
         "venue": "AT&T Stadium",
-        "tag": "Group F",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "NED 2 - JPN 2",
         "insight": "Full time"
@@ -462,9 +462,9 @@
       {
         "date": "Jun 14",
         "match": "Cote d'Ivoire v Ecuador",
-        "group": "Group E",
+        "round": "Opening phase",
         "venue": "Lincoln Financial Field",
-        "tag": "Group E",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "CIV 1 - ECU 0",
         "insight": "Full time"
@@ -472,9 +472,9 @@
       {
         "date": "Jun 14",
         "match": "Sweden v Tunisia",
-        "group": "Group F",
+        "round": "Opening phase",
         "venue": "Estadio BBVA",
-        "tag": "Group F",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "SWE 5 - TUN 1",
         "insight": "Full time"
@@ -482,9 +482,9 @@
       {
         "date": "Jun 14",
         "match": "Australia v Turkiye",
-        "group": "Group D",
+        "round": "Opening phase",
         "venue": "BC Place",
-        "tag": "Group D",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "AUS 2 - TUR 0",
         "insight": "Full time"
@@ -492,9 +492,9 @@
       {
         "date": "Jun 15",
         "match": "Belgium v Egypt",
-        "group": "Group G",
+        "round": "Opening phase",
         "venue": "Lumen Field",
-        "tag": "Group G",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "BEL 1 - EGY 1",
         "insight": "Full time"
@@ -502,9 +502,9 @@
       {
         "date": "Jun 15",
         "match": "Saudi Arabia v Uruguay",
-        "group": "Group H",
+        "round": "Opening phase",
         "venue": "Hard Rock Stadium",
-        "tag": "Group H",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "KSA 1 - URU 1",
         "insight": "Full time"
@@ -512,9 +512,9 @@
       {
         "date": "Jun 15",
         "match": "Iran v New Zealand",
-        "group": "Group G",
+        "round": "Opening phase",
         "venue": "SoFi Stadium",
-        "tag": "Group G",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "IRN 2 - NZL 2",
         "insight": "Full time"
@@ -522,9 +522,9 @@
       {
         "date": "Jun 15",
         "match": "Spain v Cabo Verde",
-        "group": "Group H",
+        "round": "Opening phase",
         "venue": "Mercedes-Benz Stadium",
-        "tag": "Group H",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "ESP 0 - CPV 0",
         "insight": "Full time"
@@ -532,9 +532,9 @@
       {
         "date": "Jun 16",
         "match": "France v Senegal",
-        "group": "Group I",
+        "round": "Opening phase",
         "venue": "MetLife Stadium",
-        "tag": "Group I",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "FRA 3 - SEN 1",
         "insight": "Full time"
@@ -542,9 +542,9 @@
       {
         "date": "Jun 16",
         "match": "Iraq v Norway",
-        "group": "Group I",
+        "round": "Opening phase",
         "venue": "Gillette Stadium",
-        "tag": "Group I",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "IRQ 1 - NOR 4",
         "insight": "Full time"
@@ -552,9 +552,9 @@
       {
         "date": "Jun 16",
         "match": "Argentina v Algeria",
-        "group": "Group J",
+        "round": "Opening phase",
         "venue": "GEHA Field at Arrowhead Stadium",
-        "tag": "Group J",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "ARG 3 - ALG 0",
         "insight": "Full time"
@@ -562,9 +562,9 @@
       {
         "date": "Jun 17",
         "match": "Austria v Jordan",
-        "group": "Group J",
+        "round": "Opening phase",
         "venue": "Levi's Stadium",
-        "tag": "Group J",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "AUT 3 - JOR 1",
         "insight": "Full time"
@@ -572,9 +572,9 @@
       {
         "date": "Jun 17",
         "match": "Portugal v Congo DR",
-        "group": "Group K",
+        "round": "Opening phase",
         "venue": "NRG Stadium",
-        "tag": "Group K",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "POR 1 - COD 1",
         "insight": "Full time"
@@ -582,9 +582,9 @@
       {
         "date": "Jun 17",
         "match": "England v Croatia",
-        "group": "Group L",
+        "round": "Opening phase",
         "venue": "AT&T Stadium",
-        "tag": "Group L",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "ENG 4 - CRO 2",
         "insight": "Full time"
@@ -592,9 +592,9 @@
       {
         "date": "Jun 17",
         "match": "Ghana v Panama",
-        "group": "Group L",
+        "round": "Opening phase",
         "venue": "BMO Field",
-        "tag": "Group L",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "GHA 1 - PAN 0",
         "insight": "Full time"
@@ -602,9 +602,9 @@
       {
         "date": "Jun 17",
         "match": "Uzbekistan v Colombia",
-        "group": "Group K",
+        "round": "Opening phase",
         "venue": "Estadio Banorte",
-        "tag": "Group K",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "UZB 1 - COL 3",
         "insight": "Full time"
@@ -612,9 +612,9 @@
       {
         "date": "Jun 18",
         "match": "Czechia v South Africa",
-        "group": "Group A",
+        "round": "Opening phase",
         "venue": "Mercedes-Benz Stadium",
-        "tag": "Group A",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "CZE 1 - RSA 1",
         "insight": "Full time"
@@ -622,9 +622,9 @@
       {
         "date": "Jun 18",
         "match": "Switzerland v Bosnia-Herzegovina",
-        "group": "Group B",
+        "round": "Opening phase",
         "venue": "SoFi Stadium",
-        "tag": "Group B",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "SUI 4 - BIH 1",
         "insight": "Full time"
@@ -632,9 +632,9 @@
       {
         "date": "Jun 18",
         "match": "Canada v Qatar",
-        "group": "Group B",
+        "round": "Opening phase",
         "venue": "BC Place",
-        "tag": "Group B",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "CAN 6 - QAT 0",
         "insight": "Full time"
@@ -642,9 +642,9 @@
       {
         "date": "Jun 18",
         "match": "Mexico v South Korea",
-        "group": "Group A",
+        "round": "Opening phase",
         "venue": "Estadio Akron",
-        "tag": "Group A",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "MEX 1 - KOR 0",
         "insight": "Full time"
@@ -652,9 +652,9 @@
       {
         "date": "Jun 19",
         "match": "United States v Australia",
-        "group": "Group D",
+        "round": "Opening phase",
         "venue": "Lumen Field",
-        "tag": "Group D",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "USA 2 - AUS 0",
         "insight": "Full time"
@@ -662,9 +662,9 @@
       {
         "date": "Jun 19",
         "match": "Scotland v Morocco",
-        "group": "Group C",
+        "round": "Opening phase",
         "venue": "Gillette Stadium",
-        "tag": "Group C",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "SCO 0 - MAR 1",
         "insight": "Full time"
@@ -672,9 +672,9 @@
       {
         "date": "Jun 19",
         "match": "Brazil v Haiti",
-        "group": "Group C",
+        "round": "Opening phase",
         "venue": "Lincoln Financial Field",
-        "tag": "Group C",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "BRA 3 - HAI 0",
         "insight": "Full time"
@@ -682,9 +682,9 @@
       {
         "date": "Jun 19",
         "match": "Turkiye v Paraguay",
-        "group": "Group D",
+        "round": "Opening phase",
         "venue": "Levi's Stadium",
-        "tag": "Group D",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "TUR 0 - PAR 1",
         "insight": "Full time"
@@ -692,9 +692,9 @@
       {
         "date": "Jun 20",
         "match": "Netherlands v Sweden",
-        "group": "Group F",
+        "round": "Opening phase",
         "venue": "NRG Stadium",
-        "tag": "Group F",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "NED 5 - SWE 1",
         "insight": "Full time"
@@ -702,9 +702,9 @@
       {
         "date": "Jun 20",
         "match": "Germany v Cote d'Ivoire",
-        "group": "Group E",
+        "round": "Opening phase",
         "venue": "BMO Field",
-        "tag": "Group E",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "GER 2 - CIV 1",
         "insight": "Full time"
@@ -712,9 +712,9 @@
       {
         "date": "Jun 20",
         "match": "Ecuador v Curacao",
-        "group": "Group E",
+        "round": "Opening phase",
         "venue": "GEHA Field at Arrowhead Stadium",
-        "tag": "Group E",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "ECU 0 - CUW 0",
         "insight": "Full time"
@@ -722,9 +722,9 @@
       {
         "date": "Jun 21",
         "match": "Tunisia v Japan",
-        "group": "Group F",
+        "round": "Opening phase",
         "venue": "Estadio BBVA",
-        "tag": "Group F",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "TUN 0 - JPN 4",
         "insight": "Full time"
@@ -732,9 +732,9 @@
       {
         "date": "Jun 21",
         "match": "Spain v Saudi Arabia",
-        "group": "Group H",
+        "round": "Opening phase",
         "venue": "Mercedes-Benz Stadium",
-        "tag": "Group H",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "ESP 4 - KSA 0",
         "insight": "Full time"
@@ -742,9 +742,9 @@
       {
         "date": "Jun 21",
         "match": "Belgium v Iran",
-        "group": "Group G",
+        "round": "Opening phase",
         "venue": "SoFi Stadium",
-        "tag": "Group G",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "BEL 0 - IRN 0",
         "insight": "Full time"
@@ -752,9 +752,9 @@
       {
         "date": "Jun 21",
         "match": "Uruguay v Cabo Verde",
-        "group": "Group H",
+        "round": "Opening phase",
         "venue": "Hard Rock Stadium",
-        "tag": "Group H",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "URU 2 - CPV 2",
         "insight": "Full time"
@@ -762,9 +762,9 @@
       {
         "date": "Jun 21",
         "match": "New Zealand v Egypt",
-        "group": "Group G",
+        "round": "Opening phase",
         "venue": "BC Place",
-        "tag": "Group G",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "NZL 1 - EGY 3",
         "insight": "Full time"
@@ -772,9 +772,9 @@
       {
         "date": "Jun 22",
         "match": "Argentina v Austria",
-        "group": "Group J",
+        "round": "Opening phase",
         "venue": "AT&T Stadium",
-        "tag": "Group J",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "ARG 2 - AUT 0",
         "insight": "Full time"
@@ -782,9 +782,9 @@
       {
         "date": "Jun 22",
         "match": "France v Iraq",
-        "group": "Group I",
+        "round": "Opening phase",
         "venue": "Lincoln Financial Field",
-        "tag": "Group I",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "FRA 3 - IRQ 0",
         "insight": "Full time"
@@ -792,9 +792,9 @@
       {
         "date": "Jun 22",
         "match": "Norway v Senegal",
-        "group": "Group I",
+        "round": "Opening phase",
         "venue": "MetLife Stadium",
-        "tag": "Group I",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "NOR 3 - SEN 2",
         "insight": "Full time"
@@ -802,9 +802,9 @@
       {
         "date": "Jun 22",
         "match": "Jordan v Algeria",
-        "group": "Group J",
+        "round": "Opening phase",
         "venue": "Levi's Stadium",
-        "tag": "Group J",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "JOR 1 - ALG 2",
         "insight": "Full time"
@@ -812,9 +812,9 @@
       {
         "date": "Jun 23",
         "match": "Portugal v Uzbekistan",
-        "group": "Group K",
+        "round": "Opening phase",
         "venue": "NRG Stadium",
-        "tag": "Group K",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "POR 5 - UZB 0",
         "insight": "Full time"
@@ -822,9 +822,9 @@
       {
         "date": "Jun 23",
         "match": "England v Ghana",
-        "group": "Group L",
+        "round": "Opening phase",
         "venue": "Gillette Stadium",
-        "tag": "Group L",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "ENG 0 - GHA 0",
         "insight": "Full time"
@@ -832,9 +832,9 @@
       {
         "date": "Jun 23",
         "match": "Panama v Croatia",
-        "group": "Group L",
+        "round": "Opening phase",
         "venue": "BMO Field",
-        "tag": "Group L",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "PAN 0 - CRO 1",
         "insight": "Full time"
@@ -842,9 +842,9 @@
       {
         "date": "Jun 23",
         "match": "Colombia v Congo DR",
-        "group": "Group K",
+        "round": "Opening phase",
         "venue": "Estadio Akron",
-        "tag": "Group K",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "COL 1 - COD 0",
         "insight": "Full time"
@@ -852,9 +852,9 @@
       {
         "date": "Jun 24",
         "match": "Bosnia-Herzegovina v Qatar",
-        "group": "Group B",
+        "round": "Opening phase",
         "venue": "Lumen Field",
-        "tag": "Group B",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "BIH 3 - QAT 1",
         "insight": "Full time"
@@ -862,9 +862,9 @@
       {
         "date": "Jun 24",
         "match": "Switzerland v Canada",
-        "group": "Group B",
+        "round": "Opening phase",
         "venue": "BC Place",
-        "tag": "Group B",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "SUI 2 - CAN 1",
         "insight": "Full time"
@@ -872,9 +872,9 @@
       {
         "date": "Jun 24",
         "match": "Morocco v Haiti",
-        "group": "Group C",
+        "round": "Opening phase",
         "venue": "Mercedes-Benz Stadium",
-        "tag": "Group C",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "MAR 4 - HAI 2",
         "insight": "Full time"
@@ -882,9 +882,9 @@
       {
         "date": "Jun 24",
         "match": "Scotland v Brazil",
-        "group": "Group C",
+        "round": "Opening phase",
         "venue": "Hard Rock Stadium",
-        "tag": "Group C",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "SCO 0 - BRA 3",
         "insight": "Full time"
@@ -892,9 +892,9 @@
       {
         "date": "Jun 24",
         "match": "Czechia v Mexico",
-        "group": "Group A",
+        "round": "Opening phase",
         "venue": "Estadio Banorte",
-        "tag": "Group A",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "CZE 0 - MEX 3",
         "insight": "Full time"
@@ -902,9 +902,9 @@
       {
         "date": "Jun 24",
         "match": "South Africa v South Korea",
-        "group": "Group A",
+        "round": "Opening phase",
         "venue": "Estadio BBVA",
-        "tag": "Group A",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "RSA 1 - KOR 0",
         "insight": "Full time"
@@ -912,9 +912,9 @@
       {
         "date": "Jun 25",
         "match": "Curacao v Cote d'Ivoire",
-        "group": "Group E",
+        "round": "Opening phase",
         "venue": "Lincoln Financial Field",
-        "tag": "Group E",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "CUW 0 - CIV 2",
         "insight": "Full time"
@@ -922,9 +922,9 @@
       {
         "date": "Jun 25",
         "match": "Ecuador v Germany",
-        "group": "Group E",
+        "round": "Opening phase",
         "venue": "MetLife Stadium",
-        "tag": "Group E",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "ECU 2 - GER 1",
         "insight": "Full time"
@@ -932,9 +932,9 @@
       {
         "date": "Jun 25",
         "match": "Japan v Sweden",
-        "group": "Group F",
+        "round": "Opening phase",
         "venue": "AT&T Stadium",
-        "tag": "Group F",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "JPN 1 - SWE 1",
         "insight": "Full time"
@@ -942,9 +942,9 @@
       {
         "date": "Jun 25",
         "match": "Tunisia v Netherlands",
-        "group": "Group F",
+        "round": "Opening phase",
         "venue": "GEHA Field at Arrowhead Stadium",
-        "tag": "Group F",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "TUN 1 - NED 3",
         "insight": "Full time"
@@ -952,9 +952,9 @@
       {
         "date": "Jun 25",
         "match": "Paraguay v Australia",
-        "group": "Group D",
+        "round": "Opening phase",
         "venue": "Levi's Stadium",
-        "tag": "Group D",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "PAR 0 - AUS 0",
         "insight": "Full time"
@@ -962,9 +962,9 @@
       {
         "date": "Jun 25",
         "match": "Turkiye v United States",
-        "group": "Group D",
+        "round": "Opening phase",
         "venue": "SoFi Stadium",
-        "tag": "Group D",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "TUR 3 - USA 2",
         "insight": "Full time"
@@ -972,9 +972,9 @@
       {
         "date": "Jun 26",
         "match": "Norway v France",
-        "group": "Group I",
+        "round": "Opening phase",
         "venue": "Gillette Stadium",
-        "tag": "Group I",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "NOR 1 - FRA 4",
         "insight": "Full time"
@@ -982,9 +982,9 @@
       {
         "date": "Jun 26",
         "match": "Senegal v Iraq",
-        "group": "Group I",
+        "round": "Opening phase",
         "venue": "BMO Field",
-        "tag": "Group I",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "SEN 5 - IRQ 0",
         "insight": "Full time"
@@ -992,9 +992,9 @@
       {
         "date": "Jun 26",
         "match": "Cabo Verde v Saudi Arabia",
-        "group": "Group H",
+        "round": "Opening phase",
         "venue": "NRG Stadium",
-        "tag": "Group H",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "CPV 0 - KSA 0",
         "insight": "Full time"
@@ -1002,9 +1002,9 @@
       {
         "date": "Jun 26",
         "match": "Uruguay v Spain",
-        "group": "Group H",
+        "round": "Opening phase",
         "venue": "Estadio Akron",
-        "tag": "Group H",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "URU 0 - ESP 1",
         "insight": "Full time"
@@ -1012,9 +1012,9 @@
       {
         "date": "Jun 26",
         "match": "Egypt v Iran",
-        "group": "Group G",
+        "round": "Opening phase",
         "venue": "Lumen Field",
-        "tag": "Group G",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "EGY 1 - IRN 1",
         "insight": "Full time"
@@ -1022,9 +1022,9 @@
       {
         "date": "Jun 26",
         "match": "New Zealand v Belgium",
-        "group": "Group G",
+        "round": "Opening phase",
         "venue": "BC Place",
-        "tag": "Group G",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "NZL 1 - BEL 5",
         "insight": "Full time"
@@ -1032,9 +1032,9 @@
       {
         "date": "Jun 27",
         "match": "Croatia v Ghana",
-        "group": "Group L",
+        "round": "Opening phase",
         "venue": "Lincoln Financial Field",
-        "tag": "Group L",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "CRO 2 - GHA 1",
         "insight": "Full time"
@@ -1042,9 +1042,9 @@
       {
         "date": "Jun 27",
         "match": "Panama v England",
-        "group": "Group L",
+        "round": "Opening phase",
         "venue": "MetLife Stadium",
-        "tag": "Group L",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "PAN 0 - ENG 2",
         "insight": "Full time"
@@ -1052,9 +1052,9 @@
       {
         "date": "Jun 27",
         "match": "Colombia v Portugal",
-        "group": "Group K",
+        "round": "Opening phase",
         "venue": "Hard Rock Stadium",
-        "tag": "Group K",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "COL 0 - POR 0",
         "insight": "Full time"
@@ -1062,9 +1062,9 @@
       {
         "date": "Jun 27",
         "match": "Congo DR v Uzbekistan",
-        "group": "Group K",
+        "round": "Opening phase",
         "venue": "Mercedes-Benz Stadium",
-        "tag": "Group K",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "COD 3 - UZB 1",
         "insight": "Full time"
@@ -1072,9 +1072,9 @@
       {
         "date": "Jun 27",
         "match": "Algeria v Austria",
-        "group": "Group J",
+        "round": "Opening phase",
         "venue": "GEHA Field at Arrowhead Stadium",
-        "tag": "Group J",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "ALG 3 - AUT 3",
         "insight": "Full time"
@@ -1082,9 +1082,9 @@
       {
         "date": "Jun 27",
         "match": "Jordan v Argentina",
-        "group": "Group J",
+        "round": "Opening phase",
         "venue": "AT&T Stadium",
-        "tag": "Group J",
+        "tag": "Opening phase",
         "status": "Final",
         "score": "JOR 1 - ARG 3",
         "insight": "Full time"
@@ -1092,9 +1092,9 @@
       {
         "date": "Jun 28",
         "match": "South Africa v Canada",
-        "group": "Group stage",
+        "round": "Opening phase",
         "venue": "SoFi Stadium",
-        "tag": "Group stage",
+        "tag": "Opening phase",
         "status": "Scheduled",
         "score": "3 p.m. ET",
         "insight": "Inglewood"
@@ -1102,9 +1102,9 @@
       {
         "date": "Jun 29",
         "match": "Brazil v Japan",
-        "group": "Group stage",
+        "round": "Opening phase",
         "venue": "NRG Stadium",
-        "tag": "Group stage",
+        "tag": "Opening phase",
         "status": "Scheduled",
         "score": "1 p.m. ET",
         "insight": "Houston"
@@ -1112,9 +1112,9 @@
       {
         "date": "Jun 29",
         "match": "Germany v Paraguay",
-        "group": "Group stage",
+        "round": "Opening phase",
         "venue": "Gillette Stadium",
-        "tag": "Group stage",
+        "tag": "Opening phase",
         "status": "Scheduled",
         "score": "4:30 p.m. ET",
         "insight": "Foxborough"
@@ -1122,9 +1122,9 @@
       {
         "date": "Jun 29",
         "match": "Netherlands v Morocco",
-        "group": "Group stage",
+        "round": "Opening phase",
         "venue": "Estadio BBVA",
-        "tag": "Group stage",
+        "tag": "Opening phase",
         "status": "Scheduled",
         "score": "9 p.m. ET",
         "insight": "Guadalupe"
@@ -1137,9 +1137,9 @@
         "detail": "Mexico v South Africa - Mexico City"
       },
       {
-        "label": "Group stage",
+        "label": "Opening phase",
         "date": "Jun 11-27",
-        "detail": "72 matches across 12 groups"
+        "detail": "72 matches before the Round of 32"
       },
       {
         "label": "Knockout rounds",
