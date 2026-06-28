@@ -5,85 +5,40 @@
 [![GitHub stars](https://img.shields.io/github/stars/moose-lab/awesome-sports-ai?style=social)](https://github.com/moose-lab/awesome-sports-ai/stargazers)
 [![Sports AI Hub](https://img.shields.io/badge/Sports%20AI%20Hub-Official%20Web%20App-00FF87?style=flat&labelColor=0D0F14)](https://sports-ai-hub.pages.dev/)
 
-**The open-source toolkit for decomposing enterprise sports AI into runnable mono-tools.**
+A resource-type-first awesome list for Sports & AI builders who need high-signal tools, datasets, libraries, models, benchmarks, and runnable prototypes.
 
-Enterprise sports AI is powerful, but most of it sits behind expensive data rights, vendor contracts, and team-only workflows. Second Spectrum, Stats Perform, Genius Sports, Hudl, Wyscout, and similar systems are not realistically accessible to most coaches, analysts, students, and indie developers.
+This README is the human-readable directory. [`data/catalog.json`](data/catalog.json) is the machine-readable source of truth for categories, sport tags, AI capabilities, openness labels, tools, and builder recipes. README entries use this metadata pattern: `_Sports: ... . AI: ... . Access: ... ._`
 
-Awesome Sports AI turns those capabilities into smaller open-source building blocks: scripts you can run locally, sample data you can inspect, and prototype paths you can extend into your own sports AI product.
+## Quick Start for Builders
 
-**Start here:** run a prototype, inspect the output, then fork the smallest piece you want to improve.
-
-- [Open Sports AI Hub](https://sports-ai-hub.pages.dev/) for the interactive project surface.
-- [Browse the prototype factory](prototypes/) for runnable mono-tools.
-- **[Start contributing](CONTRIBUTING.md)** or pick a [`good first issue`](https://github.com/moose-lab/awesome-sports-ai/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
-
-## Build From The Factory Floor
-
-The catalog is the shop window. [`/prototypes`](prototypes/) is the factory floor. These three examples show the project direction: each one decomposes a professional sports AI capability into a runnable mono-tool with local input and visible output.
-
-### [llm-match-commentator](prototypes/llm-match-commentator/)
-
-Builds a localized match-commentary stream from structured soccer events. It shows how a live data feed can become bilingual markdown commentary without a broadcast production stack.
-
-Replaces the first slice of automated recap/commentary systems from vendors like Stats Perform and WSC Sport: event stream in, audience-ready text out.
-
-```bash
-cd prototypes/llm-match-commentator
-python3 commentator.py
-```
-
-![LLM Match Commentator output](docs/assets/readme/llm-match-commentator-output.svg)
-
-### [wnba-gravity-mapper](prototypes/wnba-gravity-mapper/)
-
-Builds a player gravity map from tracking-style CSV coordinates. It calculates which offensive players draw defenders and renders both a half-court heatmap and a ranked score chart.
-
-Replaces the first slice of proprietary spacing and gravity metrics from optical tracking platforms: player positions in, tactical attention map out.
-
-```bash
-cd prototypes/wnba-gravity-mapper
-python3 gravity_mapper.py
-```
-
-![WNBA Gravity Mapper heatmap](prototypes/wnba-gravity-mapper/gravity_map.png)
-
-### [pickleball-court-mapper](prototypes/pickleball-court-mapper/)
-
-Builds a court-geometry mapper from a pickleball court image. It detects court lines, annotates the source image, and generates a clean diagram for downstream analytics.
-
-Replaces the first slice of proprietary court-calibration and ball-tracking systems: user-owned court image in, mapped court geometry out.
-
-```bash
-cd prototypes/pickleball-court-mapper
-python3 court_mapper.py
-```
-
-![Pickleball Court Mapper diagram](prototypes/pickleball-court-mapper/court_diagram.png)
-
-## Why This Exists
-
-Professional sports organizations buy integrated AI stacks that combine tracking hardware, licensed feeds, video operations, modeling, dashboards, and support. Individual builders usually cannot access those stacks directly.
-
-This repository asks a more useful question: what is the smallest open-source version of each capability that someone can run, understand, and extend?
-
-- Coaches get local-first tools they can adapt to owned footage or simple CSVs.
-- Analysts get starter models, schemas, and visualizations they can audit.
-- Indie developers get product-shaped prototypes instead of abstract lists.
-- Contributors get concrete issues where one small improvement can become the next reusable sports AI building block.
-
-## Catalog As Discovery Layer
-
-The catalog is not the product by itself. It is the discovery layer that helps builders find datasets, APIs, libraries, papers, and references that can become mono-tools.
-
-Use resource type first, then narrow by sport, AI capability, and openness:
-
-- Need runnable code? Start with [Open-Source Projects](#open-source-projects).
+- Need runnable code? Start with [Open-Source Projects](#open-source-projects), especially [`llm-match-commentator`](prototypes/llm-match-commentator/), [`wnba-gravity-mapper`](prototypes/wnba-gravity-mapper/), and [`pickleball-court-mapper`](prototypes/pickleball-court-mapper/).
 - Need raw material? Start with [Datasets/APIs/Feeds](#datasetsapisfeeds).
-- Need building blocks? Start with [Developer Libraries/SDKs](#developer-librariessdks) and [AI Models/Components](#ai-modelscomponents).
-- Need reproducible research? Start with [Research Benchmarks](#research-benchmarks).
-- Need matchday context or demos? Start with [Event Toolkits](#event-toolkits) and [Builder Recipes](#builder-recipes).
+- Need implementation building blocks? Start with [Developer Libraries/SDKs](#developer-librariessdks) and [AI Models/Components](#ai-modelscomponents).
+- Need evaluation references? Start with [Research Benchmarks](#research-benchmarks).
+- Need event or demo context? Start with [Event Toolkits](#event-toolkits) and [Builder Recipes](#builder-recipes).
+- **Contribute:** [CONTRIBUTING.md](CONTRIBUTING.md) - or pick a [`good first issue`](https://github.com/moose-lab/awesome-sports-ai/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
 
-[`data/catalog.json`](data/catalog.json) is the canonical taxonomy for categories, sport tags, AI capabilities, openness labels, tools, and builder recipes. README entries use this metadata pattern: `_Sports: ... . AI: ... . Access: ... ._`
+## Vibe-Coding Lookup Paths
+
+Use these paths when you want to move from idea to working prototype quickly:
+
+- Match commentary app: [`llm-match-commentator`](prototypes/llm-match-commentator/) + [OpenAI Whisper](#ai-modelscomponents) + [StatsBomb Open Data](#datasetsapisfeeds).
+- Basketball spacing tool: [`wnba-gravity-mapper`](prototypes/wnba-gravity-mapper/) + [Metrica Sports Sample Data](#datasetsapisfeeds) + [sportypy](#developer-librariessdks).
+- Court vision prototype: [`pickleball-court-mapper`](prototypes/pickleball-court-mapper/) + [OpenCV](#developer-librariessdks) + [Roboflow Sports](#ai-modelscomponents).
+- Soccer analytics report: [StatsBomb Open Data](#datasetsapisfeeds) + [socceraction](#developer-librariessdks) + [mplsoccer](#developer-librariessdks).
+- Tournament operations assistant: [Challonge API](#datasetsapisfeeds) + [Competition Factory](#open-source-projects) + [SportsEngine Tourney](#apps-products).
+
+## Sports & AI Relevance Rule
+
+Every entry should connect a sport-specific workflow to AI, data, automation, video, modeling, benchmarking, or developer infrastructure. Generic tools belong here only when they unlock a clear sports AI use case.
+
+Open-source projects, open datasets, open APIs, reproducible research, and free developer paths should lead each category. Commercial systems can stay when they help builders understand the professional reference point, but they should be labeled `commercial-reference`.
+
+## How To Use This Directory
+
+Use resource type first, then narrow by sport, AI capability, and openness. The catalog is organized this way so a developer can quickly answer: "Do I need an app reference, source data, a library, a model component, a benchmark, or a runnable prototype?"
+
+Promotion-friendly description: Awesome Sports AI is a resource-type-first awesome list for developers building sports AI tools with open code, public data, reproducible references, and compact prototype paths.
 
 ## Resource-Type Directory
 
@@ -206,13 +161,11 @@ Normalize fixture and event data into an automated match report with model outpu
 
 Use: football_analytics, socceraction, sports-betting, mplsoccer, and football-match-intelligence.
 
-### Build Your Own 2026 Trending App
+### Build Your Own Sports AI Prototype Launch Pack
 
-Start from runnable prototypes and event kits for World Cup, women's basketball, and emerging sports ideas.
+Start from runnable prototypes and event kits when you want a compact demo that can be forked, explained, and shared.
 
 Use: llm-match-commentator, wnba-gravity-mapper, pickleball-court-mapper, and the World Cup 2026 assistant toolkit.
-
-Public builder-path fallback: [Build Your Own 2026 Trending App](https://github.com/moose-lab/awesome-sports-ai#build-your-own-2026-trending-app).
 
 ## Featured Event Toolkits
 

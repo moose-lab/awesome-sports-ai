@@ -755,8 +755,8 @@
     },
     {
       "id": "build-2026-trending-app",
-      "title": "Build Your Own 2026 Trending App",
-      "goal": "Start from runnable prototypes and event kits for World Cup, women's basketball, and emerging sports ideas.",
+      "title": "Build Your Own Sports AI Prototype Launch Pack",
+      "goal": "Start from runnable prototypes and event kits when you want a compact demo that can be forked, explained, and shared.",
       "toolIds": ["llm-match-commentator", "wnba-gravity-mapper", "pickleball-court-mapper", "world-cup-2026-toolkit"]
     }
   ]
