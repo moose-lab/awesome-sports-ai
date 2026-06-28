@@ -238,7 +238,14 @@ const mergeFixtures = (existingFixtures, incomingFixtures) => {
     .map(({ originalIndex, ...fixture }) => publicFixture(fixture));
 };
 
-const buildStats = (fixtures) => {
+const usesKnockoutStats = (stats) =>
+  Array.isArray(stats) && stats.some((stat) => stat.label === "Knockout field");
+
+const buildStats = (existingStats, fixtures) => {
+  if (usesKnockoutStats(existingStats)) {
+    return existingStats;
+  }
+
   const finalCount = fixtures.filter((fixture) => fixture.status === "Final").length;
   const liveFixture = fixtures.find((fixture) => fixture.status === "Live");
   const scheduledCount = fixtures.filter((fixture) => fixture.status === "Scheduled").length;
@@ -278,7 +285,12 @@ const buildFixtureSummary = (existingSummary, fixtures) => {
   return {
     ...existingSummary,
     label: existingSummary?.label ?? "Knockout-stage tool contract",
-    window: firstDate === lastDate ? firstDate : `${firstDate}-${lastDate.replace(/^[A-Z][a-z]{2} /, "")}`,
+    window:
+      existingSummary?.label === "Knockout-stage tool contract" && existingSummary?.window
+        ? existingSummary.window
+        : firstDate === lastDate
+          ? firstDate
+          : `${firstDate}-${lastDate.replace(/^[A-Z][a-z]{2} /, "")}`,
     detail: `${finalPhrase}, ${liveSummary(liveFixture)}, and ${scheduledPhrase}.`,
   };
 };
@@ -300,7 +312,10 @@ const buildUpdateStream = (existingStream, fixtures, fixtureSummary, now) => {
 
   return {
     ...existingStream,
-    currentWindow: fixtureSummary.window,
+    currentWindow:
+      existingStream.label === "Knockout update stream" && existingStream.currentWindow
+        ? existingStream.currentWindow
+        : fixtureSummary.window,
     lastVerifiedAt: formatGeneratedDate(now),
     status: streamStatus(fixtures),
   };
@@ -319,7 +334,7 @@ export const syncSourceData = (sourceData, scoreboards, options = {}) => {
   data.fifaWorldCup = {
     ...fifaWorldCup,
     updated: `Updated ${formatLongDate(now)}`,
-    stats: buildStats(fixtures),
+    stats: buildStats(fifaWorldCup.stats, fixtures),
     fixtureSummary,
     ...(updateStream ? { updateStream } : {}),
     confirmedFixtures: fixtures,

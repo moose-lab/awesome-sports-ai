@@ -124,7 +124,24 @@ const sourceData = {
     subtitle: "Canada, Mexico, United States",
     updated: "Updated June 14, 2026",
     links: [],
-    stats: [],
+    stats: [
+      {
+        label: "Knockout field",
+        value: "32 teams",
+      },
+      {
+        label: "Format",
+        value: "Single elimination",
+      },
+      {
+        label: "Next stage",
+        value: "Round of 32",
+      },
+      {
+        label: "Tournament field",
+        value: "48 teams",
+      },
+    ],
     fixtureSummary: {
       label: "Knockout-stage tool contract",
       window: "Round of 32",
@@ -201,16 +218,16 @@ test("syncSourceData updates only the FIFA snapshot and preserves NBA data", () 
   assert.equal(data.fifaWorldCup.updated, "Updated June 15, 2026");
   assert.deepEqual(data.fifaWorldCup.stats, [
     {
-      label: "Final results",
-      value: "1",
+      label: "Knockout field",
+      value: "32 teams",
     },
     {
-      label: "Live match",
-      value: "SWE 2-0",
+      label: "Format",
+      value: "Single elimination",
     },
     {
-      label: "Scheduled next",
-      value: "1",
+      label: "Next stage",
+      value: "Round of 32",
     },
     {
       label: "Tournament field",
@@ -220,7 +237,8 @@ test("syncSourceData updates only the FIFA snapshot and preserves NBA data", () 
   assert.match(data.fifaWorldCup.fixtureSummary.detail, /One match is final/);
   assert.match(data.fifaWorldCup.fixtureSummary.detail, /Sweden leads Tunisia 2-0 live/);
   assert.match(data.fifaWorldCup.fixtureSummary.detail, /one fixture is scheduled next/);
-  assert.equal(data.fifaWorldCup.updateStream.currentWindow, "Jun 14-15");
+  assert.equal(data.fifaWorldCup.fixtureSummary.window, "Round of 32");
+  assert.equal(data.fifaWorldCup.updateStream.currentWindow, "Round of 32");
   assert.equal(data.fifaWorldCup.updateStream.lastVerifiedAt, "2026-06-15");
   assert.equal(data.fifaWorldCup.updateStream.status, "Live coverage active");
 });

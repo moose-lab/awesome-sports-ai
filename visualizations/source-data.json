@@ -228,7 +228,7 @@
         "slug": "analyst-workbench",
         "title": "Analyst Workbench",
         "audience": "Developers building match reports and tactical tools",
-        "output": "Tool lanes for live-data, match-intelligence, xg-and-shot-quality, video-and-vision, scouting-and-reports, and media-and-localization"
+        "output": "Tool lanes for knockout-data, bracket-and-scenarios, match-intelligence, xg-and-shot-quality, video-and-vision, scouting-and-reports, and media-and-localization"
       },
       {
         "slug": "contributor-backlog",
