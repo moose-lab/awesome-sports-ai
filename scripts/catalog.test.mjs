@@ -62,6 +62,7 @@ const expectedOpenness = [
 const ids = (items) => items.map((item) => item.id);
 const byId = (items) => new Map(items.map((item) => [item.id, item]));
 const unique = (values) => new Set(values).size === values.length;
+const escapeRegExp = (value) => String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 const readOptionsForField = (templatePath, fieldId) => {
   const lines = read(templatePath).split("\n");
@@ -130,10 +131,40 @@ test("builder recipes reference catalog tools", () => {
   });
 });
 
+test("README follows the audit's catalog-first awesome-list structure", () => {
+  const orderedSections = [
+    "## Table of Contents",
+    "## The Catalog",
+    "## The Prototype Factory",
+    "## Builder Paths & Resources",
+    "## Community & Related Lists",
+    "## Contributing",
+    "## License",
+  ];
+
+  let previousIndex = -1;
+  orderedSections.forEach((heading) => {
+    const index = readme.indexOf(heading);
+    assert.notEqual(index, -1, `README missing ${heading}`);
+    assert.ok(index > previousIndex, `${heading} must appear after the previous major section`);
+    previousIndex = index;
+  });
+
+  const toc = readme.match(/## Table of Contents\n([\s\S]+?)\n## The Catalog/);
+  assert.ok(toc, "README missing Table of Contents block before The Catalog");
+  catalog.categories.forEach((category) => {
+    assert.match(toc[1], new RegExp(`\\[${escapeRegExp(category.label)}\\]\\(#`));
+  });
+
+  assert.doesNotMatch(readme, /## Featured Event Toolkits/);
+  assert.doesNotMatch(readme, /Congratulations, New York Knicks/);
+  assert.doesNotMatch(readme, /\[!\[[^\]]+\]\(visualizations\//);
+});
+
 test("README exposes catalog categories and one marker per tool", () => {
   const categoryLabels = catalog.categories.map((category) => category.label);
-  const directory = readme.match(/## Resource-Type Directory\n([\s\S]+?)\n## Builder Recipes/);
-  assert.ok(directory, "README missing Resource-Type Directory section");
+  const directory = readme.match(/## The Catalog\n([\s\S]+?)\n## The Prototype Factory/);
+  assert.ok(directory, "README missing The Catalog section");
 
   const headings = [...directory[1].matchAll(/^### (.+)$/gm)].map((match) => match[1]);
   assert.deepEqual(headings, categoryLabels);
@@ -143,6 +174,29 @@ test("README exposes catalog categories and one marker per tool", () => {
     const count = readme.split(marker).length - 1;
     assert.equal(count, 1, `README must include exactly one marker for ${tool.id}`);
   });
+});
+
+test("README catalog entries use the standard audit tag format", () => {
+  catalog.tools.forEach((tool) => {
+    const marker = `<!-- catalog:${escapeRegExp(tool.id)} -->`;
+    const entryPattern = new RegExp(
+      `^- ${marker} \\[[^\\]]+\\]\\([^)]+\\) - .+\\. \\(Tags: Sports: .+\\. AI: .+\\. Access: .+\\.\\)$`,
+      "m",
+    );
+    assert.match(readme, entryPattern, `${tool.id} must use the standard catalog entry format`);
+  });
+});
+
+test("README presents prototypes as a compact factory table", () => {
+  const prototypeFactory = readme.match(/## The Prototype Factory\n([\s\S]+?)\n## Builder Paths & Resources/);
+  assert.ok(prototypeFactory, "README missing The Prototype Factory section");
+
+  ["llm-match-commentator", "wnba-gravity-mapper", "pickleball-court-mapper"].forEach((prototypeId) => {
+    assert.match(prototypeFactory[1], new RegExp(`\\| \`${escapeRegExp(prototypeId)}\` \\|`));
+  });
+
+  assert.doesNotMatch(prototypeFactory[1], /```/);
+  assert.doesNotMatch(prototypeFactory[1], /\[!\[/);
 });
 
 test("issue templates stay in sync with catalog taxonomy", () => {
