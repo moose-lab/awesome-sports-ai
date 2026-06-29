@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "74 matches are final, Germany and Paraguay are tied 0-0 live, and 4 fixtures are scheduled next."
+      "detail": "74 matches are final, Germany and Paraguay are tied 1-1 live, and 4 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -1116,7 +1116,7 @@
         "venue": "Gillette Stadium",
         "tag": "Round of 32",
         "status": "Live",
-        "score": "GER 0 - PAR 0",
+        "score": "GER 1 - PAR 1",
         "insight": "Live window"
       },
       {
