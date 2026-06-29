@@ -25,8 +25,9 @@ The sport guides sit on top of the catalog. They do not duplicate the full catal
 
 | Sport guide | Primary readers | Scenario coverage | Sports AI Hub route hint | Path |
 |-------------|-----------------|-------------------|--------------------------|------|
-| HYROX | Race operators, functional-fitness coaches, venue builders | Event operations; station split analysis; movement standard validation | `/sports/hyrox` | [hyrox.md](hyrox.md) |
 | Football | Analysts, scouts, coaches, match-report builders | Match intelligence; scouting boards; video and event review; shot quality | `/sports/football` | [football.md](football.md) |
+| Basketball | NBA/WNBA analysts, coaches, scouts, player-development builders | Spacing and gravity; player and game data; video tracking; shot and lineup insight | `/sports/basketball` | [basketball.md](basketball.md) |
+| HYROX | Race operators, functional-fitness coaches, venue builders | Event operations; station split analysis; movement standard validation | `/sports/hyrox` | [hyrox.md](hyrox.md) |
 | Running and Endurance | Coaches, runners, route analysts, biomechanics builders | Training load monitoring; pace and route analysis; posture and biomechanics | `/sports/running` | [running.md](running.md) |
 
 ## Standard Guide Template

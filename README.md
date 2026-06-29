@@ -187,7 +187,7 @@ The catalog is the shop window. [`/prototypes`](prototypes/) is the factory floo
 
 ## Builder Paths & Scenarios
 
-If you are focused on a specific sport, check out our **[Browse by Sport Guides](docs/sports/)** (e.g., [Football](docs/sports/football.md), [Running](docs/sports/running.md), [HYROX](docs/sports/hyrox.md)) to see how tools can be combined for specific scenarios.
+If you are focused on a specific sport, check out our **[Browse by Sport Guides](docs/sports/)** (e.g., [Football](docs/sports/football.md), [Basketball](docs/sports/basketball.md), [Running](docs/sports/running.md), [HYROX](docs/sports/hyrox.md)) to see how tools can be combined for specific scenarios.
 
 These paths show how catalog entries become prototype ideas:
 

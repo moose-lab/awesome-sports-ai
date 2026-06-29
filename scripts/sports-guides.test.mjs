@@ -9,12 +9,24 @@ const read = (path) => readFileSync(join(root, path), "utf8");
 
 const guidePaths = [
   "docs/sports/README.md",
+  "docs/sports/basketball.md",
   "docs/sports/football.md",
   "docs/sports/hyrox.md",
   "docs/sports/running.md",
 ];
 
 const guideContracts = [
+  {
+    path: "docs/sports/basketball.md",
+    slug: "basketball",
+    route: "/sports/basketball",
+    scenarios: [
+      "Spacing and Gravity Analysis",
+      "Player and Game Data Workflows",
+      "Video Tracking and Possession Review",
+      "Shot Selection and Lineup Insight",
+    ],
+  },
   {
     path: "docs/sports/hyrox.md",
     slug: "hyrox",
@@ -100,8 +112,8 @@ test("root README sports-guide links point only to existing sport-guide pages", 
   const readme = read("README.md");
   const sportsLinks = [...readme.matchAll(/\]\((docs\/sports\/[^)#]+|docs\/sports\/)\)/g)].map((match) => match[1]);
 
-  assert.ok(sportsLinks.length >= 4, "README should expose the sports guide index and examples");
-  assert.doesNotMatch(readme, /docs\/sports\/basketball\.md/);
+  assert.ok(sportsLinks.length >= 5, "README should expose the sports guide index and examples");
+  assert.match(readme, /docs\/sports\/basketball\.md/);
 
   sportsLinks.forEach((href) => {
     const path = href.endsWith("/") ? `${href}README.md` : href;
