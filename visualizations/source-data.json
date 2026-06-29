@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-06-28",
+  "generatedDate": "2026-06-29",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 28, 2026",
+    "updated": "Updated June 29, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -187,14 +187,14 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "73 matches are final, no match is live, and 3 fixtures are scheduled next."
+      "detail": "73 matches are final, no match is live, and 6 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
       "cadence": "Every 5 minutes during the tournament window",
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
-      "lastVerifiedAt": "2026-06-28",
+      "lastVerifiedAt": "2026-06-29",
       "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
@@ -1128,6 +1128,36 @@
         "status": "Scheduled",
         "score": "9 p.m. ET",
         "insight": "Guadalupe"
+      },
+      {
+        "date": "Jun 30",
+        "match": "Cote d'Ivoire v Norway",
+        "round": "Round of 32",
+        "venue": "AT&T Stadium",
+        "tag": "Round of 32",
+        "status": "Scheduled",
+        "score": "1 p.m. ET",
+        "insight": "Arlington"
+      },
+      {
+        "date": "Jun 30",
+        "match": "France v Sweden",
+        "round": "Round of 32",
+        "venue": "MetLife Stadium",
+        "tag": "Round of 32",
+        "status": "Scheduled",
+        "score": "5 p.m. ET",
+        "insight": "East Rutherford"
+      },
+      {
+        "date": "Jun 30",
+        "match": "Mexico v Ecuador",
+        "round": "Round of 32",
+        "venue": "Estadio Banorte",
+        "tag": "Round of 32",
+        "status": "Scheduled",
+        "score": "9 p.m. ET",
+        "insight": "Mexico City"
       }
     ],
     "milestones": [
