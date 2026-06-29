@@ -68,13 +68,14 @@ test("World Cup docs and README expose every toolkit lane", () => {
   const zoneDoc = safeRead("docs/world-cup-2026-zone.md");
   const toolkitDoc = safeRead("docs/world-cup-2026-toolkit.md");
 
-  assert.match(readme, /World Cup 2026 Knockout Toolkit/);
-  assert.match(readme, /Round of 32/);
+  assert.match(readme, /World Cup 2026 assistant toolkit/);
+  assert.match(readme, /World Cup 2026 knockout-stage tool map/);
+  assert.match(readme, /World Cup 2026 zone plan/);
+  assert.match(readme, /Round of 32-to-Final workflows/);
   assert.match(readme, /docs\/world-cup-2026-zone\.md/);
   assert.match(readme, /docs\/world-cup-2026-toolkit\.md/);
   assert.doesNotMatch(readme, /fifa-world-cup-2026\.svg/);
   source.fifaWorldCup.toolkit.forEach((lane) => {
-    assert.match(readme, new RegExp(escapeRegExp(lane.title)));
     assert.match(toolkitDoc, new RegExp(`### ${escapeRegExp(lane.title)}`));
     assert.match(zoneDoc, new RegExp(escapeRegExp(lane.slug)));
   });

@@ -23,7 +23,10 @@ test("README presents a developer-focused awesome list path", () => {
   assert.match(readme, /Tool users who want to find a working project/);
   assert.match(readme, /## Vibe-Coding Lookup Paths/);
   assert.match(readme, /## Sports & AI Relevance Rule/);
-  assert.match(readme, /World Cup 2026 Knockout Toolkit/);
+  assert.match(readme, /## Builder Paths & Scenarios/);
+  assert.match(readme, /World Cup 2026 assistant toolkit/);
+  assert.match(readme, /World Cup 2026 knockout-stage tool map/);
+  assert.match(readme, /World Cup 2026 zone plan/);
   assert.match(readme, /\[`data\/catalog\.json`\]\(data\/catalog\.json\)/);
   assert.match(readme, /\[`llm-match-commentator`\]\(prototypes\/llm-match-commentator\/\)/);
   assert.match(readme, /\[`wnba-gravity-mapper`\]\(prototypes\/wnba-gravity-mapper\/\)/);

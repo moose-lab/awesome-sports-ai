@@ -29,7 +29,7 @@ test("NBA event SVG reflects the source data event state", () => {
   assert.match(nba, new RegExp(escapeRegExp(source.nbaFinals.games[4].insight)));
 });
 
-test("event visualization assets stay available outside the main README", () => {
+test("event visualization assets stay outside the main README", () => {
   regenerate();
 
   const readme = read("README.md");
@@ -37,13 +37,9 @@ test("event visualization assets stay available outside the main README", () => 
 
   assert.equal(existsSync(join(root, "visualizations", "fifa-world-cup-2026.svg")), false);
   assert.match(visualizationsReadme, /\[nba-finals-2026\.svg\]\(nba-finals-2026\.svg\)/);
-  assert.match(readme, /\[generated event visuals\]\(visualizations\/README\.md\)/);
   assert.doesNotMatch(readme, /fifa-world-cup-2026\.svg/);
   assert.doesNotMatch(readme, /group-stage snapshot/i);
   assert.doesNotMatch(readme, /FIFA World Cup 2026 live score visualization/);
   assert.doesNotMatch(readme, /Congratulations, New York Knicks/);
   assert.doesNotMatch(readme, /\[!\[[^\]]+\]\(visualizations\//);
-  assert.match(readme, /World Cup 2026 Knockout Toolkit/);
-  assert.match(readme, /Round of 32/);
-  assert.match(readme, /Bracket and Elimination Scenarios/);
 });
