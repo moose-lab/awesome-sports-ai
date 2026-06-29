@@ -86,6 +86,7 @@ Open-source projects, open datasets, open APIs, reproducible research, and free 
 - **[fantasy-football-wrapped](https://github.com/kt474/fantasy-football-wrapped)** - Generates fantasy league insights and charts for Sleeper and ESPN leagues. *(Sports: American Football; AI: analytics-modeling, media-generation)*
 - **[football-match-intelligence](https://github.com/DataKnight1/football-match-intelligence)** - Builds football match intelligence dashboards with pitch control, sprint efficiency, and tactical sequencing. *(Sports: Soccer; AI: analytics-modeling, tracking)*
 - **[football_scout_rag](https://github.com/yotambraun/football_scout_rag)** - Generates repeatable football player scouting reports with retrieval-augmented workflows. *(Sports: Soccer; AI: llm-nlp, analytics-modeling)*
+- **[HYROX Gym Finder](https://github.com/moose-lab/hyrox-gym-finder)** - Finds nearby HYROXCN certified gyms from coordinates, region keywords, browser location, or imported JSON exports. *(Sports: Running/Track, Multi-sport; AI: data-ingestion, operations)*
 - **[llm-match-commentator](./prototypes/llm-match-commentator/)** - Generates localized match commentary from structured event streams. *(Sports: Soccer, Multi-sport; AI: llm-nlp, media-generation)*
 - **[pickleball-court-mapper](./prototypes/pickleball-court-mapper/)** - Detects pickleball court lines and generates annotated court diagrams. *(Sports: Tennis/Racquet; AI: computer-vision, tracking)*
 - **[Ready2Race](https://github.com/lambda9-gmbh/ready2race)** - Plans and executes competition events such as coastal rowing races. *(Sports: Multi-sport; AI: operations)*
@@ -181,6 +182,7 @@ The catalog is the shop window. [`/prototypes`](prototypes/) is the factory floo
 | **[llm-match-commentator](prototypes/llm-match-commentator/)** | Automated recap/commentary systems (e.g., Stats Perform) | Event stream -> Bilingual markdown commentary |
 | **[wnba-gravity-mapper](prototypes/wnba-gravity-mapper/)** | Proprietary spacing and gravity metrics | Player positions -> Tactical attention heatmap |
 | **[pickleball-court-mapper](prototypes/pickleball-court-mapper/)** | Proprietary court-calibration systems | Court image -> Mapped court geometry diagram |
+| **[HYROX Gym Finder](https://github.com/moose-lab/hyrox-gym-finder)** | Official venue discovery and local gym filtering | Location or JSON export -> Ranked certified gym list and map |
 
 
 **Start here:** run a prototype, inspect the output, then fork the smallest piece you want to improve.

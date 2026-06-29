@@ -27,6 +27,10 @@ Do not add:
 - Tools with unclear ownership, purpose, or availability.
 - Personal contact details or private data.
 
+## Simple Path for Early Scene Tools
+
+For early sport-scene tools, keep the contribution route small. A good first contribution can be one public repo, one clear README, one sample input, one visible output, and one catalog entry or tool-submission issue. Do not require multi-stage roadmaps, complex architecture docs, or large framework migrations before a small tool can be reviewed.
+
 ## Catalog Source of Truth
 
 [`data/catalog.json`](data/catalog.json) is the canonical catalog. Every README entry should have a matching catalog tool record and exactly one hidden marker in README:

@@ -292,6 +292,16 @@
       "openness": "open-source"
     },
     {
+      "id": "hyrox-gym-finder",
+      "title": "HYROX Gym Finder",
+      "url": "https://github.com/moose-lab/hyrox-gym-finder",
+      "description": "Finds nearby HYROXCN certified gyms from coordinates, region keywords, browser location, or imported JSON exports.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["Running/Track", "Multi-sport"],
+      "aiCapabilities": ["data-ingestion", "operations"],
+      "openness": "open-source"
+    },
+    {
       "id": "balldontlie",
       "title": "balldontlie",
       "url": "https://www.balldontlie.io/",
