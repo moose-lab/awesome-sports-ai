@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "74 matches are final, Germany and Paraguay are tied 1-1 live, and 4 fixtures are scheduled next."
+      "detail": "75 matches are final, no match is live, and 4 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-06-29",
-      "status": "Live coverage active",
+      "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1115,9 +1115,9 @@
         "round": "Round of 32",
         "venue": "Gillette Stadium",
         "tag": "Round of 32",
-        "status": "Live",
+        "status": "Final",
         "score": "GER 1 - PAR 1",
-        "insight": "Live window"
+        "insight": "Full time"
       },
       {
         "date": "Jun 29",
