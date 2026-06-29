@@ -12,12 +12,23 @@ HYROX combines mass-participation race operations, station-by-station performanc
 | Catalog tags to inspect | Multi-sport, Running/Track, operations, tracking, computer-vision, training-load |
 | Sports AI Hub route hint | `/sports/hyrox` |
 
+## First Tool Template: Nearby Certified Gym Finder
+
+The first HYROX scene template is [HYROX Gym Finder](https://github.com/moose-lab/hyrox-gym-finder), with a live app at <https://moose-lab.github.io/hyrox-gym-finder/>. It helps athletes search HYROXCN certified gyms by browser location, coordinates, region keyword, or an imported HYROXCN JSON export.
+
+Starter build:
+
+- Input: latitude/longitude, browser geolocation, city or district keyword, or the `/appapi/fit/gym/query` JSON response.
+- Output: ranked certified gym list, distance summary, booking/fitness-test flags, and a lightweight map visualization.
+- Prototype direction: keep this as a single-page static tool with no required backend, so contributors can fork it and add one small workflow at a time.
+
 ## Event Operations (赛事运营)
 
 The problem: a HYROX event needs heat management, athlete check-in, station flow, score updates, and venue communication without forcing volunteers to reconcile spreadsheets by hand.
 
 Useful catalog resources:
 
+- [HYROX Gym Finder](https://github.com/moose-lab/hyrox-gym-finder) for nearby certified training-gym discovery from the HYROXCN gym API or local JSON exports.
 - [SportsEngine Tourney](https://www.sportsengine.com/tourney/) for tournament-style registration, schedule, standings, and communication patterns.
 - [Ready2Race](https://github.com/lambda9-gmbh/ready2race) for competition execution workflows that can inspire wave, lane, and result operations.
 - [Competition Factory](https://github.com/CourtHive/competition-factory) *(Cross-domain)* for event document and draw-structure manipulation that can transfer from court sports into heat and wave planning.
