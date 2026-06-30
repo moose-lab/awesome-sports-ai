@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "77 matches are final, France and Sweden are tied 0-0 live, and 4 fixtures are scheduled next."
+      "detail": "77 matches are final, France leads Sweden 3-0 live, and 4 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -1146,7 +1146,7 @@
         "venue": "MetLife Stadium",
         "tag": "Round of 32",
         "status": "Live",
-        "score": "FRA 0 - SWE 0",
+        "score": "FRA 3 - SWE 0",
         "insight": "Live window"
       },
       {
