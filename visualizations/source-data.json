@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "76 matches are final, no match is live, and 6 fixtures are scheduled next."
+      "detail": "77 matches are final, no match is live, and 5 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -1135,9 +1135,9 @@
         "round": "Round of 32",
         "venue": "AT&T Stadium",
         "tag": "Round of 32",
-        "status": "Scheduled",
-        "score": "1 p.m. ET",
-        "insight": "Arlington"
+        "status": "Final",
+        "score": "CIV 1 - NOR 2",
+        "insight": "Full time"
       },
       {
         "date": "Jun 30",
