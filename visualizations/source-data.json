@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-06-29",
+  "generatedDate": "2026-06-30",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 29, 2026",
+    "updated": "Updated June 30, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -187,15 +187,15 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "75 matches are final, no match is live, and 4 fixtures are scheduled next."
+      "detail": "75 matches are final, Netherlands and Morocco are tied 0-0 live, and 6 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
       "cadence": "Every 5 minutes during the tournament window",
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
-      "lastVerifiedAt": "2026-06-29",
-      "status": "Pre-match coverage queued",
+      "lastVerifiedAt": "2026-06-30",
+      "status": "Live coverage active",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1125,9 +1125,9 @@
         "round": "Round of 32",
         "venue": "Estadio BBVA",
         "tag": "Round of 32",
-        "status": "Scheduled",
-        "score": "9 p.m. ET",
-        "insight": "Guadalupe"
+        "status": "Live",
+        "score": "NED 0 - MAR 0",
+        "insight": "Live window"
       },
       {
         "date": "Jun 30",
@@ -1158,6 +1158,36 @@
         "status": "Scheduled",
         "score": "9 p.m. ET",
         "insight": "Mexico City"
+      },
+      {
+        "date": "Jul 1",
+        "match": "England v Congo DR",
+        "round": "Round of 32",
+        "venue": "Mercedes-Benz Stadium",
+        "tag": "Round of 32",
+        "status": "Scheduled",
+        "score": "12 p.m. ET",
+        "insight": "Atlanta"
+      },
+      {
+        "date": "Jul 1",
+        "match": "Belgium v Senegal",
+        "round": "Round of 32",
+        "venue": "Lumen Field",
+        "tag": "Round of 32",
+        "status": "Scheduled",
+        "score": "4 p.m. ET",
+        "insight": "Seattle"
+      },
+      {
+        "date": "Jul 1",
+        "match": "United States v Bosnia-Herzegovina",
+        "round": "Round of 32",
+        "venue": "Levi's Stadium",
+        "tag": "Round of 32",
+        "status": "Scheduled",
+        "score": "8 p.m. ET",
+        "insight": "Santa Clara"
       }
     ],
     "milestones": [
