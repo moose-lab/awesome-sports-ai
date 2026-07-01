@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "80 matches are final, no match is live, and 5 fixtures are scheduled next."
+      "detail": "80 matches are final, Belgium and Senegal are tied 0-0 live, and 4 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-07-01",
-      "status": "Pre-match coverage queued",
+      "status": "Live coverage active",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1175,9 +1175,9 @@
         "round": "Round of 32",
         "venue": "Lumen Field",
         "tag": "Round of 32",
-        "status": "Scheduled",
-        "score": "4 p.m. ET",
-        "insight": "Seattle"
+        "status": "Live",
+        "score": "BEL 0 - SEN 0",
+        "insight": "Live window"
       },
       {
         "date": "Jul 1",
