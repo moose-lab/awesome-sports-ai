@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "79 matches are final, Congo DR leads England 1-0 live, and 5 fixtures are scheduled next."
+      "detail": "80 matches are final, no match is live, and 5 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-07-01",
-      "status": "Live coverage active",
+      "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1165,9 +1165,9 @@
         "round": "Round of 32",
         "venue": "Mercedes-Benz Stadium",
         "tag": "Round of 32",
-        "status": "Live",
-        "score": "ENG 0 - COD 1",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "ENG 2 - COD 1",
+        "insight": "Full time"
       },
       {
         "date": "Jul 1",
