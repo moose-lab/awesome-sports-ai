@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "80 matches are final, Belgium and Senegal are tied 0-0 live, and 4 fixtures are scheduled next."
+      "detail": "80 matches are final, Belgium and Senegal are tied 2-2 live, and 4 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -1176,7 +1176,7 @@
         "venue": "Lumen Field",
         "tag": "Round of 32",
         "status": "Live",
-        "score": "BEL 0 - SEN 0",
+        "score": "BEL 2 - SEN 2",
         "insight": "Live window"
       },
       {
