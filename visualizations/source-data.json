@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-06-30",
+  "generatedDate": "2026-07-01",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated June 30, 2026",
+    "updated": "Updated July 1, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -187,15 +187,15 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "78 matches are final, no match is live, and 4 fixtures are scheduled next."
+      "detail": "78 matches are final, Mexico leads Ecuador 2-0 live, and 6 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
       "cadence": "Every 5 minutes during the tournament window",
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
-      "lastVerifiedAt": "2026-06-30",
-      "status": "Pre-match coverage queued",
+      "lastVerifiedAt": "2026-07-01",
+      "status": "Live coverage active",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1155,9 +1155,9 @@
         "round": "Round of 32",
         "venue": "Estadio Banorte",
         "tag": "Round of 32",
-        "status": "Scheduled",
-        "score": "9 p.m. ET",
-        "insight": "Mexico City"
+        "status": "Live",
+        "score": "MEX 2 - ECU 0",
+        "insight": "Live window"
       },
       {
         "date": "Jul 1",
@@ -1188,6 +1188,36 @@
         "status": "Scheduled",
         "score": "8 p.m. ET",
         "insight": "Santa Clara"
+      },
+      {
+        "date": "Jul 2",
+        "match": "Spain v Austria",
+        "round": "Round of 32",
+        "venue": "SoFi Stadium",
+        "tag": "Round of 32",
+        "status": "Scheduled",
+        "score": "3 p.m. ET",
+        "insight": "Inglewood"
+      },
+      {
+        "date": "Jul 2",
+        "match": "Portugal v Croatia",
+        "round": "Round of 32",
+        "venue": "BMO Field",
+        "tag": "Round of 32",
+        "status": "Scheduled",
+        "score": "7 p.m. ET",
+        "insight": "Toronto"
+      },
+      {
+        "date": "Jul 2",
+        "match": "Switzerland v Algeria",
+        "round": "Round of 32",
+        "venue": "BC Place",
+        "tag": "Round of 32",
+        "status": "Scheduled",
+        "score": "11 p.m. ET",
+        "insight": "Vancouver"
       }
     ],
     "milestones": [
