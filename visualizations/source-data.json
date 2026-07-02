@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-07-01",
+  "generatedDate": "2026-07-02",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated July 1, 2026",
+    "updated": "Updated July 2, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -187,15 +187,15 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "81 matches are final, no match is live, and 4 fixtures are scheduled next."
+      "detail": "81 matches are final, United States leads Bosnia-Herzegovina 1-0 live, and 6 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
       "cadence": "Every 5 minutes during the tournament window",
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
-      "lastVerifiedAt": "2026-07-01",
-      "status": "Pre-match coverage queued",
+      "lastVerifiedAt": "2026-07-02",
+      "status": "Live coverage active",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1185,9 +1185,9 @@
         "round": "Round of 32",
         "venue": "Levi's Stadium",
         "tag": "Round of 32",
-        "status": "Scheduled",
-        "score": "8 p.m. ET",
-        "insight": "Santa Clara"
+        "status": "Live",
+        "score": "USA 1 - BIH 0",
+        "insight": "Live window"
       },
       {
         "date": "Jul 2",
@@ -1218,6 +1218,36 @@
         "status": "Scheduled",
         "score": "11 p.m. ET",
         "insight": "Vancouver"
+      },
+      {
+        "date": "Jul 3",
+        "match": "Australia v Egypt",
+        "round": "Round of 32",
+        "venue": "AT&T Stadium",
+        "tag": "Round of 32",
+        "status": "Scheduled",
+        "score": "2 p.m. ET",
+        "insight": "Arlington"
+      },
+      {
+        "date": "Jul 3",
+        "match": "Argentina v Cabo Verde",
+        "round": "Round of 32",
+        "venue": "Hard Rock Stadium",
+        "tag": "Round of 32",
+        "status": "Scheduled",
+        "score": "6 p.m. ET",
+        "insight": "Miami Gardens"
+      },
+      {
+        "date": "Jul 3",
+        "match": "Colombia v Ghana",
+        "round": "Round of 32",
+        "venue": "GEHA Field at Arrowhead Stadium",
+        "tag": "Round of 32",
+        "status": "Scheduled",
+        "score": "9:30 p.m. ET",
+        "insight": "Kansas City"
       }
     ],
     "milestones": [
