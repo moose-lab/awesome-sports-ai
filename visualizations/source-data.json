@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "82 matches are final, Spain leads Austria 1-0 live, and 5 fixtures are scheduled next."
+      "detail": "83 matches are final, no match is live, and 5 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-07-02",
-      "status": "Live coverage active",
+      "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1195,9 +1195,9 @@
         "round": "Round of 32",
         "venue": "SoFi Stadium",
         "tag": "Round of 32",
-        "status": "Live",
-        "score": "ESP 1 - AUT 0",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "ESP 3 - AUT 0",
+        "insight": "Full time"
       },
       {
         "date": "Jul 2",
