@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-07-02",
+  "generatedDate": "2026-07-03",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated July 2, 2026",
+    "updated": "Updated July 3, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -187,15 +187,15 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "83 matches are final, no match is live, and 5 fixtures are scheduled next."
+      "detail": "83 matches are final, Portugal and Croatia are tied 0-0 live, and 6 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
       "cadence": "Every 5 minutes during the tournament window",
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
-      "lastVerifiedAt": "2026-07-02",
-      "status": "Pre-match coverage queued",
+      "lastVerifiedAt": "2026-07-03",
+      "status": "Live coverage active",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1205,9 +1205,9 @@
         "round": "Round of 32",
         "venue": "BMO Field",
         "tag": "Round of 32",
-        "status": "Scheduled",
-        "score": "7 p.m. ET",
-        "insight": "Toronto"
+        "status": "Live",
+        "score": "POR 0 - CRO 0",
+        "insight": "Live window"
       },
       {
         "date": "Jul 2",
@@ -1248,6 +1248,26 @@
         "status": "Scheduled",
         "score": "9:30 p.m. ET",
         "insight": "Kansas City"
+      },
+      {
+        "date": "Jul 4",
+        "match": "Canada v Morocco",
+        "round": "Round of 16",
+        "venue": "NRG Stadium",
+        "tag": "Round of 16",
+        "status": "Scheduled",
+        "score": "1 p.m. ET",
+        "insight": "Houston"
+      },
+      {
+        "date": "Jul 4",
+        "match": "Paraguay v France",
+        "round": "Round of 16",
+        "venue": "Lincoln Financial Field",
+        "tag": "Round of 16",
+        "status": "Scheduled",
+        "score": "5 p.m. ET",
+        "insight": "Philadelphia"
       }
     ],
     "milestones": [
