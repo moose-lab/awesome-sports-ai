@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "83 matches are final, Portugal and Croatia are tied 0-0 live, and 6 fixtures are scheduled next."
+      "detail": "84 matches are final, Switzerland leads Algeria 1-0 live, and 5 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -1205,9 +1205,9 @@
         "round": "Round of 32",
         "venue": "BMO Field",
         "tag": "Round of 32",
-        "status": "Live",
-        "score": "POR 0 - CRO 0",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "POR 2 - CRO 1",
+        "insight": "Full time"
       },
       {
         "date": "Jul 2",
@@ -1215,9 +1215,9 @@
         "round": "Round of 32",
         "venue": "BC Place",
         "tag": "Round of 32",
-        "status": "Scheduled",
-        "score": "11 p.m. ET",
-        "insight": "Vancouver"
+        "status": "Live",
+        "score": "SUI 1 - ALG 0",
+        "insight": "Live window"
       },
       {
         "date": "Jul 3",
