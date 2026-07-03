@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "85 matches are final, no match is live, and 5 fixtures are scheduled next."
+      "detail": "85 matches are final, Australia and Egypt are tied 0-0 live, and 4 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-07-03",
-      "status": "Pre-match coverage queued",
+      "status": "Live coverage active",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1225,9 +1225,9 @@
         "round": "Round of 32",
         "venue": "AT&T Stadium",
         "tag": "Round of 32",
-        "status": "Scheduled",
-        "score": "2 p.m. ET",
-        "insight": "Arlington"
+        "status": "Live",
+        "score": "AUS 0 - EGY 0",
+        "insight": "Live window"
       },
       {
         "date": "Jul 3",
