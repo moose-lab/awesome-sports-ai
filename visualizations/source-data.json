@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "86 matches are final, Argentina leads Cabo Verde 2-1 live, and 5 fixtures are scheduled next."
+      "detail": "88 matches are final, no match is live, and 4 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-07-04",
-      "status": "Live coverage active",
+      "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1235,9 +1235,9 @@
         "round": "Round of 32",
         "venue": "Hard Rock Stadium",
         "tag": "Round of 32",
-        "status": "Live",
-        "score": "ARG 2 - CPV 1",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "ARG 3 - CPV 2",
+        "insight": "Full time"
       },
       {
         "date": "Jul 3",
@@ -1245,9 +1245,9 @@
         "round": "Round of 32",
         "venue": "GEHA Field at Arrowhead Stadium",
         "tag": "Round of 32",
-        "status": "Scheduled",
-        "score": "9:30 p.m. ET",
-        "insight": "Kansas City"
+        "status": "Final",
+        "score": "COL 1 - GHA 0",
+        "insight": "Full time"
       },
       {
         "date": "Jul 4",
