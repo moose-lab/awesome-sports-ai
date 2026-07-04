@@ -88,6 +88,7 @@ Open-source projects, open datasets, open APIs, reproducible research, and free 
 - **[football-match-intelligence](https://github.com/DataKnight1/football-match-intelligence)** - Builds football match intelligence dashboards with pitch control, sprint efficiency, and tactical sequencing. *(Sports: Soccer; AI: analytics-modeling, tracking)*
 - **[football_scout_rag](https://github.com/yotambraun/football_scout_rag)** - Generates repeatable football player scouting reports with retrieval-augmented workflows. *(Sports: Soccer; AI: llm-nlp, analytics-modeling)*
 - **[HYROX Gym Finder](https://github.com/moose-lab/hyrox-gym-finder)** - Finds nearby HYROXCN certified gyms from coordinates, region keywords, browser location, or imported JSON exports. *(Sports: Running/Track, Multi-sport; AI: data-ingestion, operations)*
+- **[hyrox-split-parser](./prototypes/hyrox-split-parser/)** - Parses exported HYROX result tables into run/station deltas, rank movement, and coach-ready notes. *(Sports: Running/Track, Multi-sport; AI: data-ingestion, analytics-modeling)*
 - **[llm-match-commentator](./prototypes/llm-match-commentator/)** - Generates localized match commentary from structured event streams. *(Sports: Soccer, Multi-sport; AI: llm-nlp, media-generation)*
 - **[pickleball-court-mapper](./prototypes/pickleball-court-mapper/)** - Detects pickleball court lines and generates annotated court diagrams. *(Sports: Tennis/Racquet; AI: computer-vision, tracking)*
 - **[Ready2Race](https://github.com/lambda9-gmbh/ready2race)** - Plans and executes competition events such as coastal rowing races. *(Sports: Multi-sport; AI: operations)*
@@ -184,6 +185,7 @@ The catalog is the shop window. [`/prototypes`](prototypes/) is the factory floo
 | **[wnba-gravity-mapper](prototypes/wnba-gravity-mapper/)** | Proprietary spacing and gravity metrics | Player positions -> Tactical attention heatmap |
 | **[pickleball-court-mapper](prototypes/pickleball-court-mapper/)** | Proprietary court-calibration systems | Court image -> Mapped court geometry diagram |
 | **[HYROX Gym Finder](https://github.com/moose-lab/hyrox-gym-finder)** | Official venue discovery and local gym filtering | Location or JSON export -> Ranked certified gym list and map |
+| **[hyrox-split-parser](prototypes/hyrox-split-parser/)** | Paid split-analysis dashboards on results platforms | Result table CSV -> Run/station deltas and coach report |
 
 
 **Start here:** run a prototype, inspect the output, then fork the smallest piece you want to improve.
@@ -214,10 +216,10 @@ See [Enterprise-to-Open-Source Decomposition](docs/enterprise-to-open-source-dec
 HYROX is a fixed-format race — 8 × 1 km runs alternating with 8 standardized stations — so every athlete produces the same structured splits, and almost no open-source tooling exists yet. Small, single-workflow tools win here. The full tool opportunity map — 7 lanes and 24 build targets with status, effort, and target search phrases — lives in the [HYROX guide](docs/sports/hyrox.md) and in machine-readable form under `scenes[].buildTargets` in [`data/catalog.json`](data/catalog.json).
 
 - **[HYROX Gym Finder](https://github.com/moose-lab/hyrox-gym-finder)** - Finds HYROXCN certified gyms from coordinates, region keywords, browser location, or imported JSON exports. Live at [hyrox-gym-finder.vercel.app](https://hyrox-gym-finder.vercel.app/). *(Sports: Running/Track, Multi-sport; AI: data-ingestion, operations)*
+- **[hyrox-split-parser](./prototypes/hyrox-split-parser/)** - Parses exported HYROX result tables into run/station deltas, rank movement, and coach-ready notes. First shipped zone gap. *(Sports: Running/Track, Multi-sport; AI: data-ingestion, analytics-modeling)*
 
 **Claimable gaps** — open a [claim issue](https://github.com/moose-lab/awesome-sports-ai/issues/new?template=claim-hyrox-gap.yml) to build one. You keep the repository; the zone lists it:
 
-- `hyrox-split-parser` - Exported result table -> run/station deltas, rank movement, and coach-ready notes.
 - `hyrox-movement-standard-checker` - Athlete-owned station video -> annotated review timeline with explicit uncertainty.
 - `hyrox-heat-station-load-planner` - Roster plus venue constraints -> heat plan and staffing risk report.
 - `hyrox-venue-readiness-checklist` - Station inventory plus floor plan -> setup gaps and volunteer task list.

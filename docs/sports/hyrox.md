@@ -50,7 +50,7 @@ Legend: **live** = shipped and listed. **gap** = specced in the catalog — clai
 
 *The highest-traffic questions in the sport: "was my time good?"*
 
-- `hyrox-split-parser` - Exported result table -> run/station deltas, rank movement, and coach-ready notes. *(coach, athlete / sprint / **gap** / owns: "hyrox results analysis")*
+- `hyrox-split-parser` - Exported result table -> run/station deltas, rank movement, and coach-ready notes. Runs in [/prototypes/hyrox-split-parser](../../prototypes/hyrox-split-parser/). *(coach, athlete / sprint / **live** / owns: "hyrox results analysis")*
 - `hyrox-benchmarks` - Percentile tables by division, age group, and station from public results. *(athlete / sprint / idea / owns: "hyrox average time")*
 - `hyrox-whatif` - Station improvement scenarios -> projected finish time and rank shift; a thin layer on the split parser. *(athlete, coach / weekend / idea / owns: "hyrox race simulator")*
 - `hyrox-season-dashboard` - Multi-race progress for one athlete: fitness trend, station deltas, PB tracker. *(athlete, coach / sprint / idea / owns: "hyrox progress tracker")*
@@ -111,6 +111,7 @@ The problem: coaches and athletes need to know whether time loss came from runni
 
 Useful catalog resources:
 
+- [hyrox-split-parser](../../prototypes/hyrox-split-parser/) for parsing exported result tables into run/station deltas, rank movement, and coach-ready notes.
 - [AthleteLoadMonitor](https://github.com/SaxionAMI/AthleteLoadMonitor) for training-load and readiness patterns.
 - [Coroebus](https://github.com/prakashsellathurai/Coroebus) for athlete fitness, fatigue, and readiness tracking.
 - [Acute_Chronic_Workload_Ratio](https://github.com/ale-uy/Acute_Chronic_Workload_Ratio) for simple load-ratio baselines.
@@ -120,7 +121,7 @@ Starter build:
 
 - Input: athlete split table, station names, run-lap times, division baselines, optional heart-rate zones.
 - Output: station-loss chart, run-vs-station profile, pacing consistency score, and coach notes.
-- Prototype direction: `hyrox-station-split-analyzer` in `/prototypes`.
+- Prototype direction: [hyrox-split-parser](../../prototypes/hyrox-split-parser/) in `/prototypes` — shipped.
 
 ## Movement Standard Verification (动作标准验证)
 
@@ -149,6 +150,5 @@ Starter build:
 ## Gaps: Tools Yet to be Built
 
 - HYROX heat and station load planner: roster plus venue constraints -> heat plan and staffing risk report.
-- HYROX split parser: exported result table -> run/station deltas, rank movement, and coach-ready notes.
 - HYROX movement standard checker: athlete-owned station video -> annotated review timeline with explicit uncertainty.
 - HYROX venue readiness checklist: station inventory plus floor plan -> setup gaps and volunteer task list.
