@@ -59,6 +59,7 @@ Open-source projects, open datasets, open APIs, reproducible research, and free 
   - [Learning Collections](#learning-collections)
 - [The Prototype Factory](#the-prototype-factory)
 - [Builder Paths & Scenarios](#builder-paths--scenarios)
+- [HYROX Zone](#hyrox-zone)
 - [Contribute](#contribute)
 - [License](#license)
 
@@ -205,6 +206,23 @@ These paths show how catalog entries become prototype ideas:
 
 
 See [Enterprise-to-Open-Source Decomposition](docs/enterprise-to-open-source-decomposition.md) for the broader stack map and [2026 Strategic Roadmap](docs/roadmap-2026-strategy.md) for the next prototype lanes.
+
+## HYROX Zone
+
+*The first specialty sport zone: build, list, and use tools for hybrid fitness racing. Scene data lives in [`data/catalog.json`](data/catalog.json); the full scenario guide is [docs/sports/hyrox.md](docs/sports/hyrox.md).*
+
+HYROX is a fixed-format race — 8 × 1 km runs alternating with 8 standardized stations — so every athlete produces the same structured splits, and almost no open-source tooling exists yet. Small, single-workflow tools win here. The full tool opportunity map — 7 lanes and 24 build targets with status, effort, and target search phrases — lives in the [HYROX guide](docs/sports/hyrox.md) and in machine-readable form under `scenes[].buildTargets` in [`data/catalog.json`](data/catalog.json).
+
+- **[HYROX Gym Finder](https://github.com/moose-lab/hyrox-gym-finder)** - Finds HYROXCN certified gyms from coordinates, region keywords, browser location, or imported JSON exports. Live at [hyrox-gym-finder.vercel.app](https://hyrox-gym-finder.vercel.app/). *(Sports: Running/Track, Multi-sport; AI: data-ingestion, operations)*
+
+**Claimable gaps** — open a [claim issue](https://github.com/moose-lab/awesome-sports-ai/issues/new?template=claim-hyrox-gap.yml) to build one. You keep the repository; the zone lists it:
+
+- `hyrox-split-parser` - Exported result table -> run/station deltas, rank movement, and coach-ready notes.
+- `hyrox-movement-standard-checker` - Athlete-owned station video -> annotated review timeline with explicit uncertainty.
+- `hyrox-heat-station-load-planner` - Roster plus venue constraints -> heat plan and staffing risk report.
+- `hyrox-venue-readiness-checklist` - Station inventory plus floor plan -> setup gaps and volunteer task list.
+
+Already built something HYROX-adjacent? Use the [Submit a Tool](https://github.com/moose-lab/awesome-sports-ai/issues/new?template=submit-tool.yml) form, and add the optional zone badge (snippet in [CONTRIBUTING.md](CONTRIBUTING.md)) to your README. The end-to-end contribution and listing flow is documented in [docs/hyrox-zone-workflow.md](docs/hyrox-zone-workflow.md).
 
 ## Contribute
 

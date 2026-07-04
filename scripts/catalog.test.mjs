@@ -176,6 +176,43 @@ test("sport scenes mirror the guides and reference catalog tools", () => {
       assert.ok(gap.title, `${scene.id}/${gap.id} missing title`);
       assert.ok(gap.description, `${scene.id}/${gap.id} missing description`);
     });
+
+    if (scene.lanes) {
+      assert.ok(unique(ids(scene.lanes)), `${scene.id} lane IDs must be unique`);
+      scene.lanes.forEach((lane) => {
+        assert.match(lane.id, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+        assert.ok(lane.title, `${scene.id}/${lane.id} missing lane title`);
+        assert.ok(lane.focus, `${scene.id}/${lane.id} missing lane focus`);
+      });
+    }
+
+    if (scene.buildTargets) {
+      const laneIds = new Set(ids(scene.lanes ?? []));
+      const gapIds = new Set(ids(scene.gaps));
+      const personas = new Set(["athlete", "coach", "operator", "builder"]);
+      const efforts = new Set(["weekend", "sprint", "deep"]);
+      const statuses = new Set(["live", "gap", "idea"]);
+
+      assert.ok(unique(ids(scene.buildTargets)), `${scene.id} build-target IDs must be unique`);
+      scene.buildTargets.forEach((target) => {
+        assert.match(target.id, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+        assert.ok(laneIds.has(target.lane), `${scene.id}/${target.id} invalid lane ${target.lane}`);
+        assert.ok(target.description, `${scene.id}/${target.id} missing description`);
+        assert.ok(target.keyword, `${scene.id}/${target.id} missing keyword`);
+        assert.ok(target.personas?.length > 0, `${scene.id}/${target.id} missing personas`);
+        target.personas.forEach((persona) => {
+          assert.ok(personas.has(persona), `${scene.id}/${target.id} invalid persona ${persona}`);
+        });
+        assert.ok(efforts.has(target.effort), `${scene.id}/${target.id} invalid effort ${target.effort}`);
+        assert.ok(statuses.has(target.status), `${scene.id}/${target.id} invalid status ${target.status}`);
+        if (target.status === "gap") {
+          assert.ok(gapIds.has(target.id), `${scene.id}/${target.id} gap target must match a scene gap`);
+        }
+        if (target.status === "live") {
+          assert.ok(toolIds.has(target.id), `${scene.id}/${target.id} live target must be a catalog tool`);
+        }
+      });
+    }
   });
 });
 

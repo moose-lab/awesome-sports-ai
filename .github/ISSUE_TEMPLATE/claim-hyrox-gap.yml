@@ -1,0 +1,64 @@
+name: Claim a HYROX Gap
+description: Claim one of the HYROX Zone's open tool gaps so builders do not collide.
+title: "[HYROX Claim]: "
+labels: ["hyrox-zone", "gap claim"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for building in the HYROX Zone.
+
+        Claiming a gap reserves it for a reasonable build window and lists you as its builder. You keep the repository under your own account; the zone lists and promotes the tool once it ships. Gaps are specced in `data/catalog.json` and [docs/sports/hyrox.md](../../docs/sports/hyrox.md).
+
+  - type: dropdown
+    id: gap
+    attributes:
+      label: Which gap are you claiming?
+      description: Pick a catalog gap, or choose the last option for another idea from the zone tool map.
+      options:
+        - hyrox-split-parser
+        - hyrox-movement-standard-checker
+        - hyrox-heat-station-load-planner
+        - hyrox-venue-readiness-checklist
+        - Another HYROX tool idea
+    validations:
+      required: true
+
+  - type: input
+    id: repo-url
+    attributes:
+      label: Where will it live?
+      description: Link the repository. It is fine if it is empty right now.
+      placeholder: "https://github.com/you/hyrox-split-parser"
+    validations:
+      required: true
+
+  - type: textarea
+    id: approach
+    attributes:
+      label: Planned approach
+      description: A few sentences on input, output, and the smallest version you will ship first.
+      placeholder: "Parse the official result export into run/station deltas; ship a CLI first, single-page UI later."
+    validations:
+      required: true
+
+  - type: input
+    id: eta
+    attributes:
+      label: Rough timeline
+      description: When do you expect a first runnable version? Estimates are fine.
+      placeholder: "Example: two weekends from now"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: ground-rules
+    attributes:
+      label: Ground rules
+      options:
+        - label: I plan to open-source the tool with a permissive license.
+          required: true
+        - label: I am fine with the zone listing, describing, and linking the tool once it ships.
+          required: true
+        - label: If I go quiet for 60+ days, maintainers may reopen the gap for others.
+          required: true
