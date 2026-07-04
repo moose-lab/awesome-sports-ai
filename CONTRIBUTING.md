@@ -41,6 +41,18 @@ For early sport-scene tools, keep the contribution route small. A good first con
 
 Use lowercase kebab-case IDs, for example `statsbomb-open-data` or `llm-match-commentator`.
 
+## Sport Scenes
+
+`data/catalog.json` also carries a `scenes` collection — the machine-readable mirror of the [`docs/sports/`](docs/sports/) guides, consumed by Sports AI Hub at `/sports/<slug>` and readable by any downstream frontend or coding agent. Each scene mirrors its guide's scenario sections (`toolIds` + `crossDomainToolIds` + starter build) and its "Gaps: Tools Yet to be Built" list.
+
+To catalog a new tool for an existing scene (for example HYROX):
+
+1. Add the tool record to `tools[]` as usual (category, sport tags, capabilities, openness).
+2. Append its id to the matching scene section's `toolIds` (or `crossDomainToolIds` if it transfers in from another sport).
+3. Keep the JSON and `docs/sports/<slug>.md` in sync — the guide stays the narrative source, the scene is the structured contract. `scripts/catalog.test.mjs` validates that every referenced tool id exists.
+
+If a scene gap gets built, move it out of `gaps` and into the right section's `toolIds` in the same PR that adds the tool record.
+
 ## Resource-Type Categories
 
 Choose one canonical category from `data/catalog.json`:

@@ -131,6 +131,54 @@ test("builder recipes reference catalog tools", () => {
   });
 });
 
+test("sport scenes mirror the guides and reference catalog tools", () => {
+  const toolIds = new Set(ids(catalog.tools));
+  const sportTags = new Set(catalog.sportTags);
+
+  assert.ok(Array.isArray(catalog.scenes) && catalog.scenes.length >= 1, "expected sport scenes");
+  assert.ok(unique(ids(catalog.scenes)), "scene IDs must be unique");
+  assert.ok(unique(catalog.scenes.map((scene) => scene.slug)), "scene slugs must be unique");
+
+  catalog.scenes.forEach((scene) => {
+    assert.match(scene.id, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+    assert.match(scene.slug, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+    assert.equal(scene.route, `/sports/${scene.slug}`, `${scene.id} route must match its slug`);
+    assert.ok(scene.sport, `${scene.id} missing sport`);
+    assert.ok(scene.title, `${scene.id} missing title`);
+    assert.ok(scene.tagline, `${scene.id} missing tagline`);
+    assert.ok(
+      existsSync(new URL(`../${scene.guidePath}`, import.meta.url)),
+      `${scene.id} guidePath ${scene.guidePath} must exist`,
+    );
+    scene.catalogTags.forEach((tag) => assert.ok(sportTags.has(tag), `${scene.id} invalid catalog tag ${tag}`));
+    assert.ok(toolIds.has(scene.firstToolId), `${scene.id} firstToolId ${scene.firstToolId} must exist`);
+
+    assert.ok(scene.sections.length >= 1, `${scene.id} needs at least one scenario section`);
+    assert.ok(unique(ids(scene.sections)), `${scene.id} section IDs must be unique`);
+    scene.sections.forEach((section) => {
+      assert.match(section.id, /^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+      assert.ok(section.title, `${scene.id}/${section.id} missing title`);
+      assert.ok(section.problem, `${scene.id}/${section.id} missing problem`);
+      assert.ok(section.toolIds.length >= 1, `${scene.id}/${section.id} needs tools`);
+      [...section.toolIds, ...(section.crossDomainToolIds ?? [])].forEach((toolId) =>
+        assert.ok(toolIds.has(toolId), `${scene.id}/${section.id} references ${toolId}`),
+      );
+      assert.ok(section.starterBuild?.input, `${scene.id}/${section.id} starterBuild missing input`);
+      assert.ok(section.starterBuild?.output, `${scene.id}/${section.id} starterBuild missing output`);
+      assert.ok(
+        section.starterBuild?.prototypeDirection,
+        `${scene.id}/${section.id} starterBuild missing prototypeDirection`,
+      );
+    });
+
+    assert.ok(unique(ids(scene.gaps)), `${scene.id} gap IDs must be unique`);
+    scene.gaps.forEach((gap) => {
+      assert.ok(gap.title, `${scene.id}/${gap.id} missing title`);
+      assert.ok(gap.description, `${scene.id}/${gap.id} missing description`);
+    });
+  });
+});
+
 test("README follows the audit's catalog-first awesome-list structure", () => {
   const orderedSections = [
     "## Who This Is For",

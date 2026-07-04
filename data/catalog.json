@@ -759,5 +759,82 @@
       "goal": "Start from runnable prototypes and event kits when you want a compact demo that can be forked, explained, and shared.",
       "toolIds": ["llm-match-commentator", "wnba-gravity-mapper", "pickleball-court-mapper", "world-cup-2026-toolkit"]
     }
+  ],
+  "scenes": [
+    {
+      "id": "hyrox",
+      "slug": "hyrox",
+      "sport": "HYROX",
+      "route": "/sports/hyrox",
+      "title": "HYROX",
+      "tagline": "Functional fitness race with running segments and standardized workout stations — race operations, station-by-station performance analysis, and movement-standard enforcement, mapped to reusable sports AI resources.",
+      "guidePath": "docs/sports/hyrox.md",
+      "catalogTags": ["Multi-sport", "Running/Track"],
+      "firstToolId": "hyrox-gym-finder",
+      "liveAppUrl": "https://moose-lab.github.io/hyrox-gym-finder/",
+      "sections": [
+        {
+          "id": "event-operations",
+          "title": "Event Operations",
+          "titleZh": "赛事运营",
+          "problem": "A HYROX event needs heat management, athlete check-in, station flow, score updates, and venue communication without forcing volunteers to reconcile spreadsheets by hand.",
+          "toolIds": ["hyrox-gym-finder", "sportsengine-tourney", "ready2race", "sports-ai-hub"],
+          "crossDomainToolIds": ["competition-factory"],
+          "starterBuild": {
+            "input": "Event roster CSV, division rules, heat windows, station capacity, volunteer assignments.",
+            "output": "Heat schedule, station load forecast, conflict report, and operator checklist.",
+            "prototypeDirection": "hyrox-event-ops-planner"
+          }
+        },
+        {
+          "id": "station-split-analysis",
+          "title": "Station Split Analysis",
+          "titleZh": "站点分拆分析",
+          "problem": "Coaches and athletes need to know whether time loss came from running segments, transition flow, or a specific workout station.",
+          "toolIds": ["athlete-load-monitor", "coroebus", "acute-chronic-workload-ratio"],
+          "crossDomainToolIds": ["fastf1"],
+          "starterBuild": {
+            "input": "Athlete split table, station names, run-lap times, division baselines, optional heart-rate zones.",
+            "output": "Station-loss chart, run-vs-station profile, pacing consistency score, and coach notes.",
+            "prototypeDirection": "hyrox-station-split-analyzer"
+          }
+        },
+        {
+          "id": "movement-standard-verification",
+          "title": "Movement Standard Verification",
+          "titleZh": "动作标准验证",
+          "problem": "Standardized movements such as wall balls, sled pushes, burpee broad jumps, and lunges need consistent review without replacing human judges.",
+          "toolIds": ["openpose", "mmpose", "opencv", "model-card-toolkit"],
+          "crossDomainToolIds": ["roboflow-sports"],
+          "starterBuild": {
+            "input": "Athlete-owned station video, movement standard checklist, camera-angle notes.",
+            "output": "Annotated rep timeline, range-of-motion warnings, uncertainty notes, and judge-review export.",
+            "prototypeDirection": "hyrox-movement-standard-checker"
+          }
+        }
+      ],
+      "gaps": [
+        {
+          "id": "hyrox-heat-station-load-planner",
+          "title": "HYROX heat and station load planner",
+          "description": "Roster plus venue constraints -> heat plan and staffing risk report."
+        },
+        {
+          "id": "hyrox-split-parser",
+          "title": "HYROX split parser",
+          "description": "Exported result table -> run/station deltas, rank movement, and coach-ready notes."
+        },
+        {
+          "id": "hyrox-movement-standard-checker",
+          "title": "HYROX movement standard checker",
+          "description": "Athlete-owned station video -> annotated review timeline with explicit uncertainty."
+        },
+        {
+          "id": "hyrox-venue-readiness-checklist",
+          "title": "HYROX venue readiness checklist",
+          "description": "Station inventory plus floor plan -> setup gaps and volunteer task list."
+        }
+      ]
+    }
   ]
 }

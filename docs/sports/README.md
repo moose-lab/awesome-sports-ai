@@ -93,3 +93,4 @@ Sports AI Hub should treat this directory as the source for sport learning pages
 4. Preserve `*(Cross-domain)*` labels in the UI so readers can distinguish native tools from transferable patterns.
 5. Render `Gaps: Tools Yet to be Built` as prototype roadmap candidates that can link to `/prototypes` or GitHub issue templates.
 6. Do not require root `README.md` changes for a new sport to appear in the web app; the index table is the sync surface.
+7. For structured (non-markdown) consumption, `data/catalog.json` → `scenes` mirrors each guide's scenario sections, tool references, and gaps in JSON form; guides remain the narrative source of truth and the two must stay in sync (see CONTRIBUTING.md → Sport Scenes).
