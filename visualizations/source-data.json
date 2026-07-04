@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-07-03",
+  "generatedDate": "2026-07-04",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated July 3, 2026",
+    "updated": "Updated July 4, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -187,14 +187,14 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "86 matches are final, Argentina leads Cabo Verde 1-0 live, and 3 fixtures are scheduled next."
+      "detail": "86 matches are final, Argentina leads Cabo Verde 2-1 live, and 5 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
       "cadence": "Every 5 minutes during the tournament window",
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
-      "lastVerifiedAt": "2026-07-03",
+      "lastVerifiedAt": "2026-07-04",
       "status": "Live coverage active",
       "consumers": [
         "Sports AI Hub",
@@ -1236,7 +1236,7 @@
         "venue": "Hard Rock Stadium",
         "tag": "Round of 32",
         "status": "Live",
-        "score": "ARG 1 - CPV 0",
+        "score": "ARG 2 - CPV 1",
         "insight": "Live window"
       },
       {
@@ -1268,6 +1268,26 @@
         "status": "Scheduled",
         "score": "5 p.m. ET",
         "insight": "Philadelphia"
+      },
+      {
+        "date": "Jul 5",
+        "match": "Brazil v Norway",
+        "round": "Round of 16",
+        "venue": "MetLife Stadium",
+        "tag": "Round of 16",
+        "status": "Scheduled",
+        "score": "4 p.m. ET",
+        "insight": "East Rutherford"
+      },
+      {
+        "date": "Jul 5",
+        "match": "Mexico v England",
+        "round": "Round of 16",
+        "venue": "Estadio Banorte",
+        "tag": "Round of 16",
+        "status": "Scheduled",
+        "score": "8 p.m. ET",
+        "insight": "Mexico City"
       }
     ],
     "milestones": [
