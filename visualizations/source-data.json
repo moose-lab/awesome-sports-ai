@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "89 matches are final, Paraguay and France are tied 0-0 live, and 2 fixtures are scheduled next."
+      "detail": "90 matches are final, no match is live, and 2 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-07-04",
-      "status": "Live coverage active",
+      "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1265,9 +1265,9 @@
         "round": "Round of 16",
         "venue": "Lincoln Financial Field",
         "tag": "Round of 16",
-        "status": "Live",
-        "score": "PAR 0 - FRA 0",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "PAR 0 - FRA 1",
+        "insight": "Full time"
       },
       {
         "date": "Jul 5",
