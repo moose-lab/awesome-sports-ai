@@ -53,6 +53,16 @@ To catalog a new tool for an existing scene (for example HYROX):
 
 If a scene gap gets built, move it out of `gaps` and into the right section's `toolIds` in the same PR that adds the tool record.
 
+## Zone Badge for Listed Tools
+
+Tools listed in a sport zone (for example the [HYROX Zone](README.md#hyrox-zone)) can add a badge that links back to the zone, so their users can discover related tools:
+
+```markdown
+[![Listed in Awesome Sports AI](https://img.shields.io/badge/listed%20in-awesome--sports--ai-FFCE1F?labelColor=0F110E)](https://github.com/moose-lab/awesome-sports-ai#hyrox-zone)
+```
+
+The badge is always optional and never a listing requirement.
+
 ## Resource-Type Categories
 
 Choose one canonical category from `data/catalog.json`:
