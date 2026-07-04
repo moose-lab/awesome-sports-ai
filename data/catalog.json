@@ -771,7 +771,7 @@
       "guidePath": "docs/sports/hyrox.md",
       "catalogTags": ["Multi-sport", "Running/Track"],
       "firstToolId": "hyrox-gym-finder",
-      "liveAppUrl": "https://moose-lab.github.io/hyrox-gym-finder/",
+      "liveAppUrl": "https://hyrox-gym-finder.vercel.app/",
       "sections": [
         {
           "id": "event-operations",
@@ -833,6 +833,261 @@
           "id": "hyrox-venue-readiness-checklist",
           "title": "HYROX venue readiness checklist",
           "description": "Station inventory plus floor plan -> setup gaps and volunteer task list."
+        }
+      ],
+      "lanes": [
+        {
+          "id": "train",
+          "title": "Train",
+          "focus": "Between races — where athletes spend most of the year, and where search volume lives."
+        },
+        {
+          "id": "race",
+          "title": "Race",
+          "focus": "Race weekend — short window, high emotion, shareable outputs."
+        },
+        {
+          "id": "analyze",
+          "title": "Analyze",
+          "focus": "After the gun — the highest-traffic questions in the sport."
+        },
+        {
+          "id": "judge",
+          "title": "Judge",
+          "focus": "Movement standards — the sport's hardest, most defensible computer-vision problem."
+        },
+        {
+          "id": "operate",
+          "title": "Operate",
+          "focus": "Race ops — fewer users, bigger wins across a season of weekends."
+        },
+        {
+          "id": "find",
+          "title": "Find",
+          "focus": "Discovery — where new athletes enter the sport."
+        },
+        {
+          "id": "data",
+          "title": "Data",
+          "focus": "The substrate — everything above sits on it."
+        }
+      ],
+      "buildTargets": [
+        {
+          "id": "hyrox-pacing-calculator",
+          "lane": "train",
+          "description": "Target finish time -> per-run and per-station split plan, adjusted by division and runner-vs-strength bias.",
+          "personas": ["athlete"],
+          "effort": "weekend",
+          "status": "idea",
+          "keyword": "hyrox pacing calculator"
+        },
+        {
+          "id": "hyrox-workout-generator",
+          "lane": "train",
+          "description": "Constraint-aware session builder: compromised-running blocks, station EMOMs, race-week tapers.",
+          "personas": ["athlete", "coach"],
+          "effort": "sprint",
+          "status": "idea",
+          "keyword": "hyrox workout generator"
+        },
+        {
+          "id": "hyrox-sled-calculator",
+          "lane": "train",
+          "description": "Division sled loads normalized for floor surface and sled type, with community friction notes.",
+          "personas": ["athlete"],
+          "effort": "weekend",
+          "status": "idea",
+          "keyword": "hyrox sled weight"
+        },
+        {
+          "id": "hybrid-load-tracker",
+          "lane": "train",
+          "description": "Merges run volume and strength tonnage into one weekly readiness view; pairs with AthleteLoadMonitor and ACWR.",
+          "personas": ["coach"],
+          "effort": "sprint",
+          "status": "idea",
+          "keyword": "hybrid athlete training load"
+        },
+        {
+          "id": "erg-split-tables",
+          "lane": "train",
+          "description": "SkiErg and RowErg 1000 m pacing tables with damper and drag-factor presets, printable.",
+          "personas": ["athlete"],
+          "effort": "weekend",
+          "status": "idea",
+          "keyword": "skierg 1000m pace"
+        },
+        {
+          "id": "hyrox-race-checklist",
+          "lane": "race",
+          "description": "Gear, fueling, and warmup timeline generator that prints to one page.",
+          "personas": ["athlete"],
+          "effort": "weekend",
+          "status": "idea",
+          "keyword": "hyrox race day checklist"
+        },
+        {
+          "id": "hyrox-pace-band",
+          "lane": "race",
+          "description": "Printable wristband of target splits, generated from a pacing plan.",
+          "personas": ["athlete"],
+          "effort": "weekend",
+          "status": "idea",
+          "keyword": "hyrox pace band"
+        },
+        {
+          "id": "roxzone-transit-planner",
+          "lane": "race",
+          "description": "Venue map plus realistic roxzone transit budgets, so race plans survive contact with the floor.",
+          "personas": ["athlete", "operator"],
+          "effort": "sprint",
+          "status": "idea",
+          "keyword": "roxzone"
+        },
+        {
+          "id": "hyrox-split-parser",
+          "lane": "analyze",
+          "description": "Exported result table -> run/station deltas, rank movement, and coach-ready notes.",
+          "personas": ["coach", "athlete"],
+          "effort": "sprint",
+          "status": "gap",
+          "keyword": "hyrox results analysis"
+        },
+        {
+          "id": "hyrox-benchmarks",
+          "lane": "analyze",
+          "description": "Percentile tables by division, age group, and station from public results.",
+          "personas": ["athlete"],
+          "effort": "sprint",
+          "status": "idea",
+          "keyword": "hyrox average time"
+        },
+        {
+          "id": "hyrox-whatif",
+          "lane": "analyze",
+          "description": "Station improvement scenarios -> projected finish time and rank shift; a thin layer on the split parser.",
+          "personas": ["athlete", "coach"],
+          "effort": "weekend",
+          "status": "idea",
+          "keyword": "hyrox race simulator"
+        },
+        {
+          "id": "hyrox-season-dashboard",
+          "lane": "analyze",
+          "description": "Multi-race progress for one athlete: fitness trend, station deltas, PB tracker.",
+          "personas": ["athlete", "coach"],
+          "effort": "sprint",
+          "status": "idea",
+          "keyword": "hyrox progress tracker"
+        },
+        {
+          "id": "hyrox-movement-standard-checker",
+          "lane": "judge",
+          "description": "Athlete-owned station video -> annotated review timeline with explicit uncertainty.",
+          "personas": ["coach", "builder"],
+          "effort": "deep",
+          "status": "gap",
+          "keyword": "wall ball rep checker"
+        },
+        {
+          "id": "hyrox-rep-counter",
+          "lane": "judge",
+          "description": "Pose keypoints -> rep segmentation for wall balls, burpee broad jumps, and lunges.",
+          "personas": ["builder"],
+          "effort": "deep",
+          "status": "idea",
+          "keyword": "exercise rep counter"
+        },
+        {
+          "id": "no-rep-library",
+          "lane": "judge",
+          "description": "Annotated open clip set of common no-reps per station, for athlete education and judge onboarding.",
+          "personas": ["builder", "coach"],
+          "effort": "sprint",
+          "status": "idea",
+          "keyword": "hyrox movement standards"
+        },
+        {
+          "id": "hyrox-heat-station-load-planner",
+          "lane": "operate",
+          "description": "Roster plus venue constraints -> heat plan and staffing risk report.",
+          "personas": ["operator"],
+          "effort": "deep",
+          "status": "gap",
+          "keyword": "race heat scheduling"
+        },
+        {
+          "id": "hyrox-venue-readiness-checklist",
+          "lane": "operate",
+          "description": "Station inventory plus floor plan -> setup gaps and volunteer task list.",
+          "personas": ["operator"],
+          "effort": "weekend",
+          "status": "gap",
+          "keyword": "event venue checklist"
+        },
+        {
+          "id": "judge-shift-scheduler",
+          "lane": "operate",
+          "description": "Volunteer and judge rota builder with station rotation and break rules.",
+          "personas": ["operator"],
+          "effort": "sprint",
+          "status": "idea",
+          "keyword": "volunteer scheduling tool"
+        },
+        {
+          "id": "hyrox-gym-finder",
+          "lane": "find",
+          "description": "Finds HYROXCN certified gyms from coordinates, region keywords, browser location, or imported JSON exports.",
+          "personas": ["athlete"],
+          "effort": "weekend",
+          "status": "live",
+          "keyword": "hyrox gym near me"
+        },
+        {
+          "id": "hyrox-race-calendar",
+          "lane": "find",
+          "description": "Season calendar aggregator with registration-window alerts.",
+          "personas": ["athlete"],
+          "effort": "sprint",
+          "status": "idea",
+          "keyword": "hyrox 2026 schedule"
+        },
+        {
+          "id": "hyrox-partner-matcher",
+          "lane": "find",
+          "description": "Doubles and relay partner matching by target time, division, and city.",
+          "personas": ["athlete"],
+          "effort": "sprint",
+          "status": "idea",
+          "keyword": "hyrox doubles partner"
+        },
+        {
+          "id": "hyrox-results-schema",
+          "lane": "data",
+          "description": "Normalized JSON schema for results, stations, and divisions — the zone's data contract.",
+          "personas": ["builder"],
+          "effort": "weekend",
+          "status": "idea",
+          "keyword": "hyrox api"
+        },
+        {
+          "id": "hyrox-data-py",
+          "lane": "data",
+          "description": "Python client that parses public result pages into the schema; FastF1 is the role model.",
+          "personas": ["builder"],
+          "effort": "sprint",
+          "status": "idea",
+          "keyword": "hyrox results api"
+        },
+        {
+          "id": "station-video-benchmark",
+          "lane": "data",
+          "description": "Labeled station-clip dataset for pose and rep-counting models, with model cards.",
+          "personas": ["builder"],
+          "effort": "deep",
+          "status": "idea",
+          "keyword": "fitness video dataset"
         }
       ]
     }

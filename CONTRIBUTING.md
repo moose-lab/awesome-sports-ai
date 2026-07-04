@@ -53,6 +53,8 @@ To catalog a new tool for an existing scene (for example HYROX):
 
 If a scene gap gets built, move it out of `gaps` and into the right section's `toolIds` in the same PR that adds the tool record.
 
+The end-to-end zone contribution and listing flow (contributor and maintainer sides) is documented in [docs/hyrox-zone-workflow.md](docs/hyrox-zone-workflow.md).
+
 ## Zone Badge for Listed Tools
 
 Tools listed in a sport zone (for example the [HYROX Zone](README.md#hyrox-zone)) can add a badge that links back to the zone, so their users can discover related tools:
