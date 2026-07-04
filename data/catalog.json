@@ -302,6 +302,16 @@
       "openness": "open-source"
     },
     {
+      "id": "hyrox-split-parser",
+      "title": "hyrox-split-parser",
+      "url": "./prototypes/hyrox-split-parser/",
+      "description": "Parses exported HYROX result tables into run/station deltas, rank movement, and coach-ready notes.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["Running/Track", "Multi-sport"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
+      "openness": "open-source"
+    },
+    {
       "id": "balldontlie",
       "title": "balldontlie",
       "url": "https://www.balldontlie.io/",
@@ -791,12 +801,12 @@
           "title": "Station Split Analysis",
           "titleZh": "站点分拆分析",
           "problem": "Coaches and athletes need to know whether time loss came from running segments, transition flow, or a specific workout station.",
-          "toolIds": ["athlete-load-monitor", "coroebus", "acute-chronic-workload-ratio"],
+          "toolIds": ["hyrox-split-parser", "athlete-load-monitor", "coroebus", "acute-chronic-workload-ratio"],
           "crossDomainToolIds": ["fastf1"],
           "starterBuild": {
             "input": "Athlete split table, station names, run-lap times, division baselines, optional heart-rate zones.",
             "output": "Station-loss chart, run-vs-station profile, pacing consistency score, and coach notes.",
-            "prototypeDirection": "hyrox-station-split-analyzer"
+            "prototypeDirection": "hyrox-split-parser"
           }
         },
         {
@@ -818,11 +828,6 @@
           "id": "hyrox-heat-station-load-planner",
           "title": "HYROX heat and station load planner",
           "description": "Roster plus venue constraints -> heat plan and staffing risk report."
-        },
-        {
-          "id": "hyrox-split-parser",
-          "title": "HYROX split parser",
-          "description": "Exported result table -> run/station deltas, rank movement, and coach-ready notes."
         },
         {
           "id": "hyrox-movement-standard-checker",
@@ -951,7 +956,7 @@
           "description": "Exported result table -> run/station deltas, rank movement, and coach-ready notes.",
           "personas": ["coach", "athlete"],
           "effort": "sprint",
-          "status": "gap",
+          "status": "live",
           "keyword": "hyrox results analysis"
         },
         {
