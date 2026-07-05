@@ -16,7 +16,6 @@ body:
       label: Which gap are you claiming?
       description: Pick a catalog gap, or choose the last option for another idea from the zone tool map.
       options:
-        - hyrox-split-parser
         - hyrox-movement-standard-checker
         - hyrox-heat-station-load-planner
         - hyrox-venue-readiness-checklist

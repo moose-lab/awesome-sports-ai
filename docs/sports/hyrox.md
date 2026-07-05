@@ -11,6 +11,7 @@ HYROX combines mass-participation race operations, station-by-station performanc
 | Primary readers | Race operators, functional-fitness coaches, venue builders, computer-vision prototype builders |
 | Catalog tags to inspect | Multi-sport, Running/Track, operations, tracking, computer-vision, training-load |
 | Sports AI Hub route hint | `/sports/hyrox` |
+| Zone blueprint | <https://sports-ai-hub.pages.dev/hyrox/blueprint/> |
 
 ## First Tool Template: Nearby Certified Gym Finder
 
