@@ -2,6 +2,18 @@
 
 Thanks for helping improve Awesome Sports AI. This repository is meant to be a practical, high-signal directory for people building sports AI tools, so every contribution should make the list easier to search, understand, and reuse.
 
+## Three Ways In
+
+Pick the path that fits your time budget:
+
+| Time | Path | Start here |
+|------|------|------------|
+| 2 minutes | Suggest a tool — fill a form, no repo editing. A maintainer normalizes the metadata and lands the listing PR for you. | [Submit a Tool](https://github.com/moose-lab/awesome-sports-ai/issues/new?template=submit-tool.yml) |
+| 15–30 minutes | List a tool yourself with a direct PR — one README line plus one catalog record. | [Catalog Source of Truth](#catalog-source-of-truth), then the [Pull Request Checklist](#pull-request-checklist) |
+| A weekend and up | Claim an open HYROX gap, build the tool in your own repo, and get it listed. | [Claim a HYROX Gap](https://github.com/moose-lab/awesome-sports-ai/issues/new?template=claim-hyrox-gap.yml), then the [zone workflow](docs/hyrox-zone-workflow.md) |
+
+Not sure yet? Pick a [`good first issue`](https://github.com/moose-lab/awesome-sports-ai/contribute).
+
 ## What Belongs Here
 
 Add tools, apps, open-source projects, datasets, APIs, developer libraries, AI models, research benchmarks, event toolkits, or learning collections that are directly useful for sports builders, analysts, coaches, operators, creators, or researchers.
@@ -33,13 +45,16 @@ For early sport-scene tools, keep the contribution route small. A good first con
 
 ## Catalog Source of Truth
 
-[`data/catalog.json`](data/catalog.json) is the canonical catalog. Every README entry should have a matching catalog tool record and exactly one hidden marker in README:
+[`data/catalog.json`](data/catalog.json) is the canonical catalog. Every listed tool lives in two places, added in the same PR:
+
+1. A tool record in `data/catalog.json` under `tools[]`, with a lowercase kebab-case `id` (for example `statsbomb-open-data`), `title`, `url`, a one-sentence `description`, one `categoryId`, sport tags, AI capability ids, and an openness label.
+2. A README entry in the matching Catalog category, using the compact format:
 
 ```markdown
-- <!-- catalog:tool-id --> [Tool Name](https://example.com) - Clear one-sentence description. _Sports: Basketball. AI: Data ingestion. Access: open-api._
+- **[Tool Name](https://example.com)** - Clear one-sentence description. *(Sports: Basketball; AI: data-ingestion)*
 ```
 
-Use lowercase kebab-case IDs, for example `statsbomb-open-data` or `llm-match-commentator`.
+The description ends with a period, and the `*(Sports: …; AI: …)*` block is required. `scripts/catalog.test.mjs` fails CI if a catalog tool is missing from the README or an entry drifts from this format. The openness label lives only in the catalog record, not in the README line.
 
 ## Sport Scenes
 
@@ -128,7 +143,7 @@ A good entry should:
 Good:
 
 ```markdown
-- <!-- catalog:example-sports-api --> [Example Sports API](https://example.com) - Provides fixtures, scores, and team statistics for sports applications. _Sports: Multi-sport. AI: Data ingestion. Access: open-api._
+- **[Example Sports API](https://example.com)** - Provides fixtures, scores, and team statistics for sports applications. *(Sports: Multi-sport; AI: data-ingestion)*
 ```
 
 Needs work:
@@ -145,16 +160,18 @@ Before opening a pull request, confirm that:
 - The entry is not already listed.
 - The description is neutral and concise.
 - The entry has one canonical resource-type category.
-- The entry includes sport tags, AI capability tags, and an openness label.
-- The README entry includes exactly one `<!-- catalog:... -->` marker.
-- `data/catalog.json` includes the matching tool record.
+- The entry includes sport tags, AI capability tags, and an openness label (openness lives in the catalog record).
+- The README entry uses the compact format: `- **[Name](url)** - Description. *(Sports: …; AI: …)*`.
+- `data/catalog.json` includes the matching tool record with the same title, URL, and description.
 - Builder recipes reference existing catalog `toolIds` if changed.
 - Markdown renders cleanly.
-- `node --test scripts/*.test.mjs` passes.
+- `node --test scripts/*.test.mjs` passes (Node 20+; CI runs Node 22).
 
 ## Review Process
 
 Maintainers may edit wording, move entries between categories, ask for more context, or decline entries that do not fit the scope. A declined entry is not a judgment on the tool; it usually means the list needs to stay focused and easy to trust.
+
+If `main` moves while your PR is open, maintainers rebase it or help you rebase — a good-faith PR is never closed just because the repository changed underneath it.
 
 ## Code of Conduct
 
