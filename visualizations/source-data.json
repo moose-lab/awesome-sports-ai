@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-07-04",
+  "generatedDate": "2026-07-05",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated July 4, 2026",
+    "updated": "Updated July 5, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -187,14 +187,14 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "90 matches are final, no match is live, and 2 fixtures are scheduled next."
+      "detail": "90 matches are final, no match is live, and 4 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
       "cadence": "Every 5 minutes during the tournament window",
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
-      "lastVerifiedAt": "2026-07-04",
+      "lastVerifiedAt": "2026-07-05",
       "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
@@ -1288,6 +1288,26 @@
         "status": "Scheduled",
         "score": "8 p.m. ET",
         "insight": "Mexico City"
+      },
+      {
+        "date": "Jul 6",
+        "match": "Portugal v Spain",
+        "round": "Round of 16",
+        "venue": "AT&T Stadium",
+        "tag": "Round of 16",
+        "status": "Scheduled",
+        "score": "3 p.m. ET",
+        "insight": "Arlington"
+      },
+      {
+        "date": "Jul 6",
+        "match": "United States v Belgium",
+        "round": "Round of 16",
+        "venue": "Lumen Field",
+        "tag": "Round of 16",
+        "status": "Scheduled",
+        "score": "8 p.m. ET",
+        "insight": "Seattle"
       }
     ],
     "milestones": [
