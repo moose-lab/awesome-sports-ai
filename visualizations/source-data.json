@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "90 matches are final, Brazil and Norway are tied 0-0 live, and 3 fixtures are scheduled next."
+      "detail": "91 matches are final, no match is live, and 3 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-07-05",
-      "status": "Live coverage active",
+      "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1275,9 +1275,9 @@
         "round": "Round of 16",
         "venue": "MetLife Stadium",
         "tag": "Round of 16",
-        "status": "Live",
-        "score": "BRA 0 - NOR 0",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "BRA 1 - NOR 2",
+        "insight": "Full time"
       },
       {
         "date": "Jul 5",
