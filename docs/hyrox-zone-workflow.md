@@ -44,6 +44,11 @@ Before merging a listing PR, confirm:
 3. **Runnable** — a developer can start it from its README within minutes; the zone's trust comes from live, runnable entries.
 4. **Tests green** — the CI suite guards catalog/README consistency, id integrity, and section order.
 
+Two standing norms for external PRs:
+
+- **Rebase, don't bounce.** If `main` moves while a PR is open, rebase it, merge `main` into it, or push the fix to the contributor's branch — never close a good-faith PR and ask the author to resubmit. We closed [PR #10](https://github.com/moose-lab/awesome-sports-ai/pull/10) instead of rebasing it and lost the contributor; this norm exists so that never happens again.
+- **First response within 48 hours**, even if it is only "seen, reviewing this weekend." External contributors judge the repo by their first PR experience.
+
 ## After the Merge (same day — concentrated launch window)
 
 1. **Offer the badge.** Invite the tool's author to add the zone badge (snippet in CONTRIBUTING) — always optional, never a listing requirement. This is the flywheel's return path.

@@ -230,6 +230,8 @@ Already built something HYROX-adjacent? Use the [Submit a Tool](https://github.c
 
 **[Start contributing](CONTRIBUTING.md)** or pick a [`good first issue`](https://github.com/moose-lab/awesome-sports-ai/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22).
 
+Three ways in, by time budget: suggest a tool with the [Submit a Tool form](https://github.com/moose-lab/awesome-sports-ai/issues/new?template=submit-tool.yml) (2 minutes, no repo editing), open a listing PR yourself ([entry format](CONTRIBUTING.md#catalog-source-of-truth), 15–30 minutes), or [claim an open HYROX gap](https://github.com/moose-lab/awesome-sports-ai/issues/new?template=claim-hyrox-gap.yml) and build it over a weekend.
+
 Good contributions either sharpen the catalog, make a prototype easier to run, or turn a professional sports AI workflow into a smaller open-source tool that another developer can ship.
 
 ## License

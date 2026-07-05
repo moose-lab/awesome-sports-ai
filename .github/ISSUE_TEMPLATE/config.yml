@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Sports AI Hub (web app)
+    url: https://sports-ai-hub.pages.dev/
+    about: Browse the catalog, prototypes, and sport zones without cloning the repo.
+  - name: HYROX Zone blueprint
+    url: https://sports-ai-hub.pages.dev/hyrox/blueprint/
+    about: The zone map, funnel, and open build targets — check which gaps are free before claiming one.
+  - name: Contribution workflow (end to end)
+    url: https://github.com/moose-lab/awesome-sports-ai/blob/main/docs/hyrox-zone-workflow.md
+    about: How listings and gap claims flow from issue to merged PR, on both the contributor and maintainer side.
