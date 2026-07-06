@@ -302,6 +302,16 @@
       "openness": "open-source"
     },
     {
+      "id": "hyrox-training-plan-skill",
+      "title": "HYROX Training Plan Skill",
+      "url": "https://github.com/moose-lab/hyrox-training-plan-skill",
+      "description": "Generates science-based HYROX training plans for coding agents with periodization references and validation scripts.",
+      "categoryId": "open-source-projects",
+      "sportTags": ["Running/Track", "Multi-sport"],
+      "aiCapabilities": ["llm-nlp", "training-load"],
+      "openness": "open-source"
+    },
+    {
       "id": "hyrox-split-parser",
       "title": "hyrox-split-parser",
       "url": "./prototypes/hyrox-split-parser/",
@@ -797,6 +807,23 @@
           }
         },
         {
+          "id": "training-plan-generation",
+          "title": "Training Plan Generation",
+          "titleZh": "训练计划生成",
+          "problem": "Coaches and athletes need science-based HYROX programming that balances running volume, station work, periodization, and race-division standards instead of generic fitness plans.",
+          "toolIds": [
+            "hyrox-training-plan-skill",
+            "athlete-load-monitor",
+            "coroebus",
+            "acute-chronic-workload-ratio"
+          ],
+          "starterBuild": {
+            "input": "Athlete division, race date, fitness level, weekly availability, and equipment access.",
+            "output": "Periodized daily HYROX plan with aerobic-volume guardrails, race-weight progression, and validation notes.",
+            "prototypeDirection": "hyrox-training-plan-skill"
+          }
+        },
+        {
           "id": "station-split-analysis",
           "title": "Station Split Analysis",
           "titleZh": "站点分拆分析",
@@ -895,6 +922,15 @@
           "effort": "sprint",
           "status": "idea",
           "keyword": "hyrox workout generator"
+        },
+        {
+          "id": "hyrox-training-plan-skill",
+          "lane": "train",
+          "description": "Coding-agent skill that turns athlete constraints into periodized daily HYROX plans, backed by reference files and a validator.",
+          "personas": ["athlete", "coach", "builder"],
+          "effort": "sprint",
+          "status": "live",
+          "keyword": "hyrox training plan github"
         },
         {
           "id": "hyrox-sled-calculator",

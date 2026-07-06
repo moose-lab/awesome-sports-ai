@@ -23,7 +23,7 @@ Starter build:
 - Output: ranked certified gym list, distance summary, booking/fitness-test flags, and a lightweight map visualization.
 - Prototype direction: keep this as a single-page static tool with no required backend, so contributors can fork it and add one small workflow at a time.
 
-## Tool Opportunity Map (7 Lanes, 24 Build Targets)
+## Tool Opportunity Map (7 Lanes, 25 Build Targets)
 
 The sport decomposed along the athlete's year. Every target is one small tool, one owner, and one search phrase it can own. The machine-readable mirror lives in `data/catalog.json` under `scenes[].buildTargets`.
 
@@ -35,6 +35,7 @@ Legend: **live** = shipped and listed. **gap** = specced in the catalog — clai
 
 - `hyrox-pacing-calculator` - Target finish time -> per-run and per-station split plan, adjusted by division and runner-vs-strength bias. *(athlete / weekend / idea / owns: "hyrox pacing calculator")*
 - `hyrox-workout-generator` - Constraint-aware session builder: compromised-running blocks, station EMOMs, race-week tapers. *(athlete, coach / sprint / idea / owns: "hyrox workout generator")*
+- `hyrox-training-plan-skill` - Coding-agent skill that turns athlete constraints into periodized daily HYROX plans, backed by reference files and a validator. *(athlete, coach, builder / sprint / **live** / owns: "hyrox training plan github")*
 - `hyrox-sled-calculator` - Division sled loads normalized for floor surface and sled type, with community friction notes. *(athlete / weekend / idea / owns: "hyrox sled weight")*
 - `hybrid-load-tracker` - Merges run volume and strength tonnage into one weekly readiness view; pairs with AthleteLoadMonitor and ACWR. *(coach / sprint / idea / owns: "hybrid athlete training load")*
 - `erg-split-tables` - SkiErg and RowErg 1000 m pacing tables with damper and drag-factor presets, printable. *(athlete / weekend / idea / owns: "skierg 1000m pace")*
@@ -105,6 +106,23 @@ Starter build:
 - Input: event roster CSV, division rules, heat windows, station capacity, volunteer assignments.
 - Output: heat schedule, station load forecast, conflict report, and operator checklist.
 - Prototype direction: `hyrox-event-ops-planner` in `/prototypes`.
+
+## Training Plan Generation (训练计划生成)
+
+The problem: coaches and athletes need a plan generator that treats HYROX as a running-focused hybrid endurance race, not generic high-intensity fitness programming.
+
+Useful catalog resources:
+
+- [HYROX Training Plan Skill](https://github.com/moose-lab/hyrox-training-plan-skill) for coding-agent plans built from periodization references, race standards, session catalogs, and validation scripts.
+- [AthleteLoadMonitor](https://github.com/SaxionAMI/AthleteLoadMonitor) for training-load and readiness patterns.
+- [Coroebus](https://github.com/prakashsellathurai/Coroebus) for athlete fitness, fatigue, and readiness tracking.
+- [Acute_Chronic_Workload_Ratio](https://github.com/ale-uy/Acute_Chronic_Workload_Ratio) for simple load-ratio baselines.
+
+Starter build:
+
+- Input: athlete division, race date, current fitness level, weekly availability, equipment access, and output format.
+- Output: periodized daily plan with aerobic-volume guardrails, hard-session spacing, race-weight progression, and validation notes.
+- Prototype direction: [HYROX Training Plan Skill](https://github.com/moose-lab/hyrox-training-plan-skill) — shipped as a coding-agent skill repo.
 
 ## Station Split Analysis (站点分拆分析)
 
