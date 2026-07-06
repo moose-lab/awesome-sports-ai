@@ -33,6 +33,7 @@ const guideContracts = [
     route: "/sports/hyrox",
     scenarios: [
       "Event Operations (赛事运营)",
+      "Training Plan Generation (训练计划生成)",
       "Station Split Analysis (站点分拆分析)",
       "Movement Standard Verification (动作标准验证)",
     ],

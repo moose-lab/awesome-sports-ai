@@ -115,6 +115,29 @@ test("catalog entries use valid IDs, enums, and required fields", () => {
   });
 });
 
+test("HYROX training-plan skill is discoverable as a live Train-lane tool", () => {
+  const tool = catalog.tools.find((item) => item.id === "hyrox-training-plan-skill");
+  assert.ok(tool, "HYROX training-plan skill must be listed");
+  assert.equal(tool.title, "HYROX Training Plan Skill");
+  assert.equal(tool.url, "https://github.com/moose-lab/hyrox-training-plan-skill");
+  assert.equal(tool.categoryId, "open-source-projects");
+  assert.deepEqual(tool.sportTags, ["Running/Track", "Multi-sport"]);
+  assert.deepEqual(tool.aiCapabilities, ["llm-nlp", "training-load"]);
+  assert.equal(tool.openness, "open-source");
+
+  const hyroxScene = catalog.scenes.find((scene) => scene.slug === "hyrox");
+  assert.ok(hyroxScene, "HYROX scene must exist");
+  const trainingSection = hyroxScene.sections.find((section) => section.id === "training-plan-generation");
+  assert.ok(trainingSection, "HYROX scene must include a training-plan generation section");
+  assert.ok(trainingSection.toolIds.includes("hyrox-training-plan-skill"));
+
+  const trainTarget = hyroxScene.buildTargets.find((target) => target.id === "hyrox-training-plan-skill");
+  assert.ok(trainTarget, "HYROX Train lane must expose the skill as a build target");
+  assert.equal(trainTarget.lane, "train");
+  assert.equal(trainTarget.status, "live");
+  assert.match(trainTarget.keyword, /hyrox training plan/i);
+});
+
 test("builder recipes reference catalog tools", () => {
   const toolIds = new Set(ids(catalog.tools));
   const recipeIds = ids(catalog.recipes);
