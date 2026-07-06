@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-07-05",
+  "generatedDate": "2026-07-06",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated July 5, 2026",
+    "updated": "Updated July 6, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -187,15 +187,15 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "91 matches are final, no match is live, and 3 fixtures are scheduled next."
+      "detail": "91 matches are final, Mexico and England are tied 0-0 live, and 4 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
       "cadence": "Every 5 minutes during the tournament window",
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
-      "lastVerifiedAt": "2026-07-05",
-      "status": "Pre-match coverage queued",
+      "lastVerifiedAt": "2026-07-06",
+      "status": "Live coverage active",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1285,9 +1285,9 @@
         "round": "Round of 16",
         "venue": "Estadio Banorte",
         "tag": "Round of 16",
-        "status": "Scheduled",
-        "score": "9 p.m. ET",
-        "insight": "Mexico City"
+        "status": "Live",
+        "score": "MEX 0 - ENG 0",
+        "insight": "Live window"
       },
       {
         "date": "Jul 6",
@@ -1308,6 +1308,26 @@
         "status": "Scheduled",
         "score": "8 p.m. ET",
         "insight": "Seattle"
+      },
+      {
+        "date": "Jul 7",
+        "match": "Argentina v Egypt",
+        "round": "Round of 16",
+        "venue": "Mercedes-Benz Stadium",
+        "tag": "Round of 16",
+        "status": "Scheduled",
+        "score": "12 p.m. ET",
+        "insight": "Atlanta"
+      },
+      {
+        "date": "Jul 7",
+        "match": "Switzerland v Colombia",
+        "round": "Round of 16",
+        "venue": "BC Place",
+        "tag": "Round of 16",
+        "status": "Scheduled",
+        "score": "4 p.m. ET",
+        "insight": "Vancouver"
       }
     ],
     "milestones": [
