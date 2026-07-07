@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "94 matches are final, Egypt leads Argentina 2-0 live, and one fixture is scheduled next."
+      "detail": "95 matches are final, no match is live, and one fixture is scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-07-07",
-      "status": "Live coverage active",
+      "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1315,9 +1315,9 @@
         "round": "Round of 16",
         "venue": "Mercedes-Benz Stadium",
         "tag": "Round of 16",
-        "status": "Live",
-        "score": "ARG 0 - EGY 2",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "ARG 3 - EGY 2",
+        "insight": "Full time"
       },
       {
         "date": "Jul 7",
