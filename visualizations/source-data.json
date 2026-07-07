@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "95 matches are final, Switzerland and Colombia are tied 0-0 live, and no fixtures are scheduled next."
+      "detail": "96 matches are final, no match is live, and no fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-07-07",
-      "status": "Live coverage active",
+      "status": "Post-match snapshot",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1325,9 +1325,9 @@
         "round": "Round of 16",
         "venue": "BC Place",
         "tag": "Round of 16",
-        "status": "Live",
+        "status": "Final",
         "score": "SUI 0 - COL 0",
-        "insight": "Live window"
+        "insight": "Full time"
       }
     ],
     "milestones": [
