@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-07-06",
+  "generatedDate": "2026-07-07",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated July 6, 2026",
+    "updated": "Updated July 7, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -187,15 +187,15 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "93 matches are final, no match is live, and 3 fixtures are scheduled next."
+      "detail": "93 matches are final, Belgium leads United States 3-1 live, and 2 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
       "cadence": "Every 5 minutes during the tournament window",
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
-      "lastVerifiedAt": "2026-07-06",
-      "status": "Pre-match coverage queued",
+      "lastVerifiedAt": "2026-07-07",
+      "status": "Live coverage active",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1305,9 +1305,9 @@
         "round": "Round of 16",
         "venue": "Lumen Field",
         "tag": "Round of 16",
-        "status": "Scheduled",
-        "score": "8 p.m. ET",
-        "insight": "Seattle"
+        "status": "Live",
+        "score": "USA 1 - BEL 3",
+        "insight": "Live window"
       },
       {
         "date": "Jul 7",
