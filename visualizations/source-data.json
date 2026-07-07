@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "93 matches are final, Belgium leads United States 3-1 live, and 2 fixtures are scheduled next."
+      "detail": "94 matches are final, no match is live, and 2 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-07-07",
-      "status": "Live coverage active",
+      "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1305,9 +1305,9 @@
         "round": "Round of 16",
         "venue": "Lumen Field",
         "tag": "Round of 16",
-        "status": "Live",
-        "score": "USA 1 - BEL 3",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "USA 1 - BEL 4",
+        "insight": "Full time"
       },
       {
         "date": "Jul 7",
