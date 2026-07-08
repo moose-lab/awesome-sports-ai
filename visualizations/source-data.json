@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-07-07",
+  "generatedDate": "2026-07-08",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated July 7, 2026",
+    "updated": "Updated July 8, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -187,15 +187,15 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "96 matches are final, no match is live, and no fixtures are scheduled next."
+      "detail": "96 matches are final, no match is live, and one fixture is scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
       "cadence": "Every 5 minutes during the tournament window",
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
-      "lastVerifiedAt": "2026-07-07",
-      "status": "Post-match snapshot",
+      "lastVerifiedAt": "2026-07-08",
+      "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1328,6 +1328,16 @@
         "status": "Final",
         "score": "SUI 0 - COL 0",
         "insight": "Full time"
+      },
+      {
+        "date": "Jul 9",
+        "match": "France v Morocco",
+        "round": "Quarterfinals",
+        "venue": "Gillette Stadium",
+        "tag": "Quarterfinals",
+        "status": "Scheduled",
+        "score": "4 p.m. ET",
+        "insight": "Foxborough"
       }
     ],
     "milestones": [
