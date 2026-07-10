@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "97 matches are final, no match is live, and 3 fixtures are scheduled next."
+      "detail": "97 matches are final, Spain and Belgium are tied 0-0 live, and 2 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-07-10",
-      "status": "Pre-match coverage queued",
+      "status": "Live coverage active",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1345,9 +1345,9 @@
         "round": "Quarterfinals",
         "venue": "SoFi Stadium",
         "tag": "Quarterfinals",
-        "status": "Scheduled",
-        "score": "3 p.m. ET",
-        "insight": "Inglewood"
+        "status": "Live",
+        "score": "ESP 0 - BEL 0",
+        "insight": "Live window"
       },
       {
         "date": "Jul 11",
