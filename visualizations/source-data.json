@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-07-09",
+  "generatedDate": "2026-07-10",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated July 9, 2026",
+    "updated": "Updated July 10, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -187,14 +187,14 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "97 matches are final, no match is live, and one fixture is scheduled next."
+      "detail": "97 matches are final, no match is live, and 3 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
       "cadence": "Every 5 minutes during the tournament window",
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
-      "lastVerifiedAt": "2026-07-09",
+      "lastVerifiedAt": "2026-07-10",
       "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
@@ -1348,6 +1348,26 @@
         "status": "Scheduled",
         "score": "3 p.m. ET",
         "insight": "Inglewood"
+      },
+      {
+        "date": "Jul 11",
+        "match": "Norway v England",
+        "round": "Quarterfinals",
+        "venue": "Hard Rock Stadium",
+        "tag": "Quarterfinals",
+        "status": "Scheduled",
+        "score": "5 p.m. ET",
+        "insight": "Miami Gardens"
+      },
+      {
+        "date": "Jul 11",
+        "match": "Argentina v Switzerland",
+        "round": "Quarterfinals",
+        "venue": "GEHA Field at Arrowhead Stadium",
+        "tag": "Quarterfinals",
+        "status": "Scheduled",
+        "score": "9 p.m. ET",
+        "insight": "Kansas City"
       }
     ],
     "milestones": [
