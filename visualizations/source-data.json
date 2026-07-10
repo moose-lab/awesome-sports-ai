@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "97 matches are final, Spain and Belgium are tied 0-0 live, and 2 fixtures are scheduled next."
+      "detail": "97 matches are final, Spain and Belgium are tied 1-1 live, and 2 fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -1346,7 +1346,7 @@
         "venue": "SoFi Stadium",
         "tag": "Quarterfinals",
         "status": "Live",
-        "score": "ESP 0 - BEL 0",
+        "score": "ESP 1 - BEL 1",
         "insight": "Live window"
       },
       {
