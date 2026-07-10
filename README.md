@@ -142,6 +142,7 @@ Open-source projects, open datasets, open APIs, reproducible research, and free 
 - **[OpenAI Whisper](https://github.com/openai/whisper)** - Transcribes commentary, interviews, and review audio for sports media workflows. *(Sports: Multi-sport; AI: llm-nlp, media-generation)*
 - **[OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)** - Detects real-time multi-person body, hand, face, and foot keypoints. *(Sports: Multi-sport; AI: computer-vision, tracking)*
 - **[Roboflow Sports](https://github.com/roboflow/sports)** - Provides reusable sports computer-vision workflows for player and ball tracking, team classification, and pitch-view projection. *(Sports: Multi-sport; AI: computer-vision, tracking)*
+  - [Watch the 43-second product explainer (Mandarin narration and Chinese captions)](docs/media/roboflow-sports-explainer/roboflow-sports-explainer-zh.mp4).
 - **[soccer_xg](https://github.com/ML-KULeuven/soccer_xg)** - Trains and analyzes expected-goals models for soccer. *(Sports: Soccer; AI: analytics-modeling)*
 - **[sports-betting](https://github.com/georgedouzas/sports-betting)** - Collects sports betting AI tools and prediction experiments. *(Sports: Multi-sport; AI: analytics-modeling)*
 
