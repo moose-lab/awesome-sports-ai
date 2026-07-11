@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-07-10",
+  "generatedDate": "2026-07-11",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated July 10, 2026",
+    "updated": "Updated July 11, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -194,7 +194,7 @@
       "cadence": "Every 5 minutes during the tournament window",
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
-      "lastVerifiedAt": "2026-07-10",
+      "lastVerifiedAt": "2026-07-11",
       "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
