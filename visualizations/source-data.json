@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "98 matches are final, Norway and England are tied 0-0 live, and one fixture is scheduled next."
+      "detail": "98 matches are final, Norway and England are tied 1-1 live, and one fixture is scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -1356,7 +1356,7 @@
         "venue": "Hard Rock Stadium",
         "tag": "Quarterfinals",
         "status": "Live",
-        "score": "NOR 0 - ENG 0",
+        "score": "NOR 1 - ENG 1",
         "insight": "Live window"
       },
       {
