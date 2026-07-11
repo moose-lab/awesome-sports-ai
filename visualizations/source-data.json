@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "98 matches are final, no match is live, and 2 fixtures are scheduled next."
+      "detail": "98 matches are final, Norway and England are tied 0-0 live, and one fixture is scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-07-11",
-      "status": "Pre-match coverage queued",
+      "status": "Live coverage active",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1355,9 +1355,9 @@
         "round": "Quarterfinals",
         "venue": "Hard Rock Stadium",
         "tag": "Quarterfinals",
-        "status": "Scheduled",
-        "score": "5 p.m. ET",
-        "insight": "Miami Gardens"
+        "status": "Live",
+        "score": "NOR 0 - ENG 0",
+        "insight": "Live window"
       },
       {
         "date": "Jul 11",
