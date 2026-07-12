@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "99 matches are final, Argentina and Switzerland are tied 0-0 live, and no fixtures are scheduled next."
+      "detail": "100 matches are final, no match is live, and no fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-07-12",
-      "status": "Live coverage active",
+      "status": "Post-match snapshot",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1365,9 +1365,9 @@
         "round": "Quarterfinals",
         "venue": "GEHA Field at Arrowhead Stadium",
         "tag": "Quarterfinals",
-        "status": "Live",
-        "score": "ARG 0 - SUI 0",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "ARG 3 - SUI 1",
+        "insight": "Full time"
       }
     ],
     "milestones": [
