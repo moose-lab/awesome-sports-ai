@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "100 matches are final, no match is live, and 2 fixtures are scheduled next."
+      "detail": "100 matches are final, Spain leads France 1-0 live, and one fixture is scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-07-14",
-      "status": "Pre-match coverage queued",
+      "status": "Live coverage active",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1375,9 +1375,9 @@
         "round": "Semifinals",
         "venue": "AT&T Stadium",
         "tag": "Semifinals",
-        "status": "Scheduled",
-        "score": "3 p.m. ET",
-        "insight": "Arlington"
+        "status": "Live",
+        "score": "FRA 0 - ESP 1",
+        "insight": "Live window"
       },
       {
         "date": "Jul 15",
