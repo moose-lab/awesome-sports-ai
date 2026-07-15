@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "101 matches are final, England and Argentina are tied 0-0 live, and no fixtures are scheduled next."
+      "detail": "102 matches are final, no match is live, and no fixtures are scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -195,7 +195,7 @@
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
       "lastVerifiedAt": "2026-07-15",
-      "status": "Live coverage active",
+      "status": "Post-match snapshot",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1385,9 +1385,9 @@
         "round": "Semifinals",
         "venue": "Mercedes-Benz Stadium",
         "tag": "Semifinals",
-        "status": "Live",
-        "score": "ENG 0 - ARG 0",
-        "insight": "Live window"
+        "status": "Final",
+        "score": "ENG 1 - ARG 2",
+        "insight": "Full time"
       }
     ],
     "milestones": [
