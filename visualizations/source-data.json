@@ -1,5 +1,5 @@
 {
-  "generatedDate": "2026-07-16",
+  "generatedDate": "2026-07-17",
   "nbaFinals": {
     "title": "NBA Finals 2026: Knicks Champions",
     "subtitle": "New York Knicks vs San Antonio Spurs",
@@ -141,7 +141,7 @@
   "fifaWorldCup": {
     "title": "FIFA World Cup 2026",
     "subtitle": "Canada, Mexico, United States",
-    "updated": "Updated July 16, 2026",
+    "updated": "Updated July 17, 2026",
     "links": [
       {
         "label": "FIFA match schedule",
@@ -187,15 +187,15 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "102 matches are final, no match is live, and no fixtures are scheduled next."
+      "detail": "102 matches are final, no match is live, and one fixture is scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
       "cadence": "Every 5 minutes during the tournament window",
       "currentWindow": "Round of 32 to Final",
       "source": "ESPN FIFA World Cup scoreboard API",
-      "lastVerifiedAt": "2026-07-16",
-      "status": "Post-match snapshot",
+      "lastVerifiedAt": "2026-07-17",
+      "status": "Pre-match coverage queued",
       "consumers": [
         "Sports AI Hub",
         "Knockout tool map",
@@ -1388,6 +1388,16 @@
         "status": "Final",
         "score": "ENG 1 - ARG 2",
         "insight": "Full time"
+      },
+      {
+        "date": "Jul 18",
+        "match": "France v England",
+        "round": "Opening phase",
+        "venue": "Hard Rock Stadium",
+        "tag": "Opening phase",
+        "status": "Scheduled",
+        "score": "5 p.m. ET",
+        "insight": "Miami Gardens"
       }
     ],
     "milestones": [
