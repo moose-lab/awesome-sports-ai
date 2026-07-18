@@ -187,7 +187,7 @@
     "fixtureSummary": {
       "label": "Knockout-stage tool contract",
       "window": "Round of 32-Final",
-      "detail": "102 matches are final, England leads France 2-0 live, and one fixture is scheduled next."
+      "detail": "102 matches are final, England leads France 4-3 live, and one fixture is scheduled next."
     },
     "updateStream": {
       "label": "Knockout update stream",
@@ -1396,7 +1396,7 @@
         "venue": "Hard Rock Stadium",
         "tag": "Opening phase",
         "status": "Live",
-        "score": "FRA 0 - ENG 2",
+        "score": "FRA 3 - ENG 4",
         "insight": "Live window"
       },
       {
