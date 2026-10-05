@@ -740,6 +740,16 @@
       "sportTags": ["Soccer"],
       "aiCapabilities": ["analytics-modeling", "data-ingestion"],
       "openness": "open-source"
+    },
+    {
+      "id": "dynasty-trade-values",
+      "title": "Dynasty Trade Values",
+      "url": "https://dynastytradevalues.com/",
+      "description": "Provides a free dynasty fantasy football trade-value calculator with algorithmic player and draft-pick values.",
+      "categoryId": "apps-products",
+      "sportTags": ["American Football"],
+      "aiCapabilities": ["analytics-modeling"],
+      "openness": "free-dev-tier"
     }
   ],
   "recipes": [

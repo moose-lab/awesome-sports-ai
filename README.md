@@ -75,6 +75,7 @@ Open-source projects, open datasets, open APIs, reproducible research, and free 
 - **[SportsEngine Tourney](https://www.sportsengine.com/tourney/)** - Manages tournament scheduling, brackets, standings, score updates, registration, and team communication. *(Sports: Multi-sport; AI: operations)*
 - **[Stonk Striker](https://stonk-striker.vercel.app/)** - Turns stock and crypto price charts into a browser football striking game with market-shaped terrain. *(Sports: Soccer; AI: media-generation, analytics-modeling)*
 
+- **[Dynasty Trade Values](https://dynastytradevalues.com/)** - Provides a free dynasty fantasy football trade-value calculator with algorithmic player and draft-pick values. *(Sports: American Football; AI: analytics-modeling)*
 
 ### Open-Source Projects
 
