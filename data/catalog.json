@@ -162,6 +162,16 @@
       "openness": "commercial-reference"
     },
     {
+      "id": "bjjgraph",
+      "title": "BJJGraph",
+      "url": "https://bjjgraph.org/",
+      "description": "Maps Brazilian jiu-jitsu as an interactive graph of 133 positions and 1,315 techniques with authored gi and no-gi success rates, plus flashcards and a roll game, with the full graph downloadable as JSON.",
+      "categoryId": "apps-products",
+      "sportTags": ["Combat Sports"],
+      "aiCapabilities": ["simulation-rl", "data-ingestion"],
+      "openness": "open-data"
+    },
+    {
       "id": "llm-match-commentator",
       "title": "llm-match-commentator",
       "url": "./prototypes/llm-match-commentator/",

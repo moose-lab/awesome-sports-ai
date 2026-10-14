@@ -69,6 +69,7 @@ Open-source projects, open datasets, open APIs, reproducible research, and free 
 
 *User-facing apps, hosted products, and commercial references that help builders understand complete sports AI workflows.*
 
+- **[BJJGraph](https://bjjgraph.org/)** - Maps Brazilian jiu-jitsu as an interactive graph of 133 positions and 1,315 techniques with authored gi and no-gi success rates, plus flashcards and a roll game, with the full graph downloadable as JSON. *(Sports: Combat Sports; AI: simulation-rl, data-ingestion)*
 - **[fantasy-manager](https://github.com/lukasdotcom/fantasy-manager)** - Provides an open-source self-hosted fantasy manager. *(Sports: Multi-sport; AI: operations, analytics-modeling)*
 - **[Second Spectrum](https://www.geniussports.com/newsroom/genius-sports-second-spectrum-tracking-technology-approved-by-fifa-quality-programme-for-epts/)** - Provides optical tracking, tactical analytics, and augmented broadcast tools for professional leagues and teams. *(Sports: Basketball, Soccer; AI: tracking, analytics-modeling, media-generation)*
 - **[Sports AI Hub](https://sports-ai-hub.pages.dev/)** - Provides the public web app companion for this directory, including builder navigation, prototypes, and project paths. *(Sports: Multi-sport; AI: operations, data-ingestion)*
