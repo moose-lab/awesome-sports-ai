@@ -94,6 +94,7 @@ Open-source projects, open datasets, open APIs, reproducible research, and free 
 - **[pickleball-court-mapper](./prototypes/pickleball-court-mapper/)** - Detects pickleball court lines and generates annotated court diagrams. *(Sports: Tennis/Racquet; AI: computer-vision, tracking)*
 - **[Ready2Race](https://github.com/lambda9-gmbh/ready2race)** - Plans and executes competition events such as coastal rowing races. *(Sports: Multi-sport; AI: operations)*
 - **[soccer-video-analytics](https://github.com/tryolabs/soccer-video-analytics)** - Demonstrates automatic soccer ball possession analysis from video. *(Sports: Soccer; AI: computer-vision, tracking)*
+- **[SportsBench](https://github.com/blocksharkcom/SportsBench)** - Benchmarks frontier LLMs (GPT-5, Claude, Gemini, Grok, DeepSeek) predicting real matches from the same locked brief, graded in public on win rate, calibration, ROI and closing-line value. *(Sports: Multi-sport; AI: llm-nlp, analytics-modeling)*
 - **[Video Tagging Events](https://github.com/napo/videotaggingevents)** - Tags specific segments of a video for sports review and analysis. *(Sports: Multi-sport; AI: operations, media-generation)*
 - **[wnba-gravity-mapper](./prototypes/wnba-gravity-mapper/)** - Calculates player gravity from basketball tracking coordinates and renders a heatmap. *(Sports: Basketball; AI: tracking, analytics-modeling)*
 
