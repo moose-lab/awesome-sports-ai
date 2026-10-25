@@ -109,6 +109,7 @@ Open-source projects, open datasets, open APIs, reproducible research, and free 
 - **[football.json](https://github.com/openfootball/football.json)** - Provides public-domain football match data in JSON for schedules, leagues, clubs, and results. *(Sports: Soccer; AI: data-ingestion)*
 - **[Metrica Sports Sample Data](https://github.com/metrica-sports/sample-data)** - Provides sample soccer tracking and event data for analytics tutorials and reproducible analysis. *(Sports: Soccer; AI: data-ingestion, tracking)*
 - **[nba_api](https://github.com/swar/nba_api)** - Provides a Python client for NBA.com stats endpoints and basketball data workflows. *(Sports: Basketball; AI: data-ingestion)*
+- **[Sports Odds API (BetRivers, Unibet & 22 more books)](https://apify.com/publicrecords/sports-odds-api)** - Provides live odds from 24 Kambi-powered sportsbooks in one call, including BetRivers (12 US states + Ontario), Unibet, Paf, Svenska Spel, and ATG, with one row per game, every book's price, and the best price per outcome, billed per call with no subscription. *(Sports: Multi-sport; AI: data-ingestion)*
 - **[StatsBomb Open Data](https://github.com/statsbomb/open-data)** - Provides free soccer event data for public analysis and modeling. *(Sports: Soccer; AI: data-ingestion, benchmarking)*
 - **[Toornament API](https://developer.toornament.com/)** - Provides APIs for building tournament, match, calendar, ranking, and registration workflows. *(Sports: Esports, Multi-sport; AI: operations, data-ingestion)*
 

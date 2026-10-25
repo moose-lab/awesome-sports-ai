@@ -412,6 +412,16 @@
       "openness": "open-source"
     },
     {
+      "id": "sports-odds-api",
+      "title": "Sports Odds API (BetRivers, Unibet & 22 more books)",
+      "url": "https://apify.com/publicrecords/sports-odds-api",
+      "description": "Provides live odds from 24 Kambi-powered sportsbooks in one call, including BetRivers (12 US states + Ontario), Unibet, Paf, Svenska Spel, and ATG, with one row per game, every book's price, and the best price per outcome, billed per call with no subscription.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["data-ingestion"],
+      "openness": "commercial-reference"
+    },
+    {
       "id": "fastf1",
       "title": "FastF1",
       "url": "https://github.com/theOehrly/Fast-F1",
