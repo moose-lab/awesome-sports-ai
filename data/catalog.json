@@ -412,6 +412,16 @@
       "openness": "open-source"
     },
     {
+      "id": "odds-api-io",
+      "title": "Odds-API.io",
+      "url": "https://odds-api.io/",
+      "description": "Provides pre-match and live betting odds from 450+ bookmakers across 34 sports over REST and WebSocket.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
+      "openness": "commercial-reference"
+    },
+    {
       "id": "fastf1",
       "title": "FastF1",
       "url": "https://github.com/theOehrly/Fast-F1",
