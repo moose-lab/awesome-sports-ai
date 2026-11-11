@@ -412,6 +412,16 @@
       "openness": "open-source"
     },
     {
+      "id": "pinnfeed",
+      "title": "PinnFeed",
+      "url": "https://pinnfeed.io/",
+      "description": "Provides real-time Pinnacle odds for 13 sports over WebSocket and REST, with no-vig fair odds, closing-line history and a hosted MCP server for AI assistants.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
+      "openness": "free-dev-tier"
+    },
+    {
       "id": "fastf1",
       "title": "FastF1",
       "url": "https://github.com/theOehrly/Fast-F1",
