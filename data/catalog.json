@@ -415,7 +415,7 @@
       "id": "odds-api-io",
       "title": "Odds-API.io",
       "url": "https://odds-api.io/",
-      "description": "Provides pre-match and live betting odds from 450+ bookmakers across 34 sports over REST and WebSocket.",
+      "description": "Provides pre-match and live betting odds from 500+ bookmakers across 34 sports over REST and WebSocket.",
       "categoryId": "datasets-apis-feeds",
       "sportTags": ["Multi-sport"],
       "aiCapabilities": ["data-ingestion", "analytics-modeling"],
