@@ -111,6 +111,7 @@ Open-source projects, open datasets, open APIs, reproducible research, and free 
 - **[nba_api](https://github.com/swar/nba_api)** - Provides a Python client for NBA.com stats endpoints and basketball data workflows. *(Sports: Basketball; AI: data-ingestion)*
 - **[StatsBomb Open Data](https://github.com/statsbomb/open-data)** - Provides free soccer event data for public analysis and modeling. *(Sports: Soccer; AI: data-ingestion, benchmarking)*
 - **[Toornament API](https://developer.toornament.com/)** - Provides APIs for building tournament, match, calendar, ranking, and registration workflows. *(Sports: Esports, Multi-sport; AI: operations, data-ingestion)*
+- **[AsianScore xG Prediction Ledger & Toolkit](https://github.com/AIYIXIU/asianscore-xg-ledger-dataset)** - Publishes a SHA-256 verifiable pre-match football and NBA prediction dataset, keyless CORS JSON ledger API, and zero-dependency Dixon-Coles Poisson xG and market de-vigging scripts. *(Sports: Soccer, Basketball; AI: data-ingestion, analytics-modeling, benchmarking)*
 
 
 ### Developer Libraries/SDKs
