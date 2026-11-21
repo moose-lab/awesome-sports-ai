@@ -402,6 +402,16 @@
       "openness": "open-api"
     },
     {
+      "id": "asianscore-xg-ledger-dataset",
+      "title": "AsianScore xG Prediction Ledger & Toolkit",
+      "url": "https://github.com/AIYIXIU/asianscore-xg-ledger-dataset",
+      "description": "Publishes a SHA-256 verifiable pre-match football and NBA prediction dataset, keyless CORS JSON ledger API, and zero-dependency Dixon-Coles Poisson xG and market de-vigging scripts.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["Soccer", "Basketball"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling", "benchmarking"],
+      "openness": "open-source"
+    },
+    {
       "id": "nba-api",
       "title": "nba_api",
       "url": "https://github.com/swar/nba_api",
