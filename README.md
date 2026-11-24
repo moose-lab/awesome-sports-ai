@@ -111,6 +111,7 @@ Open-source projects, open datasets, open APIs, reproducible research, and free 
 - **[nba_api](https://github.com/swar/nba_api)** - Provides a Python client for NBA.com stats endpoints and basketball data workflows. *(Sports: Basketball; AI: data-ingestion)*
 - **[StatsBomb Open Data](https://github.com/statsbomb/open-data)** - Provides free soccer event data for public analysis and modeling. *(Sports: Soccer; AI: data-ingestion, benchmarking)*
 - **[Toornament API](https://developer.toornament.com/)** - Provides APIs for building tournament, match, calendar, ranking, and registration workflows. *(Sports: Esports, Multi-sport; AI: operations, data-ingestion)*
+- **[Sports Odds API](https://apify.com/publicrecords/sports-odds-api)** - Live odds from 24 Kambi-powered sportsbooks (BetRivers, Unibet, Paf...) with best price per outcome (Apify Actor, API + MCP).
 
 
 ### Developer Libraries/SDKs
