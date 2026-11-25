@@ -412,6 +412,26 @@
       "openness": "open-source"
     },
     {
+      "id": "sports-odds-api",
+      "title": "Sports Odds API (BetRivers, Unibet & 22 more books)",
+      "url": "https://apify.com/publicrecords/sports-odds-api",
+      "description": "Provides live odds from 24 Kambi-powered sportsbooks in one call, including BetRivers (12 US states + Ontario), Unibet, Paf, Svenska Spel, and ATG, with one row per game, every book's price, and the best price per outcome, billed per call with no subscription.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["data-ingestion"],
+      "openness": "commercial-reference"
+    },
+    {
+      "id": "tennis-scores-api",
+      "title": "Tennis Scores API (ATP & WTA)",
+      "url": "https://apify.com/publicrecords/tennis-scores-api",
+      "description": "ATP and WTA match scores, results and rankings: every match for a date or a whole tournament (Grand Slams, singles, doubles, mixed) with set-by-set scores, tiebreaks, seeds, round, court and winner, or current tour rankings. Apify Actor billed per row on your own account. Standby/MCP is not built.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["Tennis/Racquet"],
+      "aiCapabilities": ["data-ingestion"],
+      "openness": "commercial-reference"
+    },
+    {
       "id": "fastf1",
       "title": "FastF1",
       "url": "https://github.com/theOehrly/Fast-F1",
