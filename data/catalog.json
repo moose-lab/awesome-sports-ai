@@ -117,13 +117,8 @@
       "url": "https://sports-ai-hub.pages.dev/",
       "description": "Provides the public web app companion for this directory, including builder navigation, prototypes, and project paths.",
       "categoryId": "apps-products",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "operations",
-        "data-ingestion"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["operations", "data-ingestion"],
       "openness": "open-source"
     },
     {
@@ -132,13 +127,8 @@
       "url": "https://stonk-striker.vercel.app/",
       "description": "Turns stock and crypto price charts into a browser football striking game with market-shaped terrain.",
       "categoryId": "apps-products",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "media-generation",
-        "analytics-modeling"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["media-generation", "analytics-modeling"],
       "openness": "free-dev-tier"
     },
     {
@@ -147,13 +137,8 @@
       "url": "https://github.com/lukasdotcom/fantasy-manager",
       "description": "Provides an open-source self-hosted fantasy manager.",
       "categoryId": "apps-products",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "operations",
-        "analytics-modeling"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["operations", "analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -162,12 +147,8 @@
       "url": "https://www.sportsengine.com/tourney/",
       "description": "Manages tournament scheduling, brackets, standings, score updates, registration, and team communication.",
       "categoryId": "apps-products",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "operations"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["operations"],
       "openness": "commercial-reference"
     },
     {
@@ -176,15 +157,8 @@
       "url": "https://www.geniussports.com/newsroom/genius-sports-second-spectrum-tracking-technology-approved-by-fifa-quality-programme-for-epts/",
       "description": "Provides optical tracking, tactical analytics, and augmented broadcast tools for professional leagues and teams.",
       "categoryId": "apps-products",
-      "sportTags": [
-        "Basketball",
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "tracking",
-        "analytics-modeling",
-        "media-generation"
-      ],
+      "sportTags": ["Basketball", "Soccer"],
+      "aiCapabilities": ["tracking", "analytics-modeling", "media-generation"],
       "openness": "commercial-reference"
     },
     {
@@ -193,14 +167,8 @@
       "url": "./prototypes/llm-match-commentator/",
       "description": "Generates localized match commentary from structured event streams.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "Soccer",
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "llm-nlp",
-        "media-generation"
-      ],
+      "sportTags": ["Soccer", "Multi-sport"],
+      "aiCapabilities": ["llm-nlp", "media-generation"],
       "openness": "open-source"
     },
     {
@@ -209,13 +177,8 @@
       "url": "./prototypes/wnba-gravity-mapper/",
       "description": "Calculates player gravity from basketball tracking coordinates and renders a heatmap.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "Basketball"
-      ],
-      "aiCapabilities": [
-        "tracking",
-        "analytics-modeling"
-      ],
+      "sportTags": ["Basketball"],
+      "aiCapabilities": ["tracking", "analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -224,13 +187,8 @@
       "url": "./prototypes/pickleball-court-mapper/",
       "description": "Detects pickleball court lines and generates annotated court diagrams.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "Tennis/Racquet"
-      ],
-      "aiCapabilities": [
-        "computer-vision",
-        "tracking"
-      ],
+      "sportTags": ["Tennis/Racquet"],
+      "aiCapabilities": ["computer-vision", "tracking"],
       "openness": "open-source"
     },
     {
@@ -239,13 +197,8 @@
       "url": "https://github.com/DataKnight1/football-match-intelligence",
       "description": "Builds football match intelligence dashboards with pitch control, sprint efficiency, and tactical sequencing.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "analytics-modeling",
-        "tracking"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling", "tracking"],
       "openness": "open-source"
     },
     {
@@ -254,13 +207,8 @@
       "url": "https://github.com/tryolabs/soccer-video-analytics",
       "description": "Demonstrates automatic soccer ball possession analysis from video.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "computer-vision",
-        "tracking"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["computer-vision", "tracking"],
       "openness": "open-source"
     },
     {
@@ -269,13 +217,8 @@
       "url": "https://github.com/napo/videotaggingevents",
       "description": "Tags specific segments of a video for sports review and analysis.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "operations",
-        "media-generation"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["operations", "media-generation"],
       "openness": "open-source"
     },
     {
@@ -284,13 +227,8 @@
       "url": "https://github.com/SaxionAMI/AthleteLoadMonitor",
       "description": "Monitors and predicts athlete load for team-sport coaches.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "training-load",
-        "analytics-modeling"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["training-load", "analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -299,13 +237,8 @@
       "url": "https://github.com/prakashsellathurai/Coroebus",
       "description": "Tracks training load, fitness, fatigue, and readiness for athletes.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "training-load",
-        "analytics-modeling"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["training-load", "analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -314,12 +247,8 @@
       "url": "https://github.com/evroon/bracket",
       "description": "Provides a self-hosted tournament system for creating and managing brackets.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "operations"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["operations"],
       "openness": "open-source"
     },
     {
@@ -328,14 +257,8 @@
       "url": "https://github.com/CourtHive/competition-factory",
       "description": "Manipulates tournament and league documents, including draws and competition structures.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "Tennis/Racquet",
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "operations",
-        "data-ingestion"
-      ],
+      "sportTags": ["Tennis/Racquet", "Multi-sport"],
+      "aiCapabilities": ["operations", "data-ingestion"],
       "openness": "open-source"
     },
     {
@@ -344,12 +267,8 @@
       "url": "https://github.com/lambda9-gmbh/ready2race",
       "description": "Plans and executes competition events such as coastal rowing races.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "operations"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["operations"],
       "openness": "open-source"
     },
     {
@@ -358,13 +277,8 @@
       "url": "https://github.com/kt474/fantasy-football-wrapped",
       "description": "Generates fantasy league insights and charts for Sleeper and ESPN leagues.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "American Football"
-      ],
-      "aiCapabilities": [
-        "analytics-modeling",
-        "media-generation"
-      ],
+      "sportTags": ["American Football"],
+      "aiCapabilities": ["analytics-modeling", "media-generation"],
       "openness": "open-source"
     },
     {
@@ -373,13 +287,8 @@
       "url": "https://github.com/yotambraun/football_scout_rag",
       "description": "Generates repeatable football player scouting reports with retrieval-augmented workflows.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "llm-nlp",
-        "analytics-modeling"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["llm-nlp", "analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -388,14 +297,8 @@
       "url": "https://github.com/moose-lab/hyrox-gym-finder",
       "description": "Finds nearby HYROXCN certified gyms from coordinates, region keywords, browser location, or imported JSON exports.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "Running/Track",
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "data-ingestion",
-        "operations"
-      ],
+      "sportTags": ["Running/Track", "Multi-sport"],
+      "aiCapabilities": ["data-ingestion", "operations"],
       "openness": "open-source"
     },
     {
@@ -404,14 +307,8 @@
       "url": "https://github.com/moose-lab/hyrox-training-plan-skill",
       "description": "Generates science-based HYROX training plans for coding agents with periodization references and validation scripts.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "Running/Track",
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "llm-nlp",
-        "training-load"
-      ],
+      "sportTags": ["Running/Track", "Multi-sport"],
+      "aiCapabilities": ["llm-nlp", "training-load"],
       "openness": "open-source"
     },
     {
@@ -420,14 +317,8 @@
       "url": "./prototypes/hyrox-split-parser/",
       "description": "Parses exported HYROX result tables into run/station deltas, rank movement, and coach-ready notes.",
       "categoryId": "open-source-projects",
-      "sportTags": [
-        "Running/Track",
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "data-ingestion",
-        "analytics-modeling"
-      ],
+      "sportTags": ["Running/Track", "Multi-sport"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -436,12 +327,8 @@
       "url": "https://www.balldontlie.io/",
       "description": "Provides API access to basketball teams, players, games, and box-score data.",
       "categoryId": "datasets-apis-feeds",
-      "sportTags": [
-        "Basketball"
-      ],
-      "aiCapabilities": [
-        "data-ingestion"
-      ],
+      "sportTags": ["Basketball"],
+      "aiCapabilities": ["data-ingestion"],
       "openness": "open-api"
     },
     {
@@ -450,13 +337,8 @@
       "url": "https://collegefootballdata.com/",
       "description": "Provides college football API endpoints for games, drives, plays, rankings, ratings, and recruiting data.",
       "categoryId": "datasets-apis-feeds",
-      "sportTags": [
-        "American Football"
-      ],
-      "aiCapabilities": [
-        "data-ingestion",
-        "analytics-modeling"
-      ],
+      "sportTags": ["American Football"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
       "openness": "open-api"
     },
     {
@@ -465,12 +347,8 @@
       "url": "https://github.com/openfootball/football.json",
       "description": "Provides public-domain football match data in JSON for schedules, leagues, clubs, and results.",
       "categoryId": "datasets-apis-feeds",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "data-ingestion"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion"],
       "openness": "open-data"
     },
     {
@@ -479,13 +357,8 @@
       "url": "https://github.com/statsbomb/open-data",
       "description": "Provides free soccer event data for public analysis and modeling.",
       "categoryId": "datasets-apis-feeds",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "data-ingestion",
-        "benchmarking"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion", "benchmarking"],
       "openness": "open-data"
     },
     {
@@ -494,13 +367,8 @@
       "url": "https://github.com/metrica-sports/sample-data",
       "description": "Provides sample soccer tracking and event data for analytics tutorials and reproducible analysis.",
       "categoryId": "datasets-apis-feeds",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "data-ingestion",
-        "tracking"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion", "tracking"],
       "openness": "open-data"
     },
     {
@@ -509,13 +377,8 @@
       "url": "https://github.com/dynastyprocess/data",
       "description": "Provides open fantasy football data maintained by DynastyProcess.",
       "categoryId": "datasets-apis-feeds",
-      "sportTags": [
-        "American Football"
-      ],
-      "aiCapabilities": [
-        "data-ingestion",
-        "analytics-modeling"
-      ],
+      "sportTags": ["American Football"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
       "openness": "open-data"
     },
     {
@@ -524,13 +387,8 @@
       "url": "https://api.challonge.com/",
       "description": "Lets developers create tournaments, update brackets, and report scores programmatically.",
       "categoryId": "datasets-apis-feeds",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "operations",
-        "data-ingestion"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["operations", "data-ingestion"],
       "openness": "open-api"
     },
     {
@@ -539,14 +397,8 @@
       "url": "https://developer.toornament.com/",
       "description": "Provides APIs for building tournament, match, calendar, ranking, and registration workflows.",
       "categoryId": "datasets-apis-feeds",
-      "sportTags": [
-        "Esports",
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "operations",
-        "data-ingestion"
-      ],
+      "sportTags": ["Esports", "Multi-sport"],
+      "aiCapabilities": ["operations", "data-ingestion"],
       "openness": "open-api"
     },
     {
@@ -555,12 +407,8 @@
       "url": "https://github.com/swar/nba_api",
       "description": "Provides a Python client for NBA.com stats endpoints and basketball data workflows.",
       "categoryId": "datasets-apis-feeds",
-      "sportTags": [
-        "Basketball"
-      ],
-      "aiCapabilities": [
-        "data-ingestion"
-      ],
+      "sportTags": ["Basketball"],
+      "aiCapabilities": ["data-ingestion"],
       "openness": "open-source"
     },
     {
@@ -569,12 +417,18 @@
       "url": "https://apify.com/publicrecords/sports-odds-api",
       "description": "Provides live odds from 24 Kambi-powered sportsbooks in one call, including BetRivers (12 US states + Ontario), Unibet, Paf, Svenska Spel, and ATG, with one row per game, every book's price, and the best price per outcome, billed per call with no subscription.",
       "categoryId": "datasets-apis-feeds",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "data-ingestion"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["data-ingestion"],
+      "openness": "commercial-reference"
+    },
+    {
+      "id": "tennis-scores-api",
+      "title": "Tennis Scores API (ATP & WTA)",
+      "url": "https://apify.com/publicrecords/tennis-scores-api",
+      "description": "ATP and WTA match scores, results and rankings: every match for a date or a whole tournament (Grand Slams, singles, doubles, mixed) with set-by-set scores, tiebreaks, seeds, round, court and winner, or current tour rankings. Apify Actor billed per row on your own account. Standby/MCP is not built.",
+      "categoryId": "datasets-apis-feeds",
+      "sportTags": ["Tennis/Racquet"],
+      "aiCapabilities": ["data-ingestion"],
       "openness": "commercial-reference"
     },
     {
@@ -583,13 +437,8 @@
       "url": "https://github.com/theOehrly/Fast-F1",
       "description": "Loads Formula 1 timing, telemetry, session, schedule, and weather data in Python.",
       "categoryId": "developer-libraries-sdks",
-      "sportTags": [
-        "Motorsport"
-      ],
-      "aiCapabilities": [
-        "data-ingestion",
-        "analytics-modeling"
-      ],
+      "sportTags": ["Motorsport"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -598,13 +447,8 @@
       "url": "https://github.com/PySport/kloppy",
       "description": "Standardizes soccer tracking and event data into vendor-independent Python objects.",
       "categoryId": "developer-libraries-sdks",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "data-ingestion",
-        "tracking"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion", "tracking"],
       "openness": "open-source"
     },
     {
@@ -613,13 +457,8 @@
       "url": "https://github.com/statsbomb/statsbombpy",
       "description": "Streams StatsBomb soccer data into Python for analysis and modeling.",
       "categoryId": "developer-libraries-sdks",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "data-ingestion",
-        "analytics-modeling"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -628,13 +467,8 @@
       "url": "https://github.com/andrewRowlinson/mplsoccer",
       "description": "Draws soccer pitches and common football analytics plots with Matplotlib.",
       "categoryId": "developer-libraries-sdks",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "analytics-modeling",
-        "media-generation"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling", "media-generation"],
       "openness": "open-source"
     },
     {
@@ -643,13 +477,8 @@
       "url": "https://github.com/ML-KULeuven/socceraction",
       "description": "Converts soccer event streams to SPADL and values actions with VAEP or xT.",
       "categoryId": "developer-libraries-sdks",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "data-ingestion",
-        "analytics-modeling"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -658,13 +487,8 @@
       "url": "https://github.com/slothfulwave/soccerplots",
       "description": "Creates radar and pizza charts for football player analysis.",
       "categoryId": "developer-libraries-sdks",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "analytics-modeling",
-        "media-generation"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling", "media-generation"],
       "openness": "open-source"
     },
     {
@@ -673,13 +497,8 @@
       "url": "https://github.com/sportsdataverse/sportypy",
       "description": "Draws regulation playing surfaces for several sports in Python.",
       "categoryId": "developer-libraries-sdks",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "analytics-modeling",
-        "media-generation"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["analytics-modeling", "media-generation"],
       "openness": "open-source"
     },
     {
@@ -688,12 +507,8 @@
       "url": "https://github.com/kkroening/ffmpeg-python",
       "description": "Provides Python bindings for FFmpeg video processing and filtering.",
       "categoryId": "developer-libraries-sdks",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "media-generation"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["media-generation"],
       "openness": "open-source"
     },
     {
@@ -702,14 +517,8 @@
       "url": "https://github.com/floodlight-sports/floodlight",
       "description": "Provides Python data structures, parsers, and analysis models for team-sport event and tracking data.",
       "categoryId": "developer-libraries-sdks",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "data-ingestion",
-        "tracking",
-        "analytics-modeling"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["data-ingestion", "tracking", "analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -718,13 +527,8 @@
       "url": "https://github.com/opencv/opencv",
       "description": "Provides open-source computer vision infrastructure for tracking, detection, and video analysis.",
       "categoryId": "developer-libraries-sdks",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "computer-vision",
-        "tracking"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["computer-vision", "tracking"],
       "openness": "open-source"
     },
     {
@@ -733,13 +537,8 @@
       "url": "https://github.com/sportsdataverse/sportsdataverse-py",
       "description": "Provides a Python package for loading and tidying data from several SportsDataverse ecosystems.",
       "categoryId": "developer-libraries-sdks",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "data-ingestion",
-        "analytics-modeling"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -748,14 +547,8 @@
       "url": "https://github.com/Alek050/databallpy",
       "description": "Reads, preprocesses, visualizes, and synchronizes soccer event and tracking data.",
       "categoryId": "developer-libraries-sdks",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "data-ingestion",
-        "tracking",
-        "training-load"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion", "tracking", "training-load"],
       "openness": "open-source"
     },
     {
@@ -764,12 +557,8 @@
       "url": "https://github.com/n-ae/yahoo-fantasy-sports-api-go",
       "description": "Provides Go bindings for Yahoo Fantasy Sports APIs.",
       "categoryId": "developer-libraries-sdks",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "data-ingestion"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["data-ingestion"],
       "openness": "open-source"
     },
     {
@@ -778,13 +567,8 @@
       "url": "https://github.com/roboflow/sports",
       "description": "Provides computer-vision examples, models, and workflows for sports detection, tracking, and analytics.",
       "categoryId": "ai-models-components",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "computer-vision",
-        "tracking"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["computer-vision", "tracking"],
       "openness": "open-source"
     },
     {
@@ -793,12 +577,8 @@
       "url": "https://github.com/ML-KULeuven/soccer_xg",
       "description": "Trains and analyzes expected-goals models for soccer.",
       "categoryId": "ai-models-components",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "analytics-modeling"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -807,14 +587,8 @@
       "url": "https://github.com/open-mmlab/mmpose",
       "description": "Provides an open-source pose estimation toolbox for biomechanics and movement analysis.",
       "categoryId": "ai-models-components",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "computer-vision",
-        "tracking",
-        "training-load"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["computer-vision", "tracking", "training-load"],
       "openness": "open-source"
     },
     {
@@ -823,13 +597,8 @@
       "url": "https://github.com/CMU-Perceptual-Computing-Lab/openpose",
       "description": "Detects real-time multi-person body, hand, face, and foot keypoints.",
       "categoryId": "ai-models-components",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "computer-vision",
-        "tracking"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["computer-vision", "tracking"],
       "openness": "open-source"
     },
     {
@@ -838,13 +607,8 @@
       "url": "https://github.com/openai/whisper",
       "description": "Transcribes commentary, interviews, and review audio for sports media workflows.",
       "categoryId": "ai-models-components",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "llm-nlp",
-        "media-generation"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["llm-nlp", "media-generation"],
       "openness": "open-source"
     },
     {
@@ -853,13 +617,8 @@
       "url": "https://github.com/ale-uy/Acute_Chronic_Workload_Ratio",
       "description": "Calculates acute-to-chronic workload ratios in Python.",
       "categoryId": "ai-models-components",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "training-load",
-        "analytics-modeling"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["training-load", "analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -868,12 +627,8 @@
       "url": "https://github.com/georgedouzas/sports-betting",
       "description": "Collects sports betting AI tools and prediction experiments.",
       "categoryId": "ai-models-components",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "analytics-modeling"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -882,13 +637,8 @@
       "url": "https://github.com/tensorflow/model-card-toolkit",
       "description": "Documents training data, assumptions, limitations, and evaluation results for machine learning models.",
       "categoryId": "ai-models-components",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "benchmarking",
-        "analytics-modeling"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["benchmarking", "analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -897,13 +647,8 @@
       "url": "https://github.com/google-research/football",
       "description": "Provides a reinforcement-learning football environment for AI research.",
       "categoryId": "research-benchmarks",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "simulation-rl",
-        "benchmarking"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["simulation-rl", "benchmarking"],
       "openness": "open-source"
     },
     {
@@ -912,14 +657,8 @@
       "url": "https://www.soccer-net.org/data",
       "description": "Provides datasets and benchmarks for soccer video understanding, action spotting, tracking, and game-state reconstruction.",
       "categoryId": "research-benchmarks",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "computer-vision",
-        "tracking",
-        "benchmarking"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["computer-vision", "tracking", "benchmarking"],
       "openness": "paper-benchmark"
     },
     {
@@ -928,16 +667,8 @@
       "url": "https://deeperaction.github.io/datasets/sportsmot.html",
       "description": "Provides a multi-object tracking dataset across basketball, football, and volleyball scenes.",
       "categoryId": "research-benchmarks",
-      "sportTags": [
-        "Basketball",
-        "Soccer",
-        "Volleyball"
-      ],
-      "aiCapabilities": [
-        "tracking",
-        "computer-vision",
-        "benchmarking"
-      ],
+      "sportTags": ["Basketball", "Soccer", "Volleyball"],
+      "aiCapabilities": ["tracking", "computer-vision", "benchmarking"],
       "openness": "paper-benchmark"
     },
     {
@@ -946,13 +677,8 @@
       "url": "https://www.nature.com/articles/s41467-024-45965-x",
       "description": "Describes a football tactics assistant for predicting and generating corner-kick tactical recommendations.",
       "categoryId": "research-benchmarks",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "analytics-modeling",
-        "benchmarking"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling", "benchmarking"],
       "openness": "paper-benchmark"
     },
     {
@@ -961,13 +687,8 @@
       "url": "./docs/world-cup-2026-zone.md",
       "description": "Defines the knockout-stage data contract, Match Center handoff, toolkit lanes, and operations checklist.",
       "categoryId": "event-toolkits",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "operations",
-        "data-ingestion"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["operations", "data-ingestion"],
       "openness": "open-source"
     },
     {
@@ -976,14 +697,8 @@
       "url": "./docs/world-cup-2026-toolkit.md",
       "description": "Classifies tools for Round of 32-to-Final workflows: data normalization, bracket scenarios, reports, xG, video, scouting, and localization.",
       "categoryId": "event-toolkits",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "data-ingestion",
-        "analytics-modeling",
-        "llm-nlp"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["data-ingestion", "analytics-modeling", "llm-nlp"],
       "openness": "open-source"
     },
     {
@@ -992,15 +707,8 @@
       "url": "./docs/world-cup-2026-toolkit.md",
       "description": "Maps single tools to practical knockout use cases, including bracket state, match briefs, shot-quality context, video review, and multilingual media.",
       "categoryId": "event-toolkits",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "operations",
-        "data-ingestion",
-        "analytics-modeling",
-        "llm-nlp"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["operations", "data-ingestion", "analytics-modeling", "llm-nlp"],
       "openness": "open-source"
     },
     {
@@ -1009,12 +717,8 @@
       "url": "https://github.com/devinpleuler/analytics-handbook",
       "description": "Introduces practical soccer analytics concepts and workflows.",
       "categoryId": "learning-collections",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "analytics-modeling"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling"],
       "openness": "open-source"
     },
     {
@@ -1023,13 +727,8 @@
       "url": "https://github.com/diegopastor/awesome-football-analytics",
       "description": "Curates football analytics resources, datasets, software, and learning material.",
       "categoryId": "learning-collections",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "analytics-modeling",
-        "data-ingestion"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling", "data-ingestion"],
       "openness": "open-source"
     },
     {
@@ -1038,13 +737,8 @@
       "url": "https://github.com/matiasmascioto/awesome-soccer-analytics",
       "description": "Collects soccer analytics resources in English and Spanish.",
       "categoryId": "learning-collections",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "analytics-modeling",
-        "data-ingestion"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling", "data-ingestion"],
       "openness": "open-source"
     },
     {
@@ -1053,13 +747,8 @@
       "url": "https://github.com/AtomScott/awesome-sports-analytics",
       "description": "Collects sports analytics datasets, tools, papers, and learning resources.",
       "categoryId": "learning-collections",
-      "sportTags": [
-        "Multi-sport"
-      ],
-      "aiCapabilities": [
-        "analytics-modeling",
-        "data-ingestion"
-      ],
+      "sportTags": ["Multi-sport"],
+      "aiCapabilities": ["analytics-modeling", "data-ingestion"],
       "openness": "open-source"
     },
     {
@@ -1068,28 +757,9 @@
       "url": "https://github.com/eddwebster/football_analytics",
       "description": "Curates football analytics projects, data, and public resources.",
       "categoryId": "learning-collections",
-      "sportTags": [
-        "Soccer"
-      ],
-      "aiCapabilities": [
-        "analytics-modeling",
-        "data-ingestion"
-      ],
+      "sportTags": ["Soccer"],
+      "aiCapabilities": ["analytics-modeling", "data-ingestion"],
       "openness": "open-source"
-    },
-    {
-      "id": "tennis-scores-api",
-      "title": "Tennis Scores API (ATP & WTA)",
-      "url": "https://apify.com/publicrecords/tennis-scores-api",
-      "description": "ATP and WTA match scores, results and rankings: every match for a date or a whole tournament (Grand Slams, singles, doubles, mixed) with set-by-set scores, tiebreaks, seeds, round, court and winner, or current tour rankings. Apify Actor billed per row on your own account. Standby/MCP is not built.",
-      "categoryId": "datasets-apis-feeds",
-      "sportTags": [
-        "Tennis/Racquet"
-      ],
-      "aiCapabilities": [
-        "data-ingestion"
-      ],
-      "openness": "commercial-reference"
     }
   ],
   "recipes": [
@@ -1097,72 +767,37 @@
       "id": "build-xg-model",
       "title": "Build Your Own xG Model",
       "goal": "Train and document a basic expected-goals model from public soccer event data.",
-      "toolIds": [
-        "statsbomb-open-data",
-        "kloppy",
-        "mplsoccer",
-        "soccer-xg",
-        "model-card-toolkit"
-      ]
+      "toolIds": ["statsbomb-open-data", "kloppy", "mplsoccer", "soccer-xg", "model-card-toolkit"]
     },
     {
       "id": "build-coaching-video-tagger",
       "title": "Build Your Own Coaching Video Tagger",
       "goal": "Create a simple sports video tagging and coach-note workflow from user-owned footage.",
-      "toolIds": [
-        "ffmpeg-python",
-        "video-tagging-events",
-        "soccer-video-analytics",
-        "analytics-handbook",
-        "openai-whisper"
-      ]
+      "toolIds": ["ffmpeg-python", "video-tagging-events", "soccer-video-analytics", "analytics-handbook", "openai-whisper"]
     },
     {
       "id": "build-player-scouting-board",
       "title": "Build Your Own Player Scouting Board",
       "goal": "Combine player profiles, public data, similarity charts, clips, and reports into a lightweight scouting board.",
-      "toolIds": [
-        "socceraction",
-        "nba-api",
-        "soccerplots",
-        "roboflow-sports",
-        "football-scout-rag"
-      ]
+      "toolIds": ["socceraction", "nba-api", "soccerplots", "roboflow-sports", "football-scout-rag"]
     },
     {
       "id": "build-athlete-load-dashboard",
       "title": "Build Your Own Athlete Load Dashboard",
       "goal": "Parse athlete-owned workload files, calculate load ratios, flag risk, and render a training dashboard.",
-      "toolIds": [
-        "databallpy",
-        "kloppy",
-        "acute-chronic-workload-ratio",
-        "athlete-load-monitor",
-        "coroebus"
-      ]
+      "toolIds": ["databallpy", "kloppy", "acute-chronic-workload-ratio", "athlete-load-monitor", "coroebus"]
     },
     {
       "id": "build-match-intelligence-report",
       "title": "Build Your Own Match Intelligence Report",
       "goal": "Normalize fixture and event data into an automated match report with model outputs and stat cards.",
-      "toolIds": [
-        "football-analytics",
-        "socceraction",
-        "sports-betting",
-        "mplsoccer",
-        "football-match-intelligence"
-      ]
+      "toolIds": ["football-analytics", "socceraction", "sports-betting", "mplsoccer", "football-match-intelligence"]
     },
     {
       "id": "build-2026-trending-app",
       "title": "Build Your Own Sports AI Prototype Launch Pack",
       "goal": "Start from runnable prototypes and event kits when you want a compact demo that can be forked, explained, and shared.",
-      "toolIds": [
-        "llm-match-commentator",
-        "wnba-gravity-mapper",
-        "pickleball-court-mapper",
-        "world-cup-2026-toolkit"
-      ]
+      "toolIds": ["llm-match-commentator", "wnba-gravity-mapper", "pickleball-court-mapper", "world-cup-2026-toolkit"]
     }
   ],
   "scenes": [
@@ -1174,10 +809,7 @@
       "title": "HYROX",
       "tagline": "Functional fitness race with running segments and standardized workout stations — race operations, station-by-station performance analysis, and movement-standard enforcement, mapped to reusable sports AI resources.",
       "guidePath": "docs/sports/hyrox.md",
-      "catalogTags": [
-        "Multi-sport",
-        "Running/Track"
-      ],
+      "catalogTags": ["Multi-sport", "Running/Track"],
       "firstToolId": "hyrox-gym-finder",
       "liveAppUrl": "https://hyrox-gym-finder.vercel.app/",
       "sections": [
@@ -1186,15 +818,8 @@
           "title": "Event Operations",
           "titleZh": "赛事运营",
           "problem": "A HYROX event needs heat management, athlete check-in, station flow, score updates, and venue communication without forcing volunteers to reconcile spreadsheets by hand.",
-          "toolIds": [
-            "hyrox-gym-finder",
-            "sportsengine-tourney",
-            "ready2race",
-            "sports-ai-hub"
-          ],
-          "crossDomainToolIds": [
-            "competition-factory"
-          ],
+          "toolIds": ["hyrox-gym-finder", "sportsengine-tourney", "ready2race", "sports-ai-hub"],
+          "crossDomainToolIds": ["competition-factory"],
           "starterBuild": {
             "input": "Event roster CSV, division rules, heat windows, station capacity, volunteer assignments.",
             "output": "Heat schedule, station load forecast, conflict report, and operator checklist.",
@@ -1223,15 +848,8 @@
           "title": "Station Split Analysis",
           "titleZh": "站点分拆分析",
           "problem": "Coaches and athletes need to know whether time loss came from running segments, transition flow, or a specific workout station.",
-          "toolIds": [
-            "hyrox-split-parser",
-            "athlete-load-monitor",
-            "coroebus",
-            "acute-chronic-workload-ratio"
-          ],
-          "crossDomainToolIds": [
-            "fastf1"
-          ],
+          "toolIds": ["hyrox-split-parser", "athlete-load-monitor", "coroebus", "acute-chronic-workload-ratio"],
+          "crossDomainToolIds": ["fastf1"],
           "starterBuild": {
             "input": "Athlete split table, station names, run-lap times, division baselines, optional heart-rate zones.",
             "output": "Station-loss chart, run-vs-station profile, pacing consistency score, and coach notes.",
@@ -1243,15 +861,8 @@
           "title": "Movement Standard Verification",
           "titleZh": "动作标准验证",
           "problem": "Standardized movements such as wall balls, sled pushes, burpee broad jumps, and lunges need consistent review without replacing human judges.",
-          "toolIds": [
-            "openpose",
-            "mmpose",
-            "opencv",
-            "model-card-toolkit"
-          ],
-          "crossDomainToolIds": [
-            "roboflow-sports"
-          ],
+          "toolIds": ["openpose", "mmpose", "opencv", "model-card-toolkit"],
+          "crossDomainToolIds": ["roboflow-sports"],
           "starterBuild": {
             "input": "Athlete-owned station video, movement standard checklist, camera-angle notes.",
             "output": "Annotated rep timeline, range-of-motion warnings, uncertainty notes, and judge-review export.",
@@ -1318,9 +929,7 @@
           "id": "hyrox-pacing-calculator",
           "lane": "train",
           "description": "Target finish time -> per-run and per-station split plan, adjusted by division and runner-vs-strength bias.",
-          "personas": [
-            "athlete"
-          ],
+          "personas": ["athlete"],
           "effort": "weekend",
           "status": "idea",
           "keyword": "hyrox pacing calculator"
@@ -1329,10 +938,7 @@
           "id": "hyrox-workout-generator",
           "lane": "train",
           "description": "Constraint-aware session builder: compromised-running blocks, station EMOMs, race-week tapers.",
-          "personas": [
-            "athlete",
-            "coach"
-          ],
+          "personas": ["athlete", "coach"],
           "effort": "sprint",
           "status": "idea",
           "keyword": "hyrox workout generator"
@@ -1341,11 +947,7 @@
           "id": "hyrox-training-plan-skill",
           "lane": "train",
           "description": "Coding-agent skill that turns athlete constraints into periodized daily HYROX plans, backed by reference files and a validator.",
-          "personas": [
-            "athlete",
-            "coach",
-            "builder"
-          ],
+          "personas": ["athlete", "coach", "builder"],
           "effort": "sprint",
           "status": "live",
           "keyword": "hyrox training plan github"
@@ -1354,9 +956,7 @@
           "id": "hyrox-sled-calculator",
           "lane": "train",
           "description": "Division sled loads normalized for floor surface and sled type, with community friction notes.",
-          "personas": [
-            "athlete"
-          ],
+          "personas": ["athlete"],
           "effort": "weekend",
           "status": "idea",
           "keyword": "hyrox sled weight"
@@ -1365,9 +965,7 @@
           "id": "hybrid-load-tracker",
           "lane": "train",
           "description": "Merges run volume and strength tonnage into one weekly readiness view; pairs with AthleteLoadMonitor and ACWR.",
-          "personas": [
-            "coach"
-          ],
+          "personas": ["coach"],
           "effort": "sprint",
           "status": "idea",
           "keyword": "hybrid athlete training load"
@@ -1376,9 +974,7 @@
           "id": "erg-split-tables",
           "lane": "train",
           "description": "SkiErg and RowErg 1000 m pacing tables with damper and drag-factor presets, printable.",
-          "personas": [
-            "athlete"
-          ],
+          "personas": ["athlete"],
           "effort": "weekend",
           "status": "idea",
           "keyword": "skierg 1000m pace"
@@ -1387,9 +983,7 @@
           "id": "hyrox-race-checklist",
           "lane": "race",
           "description": "Gear, fueling, and warmup timeline generator that prints to one page.",
-          "personas": [
-            "athlete"
-          ],
+          "personas": ["athlete"],
           "effort": "weekend",
           "status": "idea",
           "keyword": "hyrox race day checklist"
@@ -1398,9 +992,7 @@
           "id": "hyrox-pace-band",
           "lane": "race",
           "description": "Printable wristband of target splits, generated from a pacing plan.",
-          "personas": [
-            "athlete"
-          ],
+          "personas": ["athlete"],
           "effort": "weekend",
           "status": "idea",
           "keyword": "hyrox pace band"
@@ -1409,10 +1001,7 @@
           "id": "roxzone-transit-planner",
           "lane": "race",
           "description": "Venue map plus realistic roxzone transit budgets, so race plans survive contact with the floor.",
-          "personas": [
-            "athlete",
-            "operator"
-          ],
+          "personas": ["athlete", "operator"],
           "effort": "sprint",
           "status": "idea",
           "keyword": "roxzone"
@@ -1421,10 +1010,7 @@
           "id": "hyrox-split-parser",
           "lane": "analyze",
           "description": "Exported result table -> run/station deltas, rank movement, and coach-ready notes.",
-          "personas": [
-            "coach",
-            "athlete"
-          ],
+          "personas": ["coach", "athlete"],
           "effort": "sprint",
           "status": "live",
           "keyword": "hyrox results analysis"
@@ -1433,9 +1019,7 @@
           "id": "hyrox-benchmarks",
           "lane": "analyze",
           "description": "Percentile tables by division, age group, and station from public results.",
-          "personas": [
-            "athlete"
-          ],
+          "personas": ["athlete"],
           "effort": "sprint",
           "status": "idea",
           "keyword": "hyrox average time"
@@ -1444,10 +1028,7 @@
           "id": "hyrox-whatif",
           "lane": "analyze",
           "description": "Station improvement scenarios -> projected finish time and rank shift; a thin layer on the split parser.",
-          "personas": [
-            "athlete",
-            "coach"
-          ],
+          "personas": ["athlete", "coach"],
           "effort": "weekend",
           "status": "idea",
           "keyword": "hyrox race simulator"
@@ -1456,10 +1037,7 @@
           "id": "hyrox-season-dashboard",
           "lane": "analyze",
           "description": "Multi-race progress for one athlete: fitness trend, station deltas, PB tracker.",
-          "personas": [
-            "athlete",
-            "coach"
-          ],
+          "personas": ["athlete", "coach"],
           "effort": "sprint",
           "status": "idea",
           "keyword": "hyrox progress tracker"
@@ -1468,10 +1046,7 @@
           "id": "hyrox-movement-standard-checker",
           "lane": "judge",
           "description": "Athlete-owned station video -> annotated review timeline with explicit uncertainty.",
-          "personas": [
-            "coach",
-            "builder"
-          ],
+          "personas": ["coach", "builder"],
           "effort": "deep",
           "status": "gap",
           "keyword": "wall ball rep checker"
@@ -1480,9 +1055,7 @@
           "id": "hyrox-rep-counter",
           "lane": "judge",
           "description": "Pose keypoints -> rep segmentation for wall balls, burpee broad jumps, and lunges.",
-          "personas": [
-            "builder"
-          ],
+          "personas": ["builder"],
           "effort": "deep",
           "status": "idea",
           "keyword": "exercise rep counter"
@@ -1491,10 +1064,7 @@
           "id": "no-rep-library",
           "lane": "judge",
           "description": "Annotated open clip set of common no-reps per station, for athlete education and judge onboarding.",
-          "personas": [
-            "builder",
-            "coach"
-          ],
+          "personas": ["builder", "coach"],
           "effort": "sprint",
           "status": "idea",
           "keyword": "hyrox movement standards"
@@ -1503,9 +1073,7 @@
           "id": "hyrox-heat-station-load-planner",
           "lane": "operate",
           "description": "Roster plus venue constraints -> heat plan and staffing risk report.",
-          "personas": [
-            "operator"
-          ],
+          "personas": ["operator"],
           "effort": "deep",
           "status": "gap",
           "keyword": "race heat scheduling"
@@ -1514,9 +1082,7 @@
           "id": "hyrox-venue-readiness-checklist",
           "lane": "operate",
           "description": "Station inventory plus floor plan -> setup gaps and volunteer task list.",
-          "personas": [
-            "operator"
-          ],
+          "personas": ["operator"],
           "effort": "weekend",
           "status": "gap",
           "keyword": "event venue checklist"
@@ -1525,9 +1091,7 @@
           "id": "judge-shift-scheduler",
           "lane": "operate",
           "description": "Volunteer and judge rota builder with station rotation and break rules.",
-          "personas": [
-            "operator"
-          ],
+          "personas": ["operator"],
           "effort": "sprint",
           "status": "idea",
           "keyword": "volunteer scheduling tool"
@@ -1536,9 +1100,7 @@
           "id": "hyrox-gym-finder",
           "lane": "find",
           "description": "Finds HYROXCN certified gyms from coordinates, region keywords, browser location, or imported JSON exports.",
-          "personas": [
-            "athlete"
-          ],
+          "personas": ["athlete"],
           "effort": "weekend",
           "status": "live",
           "keyword": "hyrox gym near me"
@@ -1547,9 +1109,7 @@
           "id": "hyrox-race-calendar",
           "lane": "find",
           "description": "Season calendar aggregator with registration-window alerts.",
-          "personas": [
-            "athlete"
-          ],
+          "personas": ["athlete"],
           "effort": "sprint",
           "status": "idea",
           "keyword": "hyrox 2026 schedule"
@@ -1558,9 +1118,7 @@
           "id": "hyrox-partner-matcher",
           "lane": "find",
           "description": "Doubles and relay partner matching by target time, division, and city.",
-          "personas": [
-            "athlete"
-          ],
+          "personas": ["athlete"],
           "effort": "sprint",
           "status": "idea",
           "keyword": "hyrox doubles partner"
@@ -1569,9 +1127,7 @@
           "id": "hyrox-results-schema",
           "lane": "data",
           "description": "Normalized JSON schema for results, stations, and divisions — the zone's data contract.",
-          "personas": [
-            "builder"
-          ],
+          "personas": ["builder"],
           "effort": "weekend",
           "status": "idea",
           "keyword": "hyrox api"
@@ -1580,9 +1136,7 @@
           "id": "hyrox-data-py",
           "lane": "data",
           "description": "Python client that parses public result pages into the schema; FastF1 is the role model.",
-          "personas": [
-            "builder"
-          ],
+          "personas": ["builder"],
           "effort": "sprint",
           "status": "idea",
           "keyword": "hyrox results api"
@@ -1591,9 +1145,7 @@
           "id": "station-video-benchmark",
           "lane": "data",
           "description": "Labeled station-clip dataset for pose and rep-counting models, with model cards.",
-          "personas": [
-            "builder"
-          ],
+          "personas": ["builder"],
           "effort": "deep",
           "status": "idea",
           "keyword": "fitness video dataset"
